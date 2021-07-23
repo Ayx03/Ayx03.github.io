@@ -6,29 +6,29 @@
     <description>Recent content in Pages on Aynxul03&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://aynxu.l03.me/page/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://aynxu.l03.me/page/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Archives</title>
+      <title>关于</title>
+      <link>https://aynxu.l03.me/about/</link>
+      <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://aynxu.l03.me/about/</guid>
+      <description>Mail: ayx03@pm.me [RECEIVE ONLY] | ayx03@protonmail.com [REPLY]
+Luogu: @Aynxul03
+GitHub: @Ayx03</description>
+    </item>
+    
+    <item>
+      <title>归档</title>
       <link>https://aynxu.l03.me/archives/</link>
-      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://aynxu.l03.me/archives/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>About</title>
-      <link>https://aynxu.l03.me/about/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://aynxu.l03.me/about/</guid>
-      <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
-Hugo makes use of a variety of open source projects including:
- https://github.</description>
-    </item>
-    
-    <item>
-      <title>Search</title>
+      <title>搜索</title>
       <link>https://aynxu.l03.me/search/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

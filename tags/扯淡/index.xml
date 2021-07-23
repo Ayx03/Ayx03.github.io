@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Aynxul03&#39;s Blog</title>
-    <link>https://aynxu.l03.me/post/</link>
-    <description>Recent content in Posts on Aynxul03&#39;s Blog</description>
+    <title>扯淡 on Aynxul03&#39;s Blog</title>
+    <link>https://aynxu.l03.me/tags/%E6%89%AF%E6%B7%A1/</link>
+    <description>Recent content in 扯淡 on Aynxul03&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 23 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://aynxu.l03.me/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://aynxu.l03.me/tags/%E6%89%AF%E6%B7%A1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hello Hugo</title>
       <link>https://aynxu.l03.me/p/hello-hugo/</link>
