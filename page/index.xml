@@ -6,9 +6,19 @@
     <description>Recent content in Pages on Aynxul03&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 23 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://aynxu.l03.me/page/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://aynxu.l03.me/page/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>关于</title>
+      <title>友情链接（申请）</title>
+      <link>https://aynxu.l03.me/links/</link>
+      <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://aynxu.l03.me/links/</guid>
+      <description>Rosyr - 博客园 | Luogu@syr050301
+光锥之内的就是命运</description>
+    </item>
+    
+    <item>
+      <title>我的故事（关于）</title>
       <link>https://aynxu.l03.me/about/</link>
       <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
       
@@ -19,20 +29,20 @@ GitHub: @Ayx03</description>
     </item>
     
     <item>
-      <title>归档</title>
-      <link>https://aynxu.l03.me/archives/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://aynxu.l03.me/archives/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>搜索</title>
+      <title>搜索引擎（站内）</title>
       <link>https://aynxu.l03.me/search/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://aynxu.l03.me/search/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>朝花夕拾（归档）</title>
+      <link>https://aynxu.l03.me/archives/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://aynxu.l03.me/archives/</guid>
       <description></description>
     </item>
     

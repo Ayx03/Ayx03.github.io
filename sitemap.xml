@@ -8,10 +8,25 @@
     <loc>https://aynxu.l03.me/categories/</loc>
     <lastmod>2021-07-25T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://aynxu.l03.me/page/</loc>
+    <lastmod>2021-07-25T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://aynxu.l03.me/post/</loc>
     <lastmod>2021-07-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://aynxu.l03.me/tags/</loc>
+    <lastmod>2021-07-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://aynxu.l03.me/links/</loc>
+    <lastmod>2021-07-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://aynxu.l03.me/tags/%E6%8A%80%E6%9C%AF/</loc>
+    <lastmod>2021-07-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://aynxu.l03.me/categories/skill/</loc>
+    <lastmod>2021-07-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://aynxu.l03.me/p/unicorn-search/</loc>
     <lastmod>2021-07-25T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://aynxu.l03.me/tags/%E7%94%9F%E6%B4%BB/</loc>
@@ -26,9 +41,6 @@
     <loc>https://aynxu.l03.me/p/hello-hugo/</loc>
     <lastmod>2021-07-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://aynxu.l03.me/page/</loc>
-    <lastmod>2021-07-23T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://aynxu.l03.me/about/</loc>
     <lastmod>2021-07-23T00:00:00+00:00</lastmod>
   </url><url>
@@ -38,10 +50,12 @@
     <loc>https://aynxu.l03.me/tags/%E6%B5%8B%E8%AF%95/</loc>
     <lastmod>2021-07-23T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://aynxu.l03.me/categories/test/</loc>
+    <loc>https://aynxu.l03.me/search/</loc>
   </url><url>
     <loc>https://aynxu.l03.me/archives/</loc>
   </url><url>
-    <loc>https://aynxu.l03.me/search/</loc>
+    <loc>https://aynxu.l03.me/categories/test/</loc>
+  </url><url>
+    <loc>https://aynxu.l03.me/categories/life/</loc>
   </url>
 </urlset>

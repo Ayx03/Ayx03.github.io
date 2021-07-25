@@ -8,6 +8,15 @@
     <language>zh-CN</language>
     <lastBuildDate>Sun, 25 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://aynxu.l03.me/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>技术</title>
+      <link>https://aynxu.l03.me/categories/skill/</link>
+      <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://aynxu.l03.me/categories/skill/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>生活</title>
       <link>https://aynxu.l03.me/categories/%E7%94%9F%E6%B4%BB/</link>
       <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
@@ -17,11 +26,20 @@
     </item>
     
     <item>
-      <title>Test</title>
+      <title>测试</title>
       <link>https://aynxu.l03.me/categories/test/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://aynxu.l03.me/categories/test/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>生活</title>
+      <link>https://aynxu.l03.me/categories/life/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://aynxu.l03.me/categories/life/</guid>
       <description></description>
     </item>
     
