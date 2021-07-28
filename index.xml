@@ -7,6 +7,27 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-CN</language>
         <lastBuildDate>Sun, 25 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://aynxu.l03.me/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>安装 Hguo-Theme-Stack 主题时你可能会遇到的问题</title>
+        <link>https://aynxu.l03.me/p/problems-installing-stack/</link>
+        <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://aynxu.l03.me/p/problems-installing-stack/</guid>
+        <description>&lt;img src="https://aynxu.l03.me/p/problems-installing-stack/68747470733a2f2f692e696d6775722e636f6d2f634369484f47532e6a7067.jpg" alt="Featured image of post 安装 Hguo-Theme-Stack 主题时你可能会遇到的问题" /&gt;&lt;h2 id=&#34;啥装了-stack-拷了-examplesites-以后不能正常-hugo--d了&#34;&gt;啥？装了 &lt;code&gt;Stack&lt;/code&gt; 拷了 &lt;code&gt;exampleSites&lt;/code&gt; 以后不能正常 &lt;code&gt;hugo -D&lt;/code&gt;了？&lt;/h2&gt;
+&lt;p&gt;试试以下两项操作。&lt;/p&gt;
+&lt;h3 id=&#34;remove-configtoml&#34;&gt;Remove &lt;code&gt;config.toml&lt;/code&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack/issues/105&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Issus #105 @ CaiJimmy/hugo-theme-stack&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;生成-examplesitecontentpostrich-contentindexmd-时报错是因为是示例文章有请求-twitter-api-的-shortcode-需要-珂学上网-&#34;&gt;生成 &lt;code&gt;examplesite/content/post/rich-content/index.md&lt;/code&gt; 时报错是因为是示例文章有请求 &lt;code&gt;Twitter API&lt;/code&gt; 的 &lt;code&gt;Shortcode&lt;/code&gt; ，需要 &lt;code&gt;珂学上网&lt;/code&gt; 。&lt;/h3&gt;
+&lt;p&gt;我的解决方式是直接把 YouTube 、 Twitter 和 Vimeo 的 ShortCode 都删了，反正以后也用不到（当然你也可以直接把这篇 &lt;code&gt;rich-content&lt;/code&gt; 给整个删了）&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack/issues/191&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Issus #191 @ CaiJimmy/hugo-theme-stack&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;另外bilibili-的-shortcode-格式如下&#34;&gt;另外，&lt;code&gt;Bilibili&lt;/code&gt; 的 &lt;code&gt;ShortCode&lt;/code&gt; 格式如下：&lt;/h2&gt;
+&lt;p&gt;（去掉两个反斜杠）&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;\{\{&amp;lt; bilibili BV1Zx411h7ue &amp;gt;}}&lt;/code&gt;&lt;/p&gt;
+&lt;h1 id=&#34;别一天到晚建博客了赶紧写吧&#34;&gt;别一天到晚建博客了，赶紧写吧。&lt;/h1&gt;
+</description>
+        </item>
+        <item>
         <title>独角兽搜索</title>
         <link>https://aynxu.l03.me/p/unicorn-search/</link>
         <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
@@ -52,7 +73,7 @@
     &lt;/iframe&gt;
 &lt;/div&gt;
 
-&lt;h2 id=&#34;hugo-同时还内置了对于-youtubetwittervimeo-的-shortcode-支持但由于生成时无法访问相关-api-会出错因此在此移除&#34;&gt;Hugo 同时还内置了对于 YouTube、Twitter、Vimeo 的 ShortCode 支持，但由于生成时无法访问相关 API 会出错，因此在此移除。&lt;/h2&gt;
+&lt;h2 id=&#34;hugo-同时还内置了对于-youtubetwittervimeo-的-shortcode-支持但由于生成时无法访问相关-api-会出错懒得想办法让clah接管hugo的连接因此在此移除&#34;&gt;Hugo 同时还内置了对于 YouTube、Twitter、Vimeo 的 ShortCode 支持，但由于生成时无法访问相关 API 会出错（懒得想办法让Cla$h接管Hugo的连接），因此在此移除。&lt;/h2&gt;
 &lt;h3 id=&#34;markdown&#34;&gt;MarkDown&lt;/h3&gt;
 &lt;p&gt;测试&lt;/p&gt;
 &lt;h4 id=&#34;111&#34;&gt;1.1.1.&lt;/h4&gt;

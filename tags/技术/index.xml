@@ -8,6 +8,21 @@
     <language>zh-CN</language>
     <lastBuildDate>Sun, 25 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://aynxu.l03.me/tags/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>安装 Hguo-Theme-Stack 主题时你可能会遇到的问题</title>
+      <link>https://aynxu.l03.me/p/problems-installing-stack/</link>
+      <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://aynxu.l03.me/p/problems-installing-stack/</guid>
+      <description>啥？装了 Stack 拷了 exampleSites 以后不能正常 hugo -D了？ 试试以下两项操作。
+Remove config.toml Issus #105 @ CaiJimmy/hugo-theme-stack
+生成 examplesite/content/post/rich-content/index.md 时报错是因为是示例文章有请求 Twitter API 的 Shortcode ，需要 珂学上网 。 我的解决方式是直接把 YouTube 、 Twitter 和 Vimeo 的 ShortCode 都删了，反正以后也用不到（当然你也可以直接把这篇 rich-content 给整个删了）
+Issus #191 @ CaiJimmy/hugo-theme-stack
+另外，Bilibili 的 ShortCode 格式如下： （去掉两个反斜杠）
+\{\{&amp;lt; bilibili BV1Zx411h7ue &amp;gt;}}
+别一天到晚建博客了，赶紧写吧。 </description>
+    </item>
+    
+    <item>
       <title>独角兽搜索</title>
       <link>https://aynxu.l03.me/p/unicorn-search/</link>
       <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
