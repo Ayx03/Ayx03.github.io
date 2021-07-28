@@ -6,10 +6,10 @@
         <description>Recent content on Aynxul03&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-CN</language>
-        <lastBuildDate>Sun, 25 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://aynxu.l03.me/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 28 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://aynxu.l03.me/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>安装 Hguo-Theme-Stack 主题时你可能会遇到的问题</title>
         <link>https://aynxu.l03.me/p/problems-installing-stack/</link>
-        <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
+        <pubDate>Wed, 28 Jul 2021 00:00:00 +0000</pubDate>
         
         <guid>https://aynxu.l03.me/p/problems-installing-stack/</guid>
         <description>&lt;img src="https://aynxu.l03.me/p/problems-installing-stack/%E5%B0%81%E9%9D%A2.jpg" alt="Featured image of post 安装 Hguo-Theme-Stack 主题时你可能会遇到的问题" /&gt;&lt;h2 id=&#34;啥装了-stack-拷了-examplesites-以后不能正常-hugo--d了&#34;&gt;啥？装了 &lt;code&gt;Stack&lt;/code&gt; 拷了 &lt;code&gt;exampleSites&lt;/code&gt; 以后不能正常 &lt;code&gt;hugo -D&lt;/code&gt;了？&lt;/h2&gt;
