@@ -12,7 +12,7 @@
         <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
         
         <guid>https://aynxu.l03.me/p/problems-installing-stack/</guid>
-        <description>&lt;img src="https://aynxu.l03.me/p/problems-installing-stack/68747470733a2f2f692e696d6775722e636f6d2f634369484f47532e6a7067.jpg" alt="Featured image of post 安装 Hguo-Theme-Stack 主题时你可能会遇到的问题" /&gt;&lt;h2 id=&#34;啥装了-stack-拷了-examplesites-以后不能正常-hugo--d了&#34;&gt;啥？装了 &lt;code&gt;Stack&lt;/code&gt; 拷了 &lt;code&gt;exampleSites&lt;/code&gt; 以后不能正常 &lt;code&gt;hugo -D&lt;/code&gt;了？&lt;/h2&gt;
+        <description>&lt;img src="https://aynxu.l03.me/p/problems-installing-stack/%E5%B0%81%E9%9D%A2.jpg" alt="Featured image of post 安装 Hguo-Theme-Stack 主题时你可能会遇到的问题" /&gt;&lt;h2 id=&#34;啥装了-stack-拷了-examplesites-以后不能正常-hugo--d了&#34;&gt;啥？装了 &lt;code&gt;Stack&lt;/code&gt; 拷了 &lt;code&gt;exampleSites&lt;/code&gt; 以后不能正常 &lt;code&gt;hugo -D&lt;/code&gt;了？&lt;/h2&gt;
 &lt;p&gt;试试以下两项操作。&lt;/p&gt;
 &lt;h3 id=&#34;remove-configtoml&#34;&gt;Remove &lt;code&gt;config.toml&lt;/code&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack/issues/105&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
