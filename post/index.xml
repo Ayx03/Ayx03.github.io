@@ -6,7 +6,35 @@
     <description>Recent content in Posts on Aynxul03&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 28 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://aynxu.l03.me/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://aynxu.l03.me/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MySSL 安全签章</title>
+      <link>https://aynxu.l03.me/p/ssl/</link>
+      <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://aynxu.l03.me/p/ssl/</guid>
+      <description>又摸了一下午整了个这么个东西出来 要得到 A+ 评级，您的网站必须启用 HSTS 且 max-age 属性不小于 6个月（即 15768000 秒） 请注意启用 HSTS 后所有不支持 HTTPS 的子域名都将无法访问，且在 max-age 属性设置的时间内无法恢复。 要得到 ATS 合规 ，您的网站必须支持 TLS v1.2。 要得到 PCI DSS 合规，您的网站不得支持 TLS v1.0。 PCI安全标准委员会规定2018年6月30日之后，开启TLS1.0将导致PCI DSS不合规，
+具体参考：《更严格的PCI DSS合规标准》
+HSTS 相关配置可以参考 MySSL.com 的 HTTPS安全与兼容性配置指南 HTTP Strict Transport Security Header Testing Tool</description>
+    </item>
+    
+    <item>
+      <title>题解 P1603 斯诺登的密码</title>
+      <link>https://aynxu.l03.me/p/key-to-p1603/</link>
+      <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://aynxu.l03.me/p/key-to-p1603/</guid>
+      <description>P1603 斯诺登的密码 by @worcher [金钩👴] | 普及- 题目背景 根据斯诺登事件出的一道水题
+题目描述 2013 年 X 月 X 日，俄罗斯办理了斯诺登的护照，于是他混迹于一架开往委内瑞拉的飞机。但是，这件事情太不周密了，因为FBI的间谍早已获悉他的具体位置——但这不是最重要的——最重要的是如果要去委内瑞拉，那么就要经过古巴，而经过古巴的路在美国的掌控之中。
+丧心病狂的奥巴马迫降斯诺登的飞机，搜查时却发现，斯诺登杳无踪迹。但是，在据说是斯诺登的座位上，发现了一张纸条。纸条由纯英文构成：Obama is a two five zero.（以 . 结束输出，只有 6 个单词+一个句号，句子开头如没有大写亦为合法）这句话虽然有点无厘头，但是警官陈珺骛发现这是一条极其重要的线索。他在斯诺登截获的一台笔记本中找到了一个 C++ 程序，输入这条句子后立马给出了相对应的密码。陈珺鹜高兴得晕了过去，身为警官的你把字条和程序带上了飞机，准备飞往曼哈顿国际机场，但是在飞机上检查的时候发现——程序被粉碎了！飞机抵达华盛顿只剩5分钟，你必须在这 5 分钟内编写（杜撰）一个程序，免受上司的 10000000000%10 大板。破译密码的步骤如下：
+（1）找出句子中所有用英文表示的数字(≤20)，列举在下：
+正规：one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty
+非正规：a both another first second third。为避免造成歧义，another 算作 1 处理。
+（2）将这些数字平方后对 100 取模，如 00,05,11,19,86,99。
+（3）把这些两位数按数位排成一行，组成一个新数，如果开头为 0，就去 0。
+（4）找出所有排列方法中最小的一个数，即为密码。</description>
+    </item>
+    
     <item>
       <title>安装 Hguo-Theme-Stack 主题时你可能会遇到的问题</title>
       <link>https://aynxu.l03.me/p/problems-installing-stack/</link>
@@ -30,15 +58,6 @@ Issus #191 @ CaiJimmy/hugo-theme-stack
       <guid>https://aynxu.l03.me/p/unicorn-search/</guid>
       <description>我的博客的站内搜索已经搭载了这款 微内核万物互联分布式软总线形式化验证 搜索引擎，大家可以抢先体验一下！
 相信这将是与 花瓣搜索 一样的优秀国产项目！让我们在一起拒绝卡脖子！星星之火可以燎原！</description>
-    </item>
-    
-    <item>
-      <title>这就是生活</title>
-      <link>https://aynxu.l03.me/p/this-is-life/</link>
-      <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://aynxu.l03.me/p/this-is-life/</guid>
-      <description>无力感涌上来了，谁也顶不住 </description>
     </item>
     
     <item>

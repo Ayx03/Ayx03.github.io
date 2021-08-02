@@ -6,7 +6,61 @@
     <description>Recent content in Tags on Aynxul03&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 28 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://aynxu.l03.me/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://aynxu.l03.me/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C&#43;&#43;</title>
+      <link>https://aynxu.l03.me/tags/c&#43;&#43;/</link>
+      <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://aynxu.l03.me/tags/c&#43;&#43;/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HSTS</title>
+      <link>https://aynxu.l03.me/tags/hsts/</link>
+      <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://aynxu.l03.me/tags/hsts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HTTPS</title>
+      <link>https://aynxu.l03.me/tags/https/</link>
+      <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://aynxu.l03.me/tags/https/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OI</title>
+      <link>https://aynxu.l03.me/tags/oi/</link>
+      <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://aynxu.l03.me/tags/oi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>技术</title>
+      <link>https://aynxu.l03.me/tags/%E6%8A%80%E6%9C%AF/</link>
+      <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://aynxu.l03.me/tags/%E6%8A%80%E6%9C%AF/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>题解</title>
+      <link>https://aynxu.l03.me/tags/%E9%A2%98%E8%A7%A3/</link>
+      <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://aynxu.l03.me/tags/%E9%A2%98%E8%A7%A3/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Hugo</title>
       <link>https://aynxu.l03.me/tags/hugo/</link>
@@ -31,24 +85,6 @@
       <pubDate>Wed, 28 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://aynxu.l03.me/tags/stack/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>技术</title>
-      <link>https://aynxu.l03.me/tags/%E6%8A%80%E6%9C%AF/</link>
-      <pubDate>Wed, 28 Jul 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://aynxu.l03.me/tags/%E6%8A%80%E6%9C%AF/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>生活</title>
-      <link>https://aynxu.l03.me/tags/%E7%94%9F%E6%B4%BB/</link>
-      <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://aynxu.l03.me/tags/%E7%94%9F%E6%B4%BB/</guid>
       <description></description>
     </item>
     
