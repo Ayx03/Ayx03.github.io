@@ -79,9 +79,6 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;为什么样例输出不是-245--254-&#34;&gt;为什么样例输出不是 &lt;code&gt;245&lt;/code&gt; / &lt;code&gt;254&lt;/code&gt; ？&lt;/h3&gt;
 &lt;p&gt;我得了 &lt;code&gt;20&lt;/code&gt; 分（过了测试点#1）之后重读题目的理解是把数字的每一位拆分排序，而&lt;a class=&#34;link&#34; href=&#34;https://www.luogu.com.cn/discuss/show/293285&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;这个帖子&lt;/a&gt;的&lt;a class=&#34;link&#34; href=&#34;https://www.luogu.com.cn/user/434215&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;楼主&lt;/a&gt;的想法则是 &lt;code&gt;25&lt;/code&gt; 和 &lt;code&gt;4&lt;/code&gt; 的两种组合 &lt;code&gt;425&lt;/code&gt; 和 &lt;code&gt;254&lt;/code&gt; 中 &lt;code&gt;254&lt;/code&gt; 更小（&lt;code&gt;25和4组成的最小数不是254吗，为什么样例给的425&lt;/code&gt;）。可能是我们理解能力太差了。（&lt;del&gt;不排除题面存在歧义&lt;/del&gt;）
-我得了 &lt;code&gt;20&lt;/code&gt; 分（过了测试点#1）之后重读题目的理解是把数字的每一位拆分排序，而&lt;a class=&#34;link&#34; href=&#34;https://www.luogu.com.cn/discuss/show/293285&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;这个帖子&lt;/a&gt;的&lt;a class=&#34;link&#34; href=&#34;https://www.luogu.com.cn/user/434215&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;楼主&lt;/a&gt;的想法则是 &lt;code&gt;25&lt;/code&gt; 和 &lt;code&gt;4&lt;/code&gt; 的两种组合 &lt;code&gt;425&lt;/code&gt; 和 &lt;code&gt;254&lt;/code&gt; 中 &lt;code&gt;254&lt;/code&gt; 更小（&lt;code&gt;25和4组成的最小数不是254吗，为什么样例给的425&lt;/code&gt;）。可能是我们理解能力太差了。（&lt;del&gt;不排除题面存在歧义&lt;/del&gt;）&lt;/p&gt;
 &lt;h3 id=&#34;没有任何单词匹配的情况&#34;&gt;没有任何单词匹配的情况&lt;/h3&gt;
 &lt;p&gt;&lt;del&gt;可能就我没看清题？&lt;/del&gt;&lt;/p&gt;
@@ -209,6 +206,41 @@
 &lt;h4 id=&#34;111&#34;&gt;1.1.1.&lt;/h4&gt;
 &lt;h5 id=&#34;然后就不会继续生成目录了&#34;&gt;然后就不会继续生成目录了&lt;/h5&gt;
 &lt;h6 id=&#34;差不多得了&#34;&gt;差不多得了🤬&lt;/h6&gt;</description>
+        </item>
+        <item>
+        <title>使用Node.js（安装Hexo）时出现了 rollbackFailedOptional 的解决方法</title>
+        <link>https://aynxu.l03.me/p/error-installing-hexo/</link>
+        <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://aynxu.l03.me/p/error-installing-hexo/</guid>
+        <description>&lt;h2 id=&#34;我的解决方法&#34;&gt;我的解决方法&lt;/h2&gt;
+&lt;h3 id=&#34;以-管理员身份-运行一个编辑器&#34;&gt;以 &lt;strong&gt;管理员身份&lt;/strong&gt; 运行一个编辑器&lt;/h3&gt;
+&lt;h3 id=&#34;打开-cprogram-filesnodejsnode_modulesnpmnpmrc&#34;&gt;打开 &lt;code&gt;C:\Program Files\nodejs\node_modules\npm\npmrc&lt;/code&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;如果你安装Node.js时修改了安装路径那么就不是这个路径了&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如果这个文件不存在就自己新建一个文本文档并去掉扩展名 &lt;code&gt;.txt&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;修改 &lt;code&gt;C:\Program Files\nodejs\node_modules\npm\.npmrc&lt;/code&gt; 没有用&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;填入以下内容并保存&#34;&gt;填入以下内容并保存&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;proxy = null
+registry = https://registry.npm.taobao.org
+disturl = https://npm.taobao.org/dist
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;然后再重新尝试安装hexonpm-install-hexo-cli--g即可&#34;&gt;然后再重新尝试安装Hexo（&lt;code&gt;npm install hexo-cli -g&lt;/code&gt;）即可。&lt;/h3&gt;
+&lt;h3 id=&#34;如果依旧无法解决可以尝试在以管理员身份启动的命令提示符或-powershell-中执行此命令&#34;&gt;如果依旧无法解决可以尝试在以管理员身份启动的命令提示符或 Powershell 中执行此命令&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;npm config set disturl https://npm.taobao.org/dist
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;文章迁移备注&#34;&gt;文章迁移备注&lt;/h2&gt;
+&lt;p&gt;从博客园搬文章的时候无意发现本文已被以下站点转载：&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://qdmana.com/2021/01/20210105173638094t.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;qdmana.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://yunjuu.com/info/1769684.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;yunjuu.com&lt;/a&gt;&lt;/p&gt;
+</description>
         </item>
         
     </channel>
