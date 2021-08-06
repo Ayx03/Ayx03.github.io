@@ -60,5 +60,86 @@ Issus #191 @ CaiJimmy/hugo-theme-stack
 相信这将是与 花瓣搜索 一样的优秀国产项目！让我们在一起拒绝卡脖子！星星之火可以燎原！</description>
     </item>
     
+    <item>
+      <title>题解 P5707 【深基2.例12】上学迟到</title>
+      <link>https://aynxu.l03.me/p/key-to-p5707/</link>
+      <pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://aynxu.l03.me/p/key-to-p5707/</guid>
+      <description>（题面来自洛谷）
+题目描述 yyy 的学校要求早上 8 点前到达。学校到 yyy 的家一共有 s(s≤10000) 米，而 yyy 可以以 v(v&amp;lt;10000) 米每分钟的速度匀速走到学校。此外在上学路上它还要额外花 10 分钟时间进行垃圾分类。请问为了避免迟到 yyy 最晚什么时候出门？输出 HH:MM 的时间格式，不足两位时补零。由于路途遥远， yyy 可能不得不提前一天出发，不过不可能提前超过一天。
+输入格式 两个正整数 s,v，意思已经在题目中给定。
+输出格式 hh:mm 表示最晚离开家的时间（时:分，必须输出两位，不足两位前面补0）
+输入输出样例 输入 #1
+100 99
+输出 #1
+07:48
+分析 小学的匀速直线运动问题，t=s/v 但是有几个小细节 1.不要忘了加上10分钟
+2.怎么输出HH:MM的格式？
+试了一下像保留小数点一样使用C的标准输入输出（Xchkoo口中所说的“那套老掉牙的cstdio”）的占位符，居然啪一下就行了
+3.怎么处理时分进位？60进制，因为不知道进几次所以用while循环实现就行了
+4.s/v有小数点怎么办？不能四舍五入，只能向上取整，因为迟到0.000000000001分钟也是迟到。
+5.千米迢迢上学的yyy问题：八个小时都到不了学校怎么办？当h自减变为-1的时候将h赋值为23即可，由于不可能提前超过一天出发（某学生连续赶路30余小时猝死）所以if即可
+6.h及m的计算问题：我的做法是赋初值08:00然后往回倒减分钟数，然后进位到小时位
+7.为什么要发水题的题解？这样比较容易坚持每天刷题===
+最近在我身上发生了很多事，但是不想放弃OI。
+代码 #include&amp;lt;bits/stdc++.h&amp;gt;using namespace std; int main() { int s,v; cin&amp;gt;&amp;gt;s&amp;gt;&amp;gt;v; int t=ceil(1.0*s/v); int h=8,m=-t-10; while(m&amp;lt;=0) { m+=60; h--; if(h&amp;lt;0) h=23; } printf(&amp;#34;%.2d:%.2d&amp;#34;,h,m); return 0; } </description>
+    </item>
+    
+    <item>
+      <title>题解 P2669 [NOIP2015 普及组] 金币</title>
+      <link>https://aynxu.l03.me/p/key-to-p2669/</link>
+      <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://aynxu.l03.me/p/key-to-p2669/</guid>
+      <description>（题面来自洛谷）
+题目描述 国王将金币作为工资，发放给忠诚的骑士。第一天，骑士收到一枚金币；之后两天（第二天和第三天），每天收到两枚金币；之后三天（第四、五、六天），每天收到三枚金币；之后四天（第七、八、九、十天），每天收到四枚金币……；这种工资发放模式会一直这样延续下去：当连续N天每天收到N枚金币后，骑士会在之后的连续N+1天里，每天收到N+1枚金币。
+请计算在前K天里，骑士一共获得了多少金币。
+输入格式 一个正整数K，表示发放金币的天数。
+输出格式 一个正整数，即骑士收到的金币数。
+输入输出样例 输入 #1 6 输出 #1 14 输入 #2 1000 输出 #2 29820 说明/提示 【输入输出样例 1 说明】
+骑士第一天收到一枚金币；第二天和第三天，每天收到两枚金币；第四、五、六天，每天收到三枚金币。因此一共收到 1+2+2+3+3+3=14 枚金币。
+对于 100% 的数据，1 ≤ K ≤ 10,000。
+分析 又空着
+代码 #include&amp;lt;bits/stdc++.h&amp;gt;using namespace std; int main() { int K,	//发放金币的天数 	coin = 0,	//骑士收到的金币数 	per = 1,	//每天发给骑士的金币数 	remain = 1;	//按此数量发放的剩余天数 	cin&amp;gt;&amp;gt;K; for(int i=1;i&amp;lt;=day;i++) { coin+=per;	//发放金币 	if(--remain==0) remain=++per;	//之后的per+1天每天发放per+1枚金币 	} cout&amp;lt;&amp;lt;coin; return 0; } 最近经历了很多事情，希望OI可以坚持下去吧，先水个水题题解（</description>
+    </item>
+    
+    <item>
+      <title>题解 P1650 田忌赛马</title>
+      <link>https://aynxu.l03.me/p/key-to-p1650/</link>
+      <pubDate>Fri, 19 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://aynxu.l03.me/p/key-to-p1650/</guid>
+      <description>搬文章的时候瞎画的封面图还是决定不摆上去了&amp;hellip;
+(题面来自洛谷)
+题目描述 我国历史上有个著名的故事： 那是在2300年以前。齐国的大将军田忌喜欢赛马。他经常和齐王赛马。他和齐王都有三匹马：常规马，上级马，超级马。一共赛三局，每局的胜者可以从负者这里取得200银币。每匹马只能用一次。齐王的马好，同等级的马，齐王的总是比田忌的要好一点。于是每次和齐王赛马，田忌总会输600银币。
+田忌很沮丧，直到他遇到了著名的军师――孙膑。田忌采用了孙膑的计策之后，三场比赛下来，轻松而优雅地赢了齐王200银币。这实在是个很简单的计策。由于齐王总是先出最好的马，再出次好的，所以田忌用常规马对齐王的超级马，用自己的超级马对齐王的上级马，用自己的上级马对齐王的常规马，以两胜一负的战绩赢得200银币。实在很简单。
+如果不止三匹马怎么办？这个问题很显然可以转化成一个二分图最佳匹配的问题。把田忌的马放左边，把齐王的马放右边。田忌的马A和齐王的B之间，如果田忌的马胜，则连一条权为200的边；如果平局，则连一条权为0的边；如果输，则连一条权为－200的边……如果你不会求最佳匹配，用最小费用最大流也可以啊。 然而，赛马问题是一种特殊的二分图最佳匹配的问题，上面的算法过于先进了，简直是杀鸡用牛刀。现在，就请你设计一个简单的算法解决这个问题。
+输入格式 第一行一个整数n，表示他们各有几匹马（两人拥有的马的数目相同）。第二行n个整数，每个整数都代表田忌的某匹马的速度值(0 &amp;lt;= 速度值&amp;lt;= 100)。第三行n个整数，描述齐王的马的速度值。两马相遇，根据速度值的大小就可以知道哪匹马会胜出。如果速度值相同，则和局，谁也不拿钱。
+【数据规模】
+对于20%的数据，1&amp;lt;=N&amp;lt;=65；
+对于40%的数据，1&amp;lt;=N&amp;lt;=250；
+对于100%的数据，1&amp;lt;=N&amp;lt;=2000。
+输出格式 仅一行，一个整数，表示田忌最大能得到多少银币。
+输入输出样例 输入 #1
+3 92 83 71 95 87 74 输出 #1
+200 分析 都在代码注释里了
+代码 // Problem: P1650 田忌赛马 // Contest: Luogu // URL: https://www.luogu.com.cn/problem/P1650 // Memory Limit: 125 MB // Time Limit: 1000 ms // // Powered by CP Editor (https://cpeditor.org)  #include&amp;lt;bits/stdc++.h&amp;gt;using namespace std; int n, a[2001],	//田忌的马 	b[2001],	//齐王的马 	m1, m2, qian; int main(){ scanf(&amp;#34;%d&amp;#34;,&amp;amp;n); for(int i=0;i&amp;lt;n;i++) scanf(&amp;#34;%d&amp;#34;,&amp;amp;a[i]); for(int i=0;i&amp;lt;n;i++) scanf(&amp;#34;%d&amp;#34;,&amp;amp;b[i]); sort(a,a+n); sort(b,b+n); int n1=n-1, n2=n-1; while(m1&amp;lt;=n1){ if(a[n1]&amp;gt;b[n2]){	//田忌最快的比齐王最快的快 	qian+=200;	//赢钱 	n1--,n2--;	//两边各去掉一匹马 	}else if(a[n1]&amp;lt;b[n2]){//田忌最快的赢不了齐王最快的，就丢一匹最慢的 	qian-=200;	//输钱 	m1++,n2--; }else{	//如果 势 均 力 敌 的话 	if(a[m1]&amp;gt;b[m2]){ //田忌最慢的能赢齐王最慢的，就上 	qian+=200;	//赢钱 	m1++,m2++;	}else{	//赢不了就用最慢的消耗齐王最快的 	if(a[m1]&amp;lt;b[n2]) qian-=200;	//我 再 忍 你 一 手 	m1++,n2--; } } } printf(&amp;#34;%d&amp;#34;,qian); return 0; } </description>
+    </item>
+    
+    <item>
+      <title>HDU2063 过山车 题解</title>
+      <link>https://aynxu.l03.me/p/key-to-hdu2063/</link>
+      <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://aynxu.l03.me/p/key-to-hdu2063/</guid>
+      <description>题面链接 HDU 2063
+Vjudge
+题意概述 求一个二分图最大匹配的边数
+题目标签 匈牙利算法模板题
+参考代码 主体过程由深搜实现
+#include &amp;lt;bits/stdc++.h&amp;gt;using namespace std; #define maxn 1000 + 10 int n, m, k, head[maxn], link[maxn], cnt, tot; bool vis[maxn]; struct Edge { int to, nxt; }edge[maxn]; void add(int u, int v) { edge[cnt].to = v; edge[cnt].nxt = head[u]; head[u] = cnt; cnt++; } bool dfs(int u)	//深搜判断对于点集v2中的一个点u是否能与点集v1中的一个点v匹配 { for(int i = head[u]; i != -1; i = edge[i].nxt)	//枚举能匹配的点 	{ int v = edge[i].</description>
+    </item>
+    
   </channel>
 </rss>
