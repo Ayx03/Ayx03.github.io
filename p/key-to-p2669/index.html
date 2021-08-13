@@ -108,25 +108,25 @@ if (!doNotTrack) {
     <p><strong>（题面来自<a class="link" href="https://www.luogu.com.cn/problem/P2669"  target="_blank" rel="noopener"
     >洛谷</a>）</strong></p>
 <h2 id="题目描述">题目描述</h2>
-<p>国王将金币作为工资，发放给忠诚的骑士。第一天，骑士收到一枚金币；之后两天（第二天和第三天），每天收到两枚金币；之后三天（第四、五、六天），每天收到三枚金币；之后四天（第七、八、九、十天），每天收到四枚金币……；这种工资发放模式会一直这样延续下去：当连续N天每天收到N枚金币后，骑士会在之后的连续N+1天里，每天收到N+1枚金币。</p>
+<p>国王将金币作为工资，发放给忠诚的骑士。第一天，骑士收到一枚金币；之后两天（第二天和第三天），每天收到两枚金币；之后三天（第四、五、六天），每天收到三枚金币；之后四天（第七、八、九、十天），每天收到四枚金币……；这种工资发放模式会一直这样延续下去：当连续 $n$ 天每天收到 $n$ 枚金币后，骑士会在之后的连续 $n+1$ 天里，每天收到 $n+1$ 枚金币。</p>
 <p>请计算在前K天里，骑士一共获得了多少金币。</p>
 <h2 id="输入格式">输入格式</h2>
-<p>一个正整数K，表示发放金币的天数。</p>
+<p>一个正整数 $k$ ，表示发放金币的天数。</p>
 <h2 id="输出格式">输出格式</h2>
 <p>一个正整数，即骑士收到的金币数。</p>
 <h2 id="输入输出样例">输入输出样例</h2>
-<p>输入 #1
-<code>6</code>
-输出 #1
-<code>14</code>
-输入 #2
-<code>1000</code>
-输出 #2
-<code>29820</code>
-说明/提示
-【输入输出样例 1 说明】</p>
-<p>骑士第一天收到一枚金币；第二天和第三天，每天收到两枚金币；第四、五、六天，每天收到三枚金币。因此一共收到 1+2+2+3+3+3=14 枚金币。</p>
-<p>对于 100% 的数据，1 ≤ K ≤ 10,000。</p>
+<p>输入 #1</p>
+<p><code>6</code></p>
+<p>输出 #1</p>
+<p><code>14</code></p>
+<p>输入 #2</p>
+<p><code>1000</code></p>
+<p>输出 #2</p>
+<p><code>29820</code></p>
+<p>说明/提示</p>
+<p>【输入输出样例 1 说明】</p>
+<p>骑士第一天收到一枚金币；第二天和第三天，每天收到两枚金币；第四、五、六天，每天收到三枚金币。因此一共收到 $1+2+2+3+3+3=14$ 枚金币。</p>
+<p>对于 $100%$ 的数据，$1\le k\le 10^4$</p>
 <h2 id="分析">分析</h2>
 <p>又空着</p>
 <h2 id="代码">代码</h2>
@@ -195,6 +195,29 @@ if (!doNotTrack) {
     </section></footer>
 
     
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3&#43;Aro6EYUG4&#43;cU&#43;KJWu/X"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js"integrity="sha384-g7c&#43;Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI&#43;sEnkvrMWph2EDg4"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC&#43;Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
 </article>
 
     <aside class="related-contents--wrapper">
@@ -203,6 +226,18 @@ if (!doNotTrack) {
         <h2 class="section-title">智障推荐</h2>
         <div class="related-contents">
             <div class="flex article-list--tile">
+                
+                    
+<article class="">
+    <a href="/p/key-to-upc1488/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">题解 UPC-1488 客户调查(client)</h2>
+        </div>
+    </a>
+</article>
                 
                     
 <article class="">
@@ -218,68 +253,36 @@ if (!doNotTrack) {
                 
                     
 <article class="">
-    <a href="/p/key-to-hdu2063/">
+    <a href="/p/key-to-p5719/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">HDU2063 过山车 题解</h2>
-        </div>
-    </a>
-</article>
-                
-                    
-<article class="has-image">
-    <a href="/p/key-to-p1603/">
-        
-        
-            <div class="article-image">
-                <img src="/p/key-to-p1603/cover.ecf17334ebe3bdf20d874b297771da6f_hu33884e09a361eec376ba2239fc3bc8e1_84422_250x150_fill_q75_box_smart1.jpg" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy" 
-                        data-key="Key-to-P1603" 
-                        data-hash="md5-7PFzNOvjvfINh0spd3Habw==">
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">题解 P1603 斯诺登的密码</h2>
+            <h2 class="article-title">题解 P5719 【深基4.例3】分类平均</h2>
         </div>
     </a>
 </article>
                 
                     
 <article class="">
-    <a href="/p/key-to-p1650/">
+    <a href="/p/key-to-hdu2063/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">题解 P1650 田忌赛马</h2>
+            <h2 class="article-title">题解 HDU2063 过山车</h2>
         </div>
     </a>
 </article>
                 
                     
-<article class="has-image">
-    <a href="/p/ssl/">
+<article class="">
+    <a href="/p/key-to-ybt1000/">
         
-        
-            <div class="article-image">
-                <img src="/p/ssl/_hu958d513eeefe5556a31d065479ecc5ac_14205_7bffa90d1e66ca9b8184fda08a99dc7e.jpg" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy" 
-                        data-key="SSL" 
-                        data-hash="md5-jq4GZk3fs&#43;jcbgAHVstwOw==">
-                
-            </div>
         
 
         <div class="article-details">
-            <h2 class="article-title">MySSL 安全签章</h2>
+            <h2 class="article-title">题解 YBT1000：入门测试题目</h2>
         </div>
     </a>
 </article>

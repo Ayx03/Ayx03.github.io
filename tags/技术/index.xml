@@ -27,12 +27,11 @@ HSTS 相关配置可以参考 MySSL.com 的 HTTPS安全与兼容性配置指南 
       <description>P1603 斯诺登的密码 by @worcher [金钩👴] | 普及- 题目背景 根据斯诺登事件出的一道水题
 题目描述 2013 年 X 月 X 日，俄罗斯办理了斯诺登的护照，于是他混迹于一架开往委内瑞拉的飞机。但是，这件事情太不周密了，因为FBI的间谍早已获悉他的具体位置——但这不是最重要的——最重要的是如果要去委内瑞拉，那么就要经过古巴，而经过古巴的路在美国的掌控之中。
 丧心病狂的奥巴马迫降斯诺登的飞机，搜查时却发现，斯诺登杳无踪迹。但是，在据说是斯诺登的座位上，发现了一张纸条。纸条由纯英文构成：Obama is a two five zero.（以 . 结束输出，只有 6 个单词+一个句号，句子开头如没有大写亦为合法）这句话虽然有点无厘头，但是警官陈珺骛发现这是一条极其重要的线索。他在斯诺登截获的一台笔记本中找到了一个 C++ 程序，输入这条句子后立马给出了相对应的密码。陈珺鹜高兴得晕了过去，身为警官的你把字条和程序带上了飞机，准备飞往曼哈顿国际机场，但是在飞机上检查的时候发现——程序被粉碎了！飞机抵达华盛顿只剩5分钟，你必须在这 5 分钟内编写（杜撰）一个程序，免受上司的 10000000000%10 大板。破译密码的步骤如下：
-（1）找出句子中所有用英文表示的数字(≤20)，列举在下：
+（1）找出句子中所有用英文表示的数字($\leq 20$)，列举在下：
 正规：one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty
-非正规：a both another first second third。为避免造成歧义，another 算作 1 处理。
-（2）将这些数字平方后对 100 取模，如 00,05,11,19,86,99。
-（3）把这些两位数按数位排成一行，组成一个新数，如果开头为 0，就去 0。
-（4）找出所有排列方法中最小的一个数，即为密码。</description>
+非正规：a both another first second third。为避免造成歧义，another 算作 $1$ 处理。
+（2）将这些数字平方后对 $100$ 取模，如 $00,05,11,19,86,99$。
+（3）把这些两位数按数位排成一行，组成一个新数，如果开头为 $0$，就去 $0$。</description>
     </item>
     
     <item>
@@ -61,13 +60,30 @@ Issus #191 @ CaiJimmy/hugo-theme-stack
     </item>
     
     <item>
+      <title>题解 UPC-1488 客户调查(client)</title>
+      <link>https://aynxu.l03.me/p/key-to-upc1488/</link>
+      <pubDate>Tue, 13 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://aynxu.l03.me/p/key-to-upc1488/</guid>
+      <description>（题面来自洛谷）
+客户调查 时间：1s 空间：32M 题目描述： 公司派你去和几位客户面谈，以了解他们对公司产品的意见。你逐个打电话与客户联系，得知他们一般都很忙，不过他们还是可以为你抽出一点时间。现在的问题是有些客户的时间有冲突，你无法在一天内联系所有客户。所以你需要一个程序来帮助你安排第一天的工作，使得你能尽可能地和更多的客户进行联系。注意，客户不愿意你打乱他们的计划。如果你和某个客户约定见面，必须按时到达并且充分利用这段时间和他交谈，这样才不至于让他产生不满。你可以假设从一个客户处到另一个客户处的时间短得忽略不计。
+输入格式： 输入包括了多个测试数据，每个测试数据开头是一个整数n（1&amp;lt;=n&amp;lt;=10000），表示客户总数。接下来n行每行包括两个正整数s、t，分别表示该客户的空闲时间段的起始时间和终止时间。$s&amp;lt;t$
+输出格式： 对于每个测试数据，在单独一行内输出你所能接触到的最多客户数。
+样例输入： 3 1 15 2 19 15 17
+样例输出： 2
+约定： (无)
+提示： (无)
+代码 /* Name: 7、客户调查 Copyright: Aynxul03 Author: Aynxul03 Date: 2021-07-13 Description: 时间：1s 空间：32M 题目描述： 公司派你去和几位客户面谈，以了解他们对公司产品的意见。你逐个打电话与客户联系， 得知他们一般都很忙，不过他们还是可以为你抽出一点时间。现在的问题是有些客户的 时间有冲突，你无法在一天内联系所有客户。所以你需要一个程序来帮助你安排第一天 的工作，使得你能尽可能地和更多的客户进行联系。注意，客户不愿意你打乱他们的计 划。如果你和某个客户约定见面，必须按时到达并且充分利用这段时间和他交谈，这样 才不至于让他产生不满。你可以假设从一个客户处到另一个客户处的时间短得忽略不计。 输入格式： 输入包括了多个测试数据，每个测试数据开头是一个整数n（1&amp;lt;=n&amp;lt;=10000），表示客户总数。 接下来n行每行包括两个正整数s、t，分别表示该客户的空闲时间段的起始时间和终止时间。s&amp;lt;t 输出格式： 对于每个测试数据，在单独一行内输出你所能接触到的最多客户数。 */ #include&amp;lt;bits/stdc++.h&amp;gt;using namespace std; int n,lt,ans; struct sb{ int start,end; }client[1001]; bool cmp(sb a,sb b){return a.end&amp;lt;b.end;}//按结束时间升序 int main(){ ios::sync_with_stdio(0); cin&amp;gt;&amp;gt;n; for(int i=0;i&amp;lt;n;i++) cin&amp;gt;&amp;gt;client[i].</description>
+    </item>
+    
+    <item>
       <title>题解 P5707 【深基2.例12】上学迟到</title>
       <link>https://aynxu.l03.me/p/key-to-p5707/</link>
       <pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate>
       
       <guid>https://aynxu.l03.me/p/key-to-p5707/</guid>
       <description>（题面来自洛谷）
-题目描述 yyy 的学校要求早上 8 点前到达。学校到 yyy 的家一共有 s(s≤10000) 米，而 yyy 可以以 v(v&amp;lt;10000) 米每分钟的速度匀速走到学校。此外在上学路上它还要额外花 10 分钟时间进行垃圾分类。请问为了避免迟到 yyy 最晚什么时候出门？输出 HH:MM 的时间格式，不足两位时补零。由于路途遥远， yyy 可能不得不提前一天出发，不过不可能提前超过一天。
+题目描述 yyy 的学校要求早上 8 点前到达。学校到 yyy 的家一共有 $s$($s\le 10000$) 米，而 yyy 可以以 $v$($v&amp;lt;10000$) 米每分钟的速度匀速走到学校。此外在上学路上它还要额外花 10 分钟时间进行垃圾分类。请问为了避免迟到 yyy 最晚什么时候出门？输出 HH:MM 的时间格式，不足两位时补零。由于路途遥远， yyy 可能不得不提前一天出发，不过不可能提前超过一天。
 输入格式 两个正整数 s,v，意思已经在题目中给定。
 输出格式 hh:mm 表示最晚离开家的时间（时:分，必须输出两位，不足两位前面补0）
 输入输出样例 输入 #1
@@ -83,7 +99,7 @@ Issus #191 @ CaiJimmy/hugo-theme-stack
 6.h及m的计算问题：我的做法是赋初值08:00然后往回倒减分钟数，然后进位到小时位
 7.为什么要发水题的题解？这样比较容易坚持每天刷题===
 最近在我身上发生了很多事，但是不想放弃OI。
-代码 #include&amp;lt;bits/stdc++.h&amp;gt;using namespace std; int main() { int s,v; cin&amp;gt;&amp;gt;s&amp;gt;&amp;gt;v; int t=ceil(1.0*s/v); int h=8,m=-t-10; while(m&amp;lt;=0) { m+=60; h--; if(h&amp;lt;0) h=23; } printf(&amp;#34;%.2d:%.2d&amp;#34;,h,m); return 0; } </description>
+代码 #include&amp;lt;bits/stdc++.h&amp;gt;using namespace std; int main() { int s,v; cin&amp;gt;&amp;gt;s&amp;gt;&amp;gt;v; int t=ceil(1.0*s/v); int h=8,m=-t-10; while(m&amp;lt;=0) { m+=60; h--; if(h&amp;lt;0) h=23; } printf(&amp;#34;%.</description>
     </item>
     
     <item>
@@ -93,15 +109,44 @@ Issus #191 @ CaiJimmy/hugo-theme-stack
       
       <guid>https://aynxu.l03.me/p/key-to-p2669/</guid>
       <description>（题面来自洛谷）
-题目描述 国王将金币作为工资，发放给忠诚的骑士。第一天，骑士收到一枚金币；之后两天（第二天和第三天），每天收到两枚金币；之后三天（第四、五、六天），每天收到三枚金币；之后四天（第七、八、九、十天），每天收到四枚金币……；这种工资发放模式会一直这样延续下去：当连续N天每天收到N枚金币后，骑士会在之后的连续N+1天里，每天收到N+1枚金币。
+题目描述 国王将金币作为工资，发放给忠诚的骑士。第一天，骑士收到一枚金币；之后两天（第二天和第三天），每天收到两枚金币；之后三天（第四、五、六天），每天收到三枚金币；之后四天（第七、八、九、十天），每天收到四枚金币……；这种工资发放模式会一直这样延续下去：当连续 $n$ 天每天收到 $n$ 枚金币后，骑士会在之后的连续 $n+1$ 天里，每天收到 $n+1$ 枚金币。
 请计算在前K天里，骑士一共获得了多少金币。
-输入格式 一个正整数K，表示发放金币的天数。
+输入格式 一个正整数 $k$ ，表示发放金币的天数。
 输出格式 一个正整数，即骑士收到的金币数。
-输入输出样例 输入 #1 6 输出 #1 14 输入 #2 1000 输出 #2 29820 说明/提示 【输入输出样例 1 说明】
-骑士第一天收到一枚金币；第二天和第三天，每天收到两枚金币；第四、五、六天，每天收到三枚金币。因此一共收到 1+2+2+3+3+3=14 枚金币。
-对于 100% 的数据，1 ≤ K ≤ 10,000。
+输入输出样例 输入 #1
+6
+输出 #1
+14
+输入 #2
+1000
+输出 #2
+29820
+说明/提示
+【输入输出样例 1 说明】
+骑士第一天收到一枚金币；第二天和第三天，每天收到两枚金币；第四、五、六天，每天收到三枚金币。因此一共收到 $1+2+2+3+3+3=14$ 枚金币。
+对于 $100%$ 的数据，$1\le k\le 10^4$
 分析 又空着
 代码 #include&amp;lt;bits/stdc++.h&amp;gt;using namespace std; int main() { int K,	//发放金币的天数 	coin = 0,	//骑士收到的金币数 	per = 1,	//每天发给骑士的金币数 	remain = 1;	//按此数量发放的剩余天数 	cin&amp;gt;&amp;gt;K; for(int i=1;i&amp;lt;=day;i++) { coin+=per;	//发放金币 	if(--remain==0) remain=++per;	//之后的per+1天每天发放per+1枚金币 	} cout&amp;lt;&amp;lt;coin; return 0; } 最近经历了很多事情，希望OI可以坚持下去吧，先水个水题题解（</description>
+    </item>
+    
+    <item>
+      <title>题解 P5719 【深基4.例3】分类平均</title>
+      <link>https://aynxu.l03.me/p/key-to-p5719/</link>
+      <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://aynxu.l03.me/p/key-to-p5719/</guid>
+      <description>这题太有意思了，发个题解纪念一下
+题面来自洛谷
+$\LaTeX$ 渲染不了，哭了（明明后台预览是可以渲染的啊=
+（搬到新博客可以正常显示了）
+题目描述 给定 n(n ≤ 10000) 和 k(k ≤ 100)，将从 1 到 n 之间的所有正整数可以分为两类：A 类数可以被 k 整除（也就是说是 k 的倍数），而 B 类数不能。请输出这两类数的平均数，精确到小数点后 1 位，用空格隔开。
+数据保证两类数的个数都不会是 0。
+输入格式 无
+输出格式 无
+输入输出样例 输入 #1
+100 16 输出 #1
+56.0 50.1 分析 利用了等差数列等高阶数学知识来减少循环次数。
+代码（C++） #include&amp;lt;bits/stdc++.h&amp;gt;using namespace std; int main(){ int n,k,can,cant,all,num=0; cin&amp;gt;&amp;gt;n&amp;gt;&amp;gt;k; all=(n+1)*n/2; for(int i=k;i&amp;lt;=n;i+=k){ can+=i; num++; } cant=all-can; double a = (double)can/num; double a_ = (double)cant/(n-num); printf(&amp;#34;%.1lf %.1lf&amp;#34;,a,a_); return 0; } </description>
     </item>
     
     <item>
@@ -128,9 +173,9 @@ Issus #191 @ CaiJimmy/hugo-theme-stack
     </item>
     
     <item>
-      <title>HDU2063 过山车 题解</title>
+      <title>题解 HDU2063 过山车</title>
       <link>https://aynxu.l03.me/p/key-to-hdu2063/</link>
-      <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://aynxu.l03.me/p/key-to-hdu2063/</guid>
       <description>题面链接 HDU 2063
@@ -139,6 +184,29 @@ Vjudge
 题目标签 匈牙利算法模板题
 参考代码 主体过程由深搜实现
 #include &amp;lt;bits/stdc++.h&amp;gt;using namespace std; #define maxn 1000 + 10 int n, m, k, head[maxn], link[maxn], cnt, tot; bool vis[maxn]; struct Edge { int to, nxt; }edge[maxn]; void add(int u, int v) { edge[cnt].to = v; edge[cnt].nxt = head[u]; head[u] = cnt; cnt++; } bool dfs(int u)	//深搜判断对于点集v2中的一个点u是否能与点集v1中的一个点v匹配 { for(int i = head[u]; i != -1; i = edge[i].nxt)	//枚举能匹配的点 	{ int v = edge[i].</description>
+    </item>
+    
+    <item>
+      <title>题解 YBT1000：入门测试题目</title>
+      <link>https://aynxu.l03.me/p/key-to-ybt1000/</link>
+      <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://aynxu.l03.me/p/key-to-ybt1000/</guid>
+      <description>「题目信息」 OpenJudge - 01:A+B问题
+信息学奥赛一本通（C++版）在线评测系统
+推荐第一个，第二个界面实在惨不忍睹（虽然第一个题目有题号方便检索而且貌似用户比较多
+1000：入门测试题目 时间限制: 1000 ms 内存限制: 32768 KB 【题目描述】 求两个整数的和。 【输入】 一行，两个用空格隔开的整数。 【输出】 两个整数的和。 【输入样例】 1 2 【输出样例】 3 「分析设计」 新手不用理会「时间限制」和「内存限制」，学到后面才会出现TLE（Time Limit Exceed，超时）和MLE（Memory Limit Exceed，内存溢出，超内存），关于这些OJ（Online Judge，在线判题系统）术语，可以在下表中了解。
+该表纯手打，转载请注明出处。
+   简写 全称 中文称谓 补充说明 &amp;amp; 修改建议     OJ Online Judge 在线判题系统 例如洛谷   AC Accepted 通过 （嘲讽你还没过的同桌）   WA Wrong Answer 答案错误 在规定的时间和空间限制里输出了错误的答案   TLE Time Limit Exceed 超出时间限制 你的程序在该点上超出了题目给定的时间还没有结束运行，因此被强行中止（检查是否存在死循环或过多的循环，优化算法复杂度，剪枝）在一些OJ中，没有读入完输入也会造成TLE，但是在洛谷不会发生。   OLE Output Limit Exceed 超出输出限制 你的程序输出了过多的内容，因此被强行中止（检查是否存在过多的循环输出或死循环）   MLE Memory Limit Exceed 超出内存限制 你的程序使用了过多的内存，因此被强行中止（检查是否开了过大的数组/往STL容器里装了过多的数据）   RE Runtime Error 运行时出错 检查是否存在数组越界访问（尤指C(++)）另外，main函数返回非0值也会被认为异常退出   PE Presentation Error 格式错误 检查输出的空格/换行符数量是否与题目要求严格一致   CE Compile Error 编译错误 你的程序没有通过编译，因此也更没有投入运行（检查语法，初学者建议着重检查分号）   UKE Unknown Error 未知错误 评测姬也不知道出了什么问题（联系OJ管理员）    至于这个问题，就是一个最简单的 $A+B$ 问题。</description>
+    </item>
+    
+    <item>
+      <title>OJ术语的解释： AC、WA、TLE、OLE、MLE、RE、PE、CE、UKE</title>
+      <link>https://aynxu.l03.me/p/explanation-of-oj-terminology/</link>
+      <pubDate>Sun, 29 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://aynxu.l03.me/p/explanation-of-oj-terminology/</guid>
+      <description>简写 全称 中文称谓     AC Answer Cubi 粗鄙的答案   WA Wonderful Answer 优美的答案   TLE Time Limit Enough 时间充裕   OLE Output Limit Enough 输出足够   MLE Memory Limit Enough 内存充裕   RE Runtime Excellent 运行时（过于） 优秀   PE Pretty Excellent 十分优秀   CE Compile Easily 轻松通过编译   UKE Unbelievable Keeping Excellent 难以置信的保持优秀     AC=Answer Cubi 粗鄙的答案 WA=Wonderful Answer 优美的答案 TLE=Time Limit Enough 时间充裕 OLE=Output Limit Enough 输出足够 MLE=Memory Limit Enough 内存充裕 RE=Runtime Excellent 运行时（过于）优秀 PE=Pretty Excellent 十分优秀 CE=Compile Easily 轻松通过编译 UKE=Unbelievable Keeping Excellent 难以置信的保持优秀    出现AC时你需要将你的答案变得更优美才能通过； 而TLE、OLE、MLE、ER经常同时出现，可以给予你少量的额外分数； PE、CE都能给予你大量的额外分数； UKE这个标签非常稀有，可以让你直接通过这次比赛并名列前茅。  以上都是扯淡，不要真信了</description>
     </item>
     
   </channel>

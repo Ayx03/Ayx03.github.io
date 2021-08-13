@@ -6,11 +6,11 @@ Vjudge
 题意概述 求一个二分图最大匹配的边数
 题目标签 匈牙利算法模板题
 参考代码 主体过程由深搜实现
-#include &amp;lt;bits/stdc&#43;&#43;.h&amp;gt;using namespace std; #define maxn 1000 &#43; 10 int n, m, k, head[maxn], link[maxn], cnt, tot; bool vis[maxn]; struct Edge { int to, nxt; }edge[maxn]; void add(int u, int v) { edge[cnt].to = v; edge[cnt].nxt = head[u]; head[u] = cnt; cnt&#43;&#43;; } bool dfs(int u)	//深搜判断对于点集v2中的一个点u是否能与点集v1中的一个点v匹配 { for(int i = head[u]; i != -1; i = edge[i].nxt)	//枚举能匹配的点 	{ int v = edge[i].'><title>HDU2063 过山车 题解</title>
+#include &amp;lt;bits/stdc&#43;&#43;.h&amp;gt;using namespace std; #define maxn 1000 &#43; 10 int n, m, k, head[maxn], link[maxn], cnt, tot; bool vis[maxn]; struct Edge { int to, nxt; }edge[maxn]; void add(int u, int v) { edge[cnt].to = v; edge[cnt].nxt = head[u]; head[u] = cnt; cnt&#43;&#43;; } bool dfs(int u)	//深搜判断对于点集v2中的一个点u是否能与点集v1中的一个点v匹配 { for(int i = head[u]; i != -1; i = edge[i].nxt)	//枚举能匹配的点 	{ int v = edge[i].'><title>题解 HDU2063 过山车</title>
 
 <link rel='canonical' href='https://aynxu.l03.me/p/key-to-hdu2063/'>
 
-<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='HDU2063 过山车 题解'>
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='题解 HDU2063 过山车'>
 <meta property='og:description' content='题面链接 HDU 2063
 Vjudge
 题意概述 求一个二分图最大匹配的边数
@@ -19,8 +19,8 @@ Vjudge
 #include &amp;lt;bits/stdc&#43;&#43;.h&amp;gt;using namespace std; #define maxn 1000 &#43; 10 int n, m, k, head[maxn], link[maxn], cnt, tot; bool vis[maxn]; struct Edge { int to, nxt; }edge[maxn]; void add(int u, int v) { edge[cnt].to = v; edge[cnt].nxt = head[u]; head[u] = cnt; cnt&#43;&#43;; } bool dfs(int u)	//深搜判断对于点集v2中的一个点u是否能与点集v1中的一个点v匹配 { for(int i = head[u]; i != -1; i = edge[i].nxt)	//枚举能匹配的点 	{ int v = edge[i].'>
 <meta property='og:url' content='https://aynxu.l03.me/p/key-to-hdu2063/'>
 <meta property='og:site_name' content='Aynxul03&#39;s Blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='OI' /><meta property='article:tag' content='题解' /><meta property='article:tag' content='C&#43;&#43;' /><meta property='article:tag' content='技术' /><meta property='article:tag' content='洛谷' /><meta property='article:published_time' content='2021-01-05T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-08-05T13:37:00&#43;00:00'/>
-<meta name="twitter:title" content="HDU2063 过山车 题解">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='OI' /><meta property='article:tag' content='题解' /><meta property='article:tag' content='C&#43;&#43;' /><meta property='article:tag' content='技术' /><meta property='article:tag' content='洛谷' /><meta property='article:published_time' content='2020-12-30T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-08-05T13:37:00&#43;00:00'/>
+<meta name="twitter:title" content="题解 HDU2063 过山车">
 <meta name="twitter:description" content="题面链接 HDU 2063
 Vjudge
 题意概述 求一个二分图最大匹配的边数
@@ -99,7 +99,7 @@ if (!doNotTrack) {
     
 
     <h2 class="article-title">
-        <a href="/p/key-to-hdu2063/">HDU2063 过山车 题解</a>
+        <a href="/p/key-to-hdu2063/">题解 HDU2063 过山车</a>
     </h2>
 
     <footer class="article-time">
@@ -111,7 +111,7 @@ if (!doNotTrack) {
 
 
 
-        <time class="article-time--published">Jan 05, 2021</time>
+        <time class="article-time--published">Dec 30, 2020</time>
     </footer></div>
 </header>
 
@@ -253,6 +253,18 @@ if (!doNotTrack) {
                 
                     
 <article class="">
+    <a href="/p/key-to-upc1488/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">题解 UPC-1488 客户调查(client)</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
     <a href="/p/key-to-p5707/">
         
         
@@ -276,57 +288,25 @@ if (!doNotTrack) {
 </article>
                 
                     
-<article class="has-image">
-    <a href="/p/key-to-p1603/">
+<article class="">
+    <a href="/p/key-to-p5719/">
         
-        
-            <div class="article-image">
-                <img src="/p/key-to-p1603/cover.ecf17334ebe3bdf20d874b297771da6f_hu33884e09a361eec376ba2239fc3bc8e1_84422_250x150_fill_q75_box_smart1.jpg" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy" 
-                        data-key="Key-to-P1603" 
-                        data-hash="md5-7PFzNOvjvfINh0spd3Habw==">
-                
-            </div>
         
 
         <div class="article-details">
-            <h2 class="article-title">题解 P1603 斯诺登的密码</h2>
+            <h2 class="article-title">题解 P5719 【深基4.例3】分类平均</h2>
         </div>
     </a>
 </article>
                 
                     
 <article class="">
-    <a href="/p/key-to-p1650/">
+    <a href="/p/key-to-ybt1000/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">题解 P1650 田忌赛马</h2>
-        </div>
-    </a>
-</article>
-                
-                    
-<article class="has-image">
-    <a href="/p/ssl/">
-        
-        
-            <div class="article-image">
-                <img src="/p/ssl/_hu958d513eeefe5556a31d065479ecc5ac_14205_7bffa90d1e66ca9b8184fda08a99dc7e.jpg" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy" 
-                        data-key="SSL" 
-                        data-hash="md5-jq4GZk3fs&#43;jcbgAHVstwOw==">
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">MySSL 安全签章</h2>
+            <h2 class="article-title">题解 YBT1000：入门测试题目</h2>
         </div>
     </a>
 </article>

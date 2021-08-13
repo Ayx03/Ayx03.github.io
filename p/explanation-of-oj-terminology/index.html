@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='简写 全称 中文称谓     AC Answer Cubi 粗鄙的答案   WA Wonderful Answer 优美的答案   TLE Time Limit Enough 时间充裕   OLE Output Limit Enough 输出足够   MLE Memory Limit Enough 内存充裕   RE Runtime Excellent 运行时（过于） 优秀   PE Pretty Excellent 十分优秀   CE Compile Easily 轻松通过编译   UKE Unbelievable Keeping Excellent 难以置信的保持优秀     AC=Answer Cubi 粗鄙的答案 WA=Wonderful Answer 优美的答案 TLE=Time Limit Enough 时间充裕 OLE=Output Limit Enough 输出足够 MLE=Memory Limit Enough 内存充裕 RE=Runtime Excellent 运行时（过于）优秀 PE=Pretty Excellent 十分优秀 CE=Compile Easily 轻松通过编译 UKE=Unbelievable Keeping Excellent 难以置信的保持优秀    出现AC时你需要将你的答案变得更优美才能通过； 而TLE、OLE、MLE、ER经常同时出现，可以给予你少量的额外分数； PE、CE都能给予你大量的额外分数； UKE这个标签非常稀有，可以让你直接通过这次比赛并名列前茅。  以上都是扯淡，不要真信了'><title>OJ术语的解释： AC、WA、TLE、OLE、MLE、RE、PE、CE、UKE</title>
+
+<link rel='canonical' href='https://aynxu.l03.me/p/explanation-of-oj-terminology/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='OJ术语的解释： AC、WA、TLE、OLE、MLE、RE、PE、CE、UKE'>
+<meta property='og:description' content='简写 全称 中文称谓     AC Answer Cubi 粗鄙的答案   WA Wonderful Answer 优美的答案   TLE Time Limit Enough 时间充裕   OLE Output Limit Enough 输出足够   MLE Memory Limit Enough 内存充裕   RE Runtime Excellent 运行时（过于） 优秀   PE Pretty Excellent 十分优秀   CE Compile Easily 轻松通过编译   UKE Unbelievable Keeping Excellent 难以置信的保持优秀     AC=Answer Cubi 粗鄙的答案 WA=Wonderful Answer 优美的答案 TLE=Time Limit Enough 时间充裕 OLE=Output Limit Enough 输出足够 MLE=Memory Limit Enough 内存充裕 RE=Runtime Excellent 运行时（过于）优秀 PE=Pretty Excellent 十分优秀 CE=Compile Easily 轻松通过编译 UKE=Unbelievable Keeping Excellent 难以置信的保持优秀    出现AC时你需要将你的答案变得更优美才能通过； 而TLE、OLE、MLE、ER经常同时出现，可以给予你少量的额外分数； PE、CE都能给予你大量的额外分数； UKE这个标签非常稀有，可以让你直接通过这次比赛并名列前茅。  以上都是扯淡，不要真信了'>
+<meta property='og:url' content='https://aynxu.l03.me/p/explanation-of-oj-terminology/'>
+<meta property='og:site_name' content='Aynxul03&#39;s Blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='OI' /><meta property='article:tag' content='技术' /><meta property='article:tag' content='洛谷' /><meta property='article:published_time' content='2019-12-29T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-08-07T06:21:00&#43;00:00'/>
+<meta name="twitter:title" content="OJ术语的解释： AC、WA、TLE、OLE、MLE、RE、PE、CE、UKE">
+<meta name="twitter:description" content="简写 全称 中文称谓     AC Answer Cubi 粗鄙的答案   WA Wonderful Answer 优美的答案   TLE Time Limit Enough 时间充裕   OLE Output Limit Enough 输出足够   MLE Memory Limit Enough 内存充裕   RE Runtime Excellent 运行时（过于） 优秀   PE Pretty Excellent 十分优秀   CE Compile Easily 轻松通过编译   UKE Unbelievable Keeping Excellent 难以置信的保持优秀     AC=Answer Cubi 粗鄙的答案 WA=Wonderful Answer 优美的答案 TLE=Time Limit Enough 时间充裕 OLE=Output Limit Enough 输出足够 MLE=Memory Limit Enough 内存充裕 RE=Runtime Excellent 运行时（过于）优秀 PE=Pretty Excellent 十分优秀 CE=Compile Easily 轻松通过编译 UKE=Unbelievable Keeping Excellent 难以置信的保持优秀    出现AC时你需要将你的答案变得更优美才能通过； 而TLE、OLE、MLE、ER经常同时出现，可以给予你少量的额外分数； PE、CE都能给予你大量的额外分数； UKE这个标签非常稀有，可以让你直接通过这次比赛并名列前茅。  以上都是扯淡，不要真信了">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X0SE27LREY"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-X0SE27LREY', { 'anonymize_ip': false });
+}
+</script>
+
+    </head>
+    <body class="
+    article-page 
+">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        on-phone--column extended
+    
+">
+    
+        <aside class="sidebar left-sidebar sticky">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header class="site-info">
+        
+            <figure class="site-avatar">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_huc0f5178d98a2db857cdc8e9f87d42ce9_30510_300x0_resize_box_3.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+
+                
+                    <span class="emoji">🦄</span>
+                
+            </figure>
+        
+        <h1 class="site-name"><a href="https://aynxu.l03.me/">Aynxul03&#39;s Blog</a></h1>
+        <h2 class="site-description">就让黑白与对错都随风飘散去迎接你的必然</h2>
+    </header>
+
+    <ol class="menu" id="main-menu">
+        
+        
+        
+
+        <li >
+            <a href='/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/about/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/archives/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/tags/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tag" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11 3L20 12a1.5 1.5 0 0 1 0 2L14 20a1.5 1.5 0 0 1 -2 0L3 11v-4a4 4 0 0 1 4 -4h4" />
+  <circle cx="9" cy="9" r="2" />
+</svg>
+
+
+
+                
+                <span>标签</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/search/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+
+        <li >
+            <a href='/link/'>
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>友链</span>
+            </a>
+        </li>
+        
+
+        
+            <li id="dark-mode-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                <span>深色</span>
+            </li>
+        
+
+    </ol>
+    
+</aside>
+<div id="cc-myssl-id" style="position: fixed;right: 0;bottom: 0;width: 65px;height: 65px;z-index: 99;">
+    <a href="https://myssl.com/aynxu.l03.me?from=mysslid"><img src="https://static.myssl.com/res/images/myssl-id.png" alt="" style="width:100%;height:100%"></a>
+</div>
+
+
+    
+<main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E6%8A%80%E6%9C%AF/" style="background-color: #2a9d8f; color: #fff;">
+                技术
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/p/explanation-of-oj-terminology/">OJ术语的解释： AC、WA、TLE、OLE、MLE、RE、PE、CE、UKE</a>
+    </h2>
+
+    <footer class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <time class="article-time--published">Dec 29, 2019</time>
+    </footer></div>
+</header>
+
+    <section class="article-content">
+    <table>
+<thead>
+<tr>
+<th style="text-align:center">简写</th>
+<th style="text-align:center">全称</th>
+<th style="text-align:center">中文称谓</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">AC</td>
+<td style="text-align:center">Answer Cubi</td>
+<td style="text-align:center">粗鄙的答案</td>
+</tr>
+<tr>
+<td style="text-align:center">WA</td>
+<td style="text-align:center">Wonderful Answer</td>
+<td style="text-align:center">优美的答案</td>
+</tr>
+<tr>
+<td style="text-align:center">TLE</td>
+<td style="text-align:center">Time Limit Enough</td>
+<td style="text-align:center">时间充裕</td>
+</tr>
+<tr>
+<td style="text-align:center">OLE</td>
+<td style="text-align:center">Output Limit Enough</td>
+<td style="text-align:center">输出足够</td>
+</tr>
+<tr>
+<td style="text-align:center">MLE</td>
+<td style="text-align:center">Memory Limit Enough</td>
+<td style="text-align:center">内存充裕</td>
+</tr>
+<tr>
+<td style="text-align:center">RE</td>
+<td style="text-align:center">Runtime Excellent</td>
+<td style="text-align:center">运行时（过于） 优秀</td>
+</tr>
+<tr>
+<td style="text-align:center">PE</td>
+<td style="text-align:center">Pretty Excellent</td>
+<td style="text-align:center">十分优秀</td>
+</tr>
+<tr>
+<td style="text-align:center">CE</td>
+<td style="text-align:center">Compile Easily</td>
+<td style="text-align:center">轻松通过编译</td>
+</tr>
+<tr>
+<td style="text-align:center">UKE</td>
+<td style="text-align:center">Unbelievable Keeping Excellent</td>
+<td style="text-align:center">难以置信的保持优秀</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>AC=Answer Cubi 粗鄙的答案</li>
+<li>WA=Wonderful Answer 优美的答案</li>
+<li>TLE=Time Limit Enough 时间充裕</li>
+<li>OLE=Output Limit Enough 输出足够</li>
+<li>MLE=Memory Limit Enough 内存充裕</li>
+<li>RE=Runtime Excellent 运行时（过于）优秀</li>
+<li>PE=Pretty Excellent 十分优秀</li>
+<li>CE=Compile Easily 轻松通过编译</li>
+<li>UKE=Unbelievable Keeping Excellent 难以置信的保持优秀</li>
+</ul>
+<hr>
+<ul>
+<li>出现AC时你需要将你的答案变得更优美才能通过；</li>
+<li>而TLE、OLE、MLE、ER经常同时出现，可以给予你少量的额外分数；</li>
+<li>PE、CE都能给予你大量的额外分数；</li>
+<li>UKE这个标签非常稀有，可以让你直接通过这次比赛并名列前茅。</li>
+</ul>
+<p>以上都是扯淡，不要真信了</p>
+<p>下面这个是正经的（纯手打，转载注明出处）</p>
+<hr>
+<h2 id="表格">表格</h2>
+<table>
+<thead>
+<tr>
+<th>简写</th>
+<th>全称</th>
+<th>中文称谓</th>
+<th>补充说明 &amp; 修改建议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OJ</td>
+<td>Online Judge</td>
+<td>在线判题系统</td>
+<td>例如<a class="link" href="https://www.luogu.com.cn/"  target="_blank" rel="noopener"
+    >洛谷</a></td>
+</tr>
+<tr>
+<td>AC</td>
+<td>Accepted</td>
+<td>通过</td>
+<td><del>（嘲讽你还没过的同桌）</del></td>
+</tr>
+<tr>
+<td>WA</td>
+<td>Wrong Answer</td>
+<td>答案错误</td>
+<td>在规定的时间和空间限制里输出了错误的答案</td>
+</tr>
+<tr>
+<td>TLE</td>
+<td>Time Limit Exceed</td>
+<td>超出时间限制</td>
+<td>你的程序在该点上超出了题目给定的时间还没有结束运行，因此被强行中止（检查是否存在死循环或过多的循环，优化算法复杂度，剪枝）在一些OJ中，没有读入完输入也会造成TLE，但是在洛谷不会发生。</td>
+</tr>
+<tr>
+<td>OLE</td>
+<td>Output Limit Exceed</td>
+<td>超出输出限制</td>
+<td>你的程序输出了过多的内容，因此被强行中止（检查是否存在过多的循环输出或死循环）</td>
+</tr>
+<tr>
+<td>MLE</td>
+<td>Memory Limit Exceed</td>
+<td>超出内存限制</td>
+<td>你的程序使用了过多的内存，因此被强行中止（检查是否开了过大的数组/往STL容器里装了过多的数据）</td>
+</tr>
+<tr>
+<td>RE</td>
+<td>Runtime Error</td>
+<td>运行时出错</td>
+<td>检查是否存在数组越界访问（尤指C(++)）另外，main函数返回非0值也会被认为异常退出</td>
+</tr>
+<tr>
+<td>PE</td>
+<td>Presentation Error</td>
+<td>格式错误</td>
+<td>检查输出的空格/换行符数量是否与题目要求严格一致</td>
+</tr>
+<tr>
+<td>CE</td>
+<td>Compile Error</td>
+<td>编译错误</td>
+<td>你的程序没有通过编译，因此也更没有投入运行（检查语法，初学者建议着重检查分号）</td>
+</tr>
+<tr>
+<td>UKE</td>
+<td>Unknown Error</td>
+<td>未知错误</td>
+<td>评测姬也不知道出了什么问题（联系OJ管理员）</td>
+</tr>
+</tbody>
+</table>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/oi/">OI</a>
+        
+            <a href="/tags/%E6%8A%80%E6%9C%AF/">技术</a>
+        
+            <a href="/tags/%E6%B4%9B%E8%B0%B7/">洛谷</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Undefined. Please do not reprint without authorization.</span>
+    </section>
+    <section class="article-time">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span class="article-time--modified">
+            最后更新于 Aug 07, 2021 06:21 UTC
+        </span>
+    </section></footer>
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3&#43;Aro6EYUG4&#43;cU&#43;KJWu/X"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js"integrity="sha384-g7c&#43;Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI&#43;sEnkvrMWph2EDg4"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC&#43;Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">智障推荐</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="">
+    <a href="/p/key-to-upc1488/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">题解 UPC-1488 客户调查(client)</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/p/key-to-p5707/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">题解 P5707 【深基2.例12】上学迟到</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/p/key-to-p2669/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">题解 P2669 [NOIP2015 普及组] 金币</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/p/key-to-p5719/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">题解 P5719 【深基4.例3】分类平均</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/p/key-to-hdu2063/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">题解 HDU2063 过山车</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+     
+     
+        
+    <div class="disqus-container">
+    <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "ayx" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<style>
+    .disqus-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+</style>
+
+<script>
+    window.addEventListener('onColorSchemeChange', (e) => {
+        if (DISQUS) {
+            DISQUS.reset({
+                reload: true
+            });
+        }
+    })
+</script>
+
+    
+
+    <footer class="site-footer">
+	<section class="copyright">
+		© 2021 <a href="https://aynxu.l03.me">Aynxul03</a>
+    </section>
+    
+    
+    <section class="powerby">
+        
+		<a href="https://icp.gov.moe" target="_blank">萌ICP备 </a><a href="https://icp.gov.moe/?keyword=20213003" target="_blank"> 20213003号</a></br>
+		<a>Powered by </a><a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a><br><a href="https://github.com/CaiJimmy/hugo-theme-stack">Theme <b>Stack</b> by Jimmy</a><br>
+		<a href="/index.xml">RSS Feed</a> |
+        <a href="/sitemap.xml">Sitemap</a>
+        <div id="cc-myssl-id">
+</div>
+    </section>
+</footer>
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
