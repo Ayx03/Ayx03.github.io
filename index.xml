@@ -6,7 +6,47 @@
         <description>Recent content on Aynxul03&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-CN</language>
-        <lastBuildDate>Sun, 22 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://aynxu.l03.me/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 04 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://aynxu.l03.me/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>在 Hugo-Theme-Stack 中轻松上手 Waline </title>
+        <link>https://aynxu.l03.me/p/waline/</link>
+        <pubDate>Mon, 04 Oct 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://aynxu.l03.me/p/waline/</guid>
+        <description>&lt;p&gt;你以前也许听说过或用过 Valine，Waline 与它差不多，但管理功能集成在内，并可以更方便地部署。&lt;/p&gt;
+&lt;p&gt;如果你使用其他没有 Waline 支持的 Hugo 主题或其他博客系统，按本文部署后可以参考官方文档来&lt;a class=&#34;link&#34; href=&#34;https://waline.js.org/guide/client/import.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;引入客户端&lt;/a&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;登录注册并进入-leancloud-国际版控制台httpsconsoleleancloudappapps&#34;&gt;登录/注册并进入 &lt;a class=&#34;link&#34; href=&#34;https://console.leancloud.app/apps&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;LeanCloud 国际版控制台&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;创建开发版新应用（随意命名）并复制设置 - 应用凭证中的前三项值，稍后会添加在 Vercel 中的环境变量里。&lt;/p&gt;
+&lt;h2 id=&#34;httpsvercelcombuttonhttpsvercelcomimportprojecttemplatehttpsgithubcomwalinejswalinetreemainexample-on-vercel&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://vercel.com/import/project?template=https://github.com/walinejs/waline/tree/main/example&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;img src=&#34;https://vercel.com/button&#34; alt=&#34;&#34;  /&gt;&lt;/a&gt; On Vercel&lt;/h2&gt;
+&lt;p&gt;GitHub 登录，创建存储库（可私有），跳过创建团队，部署。&lt;/p&gt;
+&lt;p&gt;稍等两分钟完成部署后，在 Settings 中找到 Environment Variables，分别添加三个环境变量 &lt;code&gt;LEAN_ID&lt;/code&gt;、&lt;code&gt;LEAN_KEY&lt;/code&gt; 和 &lt;code&gt;LEAN_MASTER_KEY&lt;/code&gt; 。VALUE 分别填写在 LeanCloud 中获得的 APP ID, APP KEY, Master Key。&lt;/p&gt;
+&lt;p&gt;最后打开站点根目录下的 &lt;code&gt;config.yaml&lt;/code&gt;，在 params 下添加以下几行：（如果你当初照搬了 Stack 提供的 &lt;code&gt;config&lt;/code&gt; 文件，那么这段在第 60 行左右，只需填入 serverURL 即可）&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;        # Waline client configuration see: https://waline.js.org/en/reference/client.html
+        waline:
+            serverURL: https://PUT_YOUR_OWN_HERE.vercel.app/
+            lang: zh-CN
+            visitor: true
+            avatar:
+            emoji:
+                - https://cdn.jsdelivr.net/gh/walinejs/emojis/qq
+            requiredMeta:
+                - name
+                - email
+                - url
+            placeholder:
+            locale:
+                admin: Admin
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;记得替换 serverURL 为你自己部署的 Vercel App 地址，在&lt;a class=&#34;link&#34; href=&#34;https://waline.js.org/en/reference/client.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;这里&lt;/a&gt;查阅各项参数的含义。&lt;/p&gt;
+&lt;p&gt;emoji 暂时只发现 qq 和默认的 weibo&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://waline.js.org/guide/get-started.html#leancloud-%E8%AE%BE%E7%BD%AE-%E6%95%B0%E6%8D%AE%E5%BA%93&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;快速上手 | Waline&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;然后可以使用 &lt;code&gt;hugo server&lt;/code&gt; 看下效果，使用 Waline 时不会像 disqus 一样在本地预览时屏蔽评论。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>出现 error: ld returned 1 exit status 的五种原因以及解决方法</title>
         <link>https://aynxu.l03.me/p/error-ld-returned-1-exit-status/</link>
         <pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate>

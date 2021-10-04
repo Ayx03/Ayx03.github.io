@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Waline on Aynxul03&#39;s Blog</title>
+    <link>https://aynxu.l03.me/tags/waline/</link>
+    <description>Recent content in Waline on Aynxul03&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 04 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://aynxu.l03.me/tags/waline/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在 Hugo-Theme-Stack 中轻松上手 Waline </title>
+      <link>https://aynxu.l03.me/p/waline/</link>
+      <pubDate>Mon, 04 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://aynxu.l03.me/p/waline/</guid>
+      <description>你以前也许听说过或用过 Valine，Waline 与它差不多，但管理功能集成在内，并可以更方便地部署。
+如果你使用其他没有 Waline 支持的 Hugo 主题或其他博客系统，按本文部署后可以参考官方文档来引入客户端。
+登录/注册并进入 LeanCloud 国际版控制台 创建开发版新应用（随意命名）并复制设置 - 应用凭证中的前三项值，稍后会添加在 Vercel 中的环境变量里。
+ On Vercel GitHub 登录，创建存储库（可私有），跳过创建团队，部署。
+稍等两分钟完成部署后，在 Settings 中找到 Environment Variables，分别添加三个环境变量 LEAN_ID、LEAN_KEY 和 LEAN_MASTER_KEY 。VALUE 分别填写在 LeanCloud 中获得的 APP ID, APP KEY, Master Key。
+最后打开站点根目录下的 config.yaml，在 params 下添加以下几行：（如果你当初照搬了 Stack 提供的 config 文件，那么这段在第 60 行左右，只需填入 serverURL 即可）
+ # Waline client configuration see: https://waline.js.org/en/reference/client.html waline: serverURL: https://PUT_YOUR_OWN_HERE.vercel.app/ lang: zh-CN visitor: true avatar: emoji: - https://cdn.jsdelivr.net/gh/walinejs/emojis/qq requiredMeta: - name - email - url placeholder: locale: admin: Admin 记得替换 serverURL 为你自己部署的 Vercel App 地址，在这里查阅各项参数的含义。</description>
+    </item>
+    
+  </channel>
+</rss>

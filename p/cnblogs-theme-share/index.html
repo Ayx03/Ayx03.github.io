@@ -223,6 +223,18 @@ if (!doNotTrack) {
 </article>
                 
                     
+<article class="">
+    <a href="/p/waline/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">在 Hugo-Theme-Stack 中轻松上手 Waline </h2>
+        </div>
+    </a>
+</article>
+                
+                    
 <article class="has-image">
     <a href="/p/error-ld-returned-1-exit-status/">
         
@@ -288,28 +300,6 @@ if (!doNotTrack) {
     </a>
 </article>
                 
-                    
-<article class="has-image">
-    <a href="/p/problems-installing-stack/">
-        
-        
-            <div class="article-image">
-                <img src="/p/problems-installing-stack/%E5%B0%81%E9%9D%A2.678ddd4587ca1681e0246d5bbfccc357_hu68d4500f44eeff3c046abd6af3014f70_562499_250x150_fill_q75_box_smart1.jpg" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy" 
-                        data-key="Problems-Installing-Stack" 
-                        data-hash="md5-Z43dRYfKFoHgJG1bv8zDVw==">
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">安装 Hguo-Theme-Stack 主题时你可能会遇到的问题</h2>
-        </div>
-    </a>
-</article>
-                
             </div>
         </div>
     
@@ -318,46 +308,21 @@ if (!doNotTrack) {
      
      
         
-    <div class="disqus-container">
-    <div id="disqus_thread"></div>
-<script type="application/javascript">
-    var disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "ayx" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-</div>
-
+    <script src='//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js'></script>
+<div id="waline" class="waline-container"></div>
 <style>
-    .disqus-container {
+    .waline-container {
         background-color: var(--card-background);
         border-radius: var(--card-border-radius);
         box-shadow: var(--shadow-l1);
         padding: var(--card-padding);
     }
-</style>
-
-<script>
-    window.addEventListener('onColorSchemeChange', (e) => {
-        if (DISQUS) {
-            DISQUS.reset({
-                reload: true
-            });
-        }
-    })
+    .waline-container .vcount {
+        color: var(--card-text-color-main);
+    }
+</style><script>
+    
+    new Waline({"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis/qq"],"lang":"zh-CN","locale":{"admin":"Admin"},"requiredMeta":["name","email","url"],"serverURL":"https://waline-ikbefr64v-ayx03.vercel.app/","visitor":true});
 </script>
 
     
