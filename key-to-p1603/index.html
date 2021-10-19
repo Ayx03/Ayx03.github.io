@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='修改了一些小细节'><title>题解 P1603 斯诺登的密码</title>
+
+<link rel='canonical' href='https://aynxu.l03.me/key-to-p1603/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='题解 P1603 斯诺登的密码'>
+<meta property='og:description' content='修改了一些小细节'>
+<meta property='og:url' content='https://aynxu.l03.me/key-to-p1603/'>
+<meta property='og:site_name' content='Aynxul03 写字的地方'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='技术' /><meta property='article:tag' content='OI' /><meta property='article:tag' content='C&#43;&#43;' /><meta property='article:tag' content='题解' /><meta property='article:published_time' content='2021-08-02T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-10-19T22:53:00&#43;00:00'/><meta property='og:image' content='https://aynxu.l03.me/key-to-p1603/cover.jpg' />
+<meta name="twitter:site" content="@03Ayx">
+    <meta name="twitter:creator" content="@03Ayx"><meta name="twitter:title" content="题解 P1603 斯诺登的密码">
+<meta name="twitter:description" content="修改了一些小细节"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://aynxu.l03.me/key-to-p1603/cover.jpg' />
+    <link rel="shortcut icon" href="favicon.jpg" />
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X0SE27LREY"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-X0SE27LREY', { 'anonymize_ip': false });
+}
+</script>
+
+    </head>
+    <body class="
+    article-page has-toc
+">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        extended
+    
+">
+    
+        <div id="article-toolbar">
+            <a href="https://aynxu.l03.me/" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+                <span>返回</span>
+            </a>
+        </div>
+    
+<main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/key-to-p1603/">
+                <img src="/key-to-p1603/cover_hu33884e09a361eec376ba2239fc3bc8e1_84422_800x0_resize_q75_box.jpg"
+                        srcset="/key-to-p1603/cover_hu33884e09a361eec376ba2239fc3bc8e1_84422_800x0_resize_q75_box.jpg 800w, /key-to-p1603/cover_hu33884e09a361eec376ba2239fc3bc8e1_84422_1600x0_resize_q75_box.jpg 1600w"
+                        width="800" 
+                        height="267" 
+                        loading="lazy"
+                        alt="Featured image of post 题解 P1603 斯诺登的密码" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E6%8A%80%E6%9C%AF/" style="background-color: #2a9d8f; color: #fff;">
+                技术
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/key-to-p1603/">题解 P1603 斯诺登的密码</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        修改了一些小细节
+    </h3>
+    
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Aug 02, 2021</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    完整阅读大约需要 2 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+</div>
+</header>
+
+    <section class="article-content">
+    <p>题面来自<a class="link" href="https://www.luogu.com.cn/problem/P1603"  target="_blank" rel="noopener"
+    >洛谷</a>，根据我的个人喜好有小修改</p>
+<h2 id="题目背景">题目背景</h2>
+<p>根据斯诺登事件出的一道水题</p>
+<h2 id="题目描述">题目描述</h2>
+<p>2013 年 X 月 X 日，俄罗斯办理了斯诺登的护照，于是他混迹于一架开往委内瑞拉的飞机。但是，这件事情太不周密了，因为 FBI 的间谍早已获悉他的具体位置——但这不是最重要的——最重要的是如果要去委内瑞拉，那么就要经过古巴，而经过古巴的路在美国的掌控之中。</p>
+<p>丧心病狂的奥巴马迫降斯诺登的飞机，搜查时却发现，斯诺登杳无踪迹。但是，在据说是斯诺登的座位上，发现了一张纸条。纸条由纯英文构成：<code>Obama is a two five zero.</code>（以 <code>.</code> 结束输出，只有 6 个单词+一个句号，句子开头如没有大写亦为合法）这句话虽然有点无厘头，但是警官陈珺骛发现这是一条极其重要的线索。他在斯诺登截获的一台笔记本中找到了一个 C++ 程序，输入这条句子后立马给出了相对应的密码。陈珺鹜高兴得晕了过去，身为警官的你把字条和程序带上了飞机，准备飞往曼哈顿国际机场，但是在飞机上检查的时候发现——程序被粉碎了！飞机抵达华盛顿只剩5分钟，你必须在这 5 分钟内编写（杜撰）一个程序，免受上司的 10000000000%10 大板。破译密码的步骤如下：</p>
+<p>（1）找出句子中所有用英文表示的数字($\leq 20$)，列举在下：</p>
+<p>正规：<code>one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty</code></p>
+<p>非正规：<code>a both another first second third</code>。为避免造成歧义，<code>another</code> 算作 $1$ 处理。</p>
+<p>（2）将这些数字平方后对 $100$ 取模，如 $00,05,11,19,86,99$。</p>
+<p>（3）把这些两位数按数位排成一行，组成一个新数，如果开头为 $0$，就去 $0$。</p>
+<p>（4）找出所有排列方法中最小的一个数，即为密码。</p>
+<p>// 数据已经修正 By absi2011 如果还有问题请联系我</p>
+<h2 id="输入格式">输入格式</h2>
+<p>一个含有 6 个单词的句子。</p>
+<h2 id="输出格式">输出格式</h2>
+<p>一个整型变量（密码）。如果没有符合要求的数字出现，则输出 0。</p>
+<h2 id="输入输出样例">输入输出样例</h2>
+<p>输入 #1</p>
+<pre tabindex="0"><code>Black Obama is two five zero .
+</code></pre><p>输出 #1</p>
+<pre tabindex="0"><code>425
+</code></pre><h2 id="分析">分析</h2>
+<p><del>数据咋骂人呢</del></p>
+<p>先一个个输入单词与题目给出的 <code>26</code> 个单词匹配，<code>string</code> 类型可以直接使用逻辑运算符 <code>==</code> 进行判断（C++ 选手谁闲着没事用 <code>char</code> 数组啊）；</p>
+<p>由于已经知道单词数量是 $6$ 个并不需要用到 while 循环（输入字符串的情况下 cin 的返回值情况我也不清楚）</p>
+<h2 id="一些问题">一些问题</h2>
+<h3 id="为什么样例输出不是-245-或者-254-">为什么样例输出不是 <code>245</code> 或者 <code>254</code> ？</h3>
+<blockquote>
+<p>25和4组成的最小数不是254吗，为什么样例给的425？</p>
+</blockquote>
+<blockquote>
+<p>Black Obama is <strong>two five</strong> zero .</p>
+</blockquote>
+<h4 id="zero-是不算数的"><code>zero</code> 是不算数的！</h4>
+<p>因此我们从六个单词中只能提取出两个：<code>two</code> 和 <code>five</code>。</p>
+<p>转换成数字就是 $2$ 和 $5$。</p>
+<p>然后我们算出它们的平方。</p>
+<p>$2^2=4$</p>
+<p>$5^5=25$</p>
+<p>对 $100$ 取模后结果还是 $4$ 和 $25$。</p>
+<p>所以这个新数是 $425$。</p>
+<blockquote>
+<p>把这些两位数<code>按数位</code>排成一行，组成一个新数</p>
+</blockquote>
+<p>我感觉中间那三个字是多余的&hellip;不仅不能帮助理解反而可能误导选手</p>
+<p>这部分我暂时也想不通怎么解释，以后再编辑吧&hellip;</p>
+<h3 id="只能得-20-分">只能得 <code>20</code> 分？</h3>
+<p>放一下我下载的测试点#2 的数据（<del>请勿用于打表</del>）：</p>
+<pre tabindex="0"><code>You are a three eight pig .
+</code></pre><pre tabindex="0"><code>10964
+</code></pre><p>我得了 <code>20</code> 分的程序在这个测试点上给出的答案是 <code>1964</code>，也就是忽略了所有 <code>0</code>，但实际上只能忽略开头那个。</p>
+<blockquote>
+<p>如果<code>开头</code>为 0，就去 0。</p>
+</blockquote>
+<p>记得排序。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="k">if</span><span class="p">(</span><span class="n">num</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">num</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+<span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">cnt</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">num</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">&gt;</span><span class="mi">10</span><span class="p">)</span> <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">num</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+    <span class="k">else</span> <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="sc">&#39;0&#39;</span><span class="o">&lt;&lt;</span><span class="n">num</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+<span class="p">}</span>
+</code></pre></div><h3 id="忘了没有任何单词匹配的情况">忘了没有任何单词匹配的情况</h3>
+<p><del>可能就我没看清题？</del></p>
+<h4 id="直接输出-0-后结束程序即可">直接输出 <code>0</code> 后结束程序即可。</h4>
+<p>其实不结束也啥都输出不出来，浪费点时间而已。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">cnt</span><span class="p">)</span> <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="mi">0</span><span class="p">,</span><span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+</code></pre></div><h5 id="冷知识虽然-return-0-不能写在逗号后面用于结束程序无法通过编译但是-exit0-可以">冷知识，虽然 <code>return 0;</code> 不能写在逗号后面用于结束程序（无法通过编译），但是 <code>exit(0);</code> 可以</h5>
+<h2 id="完整代码">完整代码</h2>
+<h3 id="仅供学习参考使用">仅供学习参考使用</h3>
+<p>抄袭、复制题解，以达到刷 AC 率/AC 数量或其他目的的行为，在洛谷是严格禁止的。</p>
+<p>洛谷非常重视<strong>学术诚信</strong>。此类行为将会导致您成为<em>作弊者</em>。 具体细则请查看<a class="link" href="https://www.luogu.com.cn/blog/luogu/social-rules"  target="_blank" rel="noopener"
+    >洛谷社区规则</a>。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="cp">#include</span><span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
+</span><span class="cp"></span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="n">string</span> <span class="n">tmp</span><span class="p">,</span><span class="n">dic</span><span class="p">[</span><span class="mi">27</span><span class="p">]</span><span class="o">=</span><span class="p">{</span><span class="s">&#34;&#34;</span><span class="p">,</span><span class="s">&#34;one&#34;</span><span class="p">,</span><span class="s">&#34;two&#34;</span><span class="p">,</span><span class="s">&#34;three&#34;</span><span class="p">,</span><span class="s">&#34;four&#34;</span><span class="p">,</span><span class="s">&#34;five&#34;</span><span class="p">,</span><span class="c1">//并不会出现zero 
+</span><span class="c1"></span><span class="s">&#34;six&#34;</span><span class="p">,</span><span class="s">&#34;seven&#34;</span><span class="p">,</span><span class="s">&#34;eight&#34;</span><span class="p">,</span><span class="s">&#34;nine&#34;</span><span class="p">,</span><span class="s">&#34;ten&#34;</span><span class="p">,</span><span class="c1">//但是这里我为了前20个数下标对应数值把0空着
+</span><span class="c1"></span><span class="s">&#34;eleven&#34;</span><span class="p">,</span><span class="s">&#34;twelve&#34;</span><span class="p">,</span><span class="s">&#34;thirteen&#34;</span><span class="p">,</span><span class="s">&#34;fourteen&#34;</span><span class="p">,</span><span class="s">&#34;fifteen&#34;</span><span class="p">,</span>
+<span class="s">&#34;sixteen&#34;</span><span class="p">,</span><span class="s">&#34;seventeen&#34;</span><span class="p">,</span><span class="s">&#34;eighteen&#34;</span><span class="p">,</span><span class="s">&#34;nineteen&#34;</span><span class="p">,</span><span class="s">&#34;twenty&#34;</span><span class="p">,</span>
+<span class="s">&#34;a&#34;</span><span class="p">,</span><span class="s">&#34;both&#34;</span><span class="p">,</span><span class="s">&#34;another&#34;</span><span class="p">,</span><span class="s">&#34;first&#34;</span><span class="p">,</span><span class="s">&#34;second&#34;</span><span class="p">,</span><span class="s">&#34;third&#34;</span><span class="p">};</span>
+<span class="kt">int</span> <span class="n">num</span><span class="p">[</span><span class="mi">6</span><span class="p">],</span><span class="n">cnt</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="mi">6</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+        <span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">tmp</span><span class="p">;</span>
+        <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">i</span><span class="o">&amp;&amp;</span><span class="n">tmp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">&gt;=</span><span class="sc">&#39;A&#39;</span><span class="o">&amp;&amp;</span><span class="n">tmp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">&lt;=</span><span class="sc">&#39;Z&#39;</span><span class="p">)</span> <span class="n">tmp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+=</span><span class="sc">&#39;a&#39;</span><span class="o">-</span><span class="sc">&#39;A&#39;</span><span class="p">;</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">j</span><span class="o">&lt;=</span><span class="mi">26</span><span class="p">;</span><span class="n">j</span><span class="o">++</span><span class="p">){</span>
+            <span class="k">if</span><span class="p">(</span><span class="n">tmp</span><span class="o">==</span><span class="n">dic</span><span class="p">[</span><span class="n">j</span><span class="p">]){</span>
+                <span class="k">if</span><span class="p">(</span><span class="n">j</span><span class="o">&lt;=</span><span class="mi">20</span><span class="p">){</span>			<span class="c1">//在下标1-20匹配即对应1-20 
+</span><span class="c1"></span>                    <span class="n">num</span><span class="p">[</span><span class="n">cnt</span><span class="o">++</span><span class="p">]</span><span class="o">=</span><span class="n">j</span><span class="p">;</span>
+                    <span class="k">break</span><span class="p">;</span>
+                <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                    <span class="k">switch</span><span class="p">(</span><span class="n">j</span><span class="p">){</span>
+                    <span class="k">case</span> <span class="mi">21</span><span class="o">:</span> <span class="k">case</span> <span class="mi">23</span><span class="o">:</span> <span class="k">case</span> <span class="mi">24</span><span class="o">:</span>	<span class="c1">//21、23、24对应1 
+</span><span class="c1"></span>                        <span class="n">num</span><span class="p">[</span><span class="n">cnt</span><span class="o">++</span><span class="p">]</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="k">break</span><span class="p">;</span>
+                    <span class="k">case</span> <span class="mi">22</span><span class="o">:</span> <span class="k">case</span> <span class="mi">25</span><span class="o">:</span>		<span class="c1">//22、25对应2 
+</span><span class="c1"></span>                        <span class="n">num</span><span class="p">[</span><span class="n">cnt</span><span class="o">++</span><span class="p">]</span><span class="o">=</span><span class="mi">2</span><span class="p">;</span><span class="k">break</span><span class="p">;</span>
+                    <span class="k">case</span> <span class="mi">26</span><span class="o">:</span>			<span class="c1">//26对应3
+</span><span class="c1"></span>                        <span class="n">num</span><span class="p">[</span><span class="n">cnt</span><span class="o">++</span><span class="p">]</span><span class="o">=</span><span class="mi">3</span><span class="p">;</span><span class="k">break</span><span class="p">;</span>
+                    <span class="p">}</span>
+                    <span class="k">break</span><span class="p">;</span><span class="c1">//switch 语句内的 break 仅能跳出 switch 而对外面的循环没有影响，
+</span><span class="c1"></span>                    <span class="c1">//因此必须在跳出 switch 后再 break 一次以确保跳出循环（其实继续遍历应该
+</span><span class="c1"></span>                    <span class="c1">//也没事，不会成功匹配只是浪费点时间）
+</span><span class="c1"></span>                <span class="p">}</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">cnt</span><span class="p">)</span> <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="mi">0</span><span class="p">,</span><span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span><span class="c1">//冷知识，虽然 return 0 不能写在逗号后面用于结束程序但是
+</span><span class="c1"></span>			     <span class="c1">// exit(0) 可以
+</span><span class="c1"></span>    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">cnt</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+        <span class="n">num</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">num</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="n">num</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+        <span class="n">num</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">%=</span><span class="mi">100</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="n">sort</span><span class="p">(</span><span class="n">num</span><span class="p">,</span><span class="n">num</span><span class="o">+</span><span class="n">cnt</span><span class="p">);</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">num</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">num</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">cnt</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">num</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">&gt;</span><span class="mi">10</span><span class="p">){</span>
+            <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">num</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="sc">&#39;0&#39;</span><span class="o">&lt;&lt;</span><span class="n">num</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div><p>编辑记录</p>
+<p>修复数学公式渲染</p>
+<p>2021-08-06 18:39:00</p>
+<p>暂时移除的段落：</p>
+<blockquote>
+<p>我得了 <code>20</code> 分（过了测试点#1）之后重读题面的理解是<code>把数字的每一位拆分排序</code>，而<a class="link" href="https://www.luogu.com.cn/discuss/show/293285"  target="_blank" rel="noopener"
+    >这个帖子</a>的<a class="link" href="https://www.luogu.com.cn/user/434215"  target="_blank" rel="noopener"
+    >楼主</a>的想法则是 <code>25</code> 和 <code>4</code> 的两种组合 <code>425</code> 和 <code>254</code> 中 <code>254</code> 更小。</p>
+</blockquote>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E6%8A%80%E6%9C%AF/">技术</a>
+        
+            <a href="/tags/oi/">OI</a>
+        
+            <a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>
+        
+            <a href="/tags/%E9%A2%98%E8%A7%A3/">题解</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>未经允许禁止转载</span>
+    </section>
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最后更新于 Oct 19, 2021 22:53 UTC
+        </span>
+    </section></footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css"integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js"integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js"integrity="sha384-vZTG03m&#43;2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">智障推荐</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="">
+    <a href="/p5707/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">题解 P5707 【深基2.例12】上学迟到</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/p5719/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">题解 P5719 【深基4.例3】分类平均</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/error-ld-returned-1-exit-status/">
+        
+        
+            <div class="article-image">
+                <img src="/error-ld-returned-1-exit-status/fengmian.b3ea81974cc2f38d3e59d4a56ef0c7a0_huc9b449ad671760edd8f09c2c6f896023_562448_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="Error-ld-returned-1-exit-status" 
+                        data-hash="md5-s&#43;qBl0zC840&#43;WdSlbvDHoA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">出现 error: ld returned 1 exit status 的五种原因以及解决方法</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/upc1488/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">题解 UPC-1488 客户调查(client)</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/p2669/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">题解 P2669 [NOIP2015 普及组] 金币</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+     
+    
+        
+    <script src='//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js'></script>
+<div id="waline" class="waline-container"></div>
+<style>
+    .waline-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+    .waline-container .vcount {
+        color: var(--card-text-color-main);
+    }
+</style><script>
+    
+    new Waline({"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis/qq"],"lang":"zh-CN","locale":{"admin":"Admin"},"requiredMeta":["name","email","url"],"serverURL":"https://waline-ikbefr64v-ayx03.vercel.app/","visitor":true});
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2021 Aynxul03 写字的地方
+    </section>
+    
+    <section class="powerby">
+        
+            <a href="https://icp.gov.moe" target="_blank">萌ICP备</a> <a href="https://icp.gov.moe/?keyword=20213003" target="_blank">20213003号</a> <br/>
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.2.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <div class="widget-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                </div>
+                <h2 class="widget-title section-title">目录</h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ol>
+    <li><a href="#题目背景">题目背景</a></li>
+    <li><a href="#题目描述">题目描述</a></li>
+    <li><a href="#输入格式">输入格式</a></li>
+    <li><a href="#输出格式">输出格式</a></li>
+    <li><a href="#输入输出样例">输入输出样例</a></li>
+    <li><a href="#分析">分析</a></li>
+    <li><a href="#一些问题">一些问题</a>
+      <ol>
+        <li><a href="#为什么样例输出不是-245-或者-254-">为什么样例输出不是 <code>245</code> 或者 <code>254</code> ？</a>
+          <ol>
+            <li><a href="#zero-是不算数的"><code>zero</code> 是不算数的！</a></li>
+          </ol>
+        </li>
+        <li><a href="#只能得-20-分">只能得 <code>20</code> 分？</a></li>
+        <li><a href="#忘了没有任何单词匹配的情况">忘了没有任何单词匹配的情况</a>
+          <ol>
+            <li><a href="#直接输出-0-后结束程序即可">直接输出 <code>0</code> 后结束程序即可。</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#完整代码">完整代码</a>
+      <ol>
+        <li><a href="#仅供学习参考使用">仅供学习参考使用</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+                </div>
+            </section>
+        </aside>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

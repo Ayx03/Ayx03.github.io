@@ -1,34 +1,60 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Pages on Aynxul03&#39;s Blog</title>
+    <title>Pages on Aynxul03 写字的地方</title>
     <link>https://aynxu.l03.me/page/</link>
-    <description>Recent content in Pages on Aynxul03&#39;s Blog</description>
+    <description>Recent content in Pages on Aynxul03 写字的地方</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 23 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://aynxu.l03.me/page/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 17 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://aynxu.l03.me/page/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>无限</title>
+      <link>https://aynxu.l03.me/inf/</link>
+      <pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://aynxu.l03.me/inf/</guid>
+      <description>A Dark Room 文字游戏小黑屋，支持存档导出与导入
+mergemp4 利用 FFmpeg 在现代浏览器中合并 .mp4 格式的视频和音频 GitHub 存储库</description>
+    </item>
+    
     <item>
       <title>关于</title>
       <link>https://aynxu.l03.me/about/</link>
       <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://aynxu.l03.me/about/</guid>
-      <description>Mail: ayx03@pm.me [RECEIVE ONLY] | ayx03@protonmail.com [REPLY]
-Luogu: @Aynxul03
-GitHub: @Ayx03</description>
+      <description> 常用邮箱: ayx03@pm.me
+  Bilibili: @Aynxul03
+  GitHub: @Ayx03
+  Luogu: @Aynxul03
+  Zhihu: @Aynxul03
+ </description>
     </item>
     
     <item>
-      <title>友链</title>
+      <title>朋友</title>
       <link>https://aynxu.l03.me/link/</link>
       <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://aynxu.l03.me/link/</guid>
-      <description>可以直接点击下方的项目跳转 Rosyr 的博客园 - Rosyr 用来记录学习轨迹的地方 头像太美我不敢放 | 洛谷@syr050301 | 哔哩哔哩@艾鹰司坛
-淀粉月刊 - ——接力曾经的少年电脑世界！ 我曾经也是个小编，就是不知道为什么咕咕咕了
+      <description>可以直接点击目录中的文字来跳转 排名不分先后
+一条鱼 的博客 洛谷@我和鱼过不去
+她 AK 了 IOI ！  在 IOI 中获得满分，俗称 AKIOI 
+Rosyr 的博客园 Rosyr 用来记录学习轨迹的地方 | 头像太美我不敢放 | 洛谷@syr050301 | 哔哩哔哩@艾鹰司坛
+TA 也许是 AFO 了。
+淀粉月刊 接力曾经的《少年电脑世界》！
 Terrarum::异世界丨居正博客 关于他 GitHub@juzeon
-Zax&amp;rsquo;s Track 小溪很慢，你忍一下。 一条鱼 的博客 洛谷@我和鱼过不去
-她AK了IOI！ ******&amp;rsquo;s Blog 我不敢放 申请友链  本站的链接请使用 https://ayx03.github.io/ 以便自动跳转，l03.me 将在2021年12月19日过期，届时将更换新域名。 发在评论区与邮箱（ayx03@pm.me）的申请（格式不限）我都会在看到后尽快回复。  </description>
+Zax&amp;rsquo;s Track 小溪很慢，你忍一下。  居正对此的解释 
+申请交换友链  为了减少本站每年更换域名带来的不便，本站的链接请使用 https://ayx03.github.io/ 而不是 aynxu.l03.me，因为 l03.me 将在 2021 年 12 月 19 日过期。届时本站域名将更换为 ayx.moefox.tech。 发在评论区与邮箱（ayx03@pm.me）的申请（格式不限）我都会在看到后尽快回复，无论我选择接受抑或拒绝。  </description>
+    </item>
+    
+    <item>
+      <title>分类</title>
+      <link>https://aynxu.l03.me/categories/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://aynxu.l03.me/categories/</guid>
+      <description></description>
     </item>
     
     <item>

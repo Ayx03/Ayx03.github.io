@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Aynxul03&#39;s Blog</title>
+        <title>Aynxul03 写字的地方</title>
         <link>https://aynxu.l03.me/</link>
-        <description>Recent content on Aynxul03&#39;s Blog</description>
+        <description>Recent content on Aynxul03 写字的地方</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-CN</language>
-        <lastBuildDate>Mon, 04 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://aynxu.l03.me/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>在 Hugo-Theme-Stack 中轻松上手 Waline </title>
-        <link>https://aynxu.l03.me/p/waline/</link>
+        <lastBuildDate>Sun, 17 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://aynxu.l03.me/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>在 Hugo-Theme-Stack 中轻松配置 Waline 评论系统</title>
+        <link>https://aynxu.l03.me/waline/</link>
         <pubDate>Mon, 04 Oct 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://aynxu.l03.me/p/waline/</guid>
+        <guid>https://aynxu.l03.me/waline/</guid>
         <description>&lt;p&gt;你以前也许听说过或用过 Valine，Waline 与它差不多，但管理功能集成在内，并可以更方便地部署。&lt;/p&gt;
 &lt;p&gt;如果你使用其他没有 Waline 支持的 Hugo 主题或其他博客系统，按本文部署后可以参考官方文档来&lt;a class=&#34;link&#34; href=&#34;https://waline.js.org/guide/client/import.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;引入客户端&lt;/a&gt;。&lt;/p&gt;
@@ -19,11 +19,22 @@
     &gt;LeanCloud 国际版控制台&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;创建开发版新应用（随意命名）并复制设置 - 应用凭证中的前三项值，稍后会添加在 Vercel 中的环境变量里。&lt;/p&gt;
 &lt;h2 id=&#34;httpsvercelcombuttonhttpsvercelcomimportprojecttemplatehttpsgithubcomwalinejswalinetreemainexample-on-vercel&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://vercel.com/import/project?template=https://github.com/walinejs/waline/tree/main/example&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;img src=&#34;https://vercel.com/button&#34; alt=&#34;&#34;  /&gt;&lt;/a&gt; On Vercel&lt;/h2&gt;
+    &gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://vercel.com/button&#34; &gt;
+		&lt;img src=&#34;https://vercel.com/button&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			&gt;
+	&lt;/a&gt;
+	
+&lt;/figure&gt;&lt;/a&gt; On Vercel&lt;/h2&gt;
 &lt;p&gt;GitHub 登录，创建存储库（可私有），跳过创建团队，部署。&lt;/p&gt;
 &lt;p&gt;稍等两分钟完成部署后，在 Settings 中找到 Environment Variables，分别添加三个环境变量 &lt;code&gt;LEAN_ID&lt;/code&gt;、&lt;code&gt;LEAN_KEY&lt;/code&gt; 和 &lt;code&gt;LEAN_MASTER_KEY&lt;/code&gt; 。VALUE 分别填写在 LeanCloud 中获得的 APP ID, APP KEY, Master Key。&lt;/p&gt;
 &lt;p&gt;最后打开站点根目录下的 &lt;code&gt;config.yaml&lt;/code&gt;，在 params 下添加以下几行：（如果你当初照搬了 Stack 提供的 &lt;code&gt;config&lt;/code&gt; 文件，那么这段在第 60 行左右，只需填入 serverURL 即可）&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;        # Waline client configuration see: https://waline.js.org/en/reference/client.html
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;        # Waline client configuration see: https://waline.js.org/en/reference/client.html
         waline:
             serverURL: https://PUT_YOUR_OWN_HERE.vercel.app/
             lang: zh-CN
@@ -48,11 +59,11 @@
         </item>
         <item>
         <title>出现 error: ld returned 1 exit status 的五种原因以及解决方法</title>
-        <link>https://aynxu.l03.me/p/error-ld-returned-1-exit-status/</link>
+        <link>https://aynxu.l03.me/error-ld-returned-1-exit-status/</link>
         <pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://aynxu.l03.me/p/error-ld-returned-1-exit-status/</guid>
-        <description>&lt;img src="https://aynxu.l03.me/p/error-ld-returned-1-exit-status/fengmian.png" alt="Featured image of post 出现 error: ld returned 1 exit status 的五种原因以及解决方法" /&gt;&lt;p&gt;这个错误让人懵圈的地方就在于它不会给出错误行数，让已经写了几百行的你痛不欲生。&lt;/p&gt;
+        <guid>https://aynxu.l03.me/error-ld-returned-1-exit-status/</guid>
+        <description>&lt;img src="https://aynxu.l03.me/error-ld-returned-1-exit-status/fengmian.png" alt="Featured image of post 出现 error: ld returned 1 exit status 的五种原因以及解决方法" /&gt;&lt;p&gt;这个错误让人懵圈的地方就在于它不会给出错误行数，让已经写了几百行的你痛不欲生。&lt;/p&gt;
 &lt;h2 id=&#34;可执行文件被占用了&#34;&gt;可执行文件被占用了&lt;/h2&gt;
 &lt;p&gt;因此编译器无法覆盖旧的可执行文件，所以编译失败。&lt;/p&gt;
 &lt;p&gt;这很有可能是你没发现它还没结束运行。&lt;/p&gt;
@@ -60,21 +71,65 @@
     &gt;Visual Studio Code&lt;/a&gt;）&lt;/p&gt;
 &lt;p&gt;扩展：&lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=danielpinto8zz6.c-cpp-compile-run&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;C/C++ Compile Run&lt;/a&gt;（可以方便地编译单个 cpp 文件，且不会因为路径中存在空格或中文出错。）
-&lt;img src=&#34;https://i.loli.net/2021/08/22/XLc4rwa5vFWldKG.png&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://i.loli.net/2021/08/22/XLc4rwa5vFWldKG.png&#34; &gt;
+		&lt;img src=&#34;https://i.loli.net/2021/08/22/XLc4rwa5vFWldKG.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			&gt;
+	&lt;/a&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
 &lt;h3 id=&#34;解决方案&#34;&gt;解决方案&lt;/h3&gt;
 &lt;p&gt;Dev C++ 等 IDE 直接把弹出的窗口（黑框）关了就行了&lt;/p&gt;
 &lt;p&gt;VS Code 可以从输出切换到终端选项卡，使用快捷键 Ctrl+C 结束程序（同样适用于 external console ）。&lt;/p&gt;
 &lt;p&gt;实在不行就用任务管理器和 taskkill 吧
-&lt;img src=&#34;https://i.loli.net/2021/08/22/i1kWGBpEeq4njRo.png&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://i.loli.net/2021/08/22/i1kWGBpEeq4njRo.png&#34; &gt;
+		&lt;img src=&#34;https://i.loli.net/2021/08/22/i1kWGBpEeq4njRo.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			&gt;
+	&lt;/a&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
 &lt;h2 id=&#34;主函数不存在main-拼写错误&#34;&gt;主函数不存在（main 拼写错误）&lt;/h2&gt;
 &lt;p&gt;你不太可能不写主函数，但是你很有可能把 &lt;code&gt;main&lt;/code&gt; 打成 &lt;code&gt;mian&lt;/code&gt; 或者什么其他奇怪的东西。&lt;/p&gt;
 &lt;p&gt;在编译器眼里，这些可不能算主函数。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/08/22/cx9kIgiFmMAUSe2.png&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://i.loli.net/2021/08/22/cx9kIgiFmMAUSe2.png&#34; &gt;
+		&lt;img src=&#34;https://i.loli.net/2021/08/22/cx9kIgiFmMAUSe2.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			&gt;
+	&lt;/a&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
 &lt;h3 id=&#34;解决方案-1&#34;&gt;解决方案&lt;/h3&gt;
 &lt;p&gt;把 &lt;code&gt;main&lt;/code&gt; 拼对。&lt;/p&gt;
 &lt;h2 id=&#34;所调用的函数仅进行了声明&#34;&gt;所调用的函数仅进行了声明&lt;/h2&gt;
 &lt;p&gt;这种情况下新版编译器仍旧会输出 &lt;code&gt;error: ld returned 1 exit status&lt;/code&gt; 这一让人迷惑的错误。
-&lt;img src=&#34;https://i.loli.net/2021/08/22/ePJgykQW3GDwlKH.png&#34; alt=&#34;&#34;  /&gt;
+&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://i.loli.net/2021/08/22/ePJgykQW3GDwlKH.png&#34; &gt;
+		&lt;img src=&#34;https://i.loli.net/2021/08/22/ePJgykQW3GDwlKH.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			&gt;
+	&lt;/a&gt;
+	
+&lt;/figure&gt;
 但是一般也不会把函数体和声明分开写吧&amp;hellip;&lt;/p&gt;
 &lt;p&gt;（函数声明在主函数上方即可，函数体是可以写在 main 函数下方的。）&lt;/p&gt;
 &lt;h3 id=&#34;解决方案-2&#34;&gt;解决方案&lt;/h3&gt;
@@ -82,7 +137,20 @@
 &lt;h2 id=&#34;旧版编译器在主函数中定义了函数&#34;&gt;（旧版编译器）在主函数中定义了函数&lt;/h2&gt;
 &lt;p&gt;新版编译器发现你在 main 函数中定义了其它函数报错并不是&lt;code&gt;error: ld returned 1 exit status&lt;/code&gt;，&lt;/p&gt;
 &lt;p&gt;而是&lt;code&gt;error: a function-definition is not allowed here before &#39;{&#39; token&lt;/code&gt;
-&lt;img src=&#34;https://i.loli.net/2021/08/22/mAlnzduYxWRHPQf.png&#34; alt=&#34;Snipaste_2021-08-22_19-30-32.png&#34;  /&gt;&lt;/p&gt;
+&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://i.loli.net/2021/08/22/mAlnzduYxWRHPQf.png&#34; &gt;
+		&lt;img src=&#34;https://i.loli.net/2021/08/22/mAlnzduYxWRHPQf.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;Snipaste_2021-08-22_19-30-32.png&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Snipaste_2021-08-22_19-30-32.png&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
 &lt;h3 id=&#34;解决方案-3&#34;&gt;解决方案&lt;/h3&gt;
 &lt;p&gt;把子函数定义在主函数外面。&lt;/p&gt;
 &lt;h2 id=&#34;旧版编译器调用了不存在的函数&#34;&gt;（旧版编译器）调用了不存在的函数&lt;/h2&gt;
@@ -90,10 +158,21 @@
 &lt;p&gt;并不确定“scanf/printf 键入错误”是不是真的会引起该错误（&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/e_t_e_r_n_i_t_y/article/details/109982282&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;CSDN 上的一篇博客&lt;/a&gt;说的，我也懒得去装个旧版编译器实测），是不是只有 scanf 和 printf 会这样更不得而知&amp;hellip;&lt;/p&gt;
 &lt;p&gt;总之新版编译器即使在 CSDN 博文中所谓的“代码较多的情况”下也不会因为这个原因出现这种错误，只会告诉你这个函数在这个作用域没有被定义过，甚至还会反问你：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;你说的是 scanf 吗？
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;你说的是 scanf 吗？
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;（测试用代码是随机跳题后从&lt;a class=&#34;link&#34; href=&#34;https://www.luogu.com.cn/blog/ShadowassIIXVIIIIV/solution-p3783&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;这里&lt;/a&gt;复制的，并未提交评测）
-&lt;img src=&#34;https://i.loli.net/2021/08/22/nh231c5y94OTdHa.png&#34; alt=&#34;&#34;  /&gt;&lt;/p&gt;
+&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://i.loli.net/2021/08/22/nh231c5y94OTdHa.png&#34; &gt;
+		&lt;img src=&#34;https://i.loli.net/2021/08/22/nh231c5y94OTdHa.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			&gt;
+	&lt;/a&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
 &lt;h3 id=&#34;解决方案-4&#34;&gt;解决方案&lt;/h3&gt;
 &lt;p&gt;检查函数名称的拼写是否正确。&lt;/p&gt;
 &lt;p&gt;如果想调用库函数但不清楚应该引入什么头文件，可以在搜索引擎上像这样搜索：&lt;/p&gt;
@@ -102,7 +181,7 @@
 &lt;p&gt;&lt;code&gt;C语言 sqrt()&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;或者直接 &lt;code&gt;#include &amp;lt;bits/stdc++.h&amp;gt;&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id=&#34;本文的测试环境&#34;&gt;本文的测试环境&lt;/h2&gt;
-&lt;pre&gt;&lt;code&gt;g++ (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 10.3.0
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;g++ (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 10.3.0
 Copyright (C) 2020 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
@@ -110,12 +189,25 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
         </item>
         <item>
         <title>MySSL 安全签章</title>
-        <link>https://aynxu.l03.me/p/ssl/</link>
+        <link>https://aynxu.l03.me/ssl/</link>
         <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://aynxu.l03.me/p/ssl/</guid>
-        <description>&lt;img src="https://aynxu.l03.me/p/ssl/matt-le-SJSpo9hQf7s-unsplash.jpg" alt="Featured image of post MySSL 安全签章" /&gt;&lt;h1 id=&#34;myssl-安全认证httpsstaticmysslcomresimagesmyssl-id3pnghttpsmysslcomaynxul03mefrommysslid&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://myssl.com/aynxu.l03.me?from=mysslid&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;img src=&#34;https://static.myssl.com/res/images/myssl-id3.png&#34; alt=&#34;MySSL 安全认证&#34;  /&gt;&lt;/a&gt;&lt;/h1&gt;
+        <guid>https://aynxu.l03.me/ssl/</guid>
+        <description>&lt;img src="https://aynxu.l03.me/ssl/cover.png" alt="Featured image of post MySSL 安全签章" /&gt;&lt;h1 id=&#34;myssl-安全认证httpsstaticmysslcomresimagesmyssl-id3pnghttpsmysslcomaynxul03mefrommysslid&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://myssl.com/aynxu.l03.me?from=mysslid&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://static.myssl.com/res/images/myssl-id3.png&#34; &gt;
+		&lt;img src=&#34;https://static.myssl.com/res/images/myssl-id3.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;MySSL 安全认证&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;MySSL 安全认证&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/a&gt;&lt;/h1&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;又摸了一下午整了个这么个东西出来&#34;&gt;&lt;del&gt;又摸了一下午整了个这么个东西出来&lt;/del&gt;&lt;/h2&gt;
 &lt;h2 id=&#34;要得到-a-评级您的网站必须启用-hsts-且-max-age-属性不小于-6个月即-15768000-秒&#34;&gt;要得到 A+ 评级，您的网站必须启用 HSTS 且 &lt;code&gt;max-age&lt;/code&gt; 属性不小于 6个月（即 15768000 秒）&lt;/h2&gt;
@@ -134,18 +226,16 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
         </item>
         <item>
         <title>题解 P1603 斯诺登的密码</title>
-        <link>https://aynxu.l03.me/p/key-to-p1603/</link>
+        <link>https://aynxu.l03.me/key-to-p1603/</link>
         <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://aynxu.l03.me/p/key-to-p1603/</guid>
-        <description>&lt;img src="https://aynxu.l03.me/p/key-to-p1603/cover.jpg" alt="Featured image of post 题解 P1603 斯诺登的密码" /&gt;&lt;h1 id=&#34;p1603-斯诺登的密码httpswwwluogucomcnproblemp1603-by-worcherhttpswwwluogucomcnuser681-金钩--普及-httpswwwluogucomcnproblemlistdifficulty2&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.luogu.com.cn/problem/P1603&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;P1603 斯诺登的密码&lt;/a&gt; by &lt;a class=&#34;link&#34; href=&#34;https://www.luogu.com.cn/user/681&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;@worcher&lt;/a&gt; [金钩👴] | &lt;a class=&#34;link&#34; href=&#34;https://www.luogu.com.cn/problem/list?difficulty=2&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;code&gt;普及-&lt;/code&gt;&lt;/a&gt;&lt;/h1&gt;
+        <guid>https://aynxu.l03.me/key-to-p1603/</guid>
+        <description>&lt;img src="https://aynxu.l03.me/key-to-p1603/cover.jpg" alt="Featured image of post 题解 P1603 斯诺登的密码" /&gt;&lt;p&gt;题面来自&lt;a class=&#34;link&#34; href=&#34;https://www.luogu.com.cn/problem/P1603&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;洛谷&lt;/a&gt;，根据我的个人喜好有小修改&lt;/p&gt;
 &lt;h2 id=&#34;题目背景&#34;&gt;题目背景&lt;/h2&gt;
 &lt;p&gt;根据斯诺登事件出的一道水题&lt;/p&gt;
 &lt;h2 id=&#34;题目描述&#34;&gt;题目描述&lt;/h2&gt;
-&lt;p&gt;2013 年 X 月 X 日，俄罗斯办理了斯诺登的护照，于是他混迹于一架开往委内瑞拉的飞机。但是，这件事情太不周密了，因为FBI的间谍早已获悉他的具体位置——但这不是最重要的——最重要的是如果要去委内瑞拉，那么就要经过古巴，而经过古巴的路在美国的掌控之中。&lt;/p&gt;
+&lt;p&gt;2013 年 X 月 X 日，俄罗斯办理了斯诺登的护照，于是他混迹于一架开往委内瑞拉的飞机。但是，这件事情太不周密了，因为 FBI 的间谍早已获悉他的具体位置——但这不是最重要的——最重要的是如果要去委内瑞拉，那么就要经过古巴，而经过古巴的路在美国的掌控之中。&lt;/p&gt;
 &lt;p&gt;丧心病狂的奥巴马迫降斯诺登的飞机，搜查时却发现，斯诺登杳无踪迹。但是，在据说是斯诺登的座位上，发现了一张纸条。纸条由纯英文构成：&lt;code&gt;Obama is a two five zero.&lt;/code&gt;（以 &lt;code&gt;.&lt;/code&gt; 结束输出，只有 6 个单词+一个句号，句子开头如没有大写亦为合法）这句话虽然有点无厘头，但是警官陈珺骛发现这是一条极其重要的线索。他在斯诺登截获的一台笔记本中找到了一个 C++ 程序，输入这条句子后立马给出了相对应的密码。陈珺鹜高兴得晕了过去，身为警官的你把字条和程序带上了飞机，准备飞往曼哈顿国际机场，但是在飞机上检查的时候发现——程序被粉碎了！飞机抵达华盛顿只剩5分钟，你必须在这 5 分钟内编写（杜撰）一个程序，免受上司的 10000000000%10 大板。破译密码的步骤如下：&lt;/p&gt;
 &lt;p&gt;（1）找出句子中所有用英文表示的数字($\leq 20$)，列举在下：&lt;/p&gt;
 &lt;p&gt;正规：&lt;code&gt;one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty&lt;/code&gt;&lt;/p&gt;
@@ -160,34 +250,54 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 &lt;p&gt;一个整型变量（密码）。如果没有符合要求的数字出现，则输出 0。&lt;/p&gt;
 &lt;h2 id=&#34;输入输出样例&#34;&gt;输入输出样例&lt;/h2&gt;
 &lt;p&gt;输入 #1&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;Black Obama is two five zero .&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;输出 #1&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;425&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id=&#34;分析&#34;&gt;分析&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Black Obama is two five zero .
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;输出 #1&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;425
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;分析&#34;&gt;分析&lt;/h2&gt;
 &lt;p&gt;&lt;del&gt;数据咋骂人呢&lt;/del&gt;&lt;/p&gt;
-&lt;p&gt;先一个个输入单词与题目给出的 &lt;code&gt;26&lt;/code&gt; 个单词匹配（&lt;code&gt;string&lt;/code&gt; 类型可以直接使用 &lt;code&gt;==&lt;/code&gt;，C++ 选手谁闲着没事用 &lt;code&gt;char&lt;/code&gt; 数组啊），由于知道单词数量是 6 个并不需要用到 while 循环（输入字符串的情况下循环条件也不知道选哪个）&lt;/p&gt;
+&lt;p&gt;先一个个输入单词与题目给出的 &lt;code&gt;26&lt;/code&gt; 个单词匹配，&lt;code&gt;string&lt;/code&gt; 类型可以直接使用逻辑运算符 &lt;code&gt;==&lt;/code&gt; 进行判断（C++ 选手谁闲着没事用 &lt;code&gt;char&lt;/code&gt; 数组啊）；&lt;/p&gt;
+&lt;p&gt;由于已经知道单词数量是 $6$ 个并不需要用到 while 循环（输入字符串的情况下 cin 的返回值情况我也不清楚）&lt;/p&gt;
 &lt;h2 id=&#34;一些问题&#34;&gt;一些问题&lt;/h2&gt;
+&lt;h3 id=&#34;为什么样例输出不是-245-或者-254-&#34;&gt;为什么样例输出不是 &lt;code&gt;245&lt;/code&gt; 或者 &lt;code&gt;254&lt;/code&gt; ？&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;25和4组成的最小数不是254吗，为什么样例给的425？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Black Obama is &lt;strong&gt;two five&lt;/strong&gt; zero .&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;zero-是不算数的&#34;&gt;&lt;code&gt;zero&lt;/code&gt; 是不算数的！&lt;/h4&gt;
+&lt;p&gt;因此我们从六个单词中只能提取出两个：&lt;code&gt;two&lt;/code&gt; 和 &lt;code&gt;five&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;转换成数字就是 $2$ 和 $5$。&lt;/p&gt;
+&lt;p&gt;然后我们算出它们的平方。&lt;/p&gt;
+&lt;p&gt;$2^2=4$&lt;/p&gt;
+&lt;p&gt;$5^5=25$&lt;/p&gt;
+&lt;p&gt;对 $100$ 取模后结果还是 $4$ 和 $25$。&lt;/p&gt;
+&lt;p&gt;所以这个新数是 $425$。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;把这些两位数&lt;code&gt;按数位&lt;/code&gt;排成一行，组成一个新数&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我感觉中间那三个字是多余的&amp;hellip;不仅不能帮助理解反而可能误导选手&lt;/p&gt;
+&lt;p&gt;这部分我暂时也想不通怎么解释，以后再编辑吧&amp;hellip;&lt;/p&gt;
 &lt;h3 id=&#34;只能得-20-分&#34;&gt;只能得 &lt;code&gt;20&lt;/code&gt; 分？&lt;/h3&gt;
-&lt;p&gt;测试点#2 的数据（&lt;del&gt;请勿打表&lt;/del&gt;）：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;You are a three eight pig .
-&lt;/code&gt;&lt;/pre&gt;&lt;pre&gt;&lt;code&gt;10964
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;一般 &lt;code&gt;20&lt;/code&gt; 分程序给出的答案是 &lt;code&gt;1964&lt;/code&gt;，也就是忽略了所有 &lt;code&gt;0&lt;/code&gt;，但实际上只能忽略第一个。&lt;/p&gt;
+&lt;p&gt;放一下我下载的测试点#2 的数据（&lt;del&gt;请勿用于打表&lt;/del&gt;）：&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;You are a three eight pig .
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;10964
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;我得了 &lt;code&gt;20&lt;/code&gt; 分的程序在这个测试点上给出的答案是 &lt;code&gt;1964&lt;/code&gt;，也就是忽略了所有 &lt;code&gt;0&lt;/code&gt;，但实际上只能忽略开头那个。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果&lt;code&gt;开头&lt;/code&gt;为 0，就去 0。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;记得排序。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;num&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;])&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;cout&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;num&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;];&lt;/span&gt;
 &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;cnt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;++&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;){&lt;/span&gt;
     &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;num&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;cout&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;num&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;];&lt;/span&gt;
     &lt;span class=&#34;k&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;cout&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;sc&#34;&gt;&amp;#39;0&amp;#39;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;num&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;];&lt;/span&gt;
 &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;为什么样例输出不是-245--254-&#34;&gt;为什么样例输出不是 &lt;code&gt;245&lt;/code&gt; / &lt;code&gt;254&lt;/code&gt; ？&lt;/h3&gt;
-&lt;p&gt;我得了 &lt;code&gt;20&lt;/code&gt; 分（过了测试点#1）之后重读题目的理解是把数字的每一位拆分排序，而&lt;a class=&#34;link&#34; href=&#34;https://www.luogu.com.cn/discuss/show/293285&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;这个帖子&lt;/a&gt;的&lt;a class=&#34;link&#34; href=&#34;https://www.luogu.com.cn/user/434215&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;楼主&lt;/a&gt;的想法则是 &lt;code&gt;25&lt;/code&gt; 和 &lt;code&gt;4&lt;/code&gt; 的两种组合 &lt;code&gt;425&lt;/code&gt; 和 &lt;code&gt;254&lt;/code&gt; 中 &lt;code&gt;254&lt;/code&gt; 更小（&lt;code&gt;25和4组成的最小数不是254吗，为什么样例给的425&lt;/code&gt;）。可能是我们理解能力太差了。（&lt;del&gt;不排除题面存在歧义&lt;/del&gt;）&lt;/p&gt;
-&lt;h3 id=&#34;没有任何单词匹配的情况&#34;&gt;没有任何单词匹配的情况&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;忘了没有任何单词匹配的情况&#34;&gt;忘了没有任何单词匹配的情况&lt;/h3&gt;
 &lt;p&gt;&lt;del&gt;可能就我没看清题？&lt;/del&gt;&lt;/p&gt;
-&lt;h4 id=&#34;直接输出-0-结束程序即可&#34;&gt;直接输出 &lt;code&gt;0&lt;/code&gt; 结束程序即可。&lt;/h4&gt;
-&lt;p&gt;&lt;del&gt;其实不结束也啥都输出不出来&lt;/del&gt;&lt;/p&gt;
+&lt;h4 id=&#34;直接输出-0-后结束程序即可&#34;&gt;直接输出 &lt;code&gt;0&lt;/code&gt; 后结束程序即可。&lt;/h4&gt;
+&lt;p&gt;其实不结束也啥都输出不出来，浪费点时间而已。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;!&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;cnt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;cout&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;exit&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;冷知识，虽然 &lt;code&gt;return 0;&lt;/code&gt; 不能写在逗号后面用于结束程序（会出现编译错误）但是 &lt;code&gt;exit(0);&lt;/code&gt; 可以&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h5 id=&#34;冷知识虽然-return-0-不能写在逗号后面用于结束程序无法通过编译但是-exit0-可以&#34;&gt;冷知识，虽然 &lt;code&gt;return 0;&lt;/code&gt; 不能写在逗号后面用于结束程序（无法通过编译），但是 &lt;code&gt;exit(0);&lt;/code&gt; 可以&lt;/h5&gt;
 &lt;h2 id=&#34;完整代码&#34;&gt;完整代码&lt;/h2&gt;
 &lt;h3 id=&#34;仅供学习参考使用&#34;&gt;仅供学习参考使用&lt;/h3&gt;
 &lt;p&gt;抄袭、复制题解，以达到刷 AC 率/AC 数量或其他目的的行为，在洛谷是严格禁止的。&lt;/p&gt;
@@ -242,48 +352,58 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
         &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
     &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;UPD#1：修复数学公式渲染&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;编辑记录&lt;/p&gt;
+&lt;p&gt;修复数学公式渲染&lt;/p&gt;
+&lt;p&gt;2021-08-06 18:39:00&lt;/p&gt;
+&lt;p&gt;暂时移除的段落：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我得了 &lt;code&gt;20&lt;/code&gt; 分（过了测试点#1）之后重读题面的理解是&lt;code&gt;把数字的每一位拆分排序&lt;/code&gt;，而&lt;a class=&#34;link&#34; href=&#34;https://www.luogu.com.cn/discuss/show/293285&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;这个帖子&lt;/a&gt;的&lt;a class=&#34;link&#34; href=&#34;https://www.luogu.com.cn/user/434215&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;楼主&lt;/a&gt;的想法则是 &lt;code&gt;25&lt;/code&gt; 和 &lt;code&gt;4&lt;/code&gt; 的两种组合 &lt;code&gt;425&lt;/code&gt; 和 &lt;code&gt;254&lt;/code&gt; 中 &lt;code&gt;254&lt;/code&gt; 更小。&lt;/p&gt;
+&lt;/blockquote&gt;
 </description>
         </item>
         <item>
-        <title>安装 Hguo-Theme-Stack 主题时你可能会遇到的问题</title>
-        <link>https://aynxu.l03.me/p/problems-installing-stack/</link>
+        <title>安装 Hugo 主题 Stack 时你可能会遇到的问题</title>
+        <link>https://aynxu.l03.me/stack/</link>
         <pubDate>Wed, 28 Jul 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://aynxu.l03.me/p/problems-installing-stack/</guid>
-        <description>&lt;img src="https://aynxu.l03.me/p/problems-installing-stack/%E5%B0%81%E9%9D%A2.jpg" alt="Featured image of post 安装 Hguo-Theme-Stack 主题时你可能会遇到的问题" /&gt;&lt;h2 id=&#34;啥装了-stack-拷了-examplesites-以后不能正常-hugo--d了&#34;&gt;啥？装了 &lt;code&gt;Stack&lt;/code&gt; 拷了 &lt;code&gt;exampleSites&lt;/code&gt; 以后不能正常 &lt;code&gt;hugo -D&lt;/code&gt;了？&lt;/h2&gt;
+        <guid>https://aynxu.l03.me/stack/</guid>
+        <description>&lt;img src="https://aynxu.l03.me/stack/%E5%B0%81%E9%9D%A2.jpg" alt="Featured image of post 安装 Hugo 主题 Stack 时你可能会遇到的问题" /&gt;&lt;h2 id=&#34;啥装了-stack-拷了-examplesites-以后不能正常-hugo--d了&#34;&gt;啥？装了 &lt;code&gt;Stack&lt;/code&gt; 拷了 &lt;code&gt;exampleSites&lt;/code&gt; 以后不能正常 &lt;code&gt;hugo -D&lt;/code&gt;了？&lt;/h2&gt;
 &lt;p&gt;试试以下两项操作。&lt;/p&gt;
-&lt;h3 id=&#34;remove-configtoml&#34;&gt;Remove &lt;code&gt;config.toml&lt;/code&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;删除根目录下的-configtoml&#34;&gt;删除根目录下的 &lt;code&gt;config.toml&lt;/code&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack/issues/105&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Issus #105 @ CaiJimmy/hugo-theme-stack&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;生成-examplesitecontentpostrich-contentindexmd-时报错是因为是示例文章有请求-twitter-api-的-shortcode-需要-珂学上网-&#34;&gt;生成 &lt;code&gt;examplesite/content/post/rich-content/index.md&lt;/code&gt; 时报错是因为是示例文章有请求 &lt;code&gt;Twitter API&lt;/code&gt; 的 &lt;code&gt;Shortcode&lt;/code&gt; ，需要 &lt;code&gt;珂学上网&lt;/code&gt; 。&lt;/h3&gt;
+&lt;h3 id=&#34;生成-examplesitecontentpostrich-contentindexmd-时报错&#34;&gt;生成 &lt;code&gt;examplesite/content/post/rich-content/index.md&lt;/code&gt; 时报错&lt;/h3&gt;
+&lt;p&gt;是因为是示例文章有请求 &lt;code&gt;Twitter API&lt;/code&gt; 的 &lt;code&gt;Shortcode&lt;/code&gt; ，需要 &lt;code&gt;珂学上网&lt;/code&gt; 。&lt;/p&gt;
 &lt;p&gt;我的解决方式是直接把 YouTube 、 Twitter 和 Vimeo 的 ShortCode 都删了，反正以后也用不到（当然你也可以直接把这篇 &lt;code&gt;rich-content&lt;/code&gt; 给整个删了）&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack/issues/191&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Issus #191 @ CaiJimmy/hugo-theme-stack&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;另外bilibili-的-shortcode-格式如下&#34;&gt;另外，&lt;code&gt;Bilibili&lt;/code&gt; 的 &lt;code&gt;ShortCode&lt;/code&gt; 格式如下：&lt;/h2&gt;
 &lt;p&gt;（去掉两个反斜杠）&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;\{\{&amp;lt; bilibili BV1Zx411h7ue &amp;gt;}}&lt;/code&gt;&lt;/p&gt;
-&lt;h1 id=&#34;别一天到晚建博客了赶紧写吧&#34;&gt;别一天到晚建博客了，赶紧写吧。&lt;/h1&gt;
+&lt;h2 id=&#34;别一天到晚建博客了赶紧写吧&#34;&gt;别一天到晚建博客了，赶紧写吧。&lt;/h2&gt;
 </description>
         </item>
         <item>
         <title>独角兽搜索</title>
-        <link>https://aynxu.l03.me/p/unicorn-search/</link>
+        <link>https://aynxu.l03.me/unicorn-search/</link>
         <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://aynxu.l03.me/p/unicorn-search/</guid>
-        <description>&lt;img src="https://aynxu.l03.me/p/unicorn-search/the-creative-exchange-d2zvqp3fpro-unsplash.jpg" alt="Featured image of post 独角兽搜索" /&gt;&lt;p&gt;我的博客的&lt;a class=&#34;link&#34; href=&#34;https://aynxu.l03.me/search&#34; &gt;站内搜索&lt;/a&gt;已经搭载了这款 &lt;code&gt;微内核万物互联分布式软总线形式化验证&lt;/code&gt; 搜索引擎，大家可以抢先体验一下！&lt;/p&gt;
+        <guid>https://aynxu.l03.me/unicorn-search/</guid>
+        <description>&lt;p&gt;我的博客的&lt;a class=&#34;link&#34; href=&#34;https://aynxu.l03.me/search&#34; &gt;站内搜索&lt;/a&gt;已经搭载了这款 &lt;code&gt;微内核万物互联分布式软总线形式化验证&lt;/code&gt; 搜索引擎，大家可以在侧边栏点击搜索抢先体验一下！&lt;/p&gt;
 &lt;p&gt;相信这将是与 &lt;a class=&#34;link&#34; href=&#34;https://www.zhihu.com/question/428248188&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;strong&gt;花瓣搜索&lt;/strong&gt;&lt;/a&gt; 一样的优秀国产项目！让我们在一起拒绝卡脖子！星星之火可以燎原！&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>Hello Hugo</title>
-        <link>https://aynxu.l03.me/p/hello-hugo/</link>
+        <link>https://aynxu.l03.me/hellohugo/</link>
         <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://aynxu.l03.me/p/hello-hugo/</guid>
-        <description>&lt;h1 id=&#34;bilibili-short-code-test&#34;&gt;Bilibili Short Code Test&lt;/h1&gt;
+        <guid>https://aynxu.l03.me/hellohugo/</guid>
+        <description>&lt;h1 id=&#34;你好hugo&#34;&gt;你好，Hugo！&lt;/h1&gt;
+&lt;h2 id=&#34;bilibili-short-code-test&#34;&gt;Bilibili Short Code Test&lt;/h2&gt;
 
 
 
@@ -294,44 +414,34 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 
 &lt;div class=&#34;video-wrapper&#34;&gt;
-    &lt;iframe src=&#34;//player.bilibili.com/player.html?as_wide=1&amp;amp;high_quality=1&amp;amp;page=1&amp;bvid=BV1Zx411h7ue&#34;
+    &lt;iframe src=&#34;https://player.bilibili.com/player.html?as_wide=1&amp;amp;high_quality=1&amp;amp;page=1&amp;bvid=BV1Zx411h7ue&#34;
             scrolling=&#34;no&#34;
             frameborder=&#34;no&#34;
             framespacing=&#34;0&#34;
             allowfullscreen=&#34;true&#34;
     &gt;
     &lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;hugo-同时还内置了对于-youtubetwittervimeo-的-shortcode-支持但由于生成时无法访问相关-api-会出错懒得想办法让clah接管hugo的连接因此在此移除&#34;&gt;Hugo 同时还内置了对于 YouTube、Twitter、Vimeo 的 ShortCode 支持，但由于生成时无法访问相关 API 会出错（懒得想办法让Cla$h接管Hugo的连接），因此在此移除。&lt;/h2&gt;
-&lt;h3 id=&#34;markdown&#34;&gt;MarkDown&lt;/h3&gt;
-&lt;p&gt;测试&lt;/p&gt;
-&lt;h4 id=&#34;111&#34;&gt;1.1.1.&lt;/h4&gt;
-&lt;h5 id=&#34;然后就不会继续生成目录了&#34;&gt;然后就不会继续生成目录了&lt;/h5&gt;
-&lt;h6 id=&#34;差不多得了&#34;&gt;差不多得了🤬&lt;/h6&gt;</description>
+&lt;/div&gt;</description>
         </item>
         <item>
         <title>题解 UPC-1488 客户调查(client)</title>
-        <link>https://aynxu.l03.me/p/key-to-upc1488/</link>
+        <link>https://aynxu.l03.me/upc1488/</link>
         <pubDate>Tue, 13 Jul 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://aynxu.l03.me/p/key-to-upc1488/</guid>
-        <description>&lt;p&gt;&lt;strong&gt;（题面来自&lt;a class=&#34;link&#34; href=&#34;https://www.luogu.com.cn/problem/P5707&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;洛谷&lt;/a&gt;）&lt;/strong&gt;&lt;/p&gt;
-&lt;h1 id=&#34;客户调查&#34;&gt;客户调查&lt;/h1&gt;
-&lt;h5 id=&#34;时间1s---空间32m&#34;&gt;时间：1s   空间：32M&lt;/h5&gt;
-&lt;h2 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h2&gt;
+        <guid>https://aynxu.l03.me/upc1488/</guid>
+        <description>&lt;h2 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h2&gt;
+&lt;p&gt;时间：1s   空间：32M&lt;/p&gt;
 &lt;p&gt;公司派你去和几位客户面谈，以了解他们对公司产品的意见。你逐个打电话与客户联系，得知他们一般都很忙，不过他们还是可以为你抽出一点时间。现在的问题是有些客户的时间有冲突，你无法在一天内联系所有客户。所以你需要一个程序来帮助你安排第一天的工作，使得你能尽可能地和更多的客户进行联系。注意，客户不愿意你打乱他们的计划。如果你和某个客户约定见面，必须按时到达并且充分利用这段时间和他交谈，这样才不至于让他产生不满。你可以假设从一个客户处到另一个客户处的时间短得忽略不计。&lt;/p&gt;
 &lt;h2 id=&#34;输入格式&#34;&gt;输入格式：&lt;/h2&gt;
-&lt;p&gt;输入包括了多个测试数据，每个测试数据开头是一个整数n（1&amp;lt;=n&amp;lt;=10000），表示客户总数。接下来n行每行包括两个正整数s、t，分别表示该客户的空闲时间段的起始时间和终止时间。$s&amp;lt;t$&lt;/p&gt;
+&lt;p&gt;输入包括了多个测试数据，每个测试数据开头是一个整数 $n（1 \le n \le 10000）$，表示客户总数。接下来n行每行包括两个正整数 $s$、$t$，分别表示该客户的空闲时间段的起始时间和终止时间。$s&amp;lt;t$&lt;/p&gt;
 &lt;h2 id=&#34;输出格式&#34;&gt;输出格式：&lt;/h2&gt;
 &lt;p&gt;对于每个测试数据，在单独一行内输出你所能接触到的最多客户数。&lt;/p&gt;
 &lt;h2 id=&#34;样例输入&#34;&gt;样例输入：&lt;/h2&gt;
-&lt;p&gt;3
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;3
 1 15
 2 19
-15 17&lt;/p&gt;
-&lt;h2 id=&#34;样例输出&#34;&gt;样例输出：&lt;/h2&gt;
+15 17
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;样例输出&#34;&gt;样例输出：&lt;/h2&gt;
 &lt;p&gt;2&lt;/p&gt;
 &lt;h2 id=&#34;约定&#34;&gt;约定：&lt;/h2&gt;
 &lt;p&gt;(无)&lt;/p&gt;
@@ -378,10 +488,10 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
         </item>
         <item>
         <title>题解 P5707 【深基2.例12】上学迟到</title>
-        <link>https://aynxu.l03.me/p/key-to-p5707/</link>
+        <link>https://aynxu.l03.me/p5707/</link>
         <pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://aynxu.l03.me/p/key-to-p5707/</guid>
+        <guid>https://aynxu.l03.me/p5707/</guid>
         <description>&lt;p&gt;&lt;strong&gt;（题面来自&lt;a class=&#34;link&#34; href=&#34;https://www.luogu.com.cn/problem/P5707&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;洛谷&lt;/a&gt;）&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;题目描述&#34;&gt;题目描述&lt;/h2&gt;
@@ -423,38 +533,39 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 	&lt;span class=&#34;n&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%.2d:%.2d&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;h&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;m&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
 	&lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;编辑记录&lt;/p&gt;
+&lt;p&gt;2021-08-06 18:11:00&lt;/p&gt;
+</description>
         </item>
         <item>
         <title>题解 P2669 [NOIP2015 普及组] 金币</title>
-        <link>https://aynxu.l03.me/p/key-to-p2669/</link>
+        <link>https://aynxu.l03.me/p2669/</link>
         <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://aynxu.l03.me/p/key-to-p2669/</guid>
+        <guid>https://aynxu.l03.me/p2669/</guid>
         <description>&lt;p&gt;&lt;strong&gt;（题面来自&lt;a class=&#34;link&#34; href=&#34;https://www.luogu.com.cn/problem/P2669&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;洛谷&lt;/a&gt;）&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;题目描述&#34;&gt;题目描述&lt;/h2&gt;
 &lt;p&gt;国王将金币作为工资，发放给忠诚的骑士。第一天，骑士收到一枚金币；之后两天（第二天和第三天），每天收到两枚金币；之后三天（第四、五、六天），每天收到三枚金币；之后四天（第七、八、九、十天），每天收到四枚金币……；这种工资发放模式会一直这样延续下去：当连续 $n$ 天每天收到 $n$ 枚金币后，骑士会在之后的连续 $n+1$ 天里，每天收到 $n+1$ 枚金币。&lt;/p&gt;
-&lt;p&gt;请计算在前K天里，骑士一共获得了多少金币。&lt;/p&gt;
+&lt;p&gt;请计算在前 $k$ 天里，骑士一共获得了多少金币。&lt;/p&gt;
 &lt;h2 id=&#34;输入格式&#34;&gt;输入格式&lt;/h2&gt;
 &lt;p&gt;一个正整数 $k$ ，表示发放金币的天数。&lt;/p&gt;
 &lt;h2 id=&#34;输出格式&#34;&gt;输出格式&lt;/h2&gt;
 &lt;p&gt;一个正整数，即骑士收到的金币数。&lt;/p&gt;
 &lt;h2 id=&#34;输入输出样例&#34;&gt;输入输出样例&lt;/h2&gt;
 &lt;p&gt;输入 #1&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;6&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;输出 #1&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;14&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;输入 #2&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;1000&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;输出 #2&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;29820&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;说明/提示&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;6
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;输出 #1&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;14
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;输入 #2&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1000
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;输出 #2&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;29820
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;说明/提示&lt;/p&gt;
 &lt;p&gt;【输入输出样例 1 说明】&lt;/p&gt;
 &lt;p&gt;骑士第一天收到一枚金币；第二天和第三天，每天收到两枚金币；第四、五、六天，每天收到三枚金币。因此一共收到 $1+2+2+3+3+3=14$ 枚金币。&lt;/p&gt;
 &lt;p&gt;对于 $100%$ 的数据，$1\le k\le 10^4$&lt;/p&gt;
 &lt;h2 id=&#34;分析&#34;&gt;分析&lt;/h2&gt;
-&lt;p&gt;又空着&lt;/p&gt;
 &lt;h2 id=&#34;代码&#34;&gt;代码&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#include&lt;/span&gt;&lt;span class=&#34;cpf&#34;&gt;&amp;lt;bits/stdc++.h&amp;gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;
 &lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;using&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;namespace&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;std&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
@@ -467,37 +578,38 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 	&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;day&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;++&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
 		&lt;span class=&#34;n&#34;&gt;coin&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;per&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;		&lt;span class=&#34;c1&#34;&gt;//发放金币
 &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;		&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;--&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;remain&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;==&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; 
-		  &lt;span class=&#34;n&#34;&gt;remain&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=++&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;per&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;	        &lt;span class=&#34;c1&#34;&gt;//之后的per+1天每天发放per+1枚金币
+		  &lt;span class=&#34;n&#34;&gt;remain&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=++&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;per&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;	        &lt;span class=&#34;c1&#34;&gt;//之后的 per+1 天每天发放 per+1 枚金币
 &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;	&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 	&lt;span class=&#34;n&#34;&gt;cout&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;coin&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 	&lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;最近经历了很多事情，希望OI可以坚持下去吧，先水个水题题解（&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;编辑记录&lt;/p&gt;
+&lt;p&gt;2021-08-06 18:10:00&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>题解 P5719 【深基4.例3】分类平均</title>
-        <link>https://aynxu.l03.me/p/key-to-p5719/</link>
+        <link>https://aynxu.l03.me/p5719/</link>
         <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://aynxu.l03.me/p/key-to-p5719/</guid>
+        <guid>https://aynxu.l03.me/p5719/</guid>
         <description>&lt;p&gt;这题太有意思了，发个题解纪念一下&lt;/p&gt;
 &lt;p&gt;题面来自&lt;a class=&#34;link&#34; href=&#34;https://www.luogu.com.cn/problem/P5719&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;洛谷&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;$\LaTeX$ 渲染不了，哭了（明明后台预览是可以渲染的啊=&lt;/p&gt;
-&lt;p&gt;（搬到新博客可以正常显示了）&lt;/p&gt;
+&lt;p&gt;（搬到 Hugo 博客可以正常显示了）&lt;/p&gt;
 &lt;h2 id=&#34;题目描述&#34;&gt;题目描述&lt;/h2&gt;
-&lt;p&gt;给定 n(n ≤ 10000) 和 k(k ≤ 100)，将从 1 到 n 之间的所有正整数可以分为两类：A 类数可以被 k 整除（也就是说是 k 的倍数），而 B 类数不能。请输出这两类数的平均数，精确到小数点后 1 位，用空格隔开。&lt;/p&gt;
-&lt;p&gt;数据保证两类数的个数都不会是 0。&lt;/p&gt;
+&lt;p&gt;给定 $n(n \le 10000)$ 和 $k(k \le 100)$，将从 $1$ 到 $n$ 之间的所有正整数可以分为两类：$A$ 类数可以被 $k$ 整除（也就是说是 $k$ 的倍数），而 $B$ 类数不能。请输出这两类数的平均数，精确到小数点后 $1$ 位，用空格隔开。&lt;/p&gt;
+&lt;p&gt;数据保证两类数的个数都不会是 $0$。&lt;/p&gt;
 &lt;h2 id=&#34;输入格式&#34;&gt;输入格式&lt;/h2&gt;
 &lt;p&gt;无&lt;/p&gt;
 &lt;h2 id=&#34;输出格式&#34;&gt;输出格式&lt;/h2&gt;
 &lt;p&gt;无&lt;/p&gt;
 &lt;h2 id=&#34;输入输出样例&#34;&gt;输入输出样例&lt;/h2&gt;
 &lt;p&gt;输入 #1&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;100 16
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;100 16
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;输出 #1&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;56.0 50.1
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;56.0 50.1
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;分析&#34;&gt;分析&lt;/h2&gt;
 &lt;p&gt;利用了等差数列等高阶数学知识来减少循环次数。&lt;/p&gt;
 &lt;h2 id=&#34;代码c&#34;&gt;代码（C++）&lt;/h2&gt;
@@ -517,16 +629,272 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 	&lt;span class=&#34;n&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%.1lf %.1lf&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;a_&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
 	&lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;编辑记录&lt;/p&gt;
+&lt;p&gt;2021-08-13 12:01:00&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>分享一下我的博客园在用的修改版 Wider Gao 博客园主题</title>
+        <link>https://aynxu.l03.me/cnblogs-theme-share/</link>
+        <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://aynxu.l03.me/cnblogs-theme-share/</guid>
+        <description>&lt;p&gt;如你所见，我的博客现在使用 Hugo，因此该修改版主题不太可能发布更新。&lt;/p&gt;
+&lt;p&gt;此主题&lt;code&gt;并非我的原创作品&lt;/code&gt;，原作者为 &lt;a class=&#34;link&#34; href=&#34;https://www.cnblogs.com/widerg&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Wider Gao&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;而且改得很烂，&lt;a class=&#34;link&#34; href=&#34;https://www.cnblogs.com/ayx03&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;主页的文章展示&lt;/a&gt;都搞炸了（点击查看demo），不建议使用（但个人感觉也不是特别糟糕）&lt;/p&gt;
+&lt;h2 id=&#34;我的改动&#34;&gt;我的改动&lt;/h2&gt;
+&lt;p&gt;我作出了如下改动：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;把原作者使用的js源（&lt;code&gt;bootcss.com&lt;/code&gt;）替换为 &lt;code&gt;bootcdn.net&lt;/code&gt;，提升加载速度（至少在我所在的地区可以）&lt;/li&gt;
+&lt;li&gt;把原作者在&lt;a class=&#34;link&#34; href=&#34;https://www.cnblogs.com/widerg/p/9908459.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;博客主题更新了&lt;/a&gt;一文中提供的 &lt;code&gt;my.css&lt;/code&gt; 替换为从他的页面上扒下来的css（因为这个只有几十行的 &lt;code&gt;my.css&lt;/code&gt; 根本没法用=我也不知道为什么，从页面上直接扒也是该文评论区提供的方法）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;下载链接&#34;&gt;下载链接&lt;/h2&gt;
+&lt;p&gt;文件均发布在 &lt;code&gt;Pastebin.com&lt;/code&gt; 以及 &lt;code&gt;Ubuntu Pastebin&lt;/code&gt; 上&lt;/p&gt;
+&lt;p&gt;如需获取原版，请移步&lt;a class=&#34;link&#34; href=&#34;https://www.cnblogs.com/widerg/p/9908459.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Wider Gao的博文&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;页面定制-css-代码&#34;&gt;页面定制 CSS 代码&lt;/h3&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://pastebin.com/chRbBYGJ&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Pastebin.com&lt;/a&gt; &lt;a class=&#34;link&#34; href=&#34;https://pastebin.com/raw/chRbBYGJ&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;复制&lt;/a&gt; &lt;a class=&#34;link&#34; href=&#34;https://pastebin.com/dl/chRbBYGJ&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://paste.ubuntu.com/p/J37WKxYwtC/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Ubuntu Pastebin&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;博客侧边栏公告&#34;&gt;博客侧边栏公告&lt;/h3&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://pastebin.com/7rxEMER7&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Pastebin.com&lt;/a&gt; &lt;a class=&#34;link&#34; href=&#34;https://pastebin.com/raw/7rxEMER7&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;复制&lt;/a&gt; &lt;a class=&#34;link&#34; href=&#34;https://pastebin.com/dl/7rxEMER7&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://paste.ubuntu.com/p/BC4YmKsrvD/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Ubuntu Pastebin&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;页首-html-代码&#34;&gt;页首 HTML 代码&lt;/h3&gt;
+&lt;p&gt;只有一行，就直接放这了&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;link href=&amp;quot;https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&amp;quot; rel=&amp;quot;stylesheet&amp;quot;&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;页脚-html-代码&#34;&gt;页脚 HTML 代码&lt;/h3&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://pastebin.com/PnEmxixN&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Pastebin.com&lt;/a&gt; &lt;a class=&#34;link&#34; href=&#34;https://pastebin.com/raw/PnEmxixN&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;复制&lt;/a&gt; &lt;a class=&#34;link&#34; href=&#34;https://pastebin.com/dl/PnEmxixN&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;下载&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://paste.ubuntu.com/p/n5Jq9QjWms&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Ubuntu Pastebin&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;使用&#34;&gt;使用&lt;/h2&gt;
+&lt;h3 id=&#34;先修改一下这些代码把各种图片链接替换一下&#34;&gt;先修改一下这些代码（把各种图片链接替换一下）&lt;/h3&gt;
+&lt;p&gt;建议先粘贴到编辑器里操作（搬迁备注：现在博客园后台终于有能看的编辑器而不是光秃秃的HTML原汁原味文本框了，我青结）&lt;/p&gt;
+&lt;h3 id=&#34;背景图&#34;&gt;背景图&lt;/h3&gt;
+&lt;p&gt;替换 &lt;code&gt;https://cdn.luogu.com.cn/upload/image_hosting/utntnuud.png&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;题外话：洛谷图床会屏蔽站外链接 :( 但是登陆了上传图片的洛谷账号就能加载&lt;/p&gt;
+&lt;p&gt;这就是为什么之前syr看不到我博客园的头图而我能看到&lt;/p&gt;
+&lt;h3 id=&#34;头像&#34;&gt;头像&lt;/h3&gt;
+&lt;p&gt;替换 &lt;code&gt;https://pic.cnblogs.com/avatar/2228888/20201128101240.png&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;在博客园后台打开&lt;a class=&#34;link&#34; href=&#34;https://i.cnblogs.com/settings&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;设置&lt;/a&gt;，将博客皮肤改为 &lt;code&gt;Custom&lt;/code&gt; ，并勾选 &lt;code&gt;禁用模板默认CSS&lt;/code&gt; ，然后将这些代码粘贴到框里，保存。&lt;/p&gt;
+&lt;p&gt;实现正常显示需要申请两个（次）权限，一次HTML的，一次JS的。（申请HTML权限通过了才能申请JS权限）&lt;/p&gt;
+&lt;h2 id=&#34;声明&#34;&gt;声明&lt;/h2&gt;
+&lt;p&gt;本主题并非本人制作，如果这侵犯了您的权利，请发邮件和我取得联系，我将第一时间作出回应。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;修改记录&lt;/p&gt;
+&lt;p&gt;2021-08-06 17:37:00&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>使用 Node.js（安装Hexo）时出现了 rollbackFailedOptional 错误的解决方法</title>
+        <link>https://aynxu.l03.me/rollbackfailedoptional/</link>
+        <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
+        
+        <guid>https://aynxu.l03.me/rollbackfailedoptional/</guid>
+        <description>&lt;h2 id=&#34;我的解决方法&#34;&gt;我的解决方法&lt;/h2&gt;
+&lt;h3 id=&#34;以-管理员身份-运行一个编辑器&#34;&gt;以 &lt;strong&gt;管理员身份&lt;/strong&gt; 运行一个编辑器&lt;/h3&gt;
+&lt;h3 id=&#34;打开-cprogram-filesnodejsnode_modulesnpmnpmrc&#34;&gt;打开 &lt;code&gt;C:\Program Files\nodejs\node_modules\npm\npmrc&lt;/code&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;如果你安装Node.js时修改了安装路径那么就不是这个路径了&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如果这个文件不存在就自己新建一个文本文档并去掉扩展名 &lt;code&gt;.txt&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;修改 &lt;code&gt;C:\Program Files\nodejs\node_modules\npm\.npmrc&lt;/code&gt; 没有用&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;填入以下内容并保存&#34;&gt;填入以下内容并保存&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;proxy = null
+registry = https://registry.npm.taobao.org
+disturl = https://npm.taobao.org/dist
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;然后再重新尝试安装hexonpm-install-hexo-cli--g即可&#34;&gt;然后再重新尝试安装Hexo（&lt;code&gt;npm install hexo-cli -g&lt;/code&gt;）即可。&lt;/h3&gt;
+&lt;h3 id=&#34;如果依旧无法解决可以尝试在以管理员身份启动的命令提示符或-powershell-中执行此命令&#34;&gt;如果依旧无法解决可以尝试在以管理员身份启动的命令提示符或 Powershell 中执行此命令&lt;/h3&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;npm config set disturl https://npm.taobao.org/dist
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;文章迁移备注&#34;&gt;文章迁移备注&lt;/h2&gt;
+&lt;p&gt;从博客园搬文章的时候无意发现本文已被以下站点转载：&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://qdmana.com/2021/01/20210105173638094t.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;qdmana.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://yunjuu.com/info/1769684.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;yunjuu.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;我并未授权这些网站转载我的文章。&lt;/p&gt;
+&lt;p&gt;虽然这篇博客没有花我很多时间，但是这些网站的行为让我感到十分不满。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;编辑记录&lt;/p&gt;
+&lt;p&gt;2021-08-05 13:20:00&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>题解 HDU2063 过山车</title>
+        <link>https://aynxu.l03.me/hdu2063/</link>
+        <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://aynxu.l03.me/hdu2063/</guid>
+        <description>&lt;h2 id=&#34;题面链接&#34;&gt;题面链接&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://acm.hdu.edu.cn/showproblem.php?pid=2063&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;HDU 2063&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://vjudge.net/problem/HDU-2063&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Vjudge&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;题意概述&#34;&gt;题意概述&lt;/h2&gt;
+&lt;p&gt;求一个二分图最大匹配的边数&lt;/p&gt;
+&lt;h2 id=&#34;题目标签&#34;&gt;题目标签&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;匈牙利算法模板题&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;参考代码&#34;&gt;参考代码&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#include&lt;/span&gt; &lt;span class=&#34;cpf&#34;&gt;&amp;lt;bits/stdc++.h&amp;gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;using&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;namespace&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;std&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;cp&#34;&gt;#define maxn 1000 + 10
+&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;m&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;k&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;maxn&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;link&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;maxn&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;cnt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;tot&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;kt&#34;&gt;bool&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;vis&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;maxn&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;];&lt;/span&gt;
+&lt;span class=&#34;k&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;Edge&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+	&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;to&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;nxt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;edge&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;maxn&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;];&lt;/span&gt;
+&lt;span class=&#34;kt&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;add&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;u&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;v&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+	&lt;span class=&#34;n&#34;&gt;edge&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;cnt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;].&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;to&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;v&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+	&lt;span class=&#34;n&#34;&gt;edge&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;cnt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;].&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;nxt&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;u&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;];&lt;/span&gt;
+	&lt;span class=&#34;n&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;u&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;cnt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+	&lt;span class=&#34;n&#34;&gt;cnt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;++&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;span class=&#34;kt&#34;&gt;bool&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;dfs&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;u&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//深搜判断对于点集v2中的一个点u是否能与点集v1中的一个点v匹配
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+	&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;u&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;];&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;!=&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;edge&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;].&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;nxt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;){&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//枚举能匹配的点
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;		&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;v&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;edge&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;].&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;to&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//v为能与u匹配的点编号
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;		&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;vis&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;v&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;])&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;continue&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//利用一个vis判断当前点是否尝试匹配过，如果已经匹配过就跳过以防死循环
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;		&lt;span class=&#34;n&#34;&gt;vis&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;v&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+		&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;link&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;v&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dfs&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;link&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;v&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;])){&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//如果v可以腾出位置（即没有与v2中的任何一个点匹配或v2中还存在没有匹配过的点可以与之匹配）
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;			&lt;span class=&#34;n&#34;&gt;link&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;v&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;u&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//u与v成功匹配
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;			&lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+		&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+	&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+	&lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;false&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;getcp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;){&lt;/span&gt;
+	&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ans&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+	&lt;span class=&#34;n&#34;&gt;memset&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;link&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;sizeof&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;link&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;));&lt;/span&gt;
+	&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;++&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;){&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//遍历每个点集v2中的点
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;		&lt;span class=&#34;n&#34;&gt;memset&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;vis&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;false&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;sizeof&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;vis&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;));&lt;/span&gt;
+		&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;dfs&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ans&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;++&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+	&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+	&lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ans&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(){&lt;/span&gt;
+	&lt;span class=&#34;k&#34;&gt;while&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;scanf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%d&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;k&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;!=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;EOF&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;){&lt;/span&gt;
+		&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;!&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;k&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;break&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+		&lt;span class=&#34;n&#34;&gt;scanf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%d%d&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;m&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+		&lt;span class=&#34;n&#34;&gt;memset&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;sizeof&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;));&lt;/span&gt;
+		&lt;span class=&#34;n&#34;&gt;cnt&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+		&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;k&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;++&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;){&lt;/span&gt;
+			&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;u&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;v&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+			&lt;span class=&#34;n&#34;&gt;scanf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%d%d&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;u&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;v&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+			&lt;span class=&#34;n&#34;&gt;v&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;m&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;//把点集v1中的点的编号调整到点集v2后面
+&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;			&lt;span class=&#34;n&#34;&gt;add&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;u&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;v&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+		&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+		&lt;span class=&#34;n&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%d&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;\n&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;getcp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;m&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;));&lt;/span&gt;
+	&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+	&lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;参考博文&#34;&gt;参考博文&lt;/h2&gt;
+&lt;p&gt;想理解匈牙利算法的概念，推荐阅读&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/dark_scope/article/details/8880547&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;趣写算法系列之&amp;ndash;匈牙利算法&lt;/a&gt;（推荐在教练的陪同下阅读）&lt;/p&gt;
+&lt;p&gt;评论区有朋友通俗易懂地概括了它的思想：&lt;code&gt;先到先得 能让就让&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://111qqz.com/2016/05/hdu-2063/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;hdu 2063 过山车 (匈牙利算法模板题) – 111qqz的小窝&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;编辑记录&lt;/p&gt;
+&lt;p&gt;2021-08-05 13:37:00&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>题解 YBT 1000：入门测试题目</title>
+        <link>https://aynxu.l03.me/ybt1000/</link>
+        <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
+        
+        <guid>https://aynxu.l03.me/ybt1000/</guid>
+        <description>&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://noi.openjudge.cn/ch0103/01/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;OpenJudge - 01:A+B问题&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://ybt.ssoier.cn:8088/problem_show.php?pid=1000&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;信息学奥赛一本通（C++版）在线评测系统&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;如果非要做这题我推荐第一个 OJ，第二个 OJ 的界面实在惨不忍睹&lt;/p&gt;
+&lt;p&gt;（虽然第一个题目有题号检索比较方便而且貌似用户比较多）&lt;/p&gt;
+&lt;p&gt;更好的选择是不要做《信奥赛一本通》的题&lt;/p&gt;
+&lt;h2 id=&#34;题目的背景描述输入输出格式样例&#34;&gt;题目的背景、描述、输入输出格式样例&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1000：入门测试题目
+
+时间限制: 1000 ms         内存限制: 32768 KB
+
+【题目描述】
+
+求两个整数的和。
+
+【输入】
+
+一行，两个用空格隔开的整数。
+
+【输出】
+
+两个整数的和。
+
+【输入样例】
+
+1 2
+
+【输出样例】
+
+3
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;题意分析与算法设计&#34;&gt;题意分析与算法设计&lt;/h2&gt;
+&lt;p&gt;新手不用理会 &lt;code&gt;时间限制&lt;/code&gt; 和 &lt;code&gt;内存限制&lt;/code&gt;，一般来说学到后面才会出现 TLE（Time Limit Exceed，超出时间限制）和 MLE（Memory Limit Exceed，超出内存限制）的情况。&lt;/p&gt;
+&lt;p&gt;（关于这些术语，可以在&lt;a class=&#34;link&#34; href=&#34;https://aynxu.l03.me/explanation-of-oj-terminology/#%e6%ad%a3%e7%bb%8f%e8%a7%a3%e9%87%8a&#34; &gt;&lt;strong&gt;这里&lt;/strong&gt;&lt;/a&gt;了解。）&lt;/p&gt;
+&lt;p&gt;至于这个问题，就是一个最简单的 A+B 问题。&lt;/p&gt;
+&lt;h2 id=&#34;参考用完整代码&#34;&gt;参考用完整代码&lt;/h2&gt;
+&lt;p&gt;各位一定要养成良好的代码风格，因为代码不仅仅是给机器看的，有时候人也要看。&lt;/p&gt;
+&lt;p&gt;使用 cin/cout（需要调用 iostreeam 头文件）：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#include&lt;/span&gt; &lt;span class=&#34;cpf&#34;&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;using&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;namespace&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;std&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+	&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+	&lt;span class=&#34;n&#34;&gt;cin&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+	&lt;span class=&#34;n&#34;&gt;cout&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;b&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;endl&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;使用 scanf/printf（需要调用 cstdio 头文件）：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#include&lt;/span&gt; &lt;span class=&#34;cpf&#34;&gt;&amp;lt;cstdio&amp;gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;using&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;namespace&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;std&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+	&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+	&lt;span class=&#34;n&#34;&gt;scanf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%d%d&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+	&lt;span class=&#34;n&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%d&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这两种风格的输入输出各有长处，各位务必都要掌握。&lt;/p&gt;
+&lt;p&gt;实际上，第二份代码中没有用到任何 C++ 特性，因此不加 &lt;code&gt;using namespace std;&lt;/code&gt; 也没关系。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;del&gt;为什么这种题你还要水一篇题解出来&lt;/del&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;编辑记录&lt;/p&gt;
+&lt;p&gt;2021-08-06 18:42:00 UTC+8&lt;/p&gt;
+&lt;p&gt;最后更新于 OCT 19, 2021 21:57 UTC+8&lt;/p&gt;
+</description>
         </item>
         <item>
         <title>题解 P1650 田忌赛马</title>
-        <link>https://aynxu.l03.me/p/key-to-p1650/</link>
-        <pubDate>Fri, 19 Feb 2021 00:00:00 +0000</pubDate>
+        <link>https://aynxu.l03.me/p1650/</link>
+        <pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate>
         
-        <guid>https://aynxu.l03.me/p/key-to-p1650/</guid>
-        <description>&lt;p&gt;搬文章的时候&lt;a class=&#34;link&#34; href=&#34;./cover_hu9060b7a99162d0b96b3c4037fcbc7ad2_88085_1600x0_resize_q75_box.jpg&#34; &gt;瞎画的封面图&lt;/a&gt;还是决定不摆上去了&amp;hellip;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;(题面来自&lt;a class=&#34;link&#34; href=&#34;https://www.luogu.com.cn/problem/P1650&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+        <guid>https://aynxu.l03.me/p1650/</guid>
+        <description>&lt;p&gt;&lt;strong&gt;(题面来自&lt;a class=&#34;link&#34; href=&#34;https://www.luogu.com.cn/problem/P1650&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;洛谷&lt;/a&gt;)&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;题目描述&#34;&gt;题目描述&lt;/h2&gt;
 &lt;p&gt;我国历史上有个著名的故事： 那是在2300年以前。齐国的大将军田忌喜欢赛马。他经常和齐王赛马。他和齐王都有三匹马：常规马，上级马，超级马。一共赛三局，每局的胜者可以从负者这里取得200银币。每匹马只能用一次。齐王的马好，同等级的马，齐王的总是比田忌的要好一点。于是每次和齐王赛马，田忌总会输600银币。&lt;/p&gt;
@@ -542,11 +910,11 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 &lt;p&gt;仅一行，一个整数，表示田忌最大能得到多少银币。&lt;/p&gt;
 &lt;h2 id=&#34;输入输出样例&#34;&gt;输入输出样例&lt;/h2&gt;
 &lt;p&gt;输入 #1&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;3
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;3
 92 83 71
 95 87 74
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;输出 #1&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;200
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;200
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;分析&#34;&gt;分析&lt;/h2&gt;
 &lt;p&gt;都在代码注释里了&lt;/p&gt;
 &lt;h2 id=&#34;代码&#34;&gt;代码&lt;/h2&gt;
@@ -595,321 +963,98 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 	&lt;span class=&#34;n&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%d&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;qian&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
 	&lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-        </item>
-        <item>
-        <title>分享一下我的博客园在用的修改版Wider Gao博客园主题</title>
-        <link>https://aynxu.l03.me/p/cnblogs-theme-share/</link>
-        <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
-        
-        <guid>https://aynxu.l03.me/p/cnblogs-theme-share/</guid>
-        <description>&lt;p&gt;如你所见，我的博客现在使用 Hugo，因此该修改版主题不太可能发布更新。&lt;/p&gt;
-&lt;p&gt;此主题&lt;strong&gt;非原创&lt;/strong&gt;，原作者为 &lt;a class=&#34;link&#34; href=&#34;https://www.cnblogs.com/widerg&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Wider Gao&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;而且改得很烂，&lt;a class=&#34;link&#34; href=&#34;https://www.cnblogs.com/ayx03&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;主页的文章展示&lt;/a&gt;都搞炸了（点击查看demo），不建议使用（但个人感觉也不是特别糟糕）&lt;/p&gt;
-&lt;h2 id=&#34;我的改动&#34;&gt;我的改动&lt;/h2&gt;
-&lt;p&gt;作出了如下改动：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;把原作者使用的js源（&lt;code&gt;bootcss.com&lt;/code&gt;）替换为&lt;code&gt;bootcdn.net&lt;/code&gt;，提升加载速度&lt;/li&gt;
-&lt;li&gt;把原作者在&lt;a class=&#34;link&#34; href=&#34;https://www.cnblogs.com/widerg/p/9908459.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;博客主题更新了&lt;/a&gt;一文中提供的 &lt;code&gt;my.css&lt;/code&gt; 替换为从他的页面上扒下来的css（因为这个只有几十行的 &lt;code&gt;my.css&lt;/code&gt; 根本没法用=我也不知道为什么，从页面上直接扒也是该文评论区提供的方法）&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id=&#34;下载链接&#34;&gt;下载链接&lt;/h2&gt;
-&lt;p&gt;文件均发布在 &lt;code&gt;Pastebin.com&lt;/code&gt; 以及 &lt;code&gt;Ubuntu Pastebin&lt;/code&gt; 上&lt;/p&gt;
-&lt;p&gt;如需获取原版，请移步&lt;a class=&#34;link&#34; href=&#34;https://www.cnblogs.com/widerg/p/9908459.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Wider Gao的博文&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;页面定制-css-代码&#34;&gt;页面定制 CSS 代码&lt;/h3&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://pastebin.com/chRbBYGJ&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Pastebin.com&lt;/a&gt; &lt;a class=&#34;link&#34; href=&#34;https://pastebin.com/raw/chRbBYGJ&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;复制&lt;/a&gt; &lt;a class=&#34;link&#34; href=&#34;https://pastebin.com/dl/chRbBYGJ&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;下载&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://paste.ubuntu.com/p/J37WKxYwtC/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Ubuntu Pastebin&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;博客侧边栏公告&#34;&gt;博客侧边栏公告&lt;/h3&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://pastebin.com/7rxEMER7&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Pastebin.com&lt;/a&gt; &lt;a class=&#34;link&#34; href=&#34;https://pastebin.com/raw/7rxEMER7&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;复制&lt;/a&gt; &lt;a class=&#34;link&#34; href=&#34;https://pastebin.com/dl/7rxEMER7&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;下载&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://paste.ubuntu.com/p/BC4YmKsrvD/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Ubuntu Pastebin&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&#34;页首-html-代码&#34;&gt;页首 HTML 代码&lt;/h3&gt;
-&lt;p&gt;只有一行，就直接放这了&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;&amp;lt;link href=&amp;quot;https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&amp;quot; rel=&amp;quot;stylesheet&amp;quot;&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;h3 id=&#34;页脚-html-代码&#34;&gt;页脚 HTML 代码&lt;/h3&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://pastebin.com/PnEmxixN&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Pastebin.com&lt;/a&gt; &lt;a class=&#34;link&#34; href=&#34;https://pastebin.com/raw/PnEmxixN&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;复制&lt;/a&gt; &lt;a class=&#34;link&#34; href=&#34;https://pastebin.com/dl/PnEmxixN&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;下载&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://paste.ubuntu.com/p/n5Jq9QjWms&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Ubuntu Pastebin&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;使用&#34;&gt;使用&lt;/h2&gt;
-&lt;h3 id=&#34;先修改一下这些代码把各种图片链接替换一下&#34;&gt;先修改一下这些代码（把各种图片链接替换一下）&lt;/h3&gt;
-&lt;p&gt;建议先粘贴到编辑器里操作（搬迁备注：现在博客园后台终于有能看的编辑器而不是光秃秃的HTML原汁原味文本框了，我青结）&lt;/p&gt;
-&lt;h3 id=&#34;背景图&#34;&gt;背景图&lt;/h3&gt;
-&lt;p&gt;替换 &lt;code&gt;https://cdn.luogu.com.cn/upload/image_hosting/utntnuud.png&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;题外话：洛谷图床会屏蔽站外链接 :( 但是登陆了上传图片的洛谷账号就能加载&lt;/p&gt;
-&lt;p&gt;这就是为什么之前syr看不到我博客园的头图而我能看到&lt;/p&gt;
-&lt;h3 id=&#34;头像&#34;&gt;头像&lt;/h3&gt;
-&lt;p&gt;替换 &lt;code&gt;https://pic.cnblogs.com/avatar/2228888/20201128101240.png&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;在博客园后台打开&lt;a class=&#34;link&#34; href=&#34;https://i.cnblogs.com/settings&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;设置&lt;/a&gt;，将博客皮肤改为 &lt;code&gt;Custom&lt;/code&gt; ，并勾选 &lt;code&gt;禁用模板默认CSS&lt;/code&gt; ，然后将这些代码粘贴到框里，保存。&lt;/p&gt;
-&lt;p&gt;实现正常显示需要申请两个（次）权限，一次HTML的，一次JS的。（申请HTML权限通过了才能申请JS权限）&lt;/p&gt;
-&lt;h2 id=&#34;声明&#34;&gt;声明&lt;/h2&gt;
-&lt;p&gt;本主题并非本人制作，如果这侵犯了您的权利，请发邮件和我取得联系，我将第一时间作出回应。&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;修改记录&lt;/p&gt;
+&lt;p&gt;2021-02-19 19:20 发布于博客园&lt;/p&gt;
+&lt;p&gt;2021-08-06 17:57 迁移自博客园&lt;/p&gt;
+&lt;p&gt;搬文章的时候瞎画的封面图还是决定不摆上去了&amp;hellip;&lt;/p&gt;
 </description>
         </item>
         <item>
-        <title>使用Node.js（安装Hexo）时出现了 rollbackFailedOptional 的解决方法</title>
-        <link>https://aynxu.l03.me/p/error-installing-hexo/</link>
-        <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
+        <title>OJ术语的解释： AC、WA、TLE、OLE、MLE、RE、PE、CE、UKE 都是些啥？</title>
+        <link>https://aynxu.l03.me/explanation-of-oj-terminology/</link>
+        <pubDate>Sun, 29 Dec 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://aynxu.l03.me/p/error-installing-hexo/</guid>
-        <description>&lt;h2 id=&#34;我的解决方法&#34;&gt;我的解决方法&lt;/h2&gt;
-&lt;h3 id=&#34;以-管理员身份-运行一个编辑器&#34;&gt;以 &lt;strong&gt;管理员身份&lt;/strong&gt; 运行一个编辑器&lt;/h3&gt;
-&lt;h3 id=&#34;打开-cprogram-filesnodejsnode_modulesnpmnpmrc&#34;&gt;打开 &lt;code&gt;C:\Program Files\nodejs\node_modules\npm\npmrc&lt;/code&gt;&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;如果你安装Node.js时修改了安装路径那么就不是这个路径了&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;如果这个文件不存在就自己新建一个文本文档并去掉扩展名 &lt;code&gt;.txt&lt;/code&gt;&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;修改 &lt;code&gt;C:\Program Files\nodejs\node_modules\npm\.npmrc&lt;/code&gt; 没有用&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;填入以下内容并保存&#34;&gt;填入以下内容并保存&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;proxy = null
-registry = https://registry.npm.taobao.org
-disturl = https://npm.taobao.org/dist
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;然后再重新尝试安装hexonpm-install-hexo-cli--g即可&#34;&gt;然后再重新尝试安装Hexo（&lt;code&gt;npm install hexo-cli -g&lt;/code&gt;）即可。&lt;/h3&gt;
-&lt;h3 id=&#34;如果依旧无法解决可以尝试在以管理员身份启动的命令提示符或-powershell-中执行此命令&#34;&gt;如果依旧无法解决可以尝试在以管理员身份启动的命令提示符或 Powershell 中执行此命令&lt;/h3&gt;
-&lt;pre&gt;&lt;code&gt;npm config set disturl https://npm.taobao.org/dist
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;文章迁移备注&#34;&gt;文章迁移备注&lt;/h2&gt;
-&lt;p&gt;从博客园搬文章的时候无意发现本文已被以下站点转载：&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://qdmana.com/2021/01/20210105173638094t.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;qdmana.com&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://yunjuu.com/info/1769684.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;yunjuu.com&lt;/a&gt;&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>题解 HDU2063 过山车</title>
-        <link>https://aynxu.l03.me/p/key-to-hdu2063/</link>
-        <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
-        
-        <guid>https://aynxu.l03.me/p/key-to-hdu2063/</guid>
-        <description>&lt;h2 id=&#34;题面链接&#34;&gt;题面链接&lt;/h2&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://acm.hdu.edu.cn/showproblem.php?pid=2063&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;HDU 2063&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://vjudge.net/problem/HDU-2063&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Vjudge&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;题意概述&#34;&gt;题意概述&lt;/h2&gt;
-&lt;p&gt;求一个二分图最大匹配的边数&lt;/p&gt;
-&lt;h2 id=&#34;题目标签&#34;&gt;题目标签&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;匈牙利算法模板题&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;参考代码&#34;&gt;参考代码&lt;/h2&gt;
-&lt;p&gt;主体过程由深搜实现&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#include&lt;/span&gt; &lt;span class=&#34;cpf&#34;&gt;&amp;lt;bits/stdc++.h&amp;gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;using&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;namespace&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;std&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;cp&#34;&gt;#define maxn 1000 + 10
-&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;m&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;k&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;maxn&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;link&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;maxn&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;cnt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;tot&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;kt&#34;&gt;bool&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;vis&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;maxn&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;];&lt;/span&gt;
-&lt;span class=&#34;k&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;Edge&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-	&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;to&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;nxt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;edge&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;maxn&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;];&lt;/span&gt;
-&lt;span class=&#34;kt&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;add&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;u&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;v&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-	&lt;span class=&#34;n&#34;&gt;edge&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;cnt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;].&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;to&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;v&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-	&lt;span class=&#34;n&#34;&gt;edge&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;cnt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;].&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;nxt&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;u&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;];&lt;/span&gt;
-	&lt;span class=&#34;n&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;u&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;cnt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-	&lt;span class=&#34;n&#34;&gt;cnt&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;++&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;span class=&#34;kt&#34;&gt;bool&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;dfs&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;u&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;						      &lt;span class=&#34;c1&#34;&gt;//深搜判断对于点集v2中的一个点u是否能与点集v1中的一个点v匹配
-&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-	&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;u&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;];&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;!=&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;edge&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;].&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;nxt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;	      &lt;span class=&#34;c1&#34;&gt;//枚举能匹配的点
-&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;	&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-		&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;v&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;edge&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;].&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;to&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;			      &lt;span class=&#34;c1&#34;&gt;//v为能与u匹配的点编号
-&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;		&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;vis&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;v&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;])&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;continue&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;                          &lt;span class=&#34;c1&#34;&gt;//利用一个vis判断当前点是否尝试匹配过，如果已经匹配过就跳过以防死循环
-&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;		&lt;span class=&#34;n&#34;&gt;vis&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;v&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-		&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;link&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;v&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;||&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;dfs&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;link&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;v&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]))&lt;/span&gt;	      &lt;span class=&#34;c1&#34;&gt;//如果v可以腾出位置（即没有与v2中的任何一个点匹配或v2中还存在没有匹配过的点可以与之匹配）
-&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;		&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-			&lt;span class=&#34;n&#34;&gt;link&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;v&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;u&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;			      &lt;span class=&#34;c1&#34;&gt;//u与v成功匹配
-&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;			&lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-		&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-	&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-	&lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;false&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;getcp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-	&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ans&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-	&lt;span class=&#34;n&#34;&gt;memset&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;link&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;sizeof&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;link&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;));&lt;/span&gt;
-	&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;++&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;			      &lt;span class=&#34;c1&#34;&gt;//遍历每个点集v2中的点
-&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;	&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-		&lt;span class=&#34;n&#34;&gt;memset&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;vis&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nb&#34;&gt;false&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;sizeof&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;vis&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;));&lt;/span&gt;
-		&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;dfs&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ans&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;++&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-	&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-	&lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ans&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-	&lt;span class=&#34;k&#34;&gt;while&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;scanf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%d&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;k&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;!=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;EOF&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-	&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-		&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;!&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;k&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;break&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-		&lt;span class=&#34;n&#34;&gt;scanf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%d%d&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;m&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
-		&lt;span class=&#34;n&#34;&gt;memset&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;sizeof&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;));&lt;/span&gt;
-		&lt;span class=&#34;n&#34;&gt;cnt&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-		&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;k&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;++&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-		&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-			&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;u&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;v&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-			&lt;span class=&#34;n&#34;&gt;scanf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%d%d&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;u&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;v&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
-			&lt;span class=&#34;n&#34;&gt;v&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;m&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;				      &lt;span class=&#34;c1&#34;&gt;//把点集v1中的点的编号调整到点集v2后面
-&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;			&lt;span class=&#34;n&#34;&gt;add&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;u&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;v&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
-		&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-		&lt;span class=&#34;n&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%d&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;\n&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;getcp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;m&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;));&lt;/span&gt;
-	&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-	&lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;参考博文&#34;&gt;参考博文&lt;/h2&gt;
-&lt;p&gt;想理解匈牙利算法的概念，推荐阅读&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/dark_scope/article/details/8880547&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;趣写算法系列之&amp;ndash;匈牙利算法&lt;/a&gt;（推荐在教练的陪同下阅读）&lt;/p&gt;
-&lt;p&gt;评论区有朋友通俗易懂地概括了它的思想：&lt;code&gt;先到先得 能让就让&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://111qqz.com/2016/05/hdu-2063/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;hdu 2063 过山车 (匈牙利算法模板题) – 111qqz的小窝&lt;/a&gt;&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>题解 YBT1000：入门测试题目</title>
-        <link>https://aynxu.l03.me/p/key-to-ybt1000/</link>
-        <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
-        
-        <guid>https://aynxu.l03.me/p/key-to-ybt1000/</guid>
-        <description>&lt;h2 id=&#34;题目信息&#34;&gt;「题目信息」&lt;/h2&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://noi.openjudge.cn/ch0103/01/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;OpenJudge - 01:A+B问题&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://ybt.ssoier.cn:8088/problem_show.php?pid=1000&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;信息学奥赛一本通（C++版）在线评测系统&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;推荐第一个，第二个界面实在惨不忍睹（虽然第一个题目有题号方便检索而且貌似用户比较多&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;1000：入门测试题目
-
-时间限制: 1000 ms         内存限制: 32768 KB
-
-【题目描述】
-
-求两个整数的和。
-
-【输入】
-
-一行，两个用空格隔开的整数。
-
-【输出】
-
-两个整数的和。
-
-【输入样例】
-
-1 2
-
-【输出样例】
-
-3
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;分析设计&#34;&gt;「分析设计」&lt;/h2&gt;
-&lt;p&gt;新手不用理会「时间限制」和「内存限制」，学到后面才会出现TLE（Time Limit Exceed，超时）和MLE（Memory Limit Exceed，内存溢出，超内存），关于这些OJ（Online Judge，在线判题系统）术语，可以在下表中了解。&lt;/p&gt;
-&lt;p&gt;该表纯手打，转载请注明出处。&lt;/p&gt;
+        <guid>https://aynxu.l03.me/explanation-of-oj-terminology/</guid>
+        <description>&lt;h2 id=&#34;正经解释&#34;&gt;正经解释&lt;/h2&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;简写&lt;/th&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;全称&lt;/th&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;中文称谓&lt;/th&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;补充说明 &amp;amp; 修改建议&lt;/th&gt;
+&lt;th&gt;简称&lt;/th&gt;
+&lt;th&gt;全称&lt;/th&gt;
+&lt;th&gt;中文称谓&lt;/th&gt;
+&lt;th&gt;补充说明 &amp;amp; 修改建议&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;OJ&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;Online Judge&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;在线判题系统&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;例如&lt;a class=&#34;link&#34; href=&#34;https://www.luogu.com.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;洛谷&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;OJ&lt;/td&gt;
+&lt;td&gt;Online Judge&lt;/td&gt;
+&lt;td&gt;在线判题系统&lt;/td&gt;
+&lt;td&gt;可以对你的程序进行评测并给出结果。&lt;a class=&#34;link&#34; href=&#34;https://www.luogu.com.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;洛谷&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://www.spoj.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;SPOJ&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://codeforces.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Codeforces&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://vijos.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Vijos&lt;/a&gt;、&lt;a class=&#34;link&#34; href=&#34;https://onlinejudge.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;UVa OJ&lt;/a&gt; 都是在线判题系统&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;AC&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;Accepted&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;通过&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;&lt;del&gt;（嘲讽你还没过的同桌）&lt;/del&gt;&lt;/td&gt;
+&lt;td&gt;AC&lt;/td&gt;
+&lt;td&gt;Accepted&lt;/td&gt;
+&lt;td&gt;通过&lt;/td&gt;
+&lt;td&gt;&lt;del&gt;嘲讽你还没过的同学&lt;/del&gt; 想想在时间和空间上能否做到更优，或是继续做其他题目&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;WA&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;Wrong Answer&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;答案错误&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;在规定的时间和空间限制里输出了错误的答案&lt;/td&gt;
+&lt;td&gt;WA&lt;/td&gt;
+&lt;td&gt;Wrong Answer&lt;/td&gt;
+&lt;td&gt;答案错误&lt;/td&gt;
+&lt;td&gt;你的程序在规定的时间和内存限制内里输出了错误的答案，因此没有得分（想一想，有没有没有考虑到的特殊情况？如果你的程序根本无法对样例输入输出正确的答案，那么你的思路很可能有问题）&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;TLE&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;Time Limit Exceed&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;超出时间限制&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;你的程序在该点上超出了题目给定的时间还没有结束运行，因此被强行中止（检查是否存在死循环或过多的循环，优化算法复杂度，剪枝）在一些OJ中，没有读入完输入也会造成TLE，但是在洛谷不会发生。&lt;/td&gt;
+&lt;td&gt;TLE&lt;/td&gt;
+&lt;td&gt;Time Limit Exceed&lt;/td&gt;
+&lt;td&gt;超出时间限制&lt;/td&gt;
+&lt;td&gt;你的程序在该测试点上超出了题目给定的时间仍未结束运行，因此被强行中止（检查是否存在死循环或过多的循环，使用时间复杂度更优的算法，进行一些常数及输入输出优化，剪枝）如果你的程序能正常给出答案，记得使用循环控制语句 break 或 return 0、exit(0) 这样的语句结束程序；在一些评测系统老旧的 OJ 中，没有读入完输入的数据也会造成 TLE，但是在洛谷不会发生。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;OLE&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;Output Limit Exceed&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;超出输出限制&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;你的程序输出了过多的内容，因此被强行中止（检查是否存在过多的循环输出或死循环）&lt;/td&gt;
+&lt;td&gt;OLE&lt;/td&gt;
+&lt;td&gt;Output Limit Exceed&lt;/td&gt;
+&lt;td&gt;超出输出限制&lt;/td&gt;
+&lt;td&gt;你的程序在这个测试点中输出的字符数量超出了限制，因此被系统强行中止（检查是否存在死循环和没有注释掉的调试用输出语句）&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;MLE&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;Memory Limit Exceed&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;超出内存限制&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;你的程序使用了过多的内存，因此被强行中止（检查是否开了过大的数组/往STL容器里装了过多的数据）&lt;/td&gt;
+&lt;td&gt;MLE&lt;/td&gt;
+&lt;td&gt;Memory Limit Exceed&lt;/td&gt;
+&lt;td&gt;超出内存限制&lt;/td&gt;
+&lt;td&gt;你的程序在运行过程中占用了过多的内存，因此被系统强行中止（检查是否在程序中使用了过大的数组或是往 STL 容器中存入了过多的数据）&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;RE&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;Runtime Error&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;运行时出错&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;检查是否存在数组越界访问（尤指C(++)）另外，main函数返回非0值也会被认为异常退出&lt;/td&gt;
+&lt;td&gt;RE&lt;/td&gt;
+&lt;td&gt;Runtime Error&lt;/td&gt;
+&lt;td&gt;运行时出错&lt;/td&gt;
+&lt;td&gt;检查是否存在数组越界访问（尤其是C(++)语言选手）。另外，如果你在 main 函数中返回一个非 0 的值也会被系统认为程序异常退出&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;PE&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;Presentation Error&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;格式错误&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;检查输出的空格/换行符数量是否与题目要求严格一致&lt;/td&gt;
+&lt;td&gt;PE&lt;/td&gt;
+&lt;td&gt;Presentation Error&lt;/td&gt;
+&lt;td&gt;格式错误&lt;/td&gt;
+&lt;td&gt;检查输出的空格/换行符数量是否与题面中的要求严格一致&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;CE&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;Compile Error&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;编译错误&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;你的程序没有通过编译，因此也更没有投入运行（检查语法，初学者建议着重检查分号）&lt;/td&gt;
+&lt;td&gt;CE&lt;/td&gt;
+&lt;td&gt;Compile Error&lt;/td&gt;
+&lt;td&gt;编译错误&lt;/td&gt;
+&lt;td&gt;你的程序根本无法通过编译，也就没有可执行文件可以用来评测（检查语法，初学者建议着重检查分号和全角标点，建议敲代码时禁用中文输入法）&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;UKE&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;Unknown Error&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;未知错误&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;评测姬也不知道出了什么问题（联系OJ管理员）&lt;/td&gt;
+&lt;td&gt;UKE&lt;/td&gt;
+&lt;td&gt;Unknown Error&lt;/td&gt;
+&lt;td&gt;未知错误&lt;/td&gt;
+&lt;td&gt;评测姬也不知道出了什么问题（联系 OJ 管理员或出题人，稍后再尝试重新提交）&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;至于这个问题，就是一个最简单的 $A+B$ 问题。&lt;/p&gt;
-&lt;h2 id=&#34;参考源码&#34;&gt;「参考源码」&lt;/h2&gt;
-&lt;p&gt;&lt;del&gt;搬的时候顺便改了一下&lt;/del&gt;，码风良好&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#include&lt;/span&gt; &lt;span class=&#34;cpf&#34;&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;
-&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;using&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;namespace&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;std&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-	&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-	&lt;span class=&#34;n&#34;&gt;scanf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%d%d&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
-	&lt;span class=&#34;n&#34;&gt;cout&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;b&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;endl&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-        </item>
-        <item>
-        <title>OJ术语的解释： AC、WA、TLE、OLE、MLE、RE、PE、CE、UKE</title>
-        <link>https://aynxu.l03.me/p/explanation-of-oj-terminology/</link>
-        <pubDate>Sun, 29 Dec 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://aynxu.l03.me/p/explanation-of-oj-terminology/</guid>
-        <description>&lt;table&gt;
+&lt;h2 id=&#34;哈哈太搞笑了&#34;&gt;哈哈太搞笑了&lt;/h2&gt;
+&lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
 &lt;th style=&#34;text-align:center&#34;&gt;简写&lt;/th&gt;
@@ -983,83 +1128,6 @@ disturl = https://npm.taobao.org/dist
 &lt;li&gt;PE、CE都能给予你大量的额外分数；&lt;/li&gt;
 &lt;li&gt;UKE这个标签非常稀有，可以让你直接通过这次比赛并名列前茅。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;以上都是扯淡，不要真信了&lt;/p&gt;
-&lt;p&gt;下面这个是正经的（纯手打，转载注明出处）&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;表格&#34;&gt;表格&lt;/h2&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;简写&lt;/th&gt;
-&lt;th&gt;全称&lt;/th&gt;
-&lt;th&gt;中文称谓&lt;/th&gt;
-&lt;th&gt;补充说明 &amp;amp; 修改建议&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;OJ&lt;/td&gt;
-&lt;td&gt;Online Judge&lt;/td&gt;
-&lt;td&gt;在线判题系统&lt;/td&gt;
-&lt;td&gt;例如&lt;a class=&#34;link&#34; href=&#34;https://www.luogu.com.cn/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;洛谷&lt;/a&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;AC&lt;/td&gt;
-&lt;td&gt;Accepted&lt;/td&gt;
-&lt;td&gt;通过&lt;/td&gt;
-&lt;td&gt;&lt;del&gt;（嘲讽你还没过的同桌）&lt;/del&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;WA&lt;/td&gt;
-&lt;td&gt;Wrong Answer&lt;/td&gt;
-&lt;td&gt;答案错误&lt;/td&gt;
-&lt;td&gt;在规定的时间和空间限制里输出了错误的答案&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;TLE&lt;/td&gt;
-&lt;td&gt;Time Limit Exceed&lt;/td&gt;
-&lt;td&gt;超出时间限制&lt;/td&gt;
-&lt;td&gt;你的程序在该点上超出了题目给定的时间还没有结束运行，因此被强行中止（检查是否存在死循环或过多的循环，优化算法复杂度，剪枝）在一些OJ中，没有读入完输入也会造成TLE，但是在洛谷不会发生。&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;OLE&lt;/td&gt;
-&lt;td&gt;Output Limit Exceed&lt;/td&gt;
-&lt;td&gt;超出输出限制&lt;/td&gt;
-&lt;td&gt;你的程序输出了过多的内容，因此被强行中止（检查是否存在过多的循环输出或死循环）&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;MLE&lt;/td&gt;
-&lt;td&gt;Memory Limit Exceed&lt;/td&gt;
-&lt;td&gt;超出内存限制&lt;/td&gt;
-&lt;td&gt;你的程序使用了过多的内存，因此被强行中止（检查是否开了过大的数组/往STL容器里装了过多的数据）&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;RE&lt;/td&gt;
-&lt;td&gt;Runtime Error&lt;/td&gt;
-&lt;td&gt;运行时出错&lt;/td&gt;
-&lt;td&gt;检查是否存在数组越界访问（尤指C(++)）另外，main函数返回非0值也会被认为异常退出&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;PE&lt;/td&gt;
-&lt;td&gt;Presentation Error&lt;/td&gt;
-&lt;td&gt;格式错误&lt;/td&gt;
-&lt;td&gt;检查输出的空格/换行符数量是否与题目要求严格一致&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;CE&lt;/td&gt;
-&lt;td&gt;Compile Error&lt;/td&gt;
-&lt;td&gt;编译错误&lt;/td&gt;
-&lt;td&gt;你的程序没有通过编译，因此也更没有投入运行（检查语法，初学者建议着重检查分号）&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;UKE&lt;/td&gt;
-&lt;td&gt;Unknown Error&lt;/td&gt;
-&lt;td&gt;未知错误&lt;/td&gt;
-&lt;td&gt;评测姬也不知道出了什么问题（联系OJ管理员）&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
 </description>
         </item>
         

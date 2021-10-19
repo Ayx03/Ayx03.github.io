@@ -1,61 +1,38 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>扯淡 on Aynxul03&#39;s Blog</title>
+    <title>扯淡 on Aynxul03 写字的地方</title>
     <link>https://aynxu.l03.me/tags/%E6%89%AF%E6%B7%A1/</link>
-    <description>Recent content in 扯淡 on Aynxul03&#39;s Blog</description>
+    <description>Recent content in 扯淡 on Aynxul03 写字的地方</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 23 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://aynxu.l03.me/tags/%E6%89%AF%E6%B7%A1/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://aynxu.l03.me/tags/%E6%89%AF%E6%B7%A1/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hello Hugo</title>
-      <link>https://aynxu.l03.me/p/hello-hugo/</link>
-      <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
+      <title>独角兽搜索</title>
+      <link>https://aynxu.l03.me/unicorn-search/</link>
+      <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/p/hello-hugo/</guid>
-      <description>&lt;h1 id=&#34;bilibili-short-code-test&#34;&gt;Bilibili Short Code Test&lt;/h1&gt;</description>
+      <guid>https://aynxu.l03.me/unicorn-search/</guid>
+      <description>我的博客的站内搜索已经搭载了这款 微内核万物互联分布式软总线形式化验证 搜索引擎，大家可以在侧边栏点击搜索抢先体验一下！
+相信这将是与 花瓣搜索 一样的优秀国产项目！让我们在一起拒绝卡脖子！星星之火可以燎原！</description>
     </item>
     
     <item>
-      <title>分享一下我的博客园在用的修改版Wider Gao博客园主题</title>
-      <link>https://aynxu.l03.me/p/cnblogs-theme-share/</link>
-      <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://aynxu.l03.me/p/cnblogs-theme-share/</guid>
-      <description>如你所见，我的博客现在使用 Hugo，因此该修改版主题不太可能发布更新。
-此主题非原创，原作者为 Wider Gao
-而且改得很烂，主页的文章展示都搞炸了（点击查看demo），不建议使用（但个人感觉也不是特别糟糕）
-我的改动 作出了如下改动：
- 把原作者使用的js源（bootcss.com）替换为bootcdn.net，提升加载速度 把原作者在博客主题更新了一文中提供的 my.css 替换为从他的页面上扒下来的css（因为这个只有几十行的 my.css 根本没法用=我也不知道为什么，从页面上直接扒也是该文评论区提供的方法）  下载链接 文件均发布在 Pastebin.com 以及 Ubuntu Pastebin 上
-如需获取原版，请移步Wider Gao的博文
-页面定制 CSS 代码 Pastebin.com 复制 下载
-Ubuntu Pastebin
-博客侧边栏公告 Pastebin.com 复制 下载
-Ubuntu Pastebin
-页首 HTML 代码 只有一行，就直接放这了
-&amp;lt;link href=&amp;quot;https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&amp;quot; rel=&amp;quot;stylesheet&amp;quot;&amp;gt;
-页脚 HTML 代码 Pastebin.com 复制 下载
-Ubuntu Pastebin
-使用 先修改一下这些代码（把各种图片链接替换一下） 建议先粘贴到编辑器里操作（搬迁备注：现在博客园后台终于有能看的编辑器而不是光秃秃的HTML原汁原味文本框了，我青结）
-背景图 替换 https://cdn.luogu.com.cn/upload/image_hosting/utntnuud.png
-题外话：洛谷图床会屏蔽站外链接 :( 但是登陆了上传图片的洛谷账号就能加载
-这就是为什么之前syr看不到我博客园的头图而我能看到
-头像 替换 https://pic.cnblogs.com/avatar/2228888/20201128101240.png
-在博客园后台打开设置，将博客皮肤改为 Custom ，并勾选 禁用模板默认CSS ，然后将这些代码粘贴到框里，保存。</description>
-    </item>
-    
-    <item>
-      <title>使用Node.js（安装Hexo）时出现了 rollbackFailedOptional 的解决方法</title>
-      <link>https://aynxu.l03.me/p/error-installing-hexo/</link>
+      <title>使用 Node.js（安装Hexo）时出现了 rollbackFailedOptional 错误的解决方法</title>
+      <link>https://aynxu.l03.me/rollbackfailedoptional/</link>
       <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/p/error-installing-hexo/</guid>
+      <guid>https://aynxu.l03.me/rollbackfailedoptional/</guid>
       <description>我的解决方法 以 管理员身份 运行一个编辑器 打开 C:\Program Files\nodejs\node_modules\npm\npmrc   如果你安装Node.js时修改了安装路径那么就不是这个路径了
   如果这个文件不存在就自己新建一个文本文档并去掉扩展名 .txt
   修改 C:\Program Files\nodejs\node_modules\npm\.npmrc 没有用
   填入以下内容并保存 proxy = null registry = https://registry.npm.taobao.org disturl = https://npm.taobao.org/dist 然后再重新尝试安装Hexo（npm install hexo-cli -g）即可。 如果依旧无法解决可以尝试在以管理员身份启动的命令提示符或 Powershell 中执行此命令 npm config set disturl https://npm.taobao.org/dist 文章迁移备注 从博客园搬文章的时候无意发现本文已被以下站点转载：
 qdmana.com
-yunjuu.com</description>
+yunjuu.com
+我并未授权这些网站转载我的文章。
+虽然这篇博客没有花我很多时间，但是这些网站的行为让我感到十分不满。
+ 编辑记录
+2021-08-05 13:20:00</description>
     </item>
     
   </channel>
