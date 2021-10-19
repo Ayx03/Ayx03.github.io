@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='正经解释    简称 全称 中文称谓 补充说明 &amp;amp; 修改建议     OJ Online Judge 在线判题系统 可以对你的程序进行评测并给出结果。洛谷、SPOJ、Codeforces、Vijos、UVa OJ 都是在线判题系统   AC Accepted 通过 嘲讽你还没过的同学 想想在时间和空间上能否做到更优，或是继续做其他题目   WA Wrong Answer 答案错误 你的程序在规定的时间和内存限制内里输出了错误的答案，因此没有得分（想一想，有没有没有考虑到的特殊情况？如果你的程序根本无法对样例输入输出正确的答案，那么你的思路很可能有问题）   TLE Time Limit Exceed 超出时间限制 你的程序在该测试点上超出了题目给定的时间仍未结束运行，因此被强行中止（检查是否存在死循环或过多的循环，使用时间复杂度更优的算法，进行一些常数及输入输出优化，剪枝）如果你的程序能正常给出答案，记得使用循环控制语句 break 或 return 0、exit(0) 这样的语句结束程序；在一些评测系统老旧的 OJ 中，没有读入完输入的数据也会造成 TLE，但是在洛谷不会发生。   OLE Output Limit Exceed 超出输出限制 你的程序在这个测试点中输出的字符数量超出了限制，因此被系统强行中止（检查是否存在死循环和没有注释掉的调试用输出语句）   MLE Memory Limit Exceed 超出内存限制 你的程序在运行过程中占用了过多的内存，因此被系统强行中止（检查是否在程序中使用了过大的数组或是往 STL 容器中存入了过多的数据）   RE Runtime Error 运行时出错 检查是否存在数组越界访问（尤其是C(&#43;&#43;)语言选手）。另外，如果你在 main 函数中返回一个非 0 的值也会被系统认为程序异常退出   PE Presentation Error 格式错误 检查输出的空格/换行符数量是否与题面中的要求严格一致   CE Compile Error 编译错误 你的程序根本无法通过编译，也就没有可执行文件可以用来评测（检查语法，初学者建议着重检查分号和全角标点，建议敲代码时禁用中文输入法）   UKE Unknown Error 未知错误 评测姬也不知道出了什么问题（联系 OJ 管理员或出题人，稍后再尝试重新提交）    哈哈太搞笑了    简写 全称 中文称谓     AC Answer Cubi 粗鄙的答案   WA Wonderful Answer 优美的答案   TLE Time Limit Enough 时间充裕   OLE Output Limit Enough 输出足够   MLE Memory Limit Enough 内存充裕   RE Runtime Excellent 运行时（过于） 优秀   PE Pretty Excellent 十分优秀   CE Compile Easily 轻松通过编译   UKE Unbelievable Keeping Excellent 难以置信的保持优秀     AC=Answer Cubi 粗鄙的答案 WA=Wonderful Answer 优美的答案 TLE=Time Limit Enough 时间充裕 OLE=Output Limit Enough 输出足够 MLE=Memory Limit Enough 内存充裕 RE=Runtime Excellent 运行时（过于）优秀 PE=Pretty Excellent 十分优秀 CE=Compile Easily 轻松通过编译 UKE=Unbelievable Keeping Excellent 难以置信的保持优秀    出现AC时你需要将你的答案变得更优美才能通过； 而TLE、OLE、MLE、ER经常同时出现，可以给予你少量的额外分数； PE、CE都能给予你大量的额外分数； UKE这个标签非常稀有，可以让你直接通过这次比赛并名列前茅。  '><title>OJ术语的解释： AC、WA、TLE、OLE、MLE、RE、PE、CE、UKE 都是些啥？</title>
+
+<link rel='canonical' href='https://aynxu.l03.me/explanation-of-oj-terminology/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='OJ术语的解释： AC、WA、TLE、OLE、MLE、RE、PE、CE、UKE 都是些啥？'>
+<meta property='og:description' content='正经解释    简称 全称 中文称谓 补充说明 &amp;amp; 修改建议     OJ Online Judge 在线判题系统 可以对你的程序进行评测并给出结果。洛谷、SPOJ、Codeforces、Vijos、UVa OJ 都是在线判题系统   AC Accepted 通过 嘲讽你还没过的同学 想想在时间和空间上能否做到更优，或是继续做其他题目   WA Wrong Answer 答案错误 你的程序在规定的时间和内存限制内里输出了错误的答案，因此没有得分（想一想，有没有没有考虑到的特殊情况？如果你的程序根本无法对样例输入输出正确的答案，那么你的思路很可能有问题）   TLE Time Limit Exceed 超出时间限制 你的程序在该测试点上超出了题目给定的时间仍未结束运行，因此被强行中止（检查是否存在死循环或过多的循环，使用时间复杂度更优的算法，进行一些常数及输入输出优化，剪枝）如果你的程序能正常给出答案，记得使用循环控制语句 break 或 return 0、exit(0) 这样的语句结束程序；在一些评测系统老旧的 OJ 中，没有读入完输入的数据也会造成 TLE，但是在洛谷不会发生。   OLE Output Limit Exceed 超出输出限制 你的程序在这个测试点中输出的字符数量超出了限制，因此被系统强行中止（检查是否存在死循环和没有注释掉的调试用输出语句）   MLE Memory Limit Exceed 超出内存限制 你的程序在运行过程中占用了过多的内存，因此被系统强行中止（检查是否在程序中使用了过大的数组或是往 STL 容器中存入了过多的数据）   RE Runtime Error 运行时出错 检查是否存在数组越界访问（尤其是C(&#43;&#43;)语言选手）。另外，如果你在 main 函数中返回一个非 0 的值也会被系统认为程序异常退出   PE Presentation Error 格式错误 检查输出的空格/换行符数量是否与题面中的要求严格一致   CE Compile Error 编译错误 你的程序根本无法通过编译，也就没有可执行文件可以用来评测（检查语法，初学者建议着重检查分号和全角标点，建议敲代码时禁用中文输入法）   UKE Unknown Error 未知错误 评测姬也不知道出了什么问题（联系 OJ 管理员或出题人，稍后再尝试重新提交）    哈哈太搞笑了    简写 全称 中文称谓     AC Answer Cubi 粗鄙的答案   WA Wonderful Answer 优美的答案   TLE Time Limit Enough 时间充裕   OLE Output Limit Enough 输出足够   MLE Memory Limit Enough 内存充裕   RE Runtime Excellent 运行时（过于） 优秀   PE Pretty Excellent 十分优秀   CE Compile Easily 轻松通过编译   UKE Unbelievable Keeping Excellent 难以置信的保持优秀     AC=Answer Cubi 粗鄙的答案 WA=Wonderful Answer 优美的答案 TLE=Time Limit Enough 时间充裕 OLE=Output Limit Enough 输出足够 MLE=Memory Limit Enough 内存充裕 RE=Runtime Excellent 运行时（过于）优秀 PE=Pretty Excellent 十分优秀 CE=Compile Easily 轻松通过编译 UKE=Unbelievable Keeping Excellent 难以置信的保持优秀    出现AC时你需要将你的答案变得更优美才能通过； 而TLE、OLE、MLE、ER经常同时出现，可以给予你少量的额外分数； PE、CE都能给予你大量的额外分数； UKE这个标签非常稀有，可以让你直接通过这次比赛并名列前茅。  '>
+<meta property='og:url' content='https://aynxu.l03.me/explanation-of-oj-terminology/'>
+<meta property='og:site_name' content='Aynxul03 写字的地方'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='OJ' /><meta property='article:published_time' content='2019-12-29T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-08-07T06:21:00&#43;00:00'/>
+<meta name="twitter:site" content="@03Ayx">
+    <meta name="twitter:creator" content="@03Ayx"><meta name="twitter:title" content="OJ术语的解释： AC、WA、TLE、OLE、MLE、RE、PE、CE、UKE 都是些啥？">
+<meta name="twitter:description" content="正经解释    简称 全称 中文称谓 补充说明 &amp;amp; 修改建议     OJ Online Judge 在线判题系统 可以对你的程序进行评测并给出结果。洛谷、SPOJ、Codeforces、Vijos、UVa OJ 都是在线判题系统   AC Accepted 通过 嘲讽你还没过的同学 想想在时间和空间上能否做到更优，或是继续做其他题目   WA Wrong Answer 答案错误 你的程序在规定的时间和内存限制内里输出了错误的答案，因此没有得分（想一想，有没有没有考虑到的特殊情况？如果你的程序根本无法对样例输入输出正确的答案，那么你的思路很可能有问题）   TLE Time Limit Exceed 超出时间限制 你的程序在该测试点上超出了题目给定的时间仍未结束运行，因此被强行中止（检查是否存在死循环或过多的循环，使用时间复杂度更优的算法，进行一些常数及输入输出优化，剪枝）如果你的程序能正常给出答案，记得使用循环控制语句 break 或 return 0、exit(0) 这样的语句结束程序；在一些评测系统老旧的 OJ 中，没有读入完输入的数据也会造成 TLE，但是在洛谷不会发生。   OLE Output Limit Exceed 超出输出限制 你的程序在这个测试点中输出的字符数量超出了限制，因此被系统强行中止（检查是否存在死循环和没有注释掉的调试用输出语句）   MLE Memory Limit Exceed 超出内存限制 你的程序在运行过程中占用了过多的内存，因此被系统强行中止（检查是否在程序中使用了过大的数组或是往 STL 容器中存入了过多的数据）   RE Runtime Error 运行时出错 检查是否存在数组越界访问（尤其是C(&#43;&#43;)语言选手）。另外，如果你在 main 函数中返回一个非 0 的值也会被系统认为程序异常退出   PE Presentation Error 格式错误 检查输出的空格/换行符数量是否与题面中的要求严格一致   CE Compile Error 编译错误 你的程序根本无法通过编译，也就没有可执行文件可以用来评测（检查语法，初学者建议着重检查分号和全角标点，建议敲代码时禁用中文输入法）   UKE Unknown Error 未知错误 评测姬也不知道出了什么问题（联系 OJ 管理员或出题人，稍后再尝试重新提交）    哈哈太搞笑了    简写 全称 中文称谓     AC Answer Cubi 粗鄙的答案   WA Wonderful Answer 优美的答案   TLE Time Limit Enough 时间充裕   OLE Output Limit Enough 输出足够   MLE Memory Limit Enough 内存充裕   RE Runtime Excellent 运行时（过于） 优秀   PE Pretty Excellent 十分优秀   CE Compile Easily 轻松通过编译   UKE Unbelievable Keeping Excellent 难以置信的保持优秀     AC=Answer Cubi 粗鄙的答案 WA=Wonderful Answer 优美的答案 TLE=Time Limit Enough 时间充裕 OLE=Output Limit Enough 输出足够 MLE=Memory Limit Enough 内存充裕 RE=Runtime Excellent 运行时（过于）优秀 PE=Pretty Excellent 十分优秀 CE=Compile Easily 轻松通过编译 UKE=Unbelievable Keeping Excellent 难以置信的保持优秀    出现AC时你需要将你的答案变得更优美才能通过； 而TLE、OLE、MLE、ER经常同时出现，可以给予你少量的额外分数； PE、CE都能给予你大量的额外分数； UKE这个标签非常稀有，可以让你直接通过这次比赛并名列前茅。  ">
+    <link rel="shortcut icon" href="favicon.jpg" />
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X0SE27LREY"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-X0SE27LREY', { 'anonymize_ip': false });
+}
+</script>
+
+    </head>
+    <body class="
+    article-page has-toc
+">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        extended
+    
+">
+    
+        <div id="article-toolbar">
+            <a href="https://aynxu.l03.me/" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+                <span>返回</span>
+            </a>
+        </div>
+    
+<main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E6%8A%80%E6%9C%AF/" style="background-color: #2a9d8f; color: #fff;">
+                技术
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/explanation-of-oj-terminology/">OJ术语的解释： AC、WA、TLE、OLE、MLE、RE、PE、CE、UKE 都是些啥？</a>
+    </h2>
+
+    
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Dec 29, 2019</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    完整阅读大约需要 1 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+</div>
+</header>
+
+    <section class="article-content">
+    <h2 id="正经解释">正经解释</h2>
+<table>
+<thead>
+<tr>
+<th>简称</th>
+<th>全称</th>
+<th>中文称谓</th>
+<th>补充说明 &amp; 修改建议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OJ</td>
+<td>Online Judge</td>
+<td>在线判题系统</td>
+<td>可以对你的程序进行评测并给出结果。<a class="link" href="https://www.luogu.com.cn/"  target="_blank" rel="noopener"
+    >洛谷</a>、<a class="link" href="https://www.spoj.com/"  target="_blank" rel="noopener"
+    >SPOJ</a>、<a class="link" href="https://codeforces.com/"  target="_blank" rel="noopener"
+    >Codeforces</a>、<a class="link" href="https://vijos.org/"  target="_blank" rel="noopener"
+    >Vijos</a>、<a class="link" href="https://onlinejudge.org/"  target="_blank" rel="noopener"
+    >UVa OJ</a> 都是在线判题系统</td>
+</tr>
+<tr>
+<td>AC</td>
+<td>Accepted</td>
+<td>通过</td>
+<td><del>嘲讽你还没过的同学</del> 想想在时间和空间上能否做到更优，或是继续做其他题目</td>
+</tr>
+<tr>
+<td>WA</td>
+<td>Wrong Answer</td>
+<td>答案错误</td>
+<td>你的程序在规定的时间和内存限制内里输出了错误的答案，因此没有得分（想一想，有没有没有考虑到的特殊情况？如果你的程序根本无法对样例输入输出正确的答案，那么你的思路很可能有问题）</td>
+</tr>
+<tr>
+<td>TLE</td>
+<td>Time Limit Exceed</td>
+<td>超出时间限制</td>
+<td>你的程序在该测试点上超出了题目给定的时间仍未结束运行，因此被强行中止（检查是否存在死循环或过多的循环，使用时间复杂度更优的算法，进行一些常数及输入输出优化，剪枝）如果你的程序能正常给出答案，记得使用循环控制语句 break 或 return 0、exit(0) 这样的语句结束程序；在一些评测系统老旧的 OJ 中，没有读入完输入的数据也会造成 TLE，但是在洛谷不会发生。</td>
+</tr>
+<tr>
+<td>OLE</td>
+<td>Output Limit Exceed</td>
+<td>超出输出限制</td>
+<td>你的程序在这个测试点中输出的字符数量超出了限制，因此被系统强行中止（检查是否存在死循环和没有注释掉的调试用输出语句）</td>
+</tr>
+<tr>
+<td>MLE</td>
+<td>Memory Limit Exceed</td>
+<td>超出内存限制</td>
+<td>你的程序在运行过程中占用了过多的内存，因此被系统强行中止（检查是否在程序中使用了过大的数组或是往 STL 容器中存入了过多的数据）</td>
+</tr>
+<tr>
+<td>RE</td>
+<td>Runtime Error</td>
+<td>运行时出错</td>
+<td>检查是否存在数组越界访问（尤其是C(++)语言选手）。另外，如果你在 main 函数中返回一个非 0 的值也会被系统认为程序异常退出</td>
+</tr>
+<tr>
+<td>PE</td>
+<td>Presentation Error</td>
+<td>格式错误</td>
+<td>检查输出的空格/换行符数量是否与题面中的要求严格一致</td>
+</tr>
+<tr>
+<td>CE</td>
+<td>Compile Error</td>
+<td>编译错误</td>
+<td>你的程序根本无法通过编译，也就没有可执行文件可以用来评测（检查语法，初学者建议着重检查分号和全角标点，建议敲代码时禁用中文输入法）</td>
+</tr>
+<tr>
+<td>UKE</td>
+<td>Unknown Error</td>
+<td>未知错误</td>
+<td>评测姬也不知道出了什么问题（联系 OJ 管理员或出题人，稍后再尝试重新提交）</td>
+</tr>
+</tbody>
+</table>
+<h2 id="哈哈太搞笑了">哈哈太搞笑了</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">简写</th>
+<th style="text-align:center">全称</th>
+<th style="text-align:center">中文称谓</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">AC</td>
+<td style="text-align:center">Answer Cubi</td>
+<td style="text-align:center">粗鄙的答案</td>
+</tr>
+<tr>
+<td style="text-align:center">WA</td>
+<td style="text-align:center">Wonderful Answer</td>
+<td style="text-align:center">优美的答案</td>
+</tr>
+<tr>
+<td style="text-align:center">TLE</td>
+<td style="text-align:center">Time Limit Enough</td>
+<td style="text-align:center">时间充裕</td>
+</tr>
+<tr>
+<td style="text-align:center">OLE</td>
+<td style="text-align:center">Output Limit Enough</td>
+<td style="text-align:center">输出足够</td>
+</tr>
+<tr>
+<td style="text-align:center">MLE</td>
+<td style="text-align:center">Memory Limit Enough</td>
+<td style="text-align:center">内存充裕</td>
+</tr>
+<tr>
+<td style="text-align:center">RE</td>
+<td style="text-align:center">Runtime Excellent</td>
+<td style="text-align:center">运行时（过于） 优秀</td>
+</tr>
+<tr>
+<td style="text-align:center">PE</td>
+<td style="text-align:center">Pretty Excellent</td>
+<td style="text-align:center">十分优秀</td>
+</tr>
+<tr>
+<td style="text-align:center">CE</td>
+<td style="text-align:center">Compile Easily</td>
+<td style="text-align:center">轻松通过编译</td>
+</tr>
+<tr>
+<td style="text-align:center">UKE</td>
+<td style="text-align:center">Unbelievable Keeping Excellent</td>
+<td style="text-align:center">难以置信的保持优秀</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>AC=Answer Cubi 粗鄙的答案</li>
+<li>WA=Wonderful Answer 优美的答案</li>
+<li>TLE=Time Limit Enough 时间充裕</li>
+<li>OLE=Output Limit Enough 输出足够</li>
+<li>MLE=Memory Limit Enough 内存充裕</li>
+<li>RE=Runtime Excellent 运行时（过于）优秀</li>
+<li>PE=Pretty Excellent 十分优秀</li>
+<li>CE=Compile Easily 轻松通过编译</li>
+<li>UKE=Unbelievable Keeping Excellent 难以置信的保持优秀</li>
+</ul>
+<hr>
+<ul>
+<li>出现AC时你需要将你的答案变得更优美才能通过；</li>
+<li>而TLE、OLE、MLE、ER经常同时出现，可以给予你少量的额外分数；</li>
+<li>PE、CE都能给予你大量的额外分数；</li>
+<li>UKE这个标签非常稀有，可以让你直接通过这次比赛并名列前茅。</li>
+</ul>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/oj/">OJ</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>未经允许禁止转载</span>
+    </section>
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最后更新于 Aug 07, 2021 06:21 UTC
+        </span>
+    </section></footer>
+
+
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">智障推荐</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="">
+    <a href="/waline/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">在 Hugo-Theme-Stack 中轻松配置 Waline 评论系统</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/error-ld-returned-1-exit-status/">
+        
+        
+            <div class="article-image">
+                <img src="/error-ld-returned-1-exit-status/fengmian.b3ea81974cc2f38d3e59d4a56ef0c7a0_huc9b449ad671760edd8f09c2c6f896023_562448_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="Error-ld-returned-1-exit-status" 
+                        data-hash="md5-s&#43;qBl0zC840&#43;WdSlbvDHoA==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">出现 error: ld returned 1 exit status 的五种原因以及解决方法</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/ssl/">
+        
+        
+            <div class="article-image">
+                <img src="/ssl/cover.711e781676684d9212193aa274cffe0b_hu06fb3309396b2a0cbdb3a514cd6feb2b_139309_250x150_fill_box_smart1_3.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="SSL" 
+                        data-hash="md5-cR54FnZoTZISGTqidM/&#43;Cw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">MySSL 安全签章</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/key-to-p1603/">
+        
+        
+            <div class="article-image">
+                <img src="/key-to-p1603/cover.ecf17334ebe3bdf20d874b297771da6f_hu33884e09a361eec376ba2239fc3bc8e1_84422_250x150_fill_q75_box_smart1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="Key-to-P1603" 
+                        data-hash="md5-7PFzNOvjvfINh0spd3Habw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">题解 P1603 斯诺登的密码</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="has-image">
+    <a href="/stack/">
+        
+        
+            <div class="article-image">
+                <img src="/stack/%E5%B0%81%E9%9D%A2.678ddd4587ca1681e0246d5bbfccc357_hu68d4500f44eeff3c046abd6af3014f70_562499_250x150_fill_q75_box_smart1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="Stack" 
+                        data-hash="md5-Z43dRYfKFoHgJG1bv8zDVw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">安装 Hugo 主题 Stack 时你可能会遇到的问题</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+     
+    
+        
+    <script src='//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js'></script>
+<div id="waline" class="waline-container"></div>
+<style>
+    .waline-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+    .waline-container .vcount {
+        color: var(--card-text-color-main);
+    }
+</style><script>
+    
+    new Waline({"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis/qq"],"lang":"zh-CN","locale":{"admin":"Admin"},"requiredMeta":["name","email","url"],"serverURL":"https://waline-ikbefr64v-ayx03.vercel.app/","visitor":true});
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2021 Aynxul03 写字的地方
+    </section>
+    
+    <section class="powerby">
+        
+            <a href="https://icp.gov.moe" target="_blank">萌ICP备</a> <a href="https://icp.gov.moe/?keyword=20213003" target="_blank">20213003号</a> <br/>
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.2.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <div class="widget-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                </div>
+                <h2 class="widget-title section-title">目录</h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ol>
+    <li><a href="#正经解释">正经解释</a></li>
+    <li><a href="#哈哈太搞笑了">哈哈太搞笑了</a></li>
+  </ol>
+</nav>
+                </div>
+            </section>
+        </aside>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>taskkill on Aynxul03 写字的地方</title>
+    <link>https://aynxu.l03.me/tags/taskkill/</link>
+    <description>Recent content in taskkill on Aynxul03 写字的地方</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sun, 22 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://aynxu.l03.me/tags/taskkill/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>出现 error: ld returned 1 exit status 的五种原因以及解决方法</title>
+      <link>https://aynxu.l03.me/error-ld-returned-1-exit-status/</link>
+      <pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://aynxu.l03.me/error-ld-returned-1-exit-status/</guid>
+      <description>这个错误让人懵圈的地方就在于它不会给出错误行数，让已经写了几百行的你痛不欲生。
+可执行文件被占用了 因此编译器无法覆盖旧的可执行文件，所以编译失败。
+这很有可能是你没发现它还没结束运行。
+（我目前在用的 IDE：Visual Studio Code）
+扩展：C/C++ Compile Run（可以方便地编译单个 cpp 文件，且不会因为路径中存在空格或中文出错。）  
+解决方案 Dev C++ 等 IDE 直接把弹出的窗口（黑框）关了就行了
+VS Code 可以从输出切换到终端选项卡，使用快捷键 Ctrl+C 结束程序（同样适用于 external console ）。
+实在不行就用任务管理器和 taskkill 吧  
+主函数不存在（main 拼写错误） 你不太可能不写主函数，但是你很有可能把 main 打成 mian 或者什么其他奇怪的东西。
+在编译器眼里，这些可不能算主函数。
+ 
+解决方案 把 main 拼对。
+所调用的函数仅进行了声明 这种情况下新版编译器仍旧会输出 error: ld returned 1 exit status 这一让人迷惑的错误。   但是一般也不会把函数体和声明分开写吧&amp;hellip;
+（函数声明在主函数上方即可，函数体是可以写在 main 函数下方的。）
+解决方案 把漏写了的函数体补上。
+（旧版编译器）在主函数中定义了函数 新版编译器发现你在 main 函数中定义了其它函数报错并不是error: ld returned 1 exit status，</description>
+    </item>
+    
+  </channel>
+</rss>

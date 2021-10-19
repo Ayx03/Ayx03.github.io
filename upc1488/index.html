@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='博客园迁移计划'><title>题解 UPC-1488 客户调查(client)</title>
+
+<link rel='canonical' href='https://aynxu.l03.me/upc1488/'>
+
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='题解 UPC-1488 客户调查(client)'>
+<meta property='og:description' content='博客园迁移计划'>
+<meta property='og:url' content='https://aynxu.l03.me/upc1488/'>
+<meta property='og:site_name' content='Aynxul03 写字的地方'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='OI' /><meta property='article:tag' content='题解' /><meta property='article:tag' content='C&#43;&#43;' /><meta property='article:published_time' content='2021-07-13T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-08-06T18:42:00&#43;00:00'/>
+<meta name="twitter:site" content="@03Ayx">
+    <meta name="twitter:creator" content="@03Ayx"><meta name="twitter:title" content="题解 UPC-1488 客户调查(client)">
+<meta name="twitter:description" content="博客园迁移计划">
+    <link rel="shortcut icon" href="favicon.jpg" />
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X0SE27LREY"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-X0SE27LREY', { 'anonymize_ip': false });
+}
+</script>
+
+    </head>
+    <body class="
+    article-page has-toc
+">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        extended
+    
+">
+    
+        <div id="article-toolbar">
+            <a href="https://aynxu.l03.me/" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+                <span>返回</span>
+            </a>
+        </div>
+    
+<main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E6%8A%80%E6%9C%AF/" style="background-color: #2a9d8f; color: #fff;">
+                技术
+            </a>
+        
+    </header>
+    
+
+    <h2 class="article-title">
+        <a href="/upc1488/">题解 UPC-1488 客户调查(client)</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        博客园迁移计划
+    </h3>
+    
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Jul 13, 2021</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    完整阅读大约需要 1 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+</div>
+</header>
+
+    <section class="article-content">
+    <h2 id="题目描述">题目描述：</h2>
+<p>时间：1s   空间：32M</p>
+<p>公司派你去和几位客户面谈，以了解他们对公司产品的意见。你逐个打电话与客户联系，得知他们一般都很忙，不过他们还是可以为你抽出一点时间。现在的问题是有些客户的时间有冲突，你无法在一天内联系所有客户。所以你需要一个程序来帮助你安排第一天的工作，使得你能尽可能地和更多的客户进行联系。注意，客户不愿意你打乱他们的计划。如果你和某个客户约定见面，必须按时到达并且充分利用这段时间和他交谈，这样才不至于让他产生不满。你可以假设从一个客户处到另一个客户处的时间短得忽略不计。</p>
+<h2 id="输入格式">输入格式：</h2>
+<p>输入包括了多个测试数据，每个测试数据开头是一个整数 $n（1 \le n \le 10000）$，表示客户总数。接下来n行每行包括两个正整数 $s$、$t$，分别表示该客户的空闲时间段的起始时间和终止时间。$s&lt;t$</p>
+<h2 id="输出格式">输出格式：</h2>
+<p>对于每个测试数据，在单独一行内输出你所能接触到的最多客户数。</p>
+<h2 id="样例输入">样例输入：</h2>
+<pre tabindex="0"><code>3
+1 15
+2 19
+15 17
+</code></pre><h2 id="样例输出">样例输出：</h2>
+<p>2</p>
+<h2 id="约定">约定：</h2>
+<p>(无)</p>
+<h2 id="提示">提示：</h2>
+<p>(无)</p>
+<h2 id="代码">代码</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="cm">/*
+</span><span class="cm">	Name: 7、客户调查
+</span><span class="cm">	Copyright: Aynxul03
+</span><span class="cm">	Author: Aynxul03
+</span><span class="cm">	Date: 2021-07-13
+</span><span class="cm">	Description: 
+</span><span class="cm">	时间：1s   空间：32M
+</span><span class="cm">题目描述：
+</span><span class="cm">公司派你去和几位客户面谈，以了解他们对公司产品的意见。你逐个打电话与客户联系，
+</span><span class="cm">得知他们一般都很忙，不过他们还是可以为你抽出一点时间。现在的问题是有些客户的
+</span><span class="cm">时间有冲突，你无法在一天内联系所有客户。所以你需要一个程序来帮助你安排第一天
+</span><span class="cm">的工作，使得你能尽可能地和更多的客户进行联系。注意，客户不愿意你打乱他们的计
+</span><span class="cm">划。如果你和某个客户约定见面，必须按时到达并且充分利用这段时间和他交谈，这样
+</span><span class="cm">才不至于让他产生不满。你可以假设从一个客户处到另一个客户处的时间短得忽略不计。
+</span><span class="cm">输入格式：
+</span><span class="cm">输入包括了多个测试数据，每个测试数据开头是一个整数n（1&lt;=n&lt;=10000），表示客户总数。
+</span><span class="cm">接下来n行每行包括两个正整数s、t，分别表示该客户的空闲时间段的起始时间和终止时间。s&lt;t
+</span><span class="cm">输出格式：
+</span><span class="cm">对于每个测试数据，在单独一行内输出你所能接触到的最多客户数。
+</span><span class="cm">*/</span>
+<span class="cp">#include</span><span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
+</span><span class="cp"></span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">n</span><span class="p">,</span><span class="n">lt</span><span class="p">,</span><span class="n">ans</span><span class="p">;</span>
+<span class="k">struct</span> <span class="nc">sb</span><span class="p">{</span>
+	<span class="kt">int</span> <span class="n">start</span><span class="p">,</span><span class="n">end</span><span class="p">;</span>
+<span class="p">}</span><span class="n">client</span><span class="p">[</span><span class="mi">1001</span><span class="p">];</span>
+<span class="kt">bool</span> <span class="nf">cmp</span><span class="p">(</span><span class="n">sb</span> <span class="n">a</span><span class="p">,</span><span class="n">sb</span> <span class="n">b</span><span class="p">){</span><span class="k">return</span> <span class="n">a</span><span class="p">.</span><span class="n">end</span><span class="o">&lt;</span><span class="n">b</span><span class="p">.</span><span class="n">end</span><span class="p">;}</span><span class="c1">//按结束时间升序
+</span><span class="c1"></span><span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+	<span class="n">ios</span><span class="o">::</span><span class="n">sync_with_stdio</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+	<span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">n</span><span class="p">;</span>
+	<span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">client</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">start</span><span class="o">&gt;&gt;</span><span class="n">client</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">end</span><span class="p">;</span>
+	<span class="n">sort</span><span class="p">(</span><span class="n">client</span><span class="p">,</span><span class="n">client</span><span class="o">+</span><span class="n">n</span><span class="p">,</span><span class="n">cmp</span><span class="p">);</span>      <span class="c1">//排序
+</span><span class="c1"></span>	<span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="k">if</span><span class="p">(</span><span class="n">client</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">start</span><span class="o">&gt;=</span><span class="n">lt</span><span class="p">)</span> <span class="n">ans</span><span class="o">++</span><span class="p">,</span><span class="n">lt</span><span class="o">=</span><span class="n">client</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">end</span><span class="p">;</span>
+	<span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">ans</span><span class="p">;</span>
+	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/oi/">OI</a>
+        
+            <a href="/tags/%E9%A2%98%E8%A7%A3/">题解</a>
+        
+            <a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>未经允许禁止转载</span>
+    </section>
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+        <span>
+            最后更新于 Aug 06, 2021 18:42 UTC
+        </span>
+    </section></footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css"integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js"integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js"integrity="sha384-vZTG03m&#43;2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl"crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.querySelector(`.article-content`), {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ]
+        });})
+</script>
+    
+</article>
+
+    <aside class="related-contents--wrapper">
+    
+    
+        <h2 class="section-title">智障推荐</h2>
+        <div class="related-contents">
+            <div class="flex article-list--tile">
+                
+                    
+<article class="has-image">
+    <a href="/key-to-p1603/">
+        
+        
+            <div class="article-image">
+                <img src="/key-to-p1603/cover.ecf17334ebe3bdf20d874b297771da6f_hu33884e09a361eec376ba2239fc3bc8e1_84422_250x150_fill_q75_box_smart1.jpg" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy" 
+                        data-key="Key-to-P1603" 
+                        data-hash="md5-7PFzNOvjvfINh0spd3Habw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">题解 P1603 斯诺登的密码</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/p5707/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">题解 P5707 【深基2.例12】上学迟到</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/p2669/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">题解 P2669 [NOIP2015 普及组] 金币</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/p5719/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">题解 P5719 【深基4.例3】分类平均</h2>
+        </div>
+    </a>
+</article>
+                
+                    
+<article class="">
+    <a href="/hdu2063/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">题解 HDU2063 过山车</h2>
+        </div>
+    </a>
+</article>
+                
+            </div>
+        </div>
+    
+</aside>
+
+     
+    
+        
+    <script src='//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js'></script>
+<div id="waline" class="waline-container"></div>
+<style>
+    .waline-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+    .waline-container .vcount {
+        color: var(--card-text-color-main);
+    }
+</style><script>
+    
+    new Waline({"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis/qq"],"lang":"zh-CN","locale":{"admin":"Admin"},"requiredMeta":["name","email","url"],"serverURL":"https://waline-ikbefr64v-ayx03.vercel.app/","visitor":true});
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2021 Aynxul03 写字的地方
+    </section>
+    
+    <section class="powerby">
+        
+            <a href="https://icp.gov.moe" target="_blank">萌ICP备</a> <a href="https://icp.gov.moe/?keyword=20213003" target="_blank">20213003号</a> <br/>
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.2.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <div class="widget-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                </div>
+                <h2 class="widget-title section-title">目录</h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ol>
+    <li><a href="#题目描述">题目描述：</a></li>
+    <li><a href="#输入格式">输入格式：</a></li>
+    <li><a href="#输出格式">输出格式：</a></li>
+    <li><a href="#样例输入">样例输入：</a></li>
+    <li><a href="#样例输出">样例输出：</a></li>
+    <li><a href="#约定">约定：</a></li>
+    <li><a href="#提示">提示：</a></li>
+    <li><a href="#代码">代码</a></li>
+  </ol>
+</nav>
+                </div>
+            </section>
+        </aside>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
