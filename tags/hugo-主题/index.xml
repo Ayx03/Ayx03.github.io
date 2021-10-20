@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo 主题 on Aynxul03 写字的地方</title>
-    <link>https://aynxu.l03.me/tags/hugo-%E4%B8%BB%E9%A2%98/</link>
+    <link>https://ayx.moefox.tech/tags/hugo-%E4%B8%BB%E9%A2%98/</link>
     <description>Recent content in Hugo 主题 on Aynxul03 写字的地方</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 28 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://aynxu.l03.me/tags/hugo-%E4%B8%BB%E9%A2%98/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 28 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ayx.moefox.tech/tags/hugo-%E4%B8%BB%E9%A2%98/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>安装 Hugo 主题 Stack 时你可能会遇到的问题</title>
-      <link>https://aynxu.l03.me/stack/</link>
+      <link>https://ayx.moefox.tech/stack/</link>
       <pubDate>Wed, 28 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/stack/</guid>
+      <guid>https://ayx.moefox.tech/stack/</guid>
       <description>啥？装了 Stack 拷了 exampleSites 以后不能正常 hugo -D了？ 试试以下两项操作。
 删除根目录下的 config.toml Issus #105 @ CaiJimmy/hugo-theme-stack
 生成 examplesite/content/post/rich-content/index.md 时报错 是因为是示例文章有请求 Twitter API 的 Shortcode ，需要 珂学上网 。

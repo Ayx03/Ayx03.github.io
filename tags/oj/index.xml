@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>OJ on Aynxul03 写字的地方</title>
-    <link>https://aynxu.l03.me/tags/oj/</link>
+    <link>https://ayx.moefox.tech/tags/oj/</link>
     <description>Recent content in OJ on Aynxul03 写字的地方</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 29 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://aynxu.l03.me/tags/oj/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 29 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://ayx.moefox.tech/tags/oj/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>OJ术语的解释： AC、WA、TLE、OLE、MLE、RE、PE、CE、UKE 都是些啥？</title>
-      <link>https://aynxu.l03.me/explanation-of-oj-terminology/</link>
+      <link>https://ayx.moefox.tech/explanation-of-oj-terminology/</link>
       <pubDate>Sun, 29 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/explanation-of-oj-terminology/</guid>
+      <guid>https://ayx.moefox.tech/explanation-of-oj-terminology/</guid>
       <description>正经解释    简称 全称 中文称谓 补充说明 &amp;amp; 修改建议     OJ Online Judge 在线判题系统 可以对你的程序进行评测并给出结果。洛谷、SPOJ、Codeforces、Vijos、UVa OJ 都是在线判题系统   AC Accepted 通过 嘲讽你还没过的同学 想想在时间和空间上能否做到更优，或是继续做其他题目   WA Wrong Answer 答案错误 你的程序在规定的时间和内存限制内里输出了错误的答案，因此没有得分（想一想，有没有没有考虑到的特殊情况？如果你的程序根本无法对样例输入输出正确的答案，那么你的思路很可能有问题）   TLE Time Limit Exceed 超出时间限制 你的程序在该测试点上超出了题目给定的时间仍未结束运行，因此被强行中止（检查是否存在死循环或过多的循环，使用时间复杂度更优的算法，进行一些常数及输入输出优化，剪枝）如果你的程序能正常给出答案，记得使用循环控制语句 break 或 return 0、exit(0) 这样的语句结束程序；在一些评测系统老旧的 OJ 中，没有读入完输入的数据也会造成 TLE，但是在洛谷不会发生。   OLE Output Limit Exceed 超出输出限制 你的程序在这个测试点中输出的字符数量超出了限制，因此被系统强行中止（检查是否存在死循环和没有注释掉的调试用输出语句）   MLE Memory Limit Exceed 超出内存限制 你的程序在运行过程中占用了过多的内存，因此被系统强行中止（检查是否在程序中使用了过大的数组或是往 STL 容器中存入了过多的数据）   RE Runtime Error 运行时出错 检查是否存在数组越界访问（尤其是C(++)语言选手）。另外，如果你在 main 函数中返回一个非 0 的值也会被系统认为程序异常退出   PE Presentation Error 格式错误 检查输出的空格/换行符数量是否与题面中的要求严格一致   CE Compile Error 编译错误 你的程序根本无法通过编译，也就没有可执行文件可以用来评测（检查语法，初学者建议着重检查分号和全角标点，建议敲代码时禁用中文输入法）   UKE Unknown Error 未知错误 评测姬也不知道出了什么问题（联系 OJ 管理员或出题人，稍后再尝试重新提交）    哈哈太搞笑了    简写 全称 中文称谓     AC Answer Cubi 粗鄙的答案   WA Wonderful Answer 优美的答案   TLE Time Limit Enough 时间充裕   OLE Output Limit Enough 输出足够   MLE Memory Limit Enough 内存充裕   RE Runtime Excellent 运行时（过于） 优秀   PE Pretty Excellent 十分优秀   CE Compile Easily 轻松通过编译   UKE Unbelievable Keeping Excellent 难以置信的保持优秀     AC=Answer Cubi 粗鄙的答案 WA=Wonderful Answer 优美的答案 TLE=Time Limit Enough 时间充裕 OLE=Output Limit Enough 输出足够 MLE=Memory Limit Enough 内存充裕 RE=Runtime Excellent 运行时（过于）优秀 PE=Pretty Excellent 十分优秀 CE=Compile Easily 轻松通过编译 UKE=Unbelievable Keeping Excellent 难以置信的保持优秀    出现AC时你需要将你的答案变得更优美才能通过； 而TLE、OLE、MLE、ER经常同时出现，可以给予你少量的额外分数； PE、CE都能给予你大量的额外分数； UKE这个标签非常稀有，可以让你直接通过这次比赛并名列前茅。  </description>
     </item>
     

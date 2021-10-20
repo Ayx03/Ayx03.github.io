@@ -2,33 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Aynxul03 写字的地方</title>
-    <link>https://aynxu.l03.me/post/</link>
+    <link>https://ayx.moefox.tech/post/</link>
     <description>Recent content in Posts on Aynxul03 写字的地方</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 04 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://aynxu.l03.me/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ayx.moefox.tech/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>在 Hugo-Theme-Stack 中轻松配置 Waline 评论系统</title>
-      <link>https://aynxu.l03.me/waline/</link>
+      <title>在 Hugo 主题 Stack 中轻松配置 Waline 评论系统</title>
+      <link>https://ayx.moefox.tech/waline/</link>
       <pubDate>Mon, 04 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/waline/</guid>
-      <description>你以前也许听说过或用过 Valine，Waline 与它差不多，但管理功能集成在内，并可以更方便地部署。
+      <guid>https://ayx.moefox.tech/waline/</guid>
+      <description>你以前也许听说过或用过 Valine。Waline 与它差不多，但管理功能集成在内，并可以更方便地部署。
 如果你使用其他没有 Waline 支持的 Hugo 主题或其他博客系统，按本文部署后可以参考官方文档来引入客户端。
-登录/注册并进入 LeanCloud 国际版控制台 创建开发版新应用（随意命名）并复制设置 - 应用凭证中的前三项值，稍后会添加在 Vercel 中的环境变量里。
-  On Vercel GitHub 登录，创建存储库（可私有），跳过创建团队，部署。
-稍等两分钟完成部署后，在 Settings 中找到 Environment Variables，分别添加三个环境变量 LEAN_ID、LEAN_KEY 和 LEAN_MASTER_KEY 。VALUE 分别填写在 LeanCloud 中获得的 APP ID, APP KEY, Master Key。
-最后打开站点根目录下的 config.yaml，在 params 下添加以下几行：（如果你当初照搬了 Stack 提供的 config 文件，那么这段在第 60 行左右，只需填入 serverURL 即可）
- # Waline client configuration see: https://waline.js.org/en/reference/client.html waline: serverURL: https://PUT_YOUR_OWN_HERE.vercel.app/ lang: zh-CN visitor: true avatar: emoji: - https://cdn.jsdelivr.net/gh/walinejs/emojis/qq requiredMeta: - name - email - url placeholder: locale: admin: Admin 记得替换 serverURL 为你自己部署的 Vercel App 地址，在这里查阅各项参数的含义。</description>
+在 LeanCloud 上部署数据库 注册 LeanCloud 国际版并进入控制台。
+如果您决定使用 LeanCloud 国内版，您需要为您创建的应用额外绑定已备案的域名。
+创建开发版新应用（随意命名）并复制设置 - 应用凭证中的前三项值，稍后会添加在 Vercel 中的环境变量里。
+在 Vercel 上部署服务端  点击按钮跳转到 Vercel.com 部署  （推荐）使用 GitHub 登录，创建存储库（可以是私有 Repo），跳过创建团队（反正这也不是什么需要团队协作的项目），部署。
+两分钟左右部署就会完成。
+完成部署后在 Settings 中找到 Environment Variables，分别添加三个环境变量 LEAN_ID、LEAN_KEY 和 LEAN_MASTER_KEY 。VALUE 分别填写在 LeanCloud 中获得的 APP ID、APP KEY、和 Master Key。
+记得注册你的管理员账号，以免被访客注册。第一个注册的用户会得到管理权限。
+在配置文件中配置客户端 最后打开站点根目录下的 config.yaml，在 params 下添加以下几行：（如果你当初拷贝了 Stack 提供的 config.yaml 文件，那么这段在第 60 行左右，只需填入 serverURL 即可）
+ # Waline client configuration see: https://waline.</description>
     </item>
     
     <item>
       <title>出现 error: ld returned 1 exit status 的五种原因以及解决方法</title>
-      <link>https://aynxu.l03.me/error-ld-returned-1-exit-status/</link>
+      <link>https://ayx.moefox.tech/error-ld-returned-1-exit-status/</link>
       <pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/error-ld-returned-1-exit-status/</guid>
-      <description>这个错误让人懵圈的地方就在于它不会给出错误行数，让已经写了几百行的你痛不欲生。
+      <guid>https://ayx.moefox.tech/error-ld-returned-1-exit-status/</guid>
+      <description>这个错误让人懵圈的地方就在于它不会给出错误出现的位置，让已经写了几百行的你痛不欲生。
 可执行文件被占用了 因此编译器无法覆盖旧的可执行文件，所以编译失败。
 这很有可能是你没发现它还没结束运行。
 （我目前在用的 IDE：Visual Studio Code）
@@ -48,10 +52,10 @@ VS Code 可以从输出切换到终端选项卡，使用快捷键 Ctrl+C 结束�
     
     <item>
       <title>MySSL 安全签章</title>
-      <link>https://aynxu.l03.me/ssl/</link>
+      <link>https://ayx.moefox.tech/ssl/</link>
       <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/ssl/</guid>
+      <guid>https://ayx.moefox.tech/ssl/</guid>
       <description>MySSL 安全认证   又摸了一下午整了个这么个东西出来 要得到 A+ 评级，您的网站必须启用 HSTS 且 max-age 属性不小于 6个月（即 15768000 秒） 请注意启用 HSTS 后所有不支持 HTTPS 的子域名都将无法访问，且在 max-age 属性设置的时间内无法恢复。 要得到 ATS 合规 ，您的网站必须支持 TLS v1.2。 要得到 PCI DSS 合规，您的网站不得支持 TLS v1.0。 PCI安全标准委员会规定2018年6月30日之后，开启TLS1.0将导致PCI DSS不合规，
 具体参考：《更严格的PCI DSS合规标准》
 HSTS 相关配置可以参考 MySSL.com 的 HTTPS安全与兼容性配置指南 HTTP Strict Transport Security Header Testing Tool</description>
@@ -59,10 +63,10 @@ HSTS 相关配置可以参考 MySSL.com 的 HTTPS安全与兼容性配置指南 
     
     <item>
       <title>题解 P1603 斯诺登的密码</title>
-      <link>https://aynxu.l03.me/key-to-p1603/</link>
+      <link>https://ayx.moefox.tech/key-to-p1603/</link>
       <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/key-to-p1603/</guid>
+      <guid>https://ayx.moefox.tech/key-to-p1603/</guid>
       <description>题面来自洛谷，根据我的个人喜好有小修改
 题目背景 根据斯诺登事件出的一道水题
 题目描述 2013 年 X 月 X 日，俄罗斯办理了斯诺登的护照，于是他混迹于一架开往委内瑞拉的飞机。但是，这件事情太不周密了，因为 FBI 的间谍早已获悉他的具体位置——但这不是最重要的——最重要的是如果要去委内瑞拉，那么就要经过古巴，而经过古巴的路在美国的掌控之中。
@@ -78,10 +82,10 @@ HSTS 相关配置可以参考 MySSL.com 的 HTTPS安全与兼容性配置指南 
     
     <item>
       <title>安装 Hugo 主题 Stack 时你可能会遇到的问题</title>
-      <link>https://aynxu.l03.me/stack/</link>
+      <link>https://ayx.moefox.tech/stack/</link>
       <pubDate>Wed, 28 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/stack/</guid>
+      <guid>https://ayx.moefox.tech/stack/</guid>
       <description>啥？装了 Stack 拷了 exampleSites 以后不能正常 hugo -D了？ 试试以下两项操作。
 删除根目录下的 config.toml Issus #105 @ CaiJimmy/hugo-theme-stack
 生成 examplesite/content/post/rich-content/index.md 时报错 是因为是示例文章有请求 Twitter API 的 Shortcode ，需要 珂学上网 。
@@ -94,30 +98,30 @@ Issus #191 @ CaiJimmy/hugo-theme-stack
     
     <item>
       <title>独角兽搜索</title>
-      <link>https://aynxu.l03.me/unicorn-search/</link>
+      <link>https://ayx.moefox.tech/unicorn-search/</link>
       <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/unicorn-search/</guid>
+      <guid>https://ayx.moefox.tech/unicorn-search/</guid>
       <description>我的博客的站内搜索已经搭载了这款 微内核万物互联分布式软总线形式化验证 搜索引擎，大家可以在侧边栏点击搜索抢先体验一下！
 相信这将是与 花瓣搜索 一样的优秀国产项目！让我们在一起拒绝卡脖子！星星之火可以燎原！</description>
     </item>
     
     <item>
       <title>Hello Hugo</title>
-      <link>https://aynxu.l03.me/hellohugo/</link>
+      <link>https://ayx.moefox.tech/hellohugo/</link>
       <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/hellohugo/</guid>
+      <guid>https://ayx.moefox.tech/hellohugo/</guid>
       <description>&lt;h1 id=&#34;你好hugo&#34;&gt;你好，Hugo！&lt;/h1&gt;
 &lt;h2 id=&#34;bilibili-short-code-test&#34;&gt;Bilibili Short Code Test&lt;/h2&gt;</description>
     </item>
     
     <item>
       <title>题解 UPC-1488 客户调查(client)</title>
-      <link>https://aynxu.l03.me/upc1488/</link>
+      <link>https://ayx.moefox.tech/upc1488/</link>
       <pubDate>Tue, 13 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/upc1488/</guid>
+      <guid>https://ayx.moefox.tech/upc1488/</guid>
       <description>题目描述： 时间：1s 空间：32M
 公司派你去和几位客户面谈，以了解他们对公司产品的意见。你逐个打电话与客户联系，得知他们一般都很忙，不过他们还是可以为你抽出一点时间。现在的问题是有些客户的时间有冲突，你无法在一天内联系所有客户。所以你需要一个程序来帮助你安排第一天的工作，使得你能尽可能地和更多的客户进行联系。注意，客户不愿意你打乱他们的计划。如果你和某个客户约定见面，必须按时到达并且充分利用这段时间和他交谈，这样才不至于让他产生不满。你可以假设从一个客户处到另一个客户处的时间短得忽略不计。
 输入格式： 输入包括了多个测试数据，每个测试数据开头是一个整数 $n（1 \le n \le 10000）$，表示客户总数。接下来n行每行包括两个正整数 $s$、$t$，分别表示该客户的空闲时间段的起始时间和终止时间。$s&amp;lt;t$
@@ -130,10 +134,10 @@ Issus #191 @ CaiJimmy/hugo-theme-stack
     
     <item>
       <title>题解 P5707 【深基2.例12】上学迟到</title>
-      <link>https://aynxu.l03.me/p5707/</link>
+      <link>https://ayx.moefox.tech/p5707/</link>
       <pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/p5707/</guid>
+      <guid>https://ayx.moefox.tech/p5707/</guid>
       <description>（题面来自洛谷）
 题目描述 yyy 的学校要求早上 8 点前到达。学校到 yyy 的家一共有 $s$($s\le 10000$) 米，而 yyy 可以以 $v$($v&amp;lt;10000$) 米每分钟的速度匀速走到学校。此外在上学路上它还要额外花 10 分钟时间进行垃圾分类。请问为了避免迟到 yyy 最晚什么时候出门？输出 HH:MM 的时间格式，不足两位时补零。由于路途遥远， yyy 可能不得不提前一天出发，不过不可能提前超过一天。
 输入格式 两个正整数 s,v，意思已经在题目中给定。
@@ -156,10 +160,10 @@ Issus #191 @ CaiJimmy/hugo-theme-stack
     
     <item>
       <title>题解 P2669 [NOIP2015 普及组] 金币</title>
-      <link>https://aynxu.l03.me/p2669/</link>
+      <link>https://ayx.moefox.tech/p2669/</link>
       <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/p2669/</guid>
+      <guid>https://ayx.moefox.tech/p2669/</guid>
       <description>（题面来自洛谷）
 题目描述 国王将金币作为工资，发放给忠诚的骑士。第一天，骑士收到一枚金币；之后两天（第二天和第三天），每天收到两枚金币；之后三天（第四、五、六天），每天收到三枚金币；之后四天（第七、八、九、十天），每天收到四枚金币……；这种工资发放模式会一直这样延续下去：当连续 $n$ 天每天收到 $n$ 枚金币后，骑士会在之后的连续 $n+1$ 天里，每天收到 $n+1$ 枚金币。
 请计算在前 $k$ 天里，骑士一共获得了多少金币。
@@ -178,10 +182,10 @@ Issus #191 @ CaiJimmy/hugo-theme-stack
     
     <item>
       <title>题解 P5719 【深基4.例3】分类平均</title>
-      <link>https://aynxu.l03.me/p5719/</link>
+      <link>https://ayx.moefox.tech/p5719/</link>
       <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/p5719/</guid>
+      <guid>https://ayx.moefox.tech/p5719/</guid>
       <description>这题太有意思了，发个题解纪念一下
 题面来自洛谷
 $\LaTeX$ 渲染不了，哭了（明明后台预览是可以渲染的啊=
@@ -198,10 +202,10 @@ $\LaTeX$ 渲染不了，哭了（明明后台预览是可以渲染的啊=
     
     <item>
       <title>分享一下我的博客园在用的修改版 Wider Gao 博客园主题</title>
-      <link>https://aynxu.l03.me/cnblogs-theme-share/</link>
+      <link>https://ayx.moefox.tech/cnblogs-theme-share/</link>
       <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/cnblogs-theme-share/</guid>
+      <guid>https://ayx.moefox.tech/cnblogs-theme-share/</guid>
       <description>如你所见，我的博客现在使用 Hugo，因此该修改版主题不太可能发布更新。
 此主题并非我的原创作品，原作者为 Wider Gao
 而且改得很烂，主页的文章展示都搞炸了（点击查看demo），不建议使用（但个人感觉也不是特别糟糕）
@@ -226,10 +230,10 @@ Ubuntu Pastebin
     
     <item>
       <title>使用 Node.js（安装Hexo）时出现了 rollbackFailedOptional 错误的解决方法</title>
-      <link>https://aynxu.l03.me/rollbackfailedoptional/</link>
+      <link>https://ayx.moefox.tech/rollbackfailedoptional/</link>
       <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/rollbackfailedoptional/</guid>
+      <guid>https://ayx.moefox.tech/rollbackfailedoptional/</guid>
       <description>我的解决方法 以 管理员身份 运行一个编辑器 打开 C:\Program Files\nodejs\node_modules\npm\npmrc   如果你安装Node.js时修改了安装路径那么就不是这个路径了
   如果这个文件不存在就自己新建一个文本文档并去掉扩展名 .txt
   修改 C:\Program Files\nodejs\node_modules\npm\.npmrc 没有用
@@ -244,10 +248,10 @@ yunjuu.com
     
     <item>
       <title>题解 HDU2063 过山车</title>
-      <link>https://aynxu.l03.me/hdu2063/</link>
+      <link>https://ayx.moefox.tech/hdu2063/</link>
       <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/hdu2063/</guid>
+      <guid>https://ayx.moefox.tech/hdu2063/</guid>
       <description>题面链接 HDU 2063
 Vjudge
 题意概述 求一个二分图最大匹配的边数
@@ -257,10 +261,10 @@ Vjudge
     
     <item>
       <title>题解 YBT 1000：入门测试题目</title>
-      <link>https://aynxu.l03.me/ybt1000/</link>
+      <link>https://ayx.moefox.tech/ybt1000/</link>
       <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/ybt1000/</guid>
+      <guid>https://ayx.moefox.tech/ybt1000/</guid>
       <description>OpenJudge - 01:A+B问题
 信息学奥赛一本通（C++版）在线评测系统
 如果非要做这题我推荐第一个 OJ，第二个 OJ 的界面实在惨不忍睹
@@ -276,10 +280,10 @@ Vjudge
     
     <item>
       <title>题解 P1650 田忌赛马</title>
-      <link>https://aynxu.l03.me/p1650/</link>
+      <link>https://ayx.moefox.tech/p1650/</link>
       <pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/p1650/</guid>
+      <guid>https://ayx.moefox.tech/p1650/</guid>
       <description>(题面来自洛谷)
 题目描述 我国历史上有个著名的故事： 那是在2300年以前。齐国的大将军田忌喜欢赛马。他经常和齐王赛马。他和齐王都有三匹马：常规马，上级马，超级马。一共赛三局，每局的胜者可以从负者这里取得200银币。每匹马只能用一次。齐王的马好，同等级的马，齐王的总是比田忌的要好一点。于是每次和齐王赛马，田忌总会输600银币。
 田忌很沮丧，直到他遇到了著名的军师――孙膑。田忌采用了孙膑的计策之后，三场比赛下来，轻松而优雅地赢了齐王200银币。这实在是个很简单的计策。由于齐王总是先出最好的马，再出次好的，所以田忌用常规马对齐王的超级马，用自己的超级马对齐王的上级马，用自己的上级马对齐王的常规马，以两胜一负的战绩赢得200银币。实在很简单。
@@ -298,10 +302,10 @@ Vjudge
     
     <item>
       <title>OJ术语的解释： AC、WA、TLE、OLE、MLE、RE、PE、CE、UKE 都是些啥？</title>
-      <link>https://aynxu.l03.me/explanation-of-oj-terminology/</link>
+      <link>https://ayx.moefox.tech/explanation-of-oj-terminology/</link>
       <pubDate>Sun, 29 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/explanation-of-oj-terminology/</guid>
+      <guid>https://ayx.moefox.tech/explanation-of-oj-terminology/</guid>
       <description>正经解释    简称 全称 中文称谓 补充说明 &amp;amp; 修改建议     OJ Online Judge 在线判题系统 可以对你的程序进行评测并给出结果。洛谷、SPOJ、Codeforces、Vijos、UVa OJ 都是在线判题系统   AC Accepted 通过 嘲讽你还没过的同学 想想在时间和空间上能否做到更优，或是继续做其他题目   WA Wrong Answer 答案错误 你的程序在规定的时间和内存限制内里输出了错误的答案，因此没有得分（想一想，有没有没有考虑到的特殊情况？如果你的程序根本无法对样例输入输出正确的答案，那么你的思路很可能有问题）   TLE Time Limit Exceed 超出时间限制 你的程序在该测试点上超出了题目给定的时间仍未结束运行，因此被强行中止（检查是否存在死循环或过多的循环，使用时间复杂度更优的算法，进行一些常数及输入输出优化，剪枝）如果你的程序能正常给出答案，记得使用循环控制语句 break 或 return 0、exit(0) 这样的语句结束程序；在一些评测系统老旧的 OJ 中，没有读入完输入的数据也会造成 TLE，但是在洛谷不会发生。   OLE Output Limit Exceed 超出输出限制 你的程序在这个测试点中输出的字符数量超出了限制，因此被系统强行中止（检查是否存在死循环和没有注释掉的调试用输出语句）   MLE Memory Limit Exceed 超出内存限制 你的程序在运行过程中占用了过多的内存，因此被系统强行中止（检查是否在程序中使用了过大的数组或是往 STL 容器中存入了过多的数据）   RE Runtime Error 运行时出错 检查是否存在数组越界访问（尤其是C(++)语言选手）。另外，如果你在 main 函数中返回一个非 0 的值也会被系统认为程序异常退出   PE Presentation Error 格式错误 检查输出的空格/换行符数量是否与题面中的要求严格一致   CE Compile Error 编译错误 你的程序根本无法通过编译，也就没有可执行文件可以用来评测（检查语法，初学者建议着重检查分号和全角标点，建议敲代码时禁用中文输入法）   UKE Unknown Error 未知错误 评测姬也不知道出了什么问题（联系 OJ 管理员或出题人，稍后再尝试重新提交）    哈哈太搞笑了    简写 全称 中文称谓     AC Answer Cubi 粗鄙的答案   WA Wonderful Answer 优美的答案   TLE Time Limit Enough 时间充裕   OLE Output Limit Enough 输出足够   MLE Memory Limit Enough 内存充裕   RE Runtime Excellent 运行时（过于） 优秀   PE Pretty Excellent 十分优秀   CE Compile Easily 轻松通过编译   UKE Unbelievable Keeping Excellent 难以置信的保持优秀     AC=Answer Cubi 粗鄙的答案 WA=Wonderful Answer 优美的答案 TLE=Time Limit Enough 时间充裕 OLE=Output Limit Enough 输出足够 MLE=Memory Limit Enough 内存充裕 RE=Runtime Excellent 运行时（过于）优秀 PE=Pretty Excellent 十分优秀 CE=Compile Easily 轻松通过编译 UKE=Unbelievable Keeping Excellent 难以置信的保持优秀    出现AC时你需要将你的答案变得更优美才能通过； 而TLE、OLE、MLE、ER经常同时出现，可以给予你少量的额外分数； PE、CE都能给予你大量的额外分数； UKE这个标签非常稀有，可以让你直接通过这次比赛并名列前茅。  </description>
     </item>
     

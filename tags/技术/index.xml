@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>技术 on Aynxul03 写字的地方</title>
-    <link>https://aynxu.l03.me/tags/%E6%8A%80%E6%9C%AF/</link>
+    <link>https://ayx.moefox.tech/tags/%E6%8A%80%E6%9C%AF/</link>
     <description>Recent content in 技术 on Aynxul03 写字的地方</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 22 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://aynxu.l03.me/tags/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 22 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ayx.moefox.tech/tags/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>出现 error: ld returned 1 exit status 的五种原因以及解决方法</title>
-      <link>https://aynxu.l03.me/error-ld-returned-1-exit-status/</link>
+      <link>https://ayx.moefox.tech/error-ld-returned-1-exit-status/</link>
       <pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/error-ld-returned-1-exit-status/</guid>
-      <description>这个错误让人懵圈的地方就在于它不会给出错误行数，让已经写了几百行的你痛不欲生。
+      <guid>https://ayx.moefox.tech/error-ld-returned-1-exit-status/</guid>
+      <description>这个错误让人懵圈的地方就在于它不会给出错误出现的位置，让已经写了几百行的你痛不欲生。
 可执行文件被占用了 因此编译器无法覆盖旧的可执行文件，所以编译失败。
 这很有可能是你没发现它还没结束运行。
 （我目前在用的 IDE：Visual Studio Code）
@@ -33,10 +33,10 @@ VS Code 可以从输出切换到终端选项卡，使用快捷键 Ctrl+C 结束�
     
     <item>
       <title>MySSL 安全签章</title>
-      <link>https://aynxu.l03.me/ssl/</link>
+      <link>https://ayx.moefox.tech/ssl/</link>
       <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/ssl/</guid>
+      <guid>https://ayx.moefox.tech/ssl/</guid>
       <description>MySSL 安全认证   又摸了一下午整了个这么个东西出来 要得到 A+ 评级，您的网站必须启用 HSTS 且 max-age 属性不小于 6个月（即 15768000 秒） 请注意启用 HSTS 后所有不支持 HTTPS 的子域名都将无法访问，且在 max-age 属性设置的时间内无法恢复。 要得到 ATS 合规 ，您的网站必须支持 TLS v1.2。 要得到 PCI DSS 合规，您的网站不得支持 TLS v1.0。 PCI安全标准委员会规定2018年6月30日之后，开启TLS1.0将导致PCI DSS不合规，
 具体参考：《更严格的PCI DSS合规标准》
 HSTS 相关配置可以参考 MySSL.com 的 HTTPS安全与兼容性配置指南 HTTP Strict Transport Security Header Testing Tool</description>
@@ -44,10 +44,10 @@ HSTS 相关配置可以参考 MySSL.com 的 HTTPS安全与兼容性配置指南 
     
     <item>
       <title>题解 P1603 斯诺登的密码</title>
-      <link>https://aynxu.l03.me/key-to-p1603/</link>
+      <link>https://ayx.moefox.tech/key-to-p1603/</link>
       <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/key-to-p1603/</guid>
+      <guid>https://ayx.moefox.tech/key-to-p1603/</guid>
       <description>题面来自洛谷，根据我的个人喜好有小修改
 题目背景 根据斯诺登事件出的一道水题
 题目描述 2013 年 X 月 X 日，俄罗斯办理了斯诺登的护照，于是他混迹于一架开往委内瑞拉的飞机。但是，这件事情太不周密了，因为 FBI 的间谍早已获悉他的具体位置——但这不是最重要的——最重要的是如果要去委内瑞拉，那么就要经过古巴，而经过古巴的路在美国的掌控之中。
@@ -63,10 +63,10 @@ HSTS 相关配置可以参考 MySSL.com 的 HTTPS安全与兼容性配置指南 
     
     <item>
       <title>安装 Hugo 主题 Stack 时你可能会遇到的问题</title>
-      <link>https://aynxu.l03.me/stack/</link>
+      <link>https://ayx.moefox.tech/stack/</link>
       <pubDate>Wed, 28 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/stack/</guid>
+      <guid>https://ayx.moefox.tech/stack/</guid>
       <description>啥？装了 Stack 拷了 exampleSites 以后不能正常 hugo -D了？ 试试以下两项操作。
 删除根目录下的 config.toml Issus #105 @ CaiJimmy/hugo-theme-stack
 生成 examplesite/content/post/rich-content/index.md 时报错 是因为是示例文章有请求 Twitter API 的 Shortcode ，需要 珂学上网 。
@@ -79,20 +79,20 @@ Issus #191 @ CaiJimmy/hugo-theme-stack
     
     <item>
       <title>独角兽搜索</title>
-      <link>https://aynxu.l03.me/unicorn-search/</link>
+      <link>https://ayx.moefox.tech/unicorn-search/</link>
       <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/unicorn-search/</guid>
+      <guid>https://ayx.moefox.tech/unicorn-search/</guid>
       <description>我的博客的站内搜索已经搭载了这款 微内核万物互联分布式软总线形式化验证 搜索引擎，大家可以在侧边栏点击搜索抢先体验一下！
 相信这将是与 花瓣搜索 一样的优秀国产项目！让我们在一起拒绝卡脖子！星星之火可以燎原！</description>
     </item>
     
     <item>
       <title>题解 P5707 【深基2.例12】上学迟到</title>
-      <link>https://aynxu.l03.me/p5707/</link>
+      <link>https://ayx.moefox.tech/p5707/</link>
       <pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/p5707/</guid>
+      <guid>https://ayx.moefox.tech/p5707/</guid>
       <description>（题面来自洛谷）
 题目描述 yyy 的学校要求早上 8 点前到达。学校到 yyy 的家一共有 $s$($s\le 10000$) 米，而 yyy 可以以 $v$($v&amp;lt;10000$) 米每分钟的速度匀速走到学校。此外在上学路上它还要额外花 10 分钟时间进行垃圾分类。请问为了避免迟到 yyy 最晚什么时候出门？输出 HH:MM 的时间格式，不足两位时补零。由于路途遥远， yyy 可能不得不提前一天出发，不过不可能提前超过一天。
 输入格式 两个正整数 s,v，意思已经在题目中给定。
@@ -115,10 +115,10 @@ Issus #191 @ CaiJimmy/hugo-theme-stack
     
     <item>
       <title>题解 P5719 【深基4.例3】分类平均</title>
-      <link>https://aynxu.l03.me/p5719/</link>
+      <link>https://ayx.moefox.tech/p5719/</link>
       <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/p5719/</guid>
+      <guid>https://ayx.moefox.tech/p5719/</guid>
       <description>这题太有意思了，发个题解纪念一下
 题面来自洛谷
 $\LaTeX$ 渲染不了，哭了（明明后台预览是可以渲染的啊=

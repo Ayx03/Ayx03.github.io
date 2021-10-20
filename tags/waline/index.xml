@@ -2,24 +2,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Waline on Aynxul03 写字的地方</title>
-    <link>https://aynxu.l03.me/tags/waline/</link>
+    <link>https://ayx.moefox.tech/tags/waline/</link>
     <description>Recent content in Waline on Aynxul03 写字的地方</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 04 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://aynxu.l03.me/tags/waline/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 04 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ayx.moefox.tech/tags/waline/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>在 Hugo-Theme-Stack 中轻松配置 Waline 评论系统</title>
-      <link>https://aynxu.l03.me/waline/</link>
+      <title>在 Hugo 主题 Stack 中轻松配置 Waline 评论系统</title>
+      <link>https://ayx.moefox.tech/waline/</link>
       <pubDate>Mon, 04 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/waline/</guid>
-      <description>你以前也许听说过或用过 Valine，Waline 与它差不多，但管理功能集成在内，并可以更方便地部署。
+      <guid>https://ayx.moefox.tech/waline/</guid>
+      <description>你以前也许听说过或用过 Valine。Waline 与它差不多，但管理功能集成在内，并可以更方便地部署。
 如果你使用其他没有 Waline 支持的 Hugo 主题或其他博客系统，按本文部署后可以参考官方文档来引入客户端。
-登录/注册并进入 LeanCloud 国际版控制台 创建开发版新应用（随意命名）并复制设置 - 应用凭证中的前三项值，稍后会添加在 Vercel 中的环境变量里。
-  On Vercel GitHub 登录，创建存储库（可私有），跳过创建团队，部署。
-稍等两分钟完成部署后，在 Settings 中找到 Environment Variables，分别添加三个环境变量 LEAN_ID、LEAN_KEY 和 LEAN_MASTER_KEY 。VALUE 分别填写在 LeanCloud 中获得的 APP ID, APP KEY, Master Key。
-最后打开站点根目录下的 config.yaml，在 params 下添加以下几行：（如果你当初照搬了 Stack 提供的 config 文件，那么这段在第 60 行左右，只需填入 serverURL 即可）
- # Waline client configuration see: https://waline.js.org/en/reference/client.html waline: serverURL: https://PUT_YOUR_OWN_HERE.vercel.app/ lang: zh-CN visitor: true avatar: emoji: - https://cdn.jsdelivr.net/gh/walinejs/emojis/qq requiredMeta: - name - email - url placeholder: locale: admin: Admin 记得替换 serverURL 为你自己部署的 Vercel App 地址，在这里查阅各项参数的含义。</description>
+在 LeanCloud 上部署数据库 注册 LeanCloud 国际版并进入控制台。
+如果您决定使用 LeanCloud 国内版，您需要为您创建的应用额外绑定已备案的域名。
+创建开发版新应用（随意命名）并复制设置 - 应用凭证中的前三项值，稍后会添加在 Vercel 中的环境变量里。
+在 Vercel 上部署服务端  点击按钮跳转到 Vercel.com 部署  （推荐）使用 GitHub 登录，创建存储库（可以是私有 Repo），跳过创建团队（反正这也不是什么需要团队协作的项目），部署。
+两分钟左右部署就会完成。
+完成部署后在 Settings 中找到 Environment Variables，分别添加三个环境变量 LEAN_ID、LEAN_KEY 和 LEAN_MASTER_KEY 。VALUE 分别填写在 LeanCloud 中获得的 APP ID、APP KEY、和 Master Key。
+记得注册你的管理员账号，以免被访客注册。第一个注册的用户会得到管理权限。
+在配置文件中配置客户端 最后打开站点根目录下的 config.yaml，在 params 下添加以下几行：（如果你当初拷贝了 Stack 提供的 config.yaml 文件，那么这段在第 60 行左右，只需填入 serverURL 即可）
+ # Waline client configuration see: https://waline.</description>
     </item>
     
   </channel>

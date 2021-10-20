@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on Aynxul03 写字的地方</title>
-    <link>https://aynxu.l03.me/page/</link>
+    <link>https://ayx.moefox.tech/page/</link>
     <description>Recent content in Pages on Aynxul03 写字的地方</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 17 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://aynxu.l03.me/page/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 17 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ayx.moefox.tech/page/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>无限</title>
-      <link>https://aynxu.l03.me/inf/</link>
+      <link>https://ayx.moefox.tech/inf/</link>
       <pubDate>Sun, 17 Oct 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/inf/</guid>
+      <guid>https://ayx.moefox.tech/inf/</guid>
       <description>A Dark Room 文字游戏小黑屋，支持存档导出与导入
 mergemp4 利用 FFmpeg 在现代浏览器中合并 .mp4 格式的视频和音频 GitHub 存储库</description>
     </item>
     
     <item>
       <title>关于</title>
-      <link>https://aynxu.l03.me/about/</link>
+      <link>https://ayx.moefox.tech/about/</link>
       <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/about/</guid>
+      <guid>https://ayx.moefox.tech/about/</guid>
       <description> 常用邮箱: ayx03@pm.me
   Bilibili: @Aynxul03
   GitHub: @Ayx03
@@ -33,10 +33,10 @@ mergemp4 利用 FFmpeg 在现代浏览器中合并 .mp4 格式的视频和音频
     
     <item>
       <title>朋友</title>
-      <link>https://aynxu.l03.me/link/</link>
+      <link>https://ayx.moefox.tech/link/</link>
       <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/link/</guid>
+      <guid>https://ayx.moefox.tech/link/</guid>
       <description>可以直接点击目录中的文字来跳转 排名不分先后
 一条鱼 的博客 洛谷@我和鱼过不去
 她 AK 了 IOI ！  在 IOI 中获得满分，俗称 AKIOI 
@@ -50,37 +50,37 @@ Zax&amp;rsquo;s Track 小溪很慢，你忍一下。  居正对此的解释
     
     <item>
       <title>分类</title>
-      <link>https://aynxu.l03.me/categories/</link>
+      <link>https://ayx.moefox.tech/categories/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/categories/</guid>
+      <guid>https://ayx.moefox.tech/categories/</guid>
       <description></description>
     </item>
     
     <item>
       <title>归档</title>
-      <link>https://aynxu.l03.me/archives/</link>
+      <link>https://ayx.moefox.tech/archives/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/archives/</guid>
+      <guid>https://ayx.moefox.tech/archives/</guid>
       <description></description>
     </item>
     
     <item>
       <title>搜索</title>
-      <link>https://aynxu.l03.me/search/</link>
+      <link>https://ayx.moefox.tech/search/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/search/</guid>
+      <guid>https://ayx.moefox.tech/search/</guid>
       <description></description>
     </item>
     
     <item>
       <title>标签</title>
-      <link>https://aynxu.l03.me/tags/</link>
+      <link>https://ayx.moefox.tech/tags/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/tags/</guid>
+      <guid>https://ayx.moefox.tech/tags/</guid>
       <description></description>
     </item>
     

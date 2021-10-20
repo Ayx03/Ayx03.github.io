@@ -2,23 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Aynxul03 写字的地方</title>
-        <link>https://aynxu.l03.me/</link>
+        <link>https://ayx.moefox.tech/</link>
         <description>Recent content on Aynxul03 写字的地方</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-CN</language>
-        <lastBuildDate>Sun, 17 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://aynxu.l03.me/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>在 Hugo-Theme-Stack 中轻松配置 Waline 评论系统</title>
-        <link>https://aynxu.l03.me/waline/</link>
+        <lastBuildDate>Sun, 17 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ayx.moefox.tech/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>在 Hugo 主题 Stack 中轻松配置 Waline 评论系统</title>
+        <link>https://ayx.moefox.tech/waline/</link>
         <pubDate>Mon, 04 Oct 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://aynxu.l03.me/waline/</guid>
-        <description>&lt;p&gt;你以前也许听说过或用过 Valine，Waline 与它差不多，但管理功能集成在内，并可以更方便地部署。&lt;/p&gt;
+        <guid>https://ayx.moefox.tech/waline/</guid>
+        <description>&lt;p&gt;你以前也许听说过或用过 Valine。Waline 与它差不多，但管理功能集成在内，并可以更方便地部署。&lt;/p&gt;
 &lt;p&gt;如果你使用其他没有 Waline 支持的 Hugo 主题或其他博客系统，按本文部署后可以参考官方文档来&lt;a class=&#34;link&#34; href=&#34;https://waline.js.org/guide/client/import.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;引入客户端&lt;/a&gt;。&lt;/p&gt;
-&lt;h2 id=&#34;登录注册并进入-leancloud-国际版控制台httpsconsoleleancloudappapps&#34;&gt;登录/注册并进入 &lt;a class=&#34;link&#34; href=&#34;https://console.leancloud.app/apps&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;LeanCloud 国际版控制台&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;在-leancloud-上部署数据库&#34;&gt;在 LeanCloud 上部署数据库&lt;/h2&gt;
+&lt;p&gt;注册 LeanCloud 国际版并进入&lt;a class=&#34;link&#34; href=&#34;https://console.leancloud.app/apps&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;控制台&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;如果您决定使用 LeanCloud 国内版，您需要为您创建的应用额外绑定已备案的域名。&lt;/p&gt;
 &lt;p&gt;创建开发版新应用（随意命名）并复制设置 - 应用凭证中的前三项值，稍后会添加在 Vercel 中的环境变量里。&lt;/p&gt;
-&lt;h2 id=&#34;httpsvercelcombuttonhttpsvercelcomimportprojecttemplatehttpsgithubcomwalinejswalinetreemainexample-on-vercel&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://vercel.com/import/project?template=https://github.com/walinejs/waline/tree/main/example&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;h2 id=&#34;在-vercel-上部署服务端&#34;&gt;在 Vercel 上部署服务端&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://vercel.com/import/project?template=https://github.com/walinejs/waline/tree/main/example&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;figure 
 	&gt;
 	&lt;a href=&#34;https://vercel.com/button&#34; &gt;
@@ -27,16 +30,21 @@
 			
 			
 			loading=&#34;lazy&#34;
-			&gt;
+			alt=&#34;点击按钮跳转到 Vercel.com 部署&#34;&gt;
 	&lt;/a&gt;
 	
-&lt;/figure&gt;&lt;/a&gt; On Vercel&lt;/h2&gt;
-&lt;p&gt;GitHub 登录，创建存储库（可私有），跳过创建团队，部署。&lt;/p&gt;
-&lt;p&gt;稍等两分钟完成部署后，在 Settings 中找到 Environment Variables，分别添加三个环境变量 &lt;code&gt;LEAN_ID&lt;/code&gt;、&lt;code&gt;LEAN_KEY&lt;/code&gt; 和 &lt;code&gt;LEAN_MASTER_KEY&lt;/code&gt; 。VALUE 分别填写在 LeanCloud 中获得的 APP ID, APP KEY, Master Key。&lt;/p&gt;
-&lt;p&gt;最后打开站点根目录下的 &lt;code&gt;config.yaml&lt;/code&gt;，在 params 下添加以下几行：（如果你当初照搬了 Stack 提供的 &lt;code&gt;config&lt;/code&gt; 文件，那么这段在第 60 行左右，只需填入 serverURL 即可）&lt;/p&gt;
+	&lt;figcaption&gt;点击按钮跳转到 Vercel.com 部署&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/a&gt;
+（推荐）使用 GitHub 登录，创建存储库（可以是私有 Repo），跳过创建团队（反正这也不是什么需要团队协作的项目），部署。&lt;/p&gt;
+&lt;p&gt;两分钟左右部署就会完成。&lt;/p&gt;
+&lt;p&gt;完成部署后在 Settings 中找到 Environment Variables，分别添加三个环境变量 &lt;code&gt;LEAN_ID&lt;/code&gt;、&lt;code&gt;LEAN_KEY&lt;/code&gt; 和 &lt;code&gt;LEAN_MASTER_KEY&lt;/code&gt; 。&lt;code&gt;VALUE&lt;/code&gt; 分别填写在 LeanCloud 中获得的 &lt;code&gt;APP ID&lt;/code&gt;、&lt;code&gt;APP KEY&lt;/code&gt;、和 &lt;code&gt;Master Key&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;记得&lt;a class=&#34;link&#34; href=&#34;#%e8%af%84%e8%ae%ba%e7%ae%a1%e7%90%86&#34; &gt;注册你的管理员账号&lt;/a&gt;，以免被访客注册。第一个注册的用户会得到管理权限。&lt;/p&gt;
+&lt;h2 id=&#34;在配置文件中配置客户端&#34;&gt;在配置文件中配置客户端&lt;/h2&gt;
+&lt;p&gt;最后打开站点根目录下的 &lt;code&gt;config.yaml&lt;/code&gt;，在 params 下添加以下几行：（如果你当初拷贝了 Stack 提供的 &lt;code&gt;config.yaml&lt;/code&gt; 文件，那么这段在第 60 行左右，只需填入 serverURL 即可）&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;        # Waline client configuration see: https://waline.js.org/en/reference/client.html
         waline:
-            serverURL: https://PUT_YOUR_OWN_HERE.vercel.app/
+            serverURL: https://&amp;lt;PUT_YOUR_OWN_HERE&amp;gt;.vercel.app/
             lang: zh-CN
             visitor: true
             avatar:
@@ -51,19 +59,42 @@
                 admin: Admin
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;记得替换 serverURL 为你自己部署的 Vercel App 地址，在&lt;a class=&#34;link&#34; href=&#34;https://waline.js.org/en/reference/client.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;这里&lt;/a&gt;查阅各项参数的含义。&lt;/p&gt;
-&lt;p&gt;emoji 暂时只发现 qq 和默认的 weibo&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://waline.js.org/guide/get-started.html#leancloud-%E8%AE%BE%E7%BD%AE-%E6%95%B0%E6%8D%AE%E5%BA%93&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;快速上手 | Waline&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;然后可以使用 &lt;code&gt;hugo server&lt;/code&gt; 看下效果，使用 Waline 时不会像 disqus 一样在本地预览时屏蔽评论。&lt;/p&gt;
+&lt;h3 id=&#34;emoji&#34;&gt;Emoji&lt;/h3&gt;
+&lt;p&gt;你可以为你的 Waline 客户端添加多套表情。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Waline 提供了一系列开箱即用的表情预设。你可以直接将它们添加到 emoji 选项中:&lt;/p&gt;
+&lt;p&gt;Alus&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;哔哩哔哩&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/bilibili&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;QQ&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/qq&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;贴吧&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Twitter Emoji&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tw-emoji&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;微博&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/weibo&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;评论管理&#34;&gt;评论管理&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;评论管理 (管理端)&lt;/p&gt;
+&lt;p&gt;部署完成后，请访问 &lt;code&gt;&amp;lt;serverURL&amp;gt;/ui/register&lt;/code&gt; 进行注册。首个注册的人会被设定成管理员。&lt;/p&gt;
+&lt;p&gt;管理员登陆后，即可看到评论管理界面。在这里可以修改、标记或删除评论。&lt;/p&gt;
+&lt;p&gt;用户也通过评论框注册账号，登陆后会跳转到自己的档案页。&lt;/p&gt;
+&lt;/blockquote&gt;
 </description>
         </item>
         <item>
         <title>出现 error: ld returned 1 exit status 的五种原因以及解决方法</title>
-        <link>https://aynxu.l03.me/error-ld-returned-1-exit-status/</link>
+        <link>https://ayx.moefox.tech/error-ld-returned-1-exit-status/</link>
         <pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://aynxu.l03.me/error-ld-returned-1-exit-status/</guid>
-        <description>&lt;img src="https://aynxu.l03.me/error-ld-returned-1-exit-status/fengmian.png" alt="Featured image of post 出现 error: ld returned 1 exit status 的五种原因以及解决方法" /&gt;&lt;p&gt;这个错误让人懵圈的地方就在于它不会给出错误行数，让已经写了几百行的你痛不欲生。&lt;/p&gt;
+        <guid>https://ayx.moefox.tech/error-ld-returned-1-exit-status/</guid>
+        <description>&lt;img src="https://ayx.moefox.tech/error-ld-returned-1-exit-status/fengmian.png" alt="Featured image of post 出现 error: ld returned 1 exit status 的五种原因以及解决方法" /&gt;&lt;p&gt;这个错误让人懵圈的地方就在于它不会给出错误出现的位置，让已经写了几百行的你痛不欲生。&lt;/p&gt;
 &lt;h2 id=&#34;可执行文件被占用了&#34;&gt;可执行文件被占用了&lt;/h2&gt;
 &lt;p&gt;因此编译器无法覆盖旧的可执行文件，所以编译失败。&lt;/p&gt;
 &lt;p&gt;这很有可能是你没发现它还没结束运行。&lt;/p&gt;
@@ -158,8 +189,10 @@
 &lt;p&gt;并不确定“scanf/printf 键入错误”是不是真的会引起该错误（&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/e_t_e_r_n_i_t_y/article/details/109982282&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;CSDN 上的一篇博客&lt;/a&gt;说的，我也懒得去装个旧版编译器实测），是不是只有 scanf 和 printf 会这样更不得而知&amp;hellip;&lt;/p&gt;
 &lt;p&gt;总之新版编译器即使在 CSDN 博文中所谓的“代码较多的情况”下也不会因为这个原因出现这种错误，只会告诉你这个函数在这个作用域没有被定义过，甚至还会反问你：&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;你说的是 scanf 吗？
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;（测试用代码是随机跳题后从&lt;a class=&#34;link&#34; href=&#34;https://www.luogu.com.cn/blog/ShadowassIIXVIIIIV/solution-p3783&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;blockquote&gt;
+&lt;p&gt;你说的是 scanf 吗？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;（测试用代码是随机跳题后从&lt;a class=&#34;link&#34; href=&#34;https://www.luogu.com.cn/blog/ShadowassIIXVIIIIV/solution-p3783&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;这里&lt;/a&gt;复制的，并未提交评测）
 &lt;figure 
 	&gt;
@@ -185,15 +218,17 @@
 Copyright (C) 2020 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-&lt;/code&gt;&lt;/pre&gt;</description>
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;编辑记录&#34;&gt;编辑记录&lt;/h2&gt;
+&lt;p&gt;2021-08-22 19:20:00&lt;/p&gt;
+</description>
         </item>
         <item>
         <title>MySSL 安全签章</title>
-        <link>https://aynxu.l03.me/ssl/</link>
+        <link>https://ayx.moefox.tech/ssl/</link>
         <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://aynxu.l03.me/ssl/</guid>
-        <description>&lt;img src="https://aynxu.l03.me/ssl/cover.png" alt="Featured image of post MySSL 安全签章" /&gt;&lt;h1 id=&#34;myssl-安全认证httpsstaticmysslcomresimagesmyssl-id3pnghttpsmysslcomaynxul03mefrommysslid&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://myssl.com/aynxu.l03.me?from=mysslid&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+        <guid>https://ayx.moefox.tech/ssl/</guid>
+        <description>&lt;img src="https://ayx.moefox.tech/ssl/cover.png" alt="Featured image of post MySSL 安全签章" /&gt;&lt;h1 id=&#34;myssl-安全认证httpsstaticmysslcomresimagesmyssl-id3pnghttpsmysslcomaynxul03mefrommysslid&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://myssl.com/aynxu.l03.me?from=mysslid&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;figure 
 	&gt;
 	&lt;a href=&#34;https://static.myssl.com/res/images/myssl-id3.png&#34; &gt;
@@ -226,11 +261,11 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
         </item>
         <item>
         <title>题解 P1603 斯诺登的密码</title>
-        <link>https://aynxu.l03.me/key-to-p1603/</link>
+        <link>https://ayx.moefox.tech/key-to-p1603/</link>
         <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://aynxu.l03.me/key-to-p1603/</guid>
-        <description>&lt;img src="https://aynxu.l03.me/key-to-p1603/cover.jpg" alt="Featured image of post 题解 P1603 斯诺登的密码" /&gt;&lt;p&gt;题面来自&lt;a class=&#34;link&#34; href=&#34;https://www.luogu.com.cn/problem/P1603&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+        <guid>https://ayx.moefox.tech/key-to-p1603/</guid>
+        <description>&lt;img src="https://ayx.moefox.tech/key-to-p1603/cover.jpg" alt="Featured image of post 题解 P1603 斯诺登的密码" /&gt;&lt;p&gt;题面来自&lt;a class=&#34;link&#34; href=&#34;https://www.luogu.com.cn/problem/P1603&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;洛谷&lt;/a&gt;，根据我的个人喜好有小修改&lt;/p&gt;
 &lt;h2 id=&#34;题目背景&#34;&gt;题目背景&lt;/h2&gt;
 &lt;p&gt;根据斯诺登事件出的一道水题&lt;/p&gt;
@@ -365,11 +400,11 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
         </item>
         <item>
         <title>安装 Hugo 主题 Stack 时你可能会遇到的问题</title>
-        <link>https://aynxu.l03.me/stack/</link>
+        <link>https://ayx.moefox.tech/stack/</link>
         <pubDate>Wed, 28 Jul 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://aynxu.l03.me/stack/</guid>
-        <description>&lt;img src="https://aynxu.l03.me/stack/%E5%B0%81%E9%9D%A2.jpg" alt="Featured image of post 安装 Hugo 主题 Stack 时你可能会遇到的问题" /&gt;&lt;h2 id=&#34;啥装了-stack-拷了-examplesites-以后不能正常-hugo--d了&#34;&gt;啥？装了 &lt;code&gt;Stack&lt;/code&gt; 拷了 &lt;code&gt;exampleSites&lt;/code&gt; 以后不能正常 &lt;code&gt;hugo -D&lt;/code&gt;了？&lt;/h2&gt;
+        <guid>https://ayx.moefox.tech/stack/</guid>
+        <description>&lt;img src="https://ayx.moefox.tech/stack/%E5%B0%81%E9%9D%A2.jpg" alt="Featured image of post 安装 Hugo 主题 Stack 时你可能会遇到的问题" /&gt;&lt;h2 id=&#34;啥装了-stack-拷了-examplesites-以后不能正常-hugo--d了&#34;&gt;啥？装了 &lt;code&gt;Stack&lt;/code&gt; 拷了 &lt;code&gt;exampleSites&lt;/code&gt; 以后不能正常 &lt;code&gt;hugo -D&lt;/code&gt;了？&lt;/h2&gt;
 &lt;p&gt;试试以下两项操作。&lt;/p&gt;
 &lt;h3 id=&#34;删除根目录下的-configtoml&#34;&gt;删除根目录下的 &lt;code&gt;config.toml&lt;/code&gt;&lt;/h3&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack/issues/105&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -387,21 +422,21 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
         </item>
         <item>
         <title>独角兽搜索</title>
-        <link>https://aynxu.l03.me/unicorn-search/</link>
+        <link>https://ayx.moefox.tech/unicorn-search/</link>
         <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://aynxu.l03.me/unicorn-search/</guid>
-        <description>&lt;p&gt;我的博客的&lt;a class=&#34;link&#34; href=&#34;https://aynxu.l03.me/search&#34; &gt;站内搜索&lt;/a&gt;已经搭载了这款 &lt;code&gt;微内核万物互联分布式软总线形式化验证&lt;/code&gt; 搜索引擎，大家可以在侧边栏点击搜索抢先体验一下！&lt;/p&gt;
+        <guid>https://ayx.moefox.tech/unicorn-search/</guid>
+        <description>&lt;p&gt;我的博客的&lt;a class=&#34;link&#34; href=&#34;https://ayx.moefox.tech/search&#34; &gt;站内搜索&lt;/a&gt;已经搭载了这款 &lt;code&gt;微内核万物互联分布式软总线形式化验证&lt;/code&gt; 搜索引擎，大家可以在侧边栏点击搜索抢先体验一下！&lt;/p&gt;
 &lt;p&gt;相信这将是与 &lt;a class=&#34;link&#34; href=&#34;https://www.zhihu.com/question/428248188&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;strong&gt;花瓣搜索&lt;/strong&gt;&lt;/a&gt; 一样的优秀国产项目！让我们在一起拒绝卡脖子！星星之火可以燎原！&lt;/p&gt;
 </description>
         </item>
         <item>
         <title>Hello Hugo</title>
-        <link>https://aynxu.l03.me/hellohugo/</link>
+        <link>https://ayx.moefox.tech/hellohugo/</link>
         <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://aynxu.l03.me/hellohugo/</guid>
+        <guid>https://ayx.moefox.tech/hellohugo/</guid>
         <description>&lt;h1 id=&#34;你好hugo&#34;&gt;你好，Hugo！&lt;/h1&gt;
 &lt;h2 id=&#34;bilibili-short-code-test&#34;&gt;Bilibili Short Code Test&lt;/h2&gt;
 
@@ -425,10 +460,10 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
         </item>
         <item>
         <title>题解 UPC-1488 客户调查(client)</title>
-        <link>https://aynxu.l03.me/upc1488/</link>
+        <link>https://ayx.moefox.tech/upc1488/</link>
         <pubDate>Tue, 13 Jul 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://aynxu.l03.me/upc1488/</guid>
+        <guid>https://ayx.moefox.tech/upc1488/</guid>
         <description>&lt;h2 id=&#34;题目描述&#34;&gt;题目描述：&lt;/h2&gt;
 &lt;p&gt;时间：1s   空间：32M&lt;/p&gt;
 &lt;p&gt;公司派你去和几位客户面谈，以了解他们对公司产品的意见。你逐个打电话与客户联系，得知他们一般都很忙，不过他们还是可以为你抽出一点时间。现在的问题是有些客户的时间有冲突，你无法在一天内联系所有客户。所以你需要一个程序来帮助你安排第一天的工作，使得你能尽可能地和更多的客户进行联系。注意，客户不愿意你打乱他们的计划。如果你和某个客户约定见面，必须按时到达并且充分利用这段时间和他交谈，这样才不至于让他产生不满。你可以假设从一个客户处到另一个客户处的时间短得忽略不计。&lt;/p&gt;
@@ -488,10 +523,10 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
         </item>
         <item>
         <title>题解 P5707 【深基2.例12】上学迟到</title>
-        <link>https://aynxu.l03.me/p5707/</link>
+        <link>https://ayx.moefox.tech/p5707/</link>
         <pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://aynxu.l03.me/p5707/</guid>
+        <guid>https://ayx.moefox.tech/p5707/</guid>
         <description>&lt;p&gt;&lt;strong&gt;（题面来自&lt;a class=&#34;link&#34; href=&#34;https://www.luogu.com.cn/problem/P5707&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;洛谷&lt;/a&gt;）&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;题目描述&#34;&gt;题目描述&lt;/h2&gt;
@@ -539,10 +574,10 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
         </item>
         <item>
         <title>题解 P2669 [NOIP2015 普及组] 金币</title>
-        <link>https://aynxu.l03.me/p2669/</link>
+        <link>https://ayx.moefox.tech/p2669/</link>
         <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://aynxu.l03.me/p2669/</guid>
+        <guid>https://ayx.moefox.tech/p2669/</guid>
         <description>&lt;p&gt;&lt;strong&gt;（题面来自&lt;a class=&#34;link&#34; href=&#34;https://www.luogu.com.cn/problem/P2669&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;洛谷&lt;/a&gt;）&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;题目描述&#34;&gt;题目描述&lt;/h2&gt;
@@ -589,10 +624,10 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
         </item>
         <item>
         <title>题解 P5719 【深基4.例3】分类平均</title>
-        <link>https://aynxu.l03.me/p5719/</link>
+        <link>https://ayx.moefox.tech/p5719/</link>
         <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://aynxu.l03.me/p5719/</guid>
+        <guid>https://ayx.moefox.tech/p5719/</guid>
         <description>&lt;p&gt;这题太有意思了，发个题解纪念一下&lt;/p&gt;
 &lt;p&gt;题面来自&lt;a class=&#34;link&#34; href=&#34;https://www.luogu.com.cn/problem/P5719&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;洛谷&lt;/a&gt;&lt;/p&gt;
@@ -635,10 +670,10 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
         </item>
         <item>
         <title>分享一下我的博客园在用的修改版 Wider Gao 博客园主题</title>
-        <link>https://aynxu.l03.me/cnblogs-theme-share/</link>
+        <link>https://ayx.moefox.tech/cnblogs-theme-share/</link>
         <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://aynxu.l03.me/cnblogs-theme-share/</guid>
+        <guid>https://ayx.moefox.tech/cnblogs-theme-share/</guid>
         <description>&lt;p&gt;如你所见，我的博客现在使用 Hugo，因此该修改版主题不太可能发布更新。&lt;/p&gt;
 &lt;p&gt;此主题&lt;code&gt;并非我的原创作品&lt;/code&gt;，原作者为 &lt;a class=&#34;link&#34; href=&#34;https://www.cnblogs.com/widerg&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Wider Gao&lt;/a&gt;&lt;/p&gt;
@@ -700,10 +735,10 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
         </item>
         <item>
         <title>使用 Node.js（安装Hexo）时出现了 rollbackFailedOptional 错误的解决方法</title>
-        <link>https://aynxu.l03.me/rollbackfailedoptional/</link>
+        <link>https://ayx.moefox.tech/rollbackfailedoptional/</link>
         <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
         
-        <guid>https://aynxu.l03.me/rollbackfailedoptional/</guid>
+        <guid>https://ayx.moefox.tech/rollbackfailedoptional/</guid>
         <description>&lt;h2 id=&#34;我的解决方法&#34;&gt;我的解决方法&lt;/h2&gt;
 &lt;h3 id=&#34;以-管理员身份-运行一个编辑器&#34;&gt;以 &lt;strong&gt;管理员身份&lt;/strong&gt; 运行一个编辑器&lt;/h3&gt;
 &lt;h3 id=&#34;打开-cprogram-filesnodejsnode_modulesnpmnpmrc&#34;&gt;打开 &lt;code&gt;C:\Program Files\nodejs\node_modules\npm\npmrc&lt;/code&gt;&lt;/h3&gt;
@@ -740,10 +775,10 @@ disturl = https://npm.taobao.org/dist
         </item>
         <item>
         <title>题解 HDU2063 过山车</title>
-        <link>https://aynxu.l03.me/hdu2063/</link>
+        <link>https://ayx.moefox.tech/hdu2063/</link>
         <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
         
-        <guid>https://aynxu.l03.me/hdu2063/</guid>
+        <guid>https://ayx.moefox.tech/hdu2063/</guid>
         <description>&lt;h2 id=&#34;题面链接&#34;&gt;题面链接&lt;/h2&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://acm.hdu.edu.cn/showproblem.php?pid=2063&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;HDU 2063&lt;/a&gt;&lt;/p&gt;
@@ -821,10 +856,10 @@ disturl = https://npm.taobao.org/dist
         </item>
         <item>
         <title>题解 YBT 1000：入门测试题目</title>
-        <link>https://aynxu.l03.me/ybt1000/</link>
+        <link>https://ayx.moefox.tech/ybt1000/</link>
         <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
         
-        <guid>https://aynxu.l03.me/ybt1000/</guid>
+        <guid>https://ayx.moefox.tech/ybt1000/</guid>
         <description>&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://noi.openjudge.cn/ch0103/01/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;OpenJudge - 01:A+B问题&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://ybt.ssoier.cn:8088/problem_show.php?pid=1000&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -858,7 +893,7 @@ disturl = https://npm.taobao.org/dist
 3
 &lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;题意分析与算法设计&#34;&gt;题意分析与算法设计&lt;/h2&gt;
 &lt;p&gt;新手不用理会 &lt;code&gt;时间限制&lt;/code&gt; 和 &lt;code&gt;内存限制&lt;/code&gt;，一般来说学到后面才会出现 TLE（Time Limit Exceed，超出时间限制）和 MLE（Memory Limit Exceed，超出内存限制）的情况。&lt;/p&gt;
-&lt;p&gt;（关于这些术语，可以在&lt;a class=&#34;link&#34; href=&#34;https://aynxu.l03.me/explanation-of-oj-terminology/#%e6%ad%a3%e7%bb%8f%e8%a7%a3%e9%87%8a&#34; &gt;&lt;strong&gt;这里&lt;/strong&gt;&lt;/a&gt;了解。）&lt;/p&gt;
+&lt;p&gt;（关于这些术语，可以在&lt;a class=&#34;link&#34; href=&#34;https://ayx.moefox.tech/explanation-of-oj-terminology/#%e6%ad%a3%e7%bb%8f%e8%a7%a3%e9%87%8a&#34; &gt;&lt;strong&gt;这里&lt;/strong&gt;&lt;/a&gt;了解。）&lt;/p&gt;
 &lt;p&gt;至于这个问题，就是一个最简单的 A+B 问题。&lt;/p&gt;
 &lt;h2 id=&#34;参考用完整代码&#34;&gt;参考用完整代码&lt;/h2&gt;
 &lt;p&gt;各位一定要养成良好的代码风格，因为代码不仅仅是给机器看的，有时候人也要看。&lt;/p&gt;
@@ -890,10 +925,10 @@ disturl = https://npm.taobao.org/dist
         </item>
         <item>
         <title>题解 P1650 田忌赛马</title>
-        <link>https://aynxu.l03.me/p1650/</link>
+        <link>https://ayx.moefox.tech/p1650/</link>
         <pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate>
         
-        <guid>https://aynxu.l03.me/p1650/</guid>
+        <guid>https://ayx.moefox.tech/p1650/</guid>
         <description>&lt;p&gt;&lt;strong&gt;(题面来自&lt;a class=&#34;link&#34; href=&#34;https://www.luogu.com.cn/problem/P1650&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;洛谷&lt;/a&gt;)&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;题目描述&#34;&gt;题目描述&lt;/h2&gt;
@@ -971,10 +1006,10 @@ disturl = https://npm.taobao.org/dist
         </item>
         <item>
         <title>OJ术语的解释： AC、WA、TLE、OLE、MLE、RE、PE、CE、UKE 都是些啥？</title>
-        <link>https://aynxu.l03.me/explanation-of-oj-terminology/</link>
+        <link>https://ayx.moefox.tech/explanation-of-oj-terminology/</link>
         <pubDate>Sun, 29 Dec 2019 00:00:00 +0000</pubDate>
         
-        <guid>https://aynxu.l03.me/explanation-of-oj-terminology/</guid>
+        <guid>https://ayx.moefox.tech/explanation-of-oj-terminology/</guid>
         <description>&lt;h2 id=&#34;正经解释&#34;&gt;正经解释&lt;/h2&gt;
 &lt;table&gt;
 &lt;thead&gt;

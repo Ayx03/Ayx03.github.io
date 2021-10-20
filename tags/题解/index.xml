@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>题解 on Aynxul03 写字的地方</title>
-    <link>https://aynxu.l03.me/tags/%E9%A2%98%E8%A7%A3/</link>
+    <link>https://ayx.moefox.tech/tags/%E9%A2%98%E8%A7%A3/</link>
     <description>Recent content in 题解 on Aynxul03 写字的地方</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 02 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://aynxu.l03.me/tags/%E9%A2%98%E8%A7%A3/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ayx.moefox.tech/tags/%E9%A2%98%E8%A7%A3/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>题解 P1603 斯诺登的密码</title>
-      <link>https://aynxu.l03.me/key-to-p1603/</link>
+      <link>https://ayx.moefox.tech/key-to-p1603/</link>
       <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/key-to-p1603/</guid>
+      <guid>https://ayx.moefox.tech/key-to-p1603/</guid>
       <description>题面来自洛谷，根据我的个人喜好有小修改
 题目背景 根据斯诺登事件出的一道水题
 题目描述 2013 年 X 月 X 日，俄罗斯办理了斯诺登的护照，于是他混迹于一架开往委内瑞拉的飞机。但是，这件事情太不周密了，因为 FBI 的间谍早已获悉他的具体位置——但这不是最重要的——最重要的是如果要去委内瑞拉，那么就要经过古巴，而经过古巴的路在美国的掌控之中。
@@ -28,10 +28,10 @@
     
     <item>
       <title>题解 UPC-1488 客户调查(client)</title>
-      <link>https://aynxu.l03.me/upc1488/</link>
+      <link>https://ayx.moefox.tech/upc1488/</link>
       <pubDate>Tue, 13 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/upc1488/</guid>
+      <guid>https://ayx.moefox.tech/upc1488/</guid>
       <description>题目描述： 时间：1s 空间：32M
 公司派你去和几位客户面谈，以了解他们对公司产品的意见。你逐个打电话与客户联系，得知他们一般都很忙，不过他们还是可以为你抽出一点时间。现在的问题是有些客户的时间有冲突，你无法在一天内联系所有客户。所以你需要一个程序来帮助你安排第一天的工作，使得你能尽可能地和更多的客户进行联系。注意，客户不愿意你打乱他们的计划。如果你和某个客户约定见面，必须按时到达并且充分利用这段时间和他交谈，这样才不至于让他产生不满。你可以假设从一个客户处到另一个客户处的时间短得忽略不计。
 输入格式： 输入包括了多个测试数据，每个测试数据开头是一个整数 $n（1 \le n \le 10000）$，表示客户总数。接下来n行每行包括两个正整数 $s$、$t$，分别表示该客户的空闲时间段的起始时间和终止时间。$s&amp;lt;t$
@@ -44,10 +44,10 @@
     
     <item>
       <title>题解 P5707 【深基2.例12】上学迟到</title>
-      <link>https://aynxu.l03.me/p5707/</link>
+      <link>https://ayx.moefox.tech/p5707/</link>
       <pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/p5707/</guid>
+      <guid>https://ayx.moefox.tech/p5707/</guid>
       <description>（题面来自洛谷）
 题目描述 yyy 的学校要求早上 8 点前到达。学校到 yyy 的家一共有 $s$($s\le 10000$) 米，而 yyy 可以以 $v$($v&amp;lt;10000$) 米每分钟的速度匀速走到学校。此外在上学路上它还要额外花 10 分钟时间进行垃圾分类。请问为了避免迟到 yyy 最晚什么时候出门？输出 HH:MM 的时间格式，不足两位时补零。由于路途遥远， yyy 可能不得不提前一天出发，不过不可能提前超过一天。
 输入格式 两个正整数 s,v，意思已经在题目中给定。
@@ -70,10 +70,10 @@
     
     <item>
       <title>题解 P2669 [NOIP2015 普及组] 金币</title>
-      <link>https://aynxu.l03.me/p2669/</link>
+      <link>https://ayx.moefox.tech/p2669/</link>
       <pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/p2669/</guid>
+      <guid>https://ayx.moefox.tech/p2669/</guid>
       <description>（题面来自洛谷）
 题目描述 国王将金币作为工资，发放给忠诚的骑士。第一天，骑士收到一枚金币；之后两天（第二天和第三天），每天收到两枚金币；之后三天（第四、五、六天），每天收到三枚金币；之后四天（第七、八、九、十天），每天收到四枚金币……；这种工资发放模式会一直这样延续下去：当连续 $n$ 天每天收到 $n$ 枚金币后，骑士会在之后的连续 $n+1$ 天里，每天收到 $n+1$ 枚金币。
 请计算在前 $k$ 天里，骑士一共获得了多少金币。
@@ -92,10 +92,10 @@
     
     <item>
       <title>题解 P5719 【深基4.例3】分类平均</title>
-      <link>https://aynxu.l03.me/p5719/</link>
+      <link>https://ayx.moefox.tech/p5719/</link>
       <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/p5719/</guid>
+      <guid>https://ayx.moefox.tech/p5719/</guid>
       <description>这题太有意思了，发个题解纪念一下
 题面来自洛谷
 $\LaTeX$ 渲染不了，哭了（明明后台预览是可以渲染的啊=
@@ -112,10 +112,10 @@ $\LaTeX$ 渲染不了，哭了（明明后台预览是可以渲染的啊=
     
     <item>
       <title>题解 HDU2063 过山车</title>
-      <link>https://aynxu.l03.me/hdu2063/</link>
+      <link>https://ayx.moefox.tech/hdu2063/</link>
       <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/hdu2063/</guid>
+      <guid>https://ayx.moefox.tech/hdu2063/</guid>
       <description>题面链接 HDU 2063
 Vjudge
 题意概述 求一个二分图最大匹配的边数
@@ -125,10 +125,10 @@ Vjudge
     
     <item>
       <title>题解 YBT 1000：入门测试题目</title>
-      <link>https://aynxu.l03.me/ybt1000/</link>
+      <link>https://ayx.moefox.tech/ybt1000/</link>
       <pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/ybt1000/</guid>
+      <guid>https://ayx.moefox.tech/ybt1000/</guid>
       <description>OpenJudge - 01:A+B问题
 信息学奥赛一本通（C++版）在线评测系统
 如果非要做这题我推荐第一个 OJ，第二个 OJ 的界面实在惨不忍睹
@@ -144,10 +144,10 @@ Vjudge
     
     <item>
       <title>题解 P1650 田忌赛马</title>
-      <link>https://aynxu.l03.me/p1650/</link>
+      <link>https://ayx.moefox.tech/p1650/</link>
       <pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/p1650/</guid>
+      <guid>https://ayx.moefox.tech/p1650/</guid>
       <description>(题面来自洛谷)
 题目描述 我国历史上有个著名的故事： 那是在2300年以前。齐国的大将军田忌喜欢赛马。他经常和齐王赛马。他和齐王都有三匹马：常规马，上级马，超级马。一共赛三局，每局的胜者可以从负者这里取得200银币。每匹马只能用一次。齐王的马好，同等级的马，齐王的总是比田忌的要好一点。于是每次和齐王赛马，田忌总会输600银币。
 田忌很沮丧，直到他遇到了著名的军师――孙膑。田忌采用了孙膑的计策之后，三场比赛下来，轻松而优雅地赢了齐王200银币。这实在是个很简单的计策。由于齐王总是先出最好的马，再出次好的，所以田忌用常规马对齐王的超级马，用自己的超级马对齐王的上级马，用自己的上级马对齐王的常规马，以两胜一负的战绩赢得200银币。实在很简单。

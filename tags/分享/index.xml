@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>分享 on Aynxul03 写字的地方</title>
-    <link>https://aynxu.l03.me/tags/%E5%88%86%E4%BA%AB/</link>
+    <link>https://ayx.moefox.tech/tags/%E5%88%86%E4%BA%AB/</link>
     <description>Recent content in 分享 on Aynxul03 写字的地方</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 06 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://aynxu.l03.me/tags/%E5%88%86%E4%BA%AB/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ayx.moefox.tech/tags/%E5%88%86%E4%BA%AB/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>分享一下我的博客园在用的修改版 Wider Gao 博客园主题</title>
-      <link>https://aynxu.l03.me/cnblogs-theme-share/</link>
+      <link>https://ayx.moefox.tech/cnblogs-theme-share/</link>
       <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/cnblogs-theme-share/</guid>
+      <guid>https://ayx.moefox.tech/cnblogs-theme-share/</guid>
       <description>如你所见，我的博客现在使用 Hugo，因此该修改版主题不太可能发布更新。
 此主题并非我的原创作品，原作者为 Wider Gao
 而且改得很烂，主页的文章展示都搞炸了（点击查看demo），不建议使用（但个人感觉也不是特别糟糕）

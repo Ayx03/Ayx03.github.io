@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>水题 on Aynxul03 写字的地方</title>
-    <link>https://aynxu.l03.me/tags/%E6%B0%B4%E9%A2%98/</link>
+    <link>https://ayx.moefox.tech/tags/%E6%B0%B4%E9%A2%98/</link>
     <description>Recent content in 水题 on Aynxul03 写字的地方</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Wed, 19 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://aynxu.l03.me/tags/%E6%B0%B4%E9%A2%98/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 19 Feb 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ayx.moefox.tech/tags/%E6%B0%B4%E9%A2%98/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>题解 P1650 田忌赛马</title>
-      <link>https://aynxu.l03.me/p1650/</link>
+      <link>https://ayx.moefox.tech/p1650/</link>
       <pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://aynxu.l03.me/p1650/</guid>
+      <guid>https://ayx.moefox.tech/p1650/</guid>
       <description>(题面来自洛谷)
 题目描述 我国历史上有个著名的故事： 那是在2300年以前。齐国的大将军田忌喜欢赛马。他经常和齐王赛马。他和齐王都有三匹马：常规马，上级马，超级马。一共赛三局，每局的胜者可以从负者这里取得200银币。每匹马只能用一次。齐王的马好，同等级的马，齐王的总是比田忌的要好一点。于是每次和齐王赛马，田忌总会输600银币。
 田忌很沮丧，直到他遇到了著名的军师――孙膑。田忌采用了孙膑的计策之后，三场比赛下来，轻松而优雅地赢了齐王200银币。这实在是个很简单的计策。由于齐王总是先出最好的马，再出次好的，所以田忌用常规马对齐王的超级马，用自己的超级马对齐王的上级马，用自己的上级马对齐王的常规马，以两胜一负的战绩赢得200银币。实在很简单。
