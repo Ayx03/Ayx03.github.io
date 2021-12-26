@@ -5,25 +5,6 @@
     <link>https://ayx.moefox.tech/categories/</link>
     <description>Recent content in Categories on Aynxul03 写字的地方</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language>
-    <lastBuildDate>Mon, 04 Oct 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ayx.moefox.tech/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>技术</title>
-      <link>https://ayx.moefox.tech/categories/%E6%8A%80%E6%9C%AF/</link>
-      <pubDate>Mon, 04 Oct 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://ayx.moefox.tech/categories/%E6%8A%80%E6%9C%AF/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>生活</title>
-      <link>https://ayx.moefox.tech/categories/%E7%94%9F%E6%B4%BB/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ayx.moefox.tech/categories/%E7%94%9F%E6%B4%BB/</guid>
-      <description></description>
-    </item>
-    
+    <language>zh-CN</language><atom:link href="https://ayx.moefox.tech/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
