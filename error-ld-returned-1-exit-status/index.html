@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-cn">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='CSDN 等国内平台上的文章只提到了一丁点，故看了半天 Stack OverFlow 后写篇博客解释'><title>出现 error: ld returned 1 exit status 的五种原因以及解决方法</title>
 
 <link rel='canonical' href='https://ayx.moefox.tech/error-ld-returned-1-exit-status/'>
 
-<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='出现 error: ld returned 1 exit status 的五种原因以及解决方法'>
+<link rel="stylesheet" href="/scss/style.min.bbcfef3c56489f1f37b552146da519e6b6a74a4c92792bcc512c78e2f55f25e1.css"><meta property='og:title' content='出现 error: ld returned 1 exit status 的五种原因以及解决方法'>
 <meta property='og:description' content='CSDN 等国内平台上的文章只提到了一丁点，故看了半天 Stack OverFlow 后写篇博客解释'>
 <meta property='og:url' content='https://ayx.moefox.tech/error-ld-returned-1-exit-status/'>
 <meta property='og:site_name' content='Aynxul03 写字的地方'>
@@ -15,17 +15,6 @@
 <meta name="twitter:description" content="CSDN 等国内平台上的文章只提到了一丁点，故看了半天 Stack OverFlow 后写篇博客解释"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://ayx.moefox.tech/error-ld-returned-1-exit-status/fengmian.png' />
     <link rel="shortcut icon" href="favicon.jpg" />
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-X0SE27LREY"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-X0SE27LREY', { 'anonymize_ip': false });
-}
-</script>
 
     </head>
     <body class="
@@ -119,26 +108,14 @@ if (!doNotTrack) {
         
 
         
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="12" r="9" />
-  <polyline points="12 7 12 12 15 15" />
-</svg>
-
-
-
-                <time class="article-time--reading">
-                    阅读时长: 1 分钟
-                </time>
-            </div>
-        
     </footer>
     
 </div>
 </header>
 
     <section class="article-content">
+    
+    
     <p>这个错误让人懵圈的地方就在于它不会给出错误出现的位置，让已经写了几百行的你痛不欲生。</p>
 <h2 id="可执行文件被占用了">可执行文件被占用了</h2>
 <p>因此编译器无法覆盖旧的可执行文件，所以编译失败。</p>
@@ -147,65 +124,49 @@ if (!doNotTrack) {
     >Visual Studio Code</a>）</p>
 <p>扩展：<a class="link" href="https://marketplace.visualstudio.com/items?itemName=danielpinto8zz6.c-cpp-compile-run"  target="_blank" rel="noopener"
     >C/C++ Compile Run</a>（可以方便地编译单个 cpp 文件，且不会因为路径中存在空格或中文出错。）
-<figure 
-	>
-	<a href="https://i.loli.net/2021/08/22/XLc4rwa5vFWldKG.png" >
-		<img src="https://i.loli.net/2021/08/22/XLc4rwa5vFWldKG.png"
-			
-			
-			
-			loading="lazy"
-			>
-	</a>
+<img src="https://i.loli.net/2021/08/22/XLc4rwa5vFWldKG.png"
 	
-</figure></p>
+	
+	
+	loading="lazy"
+	
+	
+></p>
 <h3 id="解决方案">解决方案</h3>
 <p>Dev C++ 等 IDE 直接把弹出的窗口（黑框）关了就行了</p>
 <p>VS Code 可以从输出切换到终端选项卡，使用快捷键 Ctrl+C 结束程序（同样适用于 external console ）。</p>
 <p>实在不行就用任务管理器和 taskkill 吧
-<figure 
-	>
-	<a href="https://i.loli.net/2021/08/22/i1kWGBpEeq4njRo.png" >
-		<img src="https://i.loli.net/2021/08/22/i1kWGBpEeq4njRo.png"
-			
-			
-			
-			loading="lazy"
-			>
-	</a>
+<img src="https://i.loli.net/2021/08/22/i1kWGBpEeq4njRo.png"
 	
-</figure></p>
+	
+	
+	loading="lazy"
+	
+	
+></p>
 <h2 id="主函数不存在main-拼写错误">主函数不存在（main 拼写错误）</h2>
 <p>你不太可能不写主函数，但是你很有可能把 <code>main</code> 打成 <code>mian</code> 或者什么其他奇怪的东西。</p>
 <p>在编译器眼里，这些可不能算主函数。</p>
-<p><figure 
-	>
-	<a href="https://i.loli.net/2021/08/22/cx9kIgiFmMAUSe2.png" >
-		<img src="https://i.loli.net/2021/08/22/cx9kIgiFmMAUSe2.png"
-			
-			
-			
-			loading="lazy"
-			>
-	</a>
+<p><img src="https://i.loli.net/2021/08/22/cx9kIgiFmMAUSe2.png"
 	
-</figure></p>
+	
+	
+	loading="lazy"
+	
+	
+></p>
 <h3 id="解决方案-1">解决方案</h3>
 <p>把 <code>main</code> 拼对。</p>
 <h2 id="所调用的函数仅进行了声明">所调用的函数仅进行了声明</h2>
 <p>这种情况下新版编译器仍旧会输出 <code>error: ld returned 1 exit status</code> 这一让人迷惑的错误。
-<figure 
-	>
-	<a href="https://i.loli.net/2021/08/22/ePJgykQW3GDwlKH.png" >
-		<img src="https://i.loli.net/2021/08/22/ePJgykQW3GDwlKH.png"
-			
-			
-			
-			loading="lazy"
-			>
-	</a>
+<img src="https://i.loli.net/2021/08/22/ePJgykQW3GDwlKH.png"
 	
-</figure>
+	
+	
+	loading="lazy"
+	
+	
+>
 但是一般也不会把函数体和声明分开写吧&hellip;</p>
 <p>（函数声明在主函数上方即可，函数体是可以写在 main 函数下方的。）</p>
 <h3 id="解决方案-2">解决方案</h3>
@@ -213,20 +174,16 @@ if (!doNotTrack) {
 <h2 id="旧版编译器在主函数中定义了函数">（旧版编译器）在主函数中定义了函数</h2>
 <p>新版编译器发现你在 main 函数中定义了其它函数报错并不是<code>error: ld returned 1 exit status</code>，</p>
 <p>而是<code>error: a function-definition is not allowed here before '{' token</code>
-<figure 
-	>
-	<a href="https://i.loli.net/2021/08/22/mAlnzduYxWRHPQf.png" >
-		<img src="https://i.loli.net/2021/08/22/mAlnzduYxWRHPQf.png"
-			
-			
-			
-			loading="lazy"
-			alt="Snipaste_2021-08-22_19-30-32.png">
-	</a>
+<img src="https://i.loli.net/2021/08/22/mAlnzduYxWRHPQf.png"
 	
-	<figcaption>Snipaste_2021-08-22_19-30-32.png</figcaption>
 	
-</figure></p>
+	
+	loading="lazy"
+	
+		alt="Snipaste_2021-08-22_19-30-32.png"
+	
+	
+></p>
 <h3 id="解决方案-3">解决方案</h3>
 <p>把子函数定义在主函数外面。</p>
 <h2 id="旧版编译器调用了不存在的函数">（旧版编译器）调用了不存在的函数</h2>
@@ -239,18 +196,14 @@ if (!doNotTrack) {
 </blockquote>
 <p>（测试用代码是随机跳题后从<a class="link" href="https://www.luogu.com.cn/blog/ShadowassIIXVIIIIV/solution-p3783"  target="_blank" rel="noopener"
     >这里</a>复制的，并未提交评测）
-<figure 
-	>
-	<a href="https://i.loli.net/2021/08/22/nh231c5y94OTdHa.png" >
-		<img src="https://i.loli.net/2021/08/22/nh231c5y94OTdHa.png"
-			
-			
-			
-			loading="lazy"
-			>
-	</a>
+<img src="https://i.loli.net/2021/08/22/nh231c5y94OTdHa.png"
 	
-</figure></p>
+	
+	
+	loading="lazy"
+	
+	
+></p>
 <h3 id="解决方案-4">解决方案</h3>
 <p>检查函数名称的拼写是否正确。</p>
 <p>如果想调用库函数但不清楚应该引入什么头文件，可以在搜索引擎上像这样搜索：</p>
@@ -259,11 +212,21 @@ if (!doNotTrack) {
 <p><code>C语言 sqrt()</code></p>
 <p>或者直接 <code>#include &lt;bits/stdc++.h&gt;</code></p>
 <h2 id="本文的测试环境">本文的测试环境</h2>
-<pre tabindex="0"><code>g++ (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 10.3.0
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">g++ (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 10.3.0
 Copyright (C) 2020 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-</code></pre><h2 id="编辑记录">编辑记录</h2>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="编辑记录">编辑记录</h2>
 <p>2021-08-22 19:20:00</p>
 
 </section>
@@ -312,6 +275,8 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
     
 </article>
 
+    
+
     <aside class="related-contents--wrapper">
     
     
@@ -328,7 +293,8 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
                 <img src="/key-to-p1603/cover.ecf17334ebe3bdf20d874b297771da6f_hu33884e09a361eec376ba2239fc3bc8e1_84422_250x150_fill_q75_box_smart1.jpg" 
                         width="250" 
                         height="150" 
-                        loading="lazy" 
+                        loading="lazy"
+                        alt="Featured image of post 题解 P1603 斯诺登的密码"
                         data-key="Key-to-P1603" 
                         data-hash="md5-7PFzNOvjvfINh0spd3Habw==">
                 
@@ -411,7 +377,7 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
     }
 </style><script>
     
-    new Waline({"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus","https://cdn.jsdelivr.net/gh/walinejs/emojis/qq","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba"],"lang":"zh-CN","locale":{"admin":"Admin"},"requiredMeta":["name","email","url"],"serverURL":"https://waline-ikbefr64v-ayx03.vercel.app/","visitor":true});
+    new Waline({"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba","https://cdn.jsdelivr.net/gh/walinejs/emojis/qq","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus"],"lang":"zh-CN","locale":{"admin":"博主"},"requiredMeta":["name","email","url"],"serverURL":"https://c.moefox.tech/"});
 </script>
 
     
@@ -422,14 +388,14 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
         
             2020 - 
         
-        2021 Aynxul03 写字的地方
+        2022 Aynxul03 写字的地方
     </section>
     
     <section class="powerby">
         
-            本站由 GitHub Pages 及 Cloudflare 强力驱动，如果访问出错肯定是它们俩的锅。<br>由于 Pages 的局限性，我引入了 Google Analytics 来收集访问数据；这些数据只是我自己看着玩的，不会被泄露；<br>您大可屏蔽它的 Cookie，这不会影响您浏览本站的所有内容或发表评论。<br><a href="https://icp.gov.moe" target="_blank">萌ICP备</a> <a href="https://icp.gov.moe/?keyword=20213003" target="_blank">20213003号</a> <br/>
+            主站由 Vercel 驱动，如遇需使用 IPv6 或主站无法访问请访问托管于 GitHub Pages 的<a href="https://ayx03.github.io/">镜像</a>（实时同步）。<br>由于 Pages 的局限性，我引入了 Google Analytics 来收集访问数据；这些数据只是我自己看着玩的，不会被泄露；<br>您大可屏蔽它的 Cookie，这不会影响您浏览本站的所有内容或发表评论。<br>本站支持 IPv6 网络。<br><a href="https://icp.gov.moe" target="_blank">萌ICP备</a> <a href="https://icp.gov.moe/?keyword=20213003" target="_blank">20213003号</a> <br/>
         Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.5.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.8.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
     </section>
 </footer>
 
@@ -498,11 +464,11 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 </div><script 
                 src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
-                defer="true"
+                defer
                 >
             </script><script 
                 src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
-                defer="true"
+                defer
                 >
             </script><link 
                 rel="stylesheet" 
@@ -570,7 +536,7 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
         </div>
         <script 
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
-                defer="false"
+                
                 >
             </script><script type="text/javascript" src="/ts/main.js" defer></script>
 <script>

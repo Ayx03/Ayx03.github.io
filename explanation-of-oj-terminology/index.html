@@ -1,30 +1,19 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-cn">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='正经解释    简称 全称 中文称谓 补充说明 &amp;amp; 修改建议     OJ Online Judge 在线判题系统 可以对你的程序进行评测并给出结果。洛谷、SPOJ、Codeforces、Vijos、UVa OJ 都是在线判题系统   AC Accepted 通过 嘲讽你还没过的同学 想想在时间和空间上能否做到更优，或是继续做其他题目   WA Wrong Answer 答案错误 你的程序在规定的时间和内存限制内里输出了错误的答案，因此没有得分（想一想，有没有没有考虑到的特殊情况？如果你的程序根本无法对样例输入输出正确的答案，那么你的思路很可能有问题）   TLE Time Limit Exceed 超出时间限制 你的程序在该测试点上超出了题目给定的时间仍未结束运行，因此被强行中止（检查是否存在死循环或过多的循环，使用时间复杂度更优的算法，进行一些常数及输入输出优化，剪枝）如果你的程序能正常给出答案，记得使用循环控制语句 break 或 return 0、exit(0) 这样的语句结束程序；在一些评测系统老旧的 OJ 中，没有读入完输入的数据也会造成 TLE，但是在洛谷不会发生。   OLE Output Limit Exceed 超出输出限制 你的程序在这个测试点中输出的字符数量超出了限制，因此被系统强行中止（检查是否存在死循环和没有注释掉的调试用输出语句）   MLE Memory Limit Exceed 超出内存限制 你的程序在运行过程中占用了过多的内存，因此被系统强行中止（检查是否在程序中使用了过大的数组或是往 STL 容器中存入了过多的数据）   RE Runtime Error 运行时出错 检查是否存在数组越界访问（尤其是C(&#43;&#43;)语言选手）。另外，如果你在 main 函数中返回一个非 0 的值也会被系统认为程序异常退出   PE Presentation Error 格式错误 检查输出的空格/换行符数量是否与题面中的要求严格一致   CE Compile Error 编译错误 你的程序根本无法通过编译，也就没有可执行文件可以用来评测（检查语法，初学者建议着重检查分号和全角标点，建议敲代码时禁用中文输入法）   UKE Unknown Error 未知错误 评测姬也不知道出了什么问题（联系 OJ 管理员或出题人，稍后再尝试重新提交）    哈哈太搞笑了    简写 全称 中文称谓     AC Answer Cubi 粗鄙的答案   WA Wonderful Answer 优美的答案   TLE Time Limit Enough 时间充裕   OLE Output Limit Enough 输出足够   MLE Memory Limit Enough 内存充裕   RE Runtime Excellent 运行时（过于） 优秀   PE Pretty Excellent 十分优秀   CE Compile Easily 轻松通过编译   UKE Unbelievable Keeping Excellent 难以置信的保持优秀     AC=Answer Cubi 粗鄙的答案 WA=Wonderful Answer 优美的答案 TLE=Time Limit Enough 时间充裕 OLE=Output Limit Enough 输出足够 MLE=Memory Limit Enough 内存充裕 RE=Runtime Excellent 运行时（过于）优秀 PE=Pretty Excellent 十分优秀 CE=Compile Easily 轻松通过编译 UKE=Unbelievable Keeping Excellent 难以置信的保持优秀    出现AC时你需要将你的答案变得更优美才能通过； 而TLE、OLE、MLE、ER经常同时出现，可以给予你少量的额外分数； PE、CE都能给予你大量的额外分数； UKE这个标签非常稀有，可以让你直接通过这次比赛并名列前茅。  '><title>OJ术语的解释： AC、WA、TLE、OLE、MLE、RE、PE、CE、UKE 都是些啥？</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='正经解释 简称 全称 中文称谓 补充说明 &amp;amp; 修改建议 OJ Online Judge 在线判题系统 可以对你的程序进行评测并给出结果。洛谷、SPOJ、Codeforces、Vijo'><title>OJ术语的解释： AC、WA、TLE、OLE、MLE、RE、PE、CE、UKE 都是些啥？</title>
 
 <link rel='canonical' href='https://ayx.moefox.tech/explanation-of-oj-terminology/'>
 
-<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='OJ术语的解释： AC、WA、TLE、OLE、MLE、RE、PE、CE、UKE 都是些啥？'>
-<meta property='og:description' content='正经解释    简称 全称 中文称谓 补充说明 &amp;amp; 修改建议     OJ Online Judge 在线判题系统 可以对你的程序进行评测并给出结果。洛谷、SPOJ、Codeforces、Vijos、UVa OJ 都是在线判题系统   AC Accepted 通过 嘲讽你还没过的同学 想想在时间和空间上能否做到更优，或是继续做其他题目   WA Wrong Answer 答案错误 你的程序在规定的时间和内存限制内里输出了错误的答案，因此没有得分（想一想，有没有没有考虑到的特殊情况？如果你的程序根本无法对样例输入输出正确的答案，那么你的思路很可能有问题）   TLE Time Limit Exceed 超出时间限制 你的程序在该测试点上超出了题目给定的时间仍未结束运行，因此被强行中止（检查是否存在死循环或过多的循环，使用时间复杂度更优的算法，进行一些常数及输入输出优化，剪枝）如果你的程序能正常给出答案，记得使用循环控制语句 break 或 return 0、exit(0) 这样的语句结束程序；在一些评测系统老旧的 OJ 中，没有读入完输入的数据也会造成 TLE，但是在洛谷不会发生。   OLE Output Limit Exceed 超出输出限制 你的程序在这个测试点中输出的字符数量超出了限制，因此被系统强行中止（检查是否存在死循环和没有注释掉的调试用输出语句）   MLE Memory Limit Exceed 超出内存限制 你的程序在运行过程中占用了过多的内存，因此被系统强行中止（检查是否在程序中使用了过大的数组或是往 STL 容器中存入了过多的数据）   RE Runtime Error 运行时出错 检查是否存在数组越界访问（尤其是C(&#43;&#43;)语言选手）。另外，如果你在 main 函数中返回一个非 0 的值也会被系统认为程序异常退出   PE Presentation Error 格式错误 检查输出的空格/换行符数量是否与题面中的要求严格一致   CE Compile Error 编译错误 你的程序根本无法通过编译，也就没有可执行文件可以用来评测（检查语法，初学者建议着重检查分号和全角标点，建议敲代码时禁用中文输入法）   UKE Unknown Error 未知错误 评测姬也不知道出了什么问题（联系 OJ 管理员或出题人，稍后再尝试重新提交）    哈哈太搞笑了    简写 全称 中文称谓     AC Answer Cubi 粗鄙的答案   WA Wonderful Answer 优美的答案   TLE Time Limit Enough 时间充裕   OLE Output Limit Enough 输出足够   MLE Memory Limit Enough 内存充裕   RE Runtime Excellent 运行时（过于） 优秀   PE Pretty Excellent 十分优秀   CE Compile Easily 轻松通过编译   UKE Unbelievable Keeping Excellent 难以置信的保持优秀     AC=Answer Cubi 粗鄙的答案 WA=Wonderful Answer 优美的答案 TLE=Time Limit Enough 时间充裕 OLE=Output Limit Enough 输出足够 MLE=Memory Limit Enough 内存充裕 RE=Runtime Excellent 运行时（过于）优秀 PE=Pretty Excellent 十分优秀 CE=Compile Easily 轻松通过编译 UKE=Unbelievable Keeping Excellent 难以置信的保持优秀    出现AC时你需要将你的答案变得更优美才能通过； 而TLE、OLE、MLE、ER经常同时出现，可以给予你少量的额外分数； PE、CE都能给予你大量的额外分数； UKE这个标签非常稀有，可以让你直接通过这次比赛并名列前茅。  '>
+<link rel="stylesheet" href="/scss/style.min.bbcfef3c56489f1f37b552146da519e6b6a74a4c92792bcc512c78e2f55f25e1.css"><meta property='og:title' content='OJ术语的解释： AC、WA、TLE、OLE、MLE、RE、PE、CE、UKE 都是些啥？'>
+<meta property='og:description' content='正经解释 简称 全称 中文称谓 补充说明 &amp;amp; 修改建议 OJ Online Judge 在线判题系统 可以对你的程序进行评测并给出结果。洛谷、SPOJ、Codeforces、Vijo'>
 <meta property='og:url' content='https://ayx.moefox.tech/explanation-of-oj-terminology/'>
 <meta property='og:site_name' content='Aynxul03 写字的地方'>
 <meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='OJ' /><meta property='article:published_time' content='2019-12-29T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-08-07T06:21:00&#43;00:00'/>
 <meta name="twitter:site" content="@03Ayx">
     <meta name="twitter:creator" content="@03Ayx"><meta name="twitter:title" content="OJ术语的解释： AC、WA、TLE、OLE、MLE、RE、PE、CE、UKE 都是些啥？">
-<meta name="twitter:description" content="正经解释    简称 全称 中文称谓 补充说明 &amp;amp; 修改建议     OJ Online Judge 在线判题系统 可以对你的程序进行评测并给出结果。洛谷、SPOJ、Codeforces、Vijos、UVa OJ 都是在线判题系统   AC Accepted 通过 嘲讽你还没过的同学 想想在时间和空间上能否做到更优，或是继续做其他题目   WA Wrong Answer 答案错误 你的程序在规定的时间和内存限制内里输出了错误的答案，因此没有得分（想一想，有没有没有考虑到的特殊情况？如果你的程序根本无法对样例输入输出正确的答案，那么你的思路很可能有问题）   TLE Time Limit Exceed 超出时间限制 你的程序在该测试点上超出了题目给定的时间仍未结束运行，因此被强行中止（检查是否存在死循环或过多的循环，使用时间复杂度更优的算法，进行一些常数及输入输出优化，剪枝）如果你的程序能正常给出答案，记得使用循环控制语句 break 或 return 0、exit(0) 这样的语句结束程序；在一些评测系统老旧的 OJ 中，没有读入完输入的数据也会造成 TLE，但是在洛谷不会发生。   OLE Output Limit Exceed 超出输出限制 你的程序在这个测试点中输出的字符数量超出了限制，因此被系统强行中止（检查是否存在死循环和没有注释掉的调试用输出语句）   MLE Memory Limit Exceed 超出内存限制 你的程序在运行过程中占用了过多的内存，因此被系统强行中止（检查是否在程序中使用了过大的数组或是往 STL 容器中存入了过多的数据）   RE Runtime Error 运行时出错 检查是否存在数组越界访问（尤其是C(&#43;&#43;)语言选手）。另外，如果你在 main 函数中返回一个非 0 的值也会被系统认为程序异常退出   PE Presentation Error 格式错误 检查输出的空格/换行符数量是否与题面中的要求严格一致   CE Compile Error 编译错误 你的程序根本无法通过编译，也就没有可执行文件可以用来评测（检查语法，初学者建议着重检查分号和全角标点，建议敲代码时禁用中文输入法）   UKE Unknown Error 未知错误 评测姬也不知道出了什么问题（联系 OJ 管理员或出题人，稍后再尝试重新提交）    哈哈太搞笑了    简写 全称 中文称谓     AC Answer Cubi 粗鄙的答案   WA Wonderful Answer 优美的答案   TLE Time Limit Enough 时间充裕   OLE Output Limit Enough 输出足够   MLE Memory Limit Enough 内存充裕   RE Runtime Excellent 运行时（过于） 优秀   PE Pretty Excellent 十分优秀   CE Compile Easily 轻松通过编译   UKE Unbelievable Keeping Excellent 难以置信的保持优秀     AC=Answer Cubi 粗鄙的答案 WA=Wonderful Answer 优美的答案 TLE=Time Limit Enough 时间充裕 OLE=Output Limit Enough 输出足够 MLE=Memory Limit Enough 内存充裕 RE=Runtime Excellent 运行时（过于）优秀 PE=Pretty Excellent 十分优秀 CE=Compile Easily 轻松通过编译 UKE=Unbelievable Keeping Excellent 难以置信的保持优秀    出现AC时你需要将你的答案变得更优美才能通过； 而TLE、OLE、MLE、ER经常同时出现，可以给予你少量的额外分数； PE、CE都能给予你大量的额外分数； UKE这个标签非常稀有，可以让你直接通过这次比赛并名列前茅。  ">
+<meta name="twitter:description" content="正经解释 简称 全称 中文称谓 补充说明 &amp;amp; 修改建议 OJ Online Judge 在线判题系统 可以对你的程序进行评测并给出结果。洛谷、SPOJ、Codeforces、Vijo">
     <link rel="shortcut icon" href="favicon.jpg" />
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-X0SE27LREY"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-X0SE27LREY', { 'anonymize_ip': false });
-}
-</script>
 
     </head>
     <body class="
@@ -102,28 +91,16 @@ if (!doNotTrack) {
         
 
         
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="12" r="9" />
-  <polyline points="12 7 12 12 15 15" />
-</svg>
-
-
-
-                <time class="article-time--reading">
-                    阅读时长: 1 分钟
-                </time>
-            </div>
-        
     </footer>
     
 </div>
 </header>
 
     <section class="article-content">
+    
+    
     <h2 id="正经解释">正经解释</h2>
-<table>
+<div class="table-wrapper"><table>
 <thead>
 <tr>
 <th>简称</th>
@@ -199,9 +176,9 @@ if (!doNotTrack) {
 <td>评测姬也不知道出了什么问题（联系 OJ 管理员或出题人，稍后再尝试重新提交）</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2 id="哈哈太搞笑了">哈哈太搞笑了</h2>
-<table>
+<div class="table-wrapper"><table>
 <thead>
 <tr>
 <th style="text-align:center">简写</th>
@@ -256,7 +233,7 @@ if (!doNotTrack) {
 <td style="text-align:center">难以置信的保持优秀</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <ul>
 <li>AC=Answer Cubi 粗鄙的答案</li>
 <li>WA=Wonderful Answer 优美的答案</li>
@@ -318,6 +295,8 @@ if (!doNotTrack) {
     
 </article>
 
+    
+
     <aside class="related-contents--wrapper">
     
     
@@ -340,7 +319,7 @@ if (!doNotTrack) {
     }
 </style><script>
     
-    new Waline({"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus","https://cdn.jsdelivr.net/gh/walinejs/emojis/qq","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba"],"lang":"zh-CN","locale":{"admin":"Admin"},"requiredMeta":["name","email","url"],"serverURL":"https://waline-ikbefr64v-ayx03.vercel.app/","visitor":true});
+    new Waline({"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba","https://cdn.jsdelivr.net/gh/walinejs/emojis/qq","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus"],"lang":"zh-CN","locale":{"admin":"博主"},"requiredMeta":["name","email","url"],"serverURL":"https://c.moefox.tech/"});
 </script>
 
     
@@ -351,14 +330,14 @@ if (!doNotTrack) {
         
             2020 - 
         
-        2021 Aynxul03 写字的地方
+        2022 Aynxul03 写字的地方
     </section>
     
     <section class="powerby">
         
-            本站由 GitHub Pages 及 Cloudflare 强力驱动，如果访问出错肯定是它们俩的锅。<br>由于 Pages 的局限性，我引入了 Google Analytics 来收集访问数据；这些数据只是我自己看着玩的，不会被泄露；<br>您大可屏蔽它的 Cookie，这不会影响您浏览本站的所有内容或发表评论。<br><a href="https://icp.gov.moe" target="_blank">萌ICP备</a> <a href="https://icp.gov.moe/?keyword=20213003" target="_blank">20213003号</a> <br/>
+            主站由 Vercel 驱动，如遇需使用 IPv6 或主站无法访问请访问托管于 GitHub Pages 的<a href="https://ayx03.github.io/">镜像</a>（实时同步）。<br>由于 Pages 的局限性，我引入了 Google Analytics 来收集访问数据；这些数据只是我自己看着玩的，不会被泄露；<br>您大可屏蔽它的 Cookie，这不会影响您浏览本站的所有内容或发表评论。<br>本站支持 IPv6 网络。<br><a href="https://icp.gov.moe" target="_blank">萌ICP备</a> <a href="https://icp.gov.moe/?keyword=20213003" target="_blank">20213003号</a> <br/>
         Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.5.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.8.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
     </section>
 </footer>
 
@@ -427,11 +406,11 @@ if (!doNotTrack) {
 
 </div><script 
                 src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
-                defer="true"
+                defer
                 >
             </script><script 
                 src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
-                defer="true"
+                defer
                 >
             </script><link 
                 rel="stylesheet" 
@@ -474,7 +453,7 @@ if (!doNotTrack) {
         </div>
         <script 
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
-                defer="false"
+                
                 >
             </script><script type="text/javascript" src="/ts/main.js" defer></script>
 <script>

@@ -5,7 +5,7 @@
     <link>https://ayx.moefox.tech/page/</link>
     <description>Recent content in Pages on Aynxul03 写字的地方</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language>
+    <language>zh-cn</language>
     <lastBuildDate>Fri, 23 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ayx.moefox.tech/page/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于</title>
@@ -13,12 +13,7 @@
       <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ayx.moefox.tech/about/</guid>
-      <description>有事找我请首先考虑发邮件，我的常用邮箱: aynxul03#gmail.com （把#替换成@）
-B站: @Aynxul03
-GitHub: @Ayx03
-洛谷: @Aynxul03
-知乎: @Aynxul03
-TG/QQ/微信等IM账号：熟了自然会告诉你</description>
+      <description>有事找我请首先考虑发邮件，我的常用邮箱: aynxul03#gmail.com （把#替换成@） B站: @Aynxul03 GitHub: @Ayx03 洛谷: @Aynxul03 知乎: @Aynxul03 TG/QQ/微信等IM账号：熟了自然会告诉你</description>
     </item>
     
     <item>
@@ -27,23 +22,7 @@ TG/QQ/微信等IM账号：熟了自然会告诉你</description>
       <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ayx.moefox.tech/link/</guid>
-      <description>个人博客 目前都是 OI 向的（
-一条鱼 的博客 洛谷@我和鱼过不去
-她 AK 了 IOI ！  在 IOI 中获得满分，俗称 AKIOI 
-Rosyr 的博客园 Rosyr 用来记录学习轨迹的地方 | 他的头像 | luogu@syr050301 | bilibili@艾鹰司坛
-TA AFO 了。
-组织/项目 萌狸科技 本站隶属于萌狸科技。
-淀粉月刊 接力曾经的《少年电脑世界》！简介/我们的故事
-中文独立博客 如果你想找到更多像本站一样拥有自己的域名且相对自由的博客站点的话&amp;hellip;
-萌国ICP备案 本站仅在此处进行过ICP备案，备案号为20213003。
-提问的智慧 简体中文版
-A Dark Room 小黑屋，一款文字游戏。
-支持以一串 Base64 编码后的 json 进行存档导入/导出。
-我对它做了一些小改进，应该 以后会稍微改改的
-mergemp4 利用 FFmpeg 在现代浏览器中合并 .mp4 格式的视频和音频，原作者为 maple3142。
-目前似乎不可用。肯定不是被我搞坏的！
-GitHub 存储库
-申请交换友链  为了减少本站（大概率会）每年更换域名带来的不便，本站的链接请使用 https://ayx03.github.io/ 而不是 ayx.moefox.tech l03.me 已于2021年12月19日过期。本站域名已更换为 ayx.</description>
+      <description>个人博客 目前都是 OI 向的（ 一条鱼 的博客 洛谷@我和鱼过不去 她 AK 了 IOI ！ Rosyr 的博客园 Rosyr 用来记录学习轨迹的地方 | 他的头像 | luogu@syr050301 | bilibili@艾鹰司坛</description>
     </item>
     
     <item>
@@ -52,7 +31,7 @@ GitHub 存储库
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ayx.moefox.tech/archives/</guid>
-      <description></description>
+      <description>如果你看到了这段话，说明这个页面出了些问题&amp;hellip;</description>
     </item>
     
     <item>
@@ -61,7 +40,7 @@ GitHub 存储库
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ayx.moefox.tech/search/</guid>
-      <description></description>
+      <description>如果你看到了这段话，说明这个页面出了些问题&amp;hellip;</description>
     </item>
     
     <item>
@@ -70,7 +49,7 @@ GitHub 存储库
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ayx.moefox.tech/tags/</guid>
-      <description></description>
+      <description>如果你看到了这段话，说明这个页面出了些问题&amp;hellip;</description>
     </item>
     
   </channel>
