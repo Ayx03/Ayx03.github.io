@@ -5,7 +5,7 @@
     <link>https://ayx.moefox.tech/tags/%E6%89%AF%E6%B7%A1/</link>
     <description>Recent content in 扯淡 on Aynxul03 写字的地方</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language>
+    <language>zh-cn</language>
     <lastBuildDate>Sun, 25 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ayx.moefox.tech/tags/%E6%89%AF%E6%B7%A1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>独角兽搜索</title>
@@ -13,8 +13,7 @@
       <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ayx.moefox.tech/unicorn-search/</guid>
-      <description>我的博客的站内搜索已经搭载了这款 微内核万物互联分布式软总线形式化验证 搜索引擎，大家可以在侧边栏点击搜索抢先体验一下！
-相信这将是与 花瓣搜索 一样的优秀国产项目！让我们在一起拒绝卡脖子！星星之火可以燎原！</description>
+      <description>我的博客的站内搜索已经搭载了这款 微内核万物互联分布式软总线形式化验证 搜索引擎，大家可以在侧边栏点击搜索抢先体验一下！ 相信这将是与 花瓣搜索 一样</description>
     </item>
     
     <item>
@@ -23,16 +22,7 @@
       <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ayx.moefox.tech/rollbackfailedoptional/</guid>
-      <description>我的解决方法 以 管理员身份 运行一个编辑器 打开 C:\Program Files\nodejs\node_modules\npm\npmrc   如果你安装Node.js时修改了安装路径那么就不是这个路径了
-  如果这个文件不存在就自己新建一个文本文档并去掉扩展名 .txt
-  修改 C:\Program Files\nodejs\node_modules\npm\.npmrc 没有用
-  填入以下内容并保存 proxy = null registry = https://registry.npm.taobao.org disturl = https://npm.taobao.org/dist 然后再重新尝试安装Hexo（npm install hexo-cli -g）即可。 如果依旧无法解决可以尝试在以管理员身份启动的命令提示符或 Powershell 中执行此命令 npm config set disturl https://npm.taobao.org/dist 文章迁移备注 从博客园搬文章的时候无意发现本文已被以下站点转载：
-qdmana.com
-yunjuu.com
-我并未授权这些网站转载我的文章。
-虽然这篇博客没有花我很多时间，但是这些网站的行为让我感到十分不满。
- 编辑记录
-2021-08-05 13:20:00</description>
+      <description>我的解决方法 以 管理员身份 运行一个编辑器 打开 C:\Program Files\nodejs\node_modules\npm\npmrc 如果你安装Node.js时修改了安装路径那么就不是这个路径了 如果这个文件不存在就自己新建一个文</description>
     </item>
     
   </channel>

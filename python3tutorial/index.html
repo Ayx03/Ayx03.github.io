@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='R.I.P. Python 2'><title>Python 3 入门学习笔记</title>
+
+<link rel='canonical' href='https://ayx.moefox.tech/python3tutorial/'>
+
+<link rel="stylesheet" href="/scss/style.min.8f4416a35036b6471a6978873128b5652464226c8db8a9620ed1b94bc11bd353.css"><meta property='og:title' content='Python 3 入门学习笔记'>
+<meta property='og:description' content='R.I.P. Python 2'>
+<meta property='og:url' content='https://ayx.moefox.tech/python3tutorial/'>
+<meta property='og:site_name' content='Aynxul03 写字的地方'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2022-02-12T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2022-02-12T00:00:00&#43;00:00'/>
+<meta name="twitter:site" content="@03Ayx">
+    <meta name="twitter:creator" content="@03Ayx"><meta name="twitter:title" content="Python 3 入门学习笔记">
+<meta name="twitter:description" content="R.I.P. Python 2">
+    <link rel="shortcut icon" href="favicon.jpg" />
+
+    </head>
+    <body class="
+    article-page has-toc
+">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex 
+    
+        extended
+    
+">
+    
+        <div id="article-toolbar">
+            <a href="/" class="back-home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="15 6 9 12 15 18" />
+</svg>
+
+
+
+                <span>返回</span>
+            </a>
+        </div>
+    
+<main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+
+    <h2 class="article-title">
+        <a href="/python3tutorial/">Python 3 入门学习笔记</a>
+    </h2>
+
+    
+    <h3 class="article-subtitle">
+        R.I.P. Python 2
+    </h3>
+    
+
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Feb 12, 2022</time>
+            </div>
+        
+
+        
+    </footer>
+    
+</div>
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="安装-python-3-本体与集成开发环境">安装 Python 3 本体与集成开发环境</h2>
+<p>如果你已经完成了这些准备工作，可以使用右侧的目录跳到下一章节 - 你好，世界。</p>
+<h3 id="python-3-本体包括-idle">Python 3 本体（包括 IDLE）</h3>
+<p>前往 Python 官网下载。</p>
+<p><a class="link" href="https://www.python.org/downloads"  target="_blank" rel="noopener"
+    >https://www.python.org/downloads</a></p>
+<p>打开该地址时会自动识别你的操作系统并为你推荐合适的 Python 3 版本，一般情况下点击黄色按钮下载即可。目前的最新版本为 3.10.2。</p>
+<h4 id="windows-用户">Windows 用户</h4>
+<p>8/8.1/10/11 用户也可以在 Microsoft Store <a class="link" href="https://www.microsoft.com/zh-cn/p/python-310/9pjpw5ldxlz5"  target="_blank" rel="noopener"
+    >免费获取 Python 3.10</a>。</p>
+<p>在命令提示符/PowerShell 中输入 <code>python3</code> 也可以唤起 Microsoft 商店并进入该页面。</p>
+<p>需要注意的是，如果你使用的是比 Windows 8.1 或 Windows Server 2012 更旧的操作系统，你将无法安装 Python 3.9.0 及更新的版本。你仍能安装 Python 3.8.10，但对 Python 3.8.x 的支持将于 2024 年 10 月终止。</p>
+<p>安装时记得勾选 Add Python 3.x to PATH，这样就不需要手动配置环境变量了。</p>
+<hr>
+<p>安装好后，在命令提示符（Command Prompt）/PowerShell（macOS/Linux 是 Terminal） 中输入 <code>python -V</code> 来查看版本信息。</p>
+<p>打开运行（按下键盘上的 Win+R），输入 <code>python</code> 即可进入 IDLE（在 Windows 的开始菜单里你也可以找到 IDLE）。</p>
+<h3 id="pycharm">PyCharm</h3>
+<p>支持 Windows、macOS(Intel/Apple Silicon)、Linux。</p>
+<p>前往 JetBrains 官网下载安装包。</p>
+<p><a class="link" href="https://www.jetbrains.com/zh-cn/pycharm/download"  target="_blank" rel="noopener"
+    >https://www.jetbrains.com/zh-cn/pycharm/download</a></p>
+<p>如果你没有教育邮箱可用于申请免费的 Professional Edition，推荐下载免费且开源的 Community Edition。</p>
+<h4 id="ubuntu--1604-用户">Ubuntu ≥ 16.04 用户</h4>
+<p>也可以使用 snap 安装 PyCharm：</p>
+<p><code>sudo snap install [pycharm-professional|pycharm-community] --classic</code></p>
+<p>你也可以选择 Spyder 等其他 IDE，或者干脆使用一个文本编辑器（如 vim、Sublime Text、Notepad3）。</p>
+<p>这篇笔记将使用 PyCharm 和 Python 3.10.2。</p>
+<h2 id="你好世界">你好，世界。</h2>
+<p>打开 PyCharm 新建一个项目（暂时不需要特别配置解释器，保持默认即可；如果你想保持些神秘感，记得取消勾选 <code>Create a main.py welcome script</code>；或许在只有一个文件的情况下使用 IDLE 是更好的选择），等待 IDE 自动配置环境。</p>
+<p>在左侧的资源管理器中右键你刚创建的项目，选择 New &gt; Python File，为你的第一个 Python 程序起一个你喜欢的名字。不过，它不能以数字开头。</p>
+<h3 id="print-语句">print 语句</h3>
+<p>双击刚刚创建的文件，在右侧打开的文本编辑区域输入 <code>print(&quot;Hello World!&quot;)</code>。</p>
+<p>输入 Python 代码时，记得切换到美式键盘或英式键盘而不是使用中文输入法（如果你没有，在语言和键盘选项中添加一个），以免错误地输入中文的逗号（，）、句号（。）、引号（“”）、中括号（【】）以及小括号。</p>
+<p>像其他大多数 IDE 一样，PyCharm 会替你自动补全括号和双引号，你只需要打左半边就好。</p>
+<p>按下 Alt+Shift+F10（或在 <code>Run</code> 菜单下选择 <code>Run...</code>），选择你的文件。</p>
+<p>下方弹出的窗口中输出了 <code>Hello World!</code>。</p>
+<p><code>Process finished with exit code 0</code> 表示程序正常结束；对应地，<code>Process finished with exit code 1</code> 表示程序异常退出。</p>
+<h1 id="未完待续">未完，待续</h1>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>未经允许禁止转载</span>
+    </section>
+    </footer>
+
+
+    
+</article>
+
+    
+
+    <aside class="related-contents--wrapper">
+    
+    
+</aside>
+
+     
+    
+        
+    <script src='//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js'></script>
+<div id="waline" class="waline-container"></div>
+<style>
+    .waline-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+    }
+    .waline-container .vcount {
+        color: var(--card-text-color-main);
+    }
+</style><script>
+    
+    new Waline({"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba","https://cdn.jsdelivr.net/gh/walinejs/emojis/qq","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus"],"lang":"zh-CN","locale":{"admin":"博主"},"requiredMeta":["name","email","url"],"serverURL":"https://c.moefox.tech/"});
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2022 Aynxul03 写字的地方
+    </section>
+    
+    <section class="powerby">
+        
+            主站由 Vercel 驱动，如遇需使用 IPv6 或主站无法访问请访问托管于 GitHub Pages 的<a href="https://ayx03.github.io/">镜像</a>（实时同步）。<br>由于 Pages 的局限性，我引入了 Google Analytics 来收集访问数据；这些数据只是我自己看着玩的，不会被泄露；<br>您大可屏蔽它的 Cookie，这不会影响您浏览本站的所有内容或发表评论。<br>本站支持 IPv6 网络。<br><a href="https://icp.gov.moe" target="_blank">萌ICP备</a> <a href="https://icp.gov.moe/?keyword=20213003" target="_blank">20213003号</a> <br/>
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.7.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer="true"
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
+            >
+
+            </main>
+    
+        <aside class="sidebar right-sidebar sticky">
+            <section class="widget archives">
+                <div class="widget-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                </div>
+                <h2 class="widget-title section-title">目录</h2>
+                
+                <div class="widget--toc">
+                    <nav id="TableOfContents">
+  <ol>
+    <li><a href="#安装-python-3-本体与集成开发环境">安装 Python 3 本体与集成开发环境</a>
+      <ol>
+        <li><a href="#python-3-本体包括-idle">Python 3 本体（包括 IDLE）</a>
+          <ol>
+            <li><a href="#windows-用户">Windows 用户</a></li>
+          </ol>
+        </li>
+        <li><a href="#pycharm">PyCharm</a>
+          <ol>
+            <li><a href="#ubuntu--1604-用户">Ubuntu ≥ 16.04 用户</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#你好世界">你好，世界。</a>
+      <ol>
+        <li><a href="#print-语句">print 语句</a></li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+                </div>
+            </section>
+        </aside>
+    
+
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
+                defer="false"
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

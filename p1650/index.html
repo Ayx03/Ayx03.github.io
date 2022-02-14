@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-cn">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='迁自我的博客园有改动'><title>题解 P1650 田忌赛马</title>
 
 <link rel='canonical' href='https://ayx.moefox.tech/p1650/'>
 
-<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='题解 P1650 田忌赛马'>
+<link rel="stylesheet" href="/scss/style.min.8f4416a35036b6471a6978873128b5652464226c8db8a9620ed1b94bc11bd353.css"><meta property='og:title' content='题解 P1650 田忌赛马'>
 <meta property='og:description' content='迁自我的博客园有改动'>
 <meta property='og:url' content='https://ayx.moefox.tech/p1650/'>
 <meta property='og:site_name' content='Aynxul03 写字的地方'>
@@ -14,17 +14,6 @@
     <meta name="twitter:creator" content="@03Ayx"><meta name="twitter:title" content="题解 P1650 田忌赛马">
 <meta name="twitter:description" content="迁自我的博客园有改动">
     <link rel="shortcut icon" href="favicon.jpg" />
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-X0SE27LREY"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-X0SE27LREY', { 'anonymize_ip': false });
-}
-</script>
 
     </head>
     <body class="
@@ -106,26 +95,14 @@ if (!doNotTrack) {
         
 
         
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="12" r="9" />
-  <polyline points="12 7 12 12 15 15" />
-</svg>
-
-
-
-                <time class="article-time--reading">
-                    阅读时长: 1 分钟
-                </time>
-            </div>
-        
     </footer>
     
 </div>
 </header>
 
     <section class="article-content">
+    
+    
     <p><strong>(题面来自<a class="link" href="https://www.luogu.com.cn/problem/P1650"  target="_blank" rel="noopener"
     >洛谷</a>)</strong></p>
 <h2 id="题目描述">题目描述</h2>
@@ -142,15 +119,80 @@ if (!doNotTrack) {
 <p>仅一行，一个整数，表示田忌最大能得到多少银币。</p>
 <h2 id="输入输出样例">输入输出样例</h2>
 <p>输入 #1</p>
-<pre tabindex="0"><code>3
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">3
 92 83 71
 95 87 74
-</code></pre><p>输出 #1</p>
-<pre tabindex="0"><code>200
-</code></pre><h2 id="分析">分析</h2>
+</code></pre></td></tr></table>
+</div>
+</div><p>输出 #1</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">200
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="分析">分析</h2>
 <p>都在代码注释里了</p>
 <h2 id="代码">代码</h2>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="c1">// Problem: P1650 田忌赛马
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="c1">// Problem: P1650 田忌赛马
 </span><span class="c1">// Contest: Luogu
 </span><span class="c1">// URL: https://www.luogu.com.cn/problem/P1650
 </span><span class="c1">// Memory Limit: 125 MB
@@ -195,7 +237,9 @@ if (!doNotTrack) {
 	<span class="n">printf</span><span class="p">(</span><span class="s">&#34;%d&#34;</span><span class="p">,</span><span class="n">qian</span><span class="p">);</span>
 	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre></div><p>修改记录</p>
+</code></pre></td></tr></table>
+</div>
+</div><p>修改记录</p>
 <p>2021-02-19 19:20 发布于博客园</p>
 <p>2021-08-06 17:57 迁移自博客园</p>
 <p>搬文章的时候瞎画的封面图还是决定不摆上去了&hellip;</p>
@@ -237,6 +281,8 @@ if (!doNotTrack) {
 
     
 </article>
+
+    
 
     <aside class="related-contents--wrapper">
     
@@ -290,7 +336,8 @@ if (!doNotTrack) {
                 <img src="/key-to-p1603/cover.ecf17334ebe3bdf20d874b297771da6f_hu33884e09a361eec376ba2239fc3bc8e1_84422_250x150_fill_q75_box_smart1.jpg" 
                         width="250" 
                         height="150" 
-                        loading="lazy" 
+                        loading="lazy"
+                        alt="Featured image of post 题解 P1603 斯诺登的密码"
                         data-key="Key-to-P1603" 
                         data-hash="md5-7PFzNOvjvfINh0spd3Habw==">
                 
@@ -337,7 +384,7 @@ if (!doNotTrack) {
     }
 </style><script>
     
-    new Waline({"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus","https://cdn.jsdelivr.net/gh/walinejs/emojis/qq","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba"],"lang":"zh-CN","locale":{"admin":"Admin"},"requiredMeta":["name","email","url"],"serverURL":"https://waline-ikbefr64v-ayx03.vercel.app/","visitor":true});
+    new Waline({"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba","https://cdn.jsdelivr.net/gh/walinejs/emojis/qq","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus"],"lang":"zh-CN","locale":{"admin":"博主"},"requiredMeta":["name","email","url"],"serverURL":"https://c.moefox.tech/"});
 </script>
 
     
@@ -348,14 +395,14 @@ if (!doNotTrack) {
         
             2020 - 
         
-        2021 Aynxul03 写字的地方
+        2022 Aynxul03 写字的地方
     </section>
     
     <section class="powerby">
         
-            本站由 GitHub Pages 及 Cloudflare 强力驱动，如果访问出错肯定是它们俩的锅。<br>由于 Pages 的局限性，我引入了 Google Analytics 来收集访问数据；这些数据只是我自己看着玩的，不会被泄露；<br>您大可屏蔽它的 Cookie，这不会影响您浏览本站的所有内容或发表评论。<br><a href="https://icp.gov.moe" target="_blank">萌ICP备</a> <a href="https://icp.gov.moe/?keyword=20213003" target="_blank">20213003号</a> <br/>
+            主站由 Vercel 驱动，如遇需使用 IPv6 或主站无法访问请访问托管于 GitHub Pages 的<a href="https://ayx03.github.io/">镜像</a>（实时同步）。<br>由于 Pages 的局限性，我引入了 Google Analytics 来收集访问数据；这些数据只是我自己看着玩的，不会被泄露；<br>您大可屏蔽它的 Cookie，这不会影响您浏览本站的所有内容或发表评论。<br>本站支持 IPv6 网络。<br><a href="https://icp.gov.moe" target="_blank">萌ICP备</a> <a href="https://icp.gov.moe/?keyword=20213003" target="_blank">20213003号</a> <br/>
         Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.5.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.7.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
     </section>
 </footer>
 
