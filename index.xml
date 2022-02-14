@@ -5,54 +5,8 @@
         <link>https://ayx.moefox.tech/</link>
         <description>Recent content on Aynxul03 写字的地方</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
-        <lastBuildDate>Sat, 12 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ayx.moefox.tech/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Python 3 入门学习笔记</title>
-        <link>https://ayx.moefox.tech/python3tutorial/</link>
-        <pubDate>Sat, 12 Feb 2022 00:00:00 +0000</pubDate>
-        
-        <guid>https://ayx.moefox.tech/python3tutorial/</guid>
-        <description>&lt;h2 id=&#34;安装-python-3-本体与集成开发环境&#34;&gt;安装 Python 3 本体与集成开发环境&lt;/h2&gt;
-&lt;p&gt;如果你已经完成了这些准备工作，可以使用右侧的目录跳到下一章节 - 你好，世界。&lt;/p&gt;
-&lt;h3 id=&#34;python-3-本体包括-idle&#34;&gt;Python 3 本体（包括 IDLE）&lt;/h3&gt;
-&lt;p&gt;前往 Python 官网下载。&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.python.org/downloads&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.python.org/downloads&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;打开该地址时会自动识别你的操作系统并为你推荐合适的 Python 3 版本，一般情况下点击黄色按钮下载即可。目前的最新版本为 3.10.2。&lt;/p&gt;
-&lt;h4 id=&#34;windows-用户&#34;&gt;Windows 用户&lt;/h4&gt;
-&lt;p&gt;8/8.1/10/11 用户也可以在 Microsoft Store &lt;a class=&#34;link&#34; href=&#34;https://www.microsoft.com/zh-cn/p/python-310/9pjpw5ldxlz5&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;免费获取 Python 3.10&lt;/a&gt;。&lt;/p&gt;
-&lt;p&gt;在命令提示符/PowerShell 中输入 &lt;code&gt;python3&lt;/code&gt; 也可以唤起 Microsoft 商店并进入该页面。&lt;/p&gt;
-&lt;p&gt;需要注意的是，如果你使用的是比 Windows 8.1 或 Windows Server 2012 更旧的操作系统，你将无法安装 Python 3.9.0 及更新的版本。你仍能安装 Python 3.8.10，但对 Python 3.8.x 的支持将于 2024 年 10 月终止。&lt;/p&gt;
-&lt;p&gt;安装时记得勾选 Add Python 3.x to PATH，这样就不需要手动配置环境变量了。&lt;/p&gt;
-&lt;hr&gt;
-&lt;p&gt;安装好后，在命令提示符（Command Prompt）/PowerShell（macOS/Linux 是 Terminal） 中输入 &lt;code&gt;python -V&lt;/code&gt; 来查看版本信息。&lt;/p&gt;
-&lt;p&gt;打开运行（按下键盘上的 Win+R），输入 &lt;code&gt;python&lt;/code&gt; 即可进入 IDLE（在 Windows 的开始菜单里你也可以找到 IDLE）。&lt;/p&gt;
-&lt;h3 id=&#34;pycharm&#34;&gt;PyCharm&lt;/h3&gt;
-&lt;p&gt;支持 Windows、macOS(Intel/Apple Silicon)、Linux。&lt;/p&gt;
-&lt;p&gt;前往 JetBrains 官网下载安装包。&lt;/p&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.jetbrains.com/zh-cn/pycharm/download&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://www.jetbrains.com/zh-cn/pycharm/download&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;如果你没有教育邮箱可用于申请免费的 Professional Edition，推荐下载免费且开源的 Community Edition。&lt;/p&gt;
-&lt;h4 id=&#34;ubuntu--1604-用户&#34;&gt;Ubuntu ≥ 16.04 用户&lt;/h4&gt;
-&lt;p&gt;也可以使用 snap 安装 PyCharm：&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;sudo snap install [pycharm-professional|pycharm-community] --classic&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;你也可以选择 Spyder 等其他 IDE，或者干脆使用一个文本编辑器（如 vim、Sublime Text、Notepad3）。&lt;/p&gt;
-&lt;p&gt;这篇笔记将使用 PyCharm 和 Python 3.10.2。&lt;/p&gt;
-&lt;h2 id=&#34;你好世界&#34;&gt;你好，世界。&lt;/h2&gt;
-&lt;p&gt;打开 PyCharm 新建一个项目（暂时不需要特别配置解释器，保持默认即可；如果你想保持些神秘感，记得取消勾选 &lt;code&gt;Create a main.py welcome script&lt;/code&gt;；或许在只有一个文件的情况下使用 IDLE 是更好的选择），等待 IDE 自动配置环境。&lt;/p&gt;
-&lt;p&gt;在左侧的资源管理器中右键你刚创建的项目，选择 New &amp;gt; Python File，为你的第一个 Python 程序起一个你喜欢的名字。不过，它不能以数字开头。&lt;/p&gt;
-&lt;h3 id=&#34;print-语句&#34;&gt;print 语句&lt;/h3&gt;
-&lt;p&gt;双击刚刚创建的文件，在右侧打开的文本编辑区域输入 &lt;code&gt;print(&amp;quot;Hello World!&amp;quot;)&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;输入 Python 代码时，记得切换到美式键盘或英式键盘而不是使用中文输入法（如果你没有，在语言和键盘选项中添加一个），以免错误地输入中文的逗号（，）、句号（。）、引号（“”）、中括号（【】）以及小括号。&lt;/p&gt;
-&lt;p&gt;像其他大多数 IDE 一样，PyCharm 会替你自动补全括号和双引号，你只需要打左半边就好。&lt;/p&gt;
-&lt;p&gt;按下 Alt+Shift+F10（或在 &lt;code&gt;Run&lt;/code&gt; 菜单下选择 &lt;code&gt;Run...&lt;/code&gt;），选择你的文件。&lt;/p&gt;
-&lt;p&gt;下方弹出的窗口中输出了 &lt;code&gt;Hello World!&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;Process finished with exit code 0&lt;/code&gt; 表示程序正常结束；对应地，&lt;code&gt;Process finished with exit code 1&lt;/code&gt; 表示程序异常退出。&lt;/p&gt;
-&lt;h1 id=&#34;未完待续&#34;&gt;未完，待续&lt;/h1&gt;
-</description>
-        </item>
-        <item>
+        <language>zh-CN</language>
+        <lastBuildDate>Sun, 26 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ayx.moefox.tech/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>新年快乐 &amp; 本站的改版</title>
         <link>https://ayx.moefox.tech/happynewyear2022/</link>
         <pubDate>Sun, 26 Dec 2021 00:00:00 +0000</pubDate>
@@ -98,42 +52,27 @@
 &lt;p&gt;创建开发版新应用（随意命名）并复制设置 - 应用凭证中的前三项值，稍后会添加在 Vercel 中的环境变量里。&lt;/p&gt;
 &lt;h2 id=&#34;在-vercel-上部署服务端&#34;&gt;在 Vercel 上部署服务端&lt;/h2&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://vercel.com/import/project?template=https://github.com/walinejs/waline/tree/main/example&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;img src=&#34;https://vercel.com/button&#34;
+    &gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://vercel.com/button&#34; &gt;
+		&lt;img src=&#34;https://vercel.com/button&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;点击按钮跳转到 Vercel.com 部署&#34;&gt;
+	&lt;/a&gt;
 	
+	&lt;figcaption&gt;点击按钮跳转到 Vercel.com 部署&lt;/figcaption&gt;
 	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;点击按钮跳转到 Vercel.com 部署&#34;
-	
-	
-&gt;&lt;/a&gt;
+&lt;/figure&gt;&lt;/a&gt;
 （推荐）使用 GitHub 登录，创建存储库（可以是私有 Repo），跳过创建团队（反正这也不是什么需要团队协作的项目），部署。&lt;/p&gt;
 &lt;p&gt;两分钟左右部署就会完成。&lt;/p&gt;
 &lt;p&gt;完成部署后在 Settings 中找到 Environment Variables，分别添加三个环境变量 &lt;code&gt;LEAN_ID&lt;/code&gt;、&lt;code&gt;LEAN_KEY&lt;/code&gt; 和 &lt;code&gt;LEAN_MASTER_KEY&lt;/code&gt; 。&lt;code&gt;VALUE&lt;/code&gt; 分别填写在 LeanCloud 中获得的 &lt;code&gt;APP ID&lt;/code&gt;、&lt;code&gt;APP KEY&lt;/code&gt;、和 &lt;code&gt;Master Key&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;记得&lt;a class=&#34;link&#34; href=&#34;#%e8%af%84%e8%ae%ba%e7%ae%a1%e7%90%86&#34; &gt;注册你的管理员账号&lt;/a&gt;，以免被访客注册。第一个注册的用户会得到管理权限。&lt;/p&gt;
 &lt;h2 id=&#34;在配置文件中配置客户端&#34;&gt;在配置文件中配置客户端&lt;/h2&gt;
 &lt;p&gt;最后打开站点根目录下的 &lt;code&gt;config.yaml&lt;/code&gt;，在 params 下添加以下几行：（如果你当初拷贝了 Stack 提供的 &lt;code&gt;config.yaml&lt;/code&gt; 文件，那么这段在第 60 行左右，只需填入 serverURL 即可）&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;        # Waline client configuration see: https://waline.js.org/en/reference/client.html
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;        # Waline client configuration see: https://waline.js.org/en/reference/client.html
         waline:
             serverURL: https://&amp;lt;PUT_YOUR_OWN_HERE&amp;gt;.vercel.app/
             lang: zh-CN
@@ -148,9 +87,7 @@
             placeholder:
             locale:
                 admin: Admin
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;记得替换 serverURL 为你自己部署的 Vercel App 地址，在&lt;a class=&#34;link&#34; href=&#34;https://waline.js.org/en/reference/client.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;记得替换 serverURL 为你自己部署的 Vercel App 地址，在&lt;a class=&#34;link&#34; href=&#34;https://waline.js.org/en/reference/client.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;这里&lt;/a&gt;查阅各项参数的含义。&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://waline.js.org/guide/get-started.html#leancloud-%E8%AE%BE%E7%BD%AE-%E6%95%B0%E6%8D%AE%E5%BA%93&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;快速上手 | Waline&lt;/a&gt;&lt;/p&gt;
@@ -195,49 +132,65 @@
     &gt;Visual Studio Code&lt;/a&gt;）&lt;/p&gt;
 &lt;p&gt;扩展：&lt;a class=&#34;link&#34; href=&#34;https://marketplace.visualstudio.com/items?itemName=danielpinto8zz6.c-cpp-compile-run&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;C/C++ Compile Run&lt;/a&gt;（可以方便地编译单个 cpp 文件，且不会因为路径中存在空格或中文出错。）
-&lt;img src=&#34;https://i.loli.net/2021/08/22/XLc4rwa5vFWldKG.png&#34;
+&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://i.loli.net/2021/08/22/XLc4rwa5vFWldKG.png&#34; &gt;
+		&lt;img src=&#34;https://i.loli.net/2021/08/22/XLc4rwa5vFWldKG.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			&gt;
+	&lt;/a&gt;
 	
-	
-	
-	loading=&#34;lazy&#34;
-	
-	
-&gt;&lt;/p&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;h3 id=&#34;解决方案&#34;&gt;解决方案&lt;/h3&gt;
 &lt;p&gt;Dev C++ 等 IDE 直接把弹出的窗口（黑框）关了就行了&lt;/p&gt;
 &lt;p&gt;VS Code 可以从输出切换到终端选项卡，使用快捷键 Ctrl+C 结束程序（同样适用于 external console ）。&lt;/p&gt;
 &lt;p&gt;实在不行就用任务管理器和 taskkill 吧
-&lt;img src=&#34;https://i.loli.net/2021/08/22/i1kWGBpEeq4njRo.png&#34;
+&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://i.loli.net/2021/08/22/i1kWGBpEeq4njRo.png&#34; &gt;
+		&lt;img src=&#34;https://i.loli.net/2021/08/22/i1kWGBpEeq4njRo.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			&gt;
+	&lt;/a&gt;
 	
-	
-	
-	loading=&#34;lazy&#34;
-	
-	
-&gt;&lt;/p&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;h2 id=&#34;主函数不存在main-拼写错误&#34;&gt;主函数不存在（main 拼写错误）&lt;/h2&gt;
 &lt;p&gt;你不太可能不写主函数，但是你很有可能把 &lt;code&gt;main&lt;/code&gt; 打成 &lt;code&gt;mian&lt;/code&gt; 或者什么其他奇怪的东西。&lt;/p&gt;
 &lt;p&gt;在编译器眼里，这些可不能算主函数。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://i.loli.net/2021/08/22/cx9kIgiFmMAUSe2.png&#34;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://i.loli.net/2021/08/22/cx9kIgiFmMAUSe2.png&#34; &gt;
+		&lt;img src=&#34;https://i.loli.net/2021/08/22/cx9kIgiFmMAUSe2.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			&gt;
+	&lt;/a&gt;
 	
-	
-	
-	loading=&#34;lazy&#34;
-	
-	
-&gt;&lt;/p&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;h3 id=&#34;解决方案-1&#34;&gt;解决方案&lt;/h3&gt;
 &lt;p&gt;把 &lt;code&gt;main&lt;/code&gt; 拼对。&lt;/p&gt;
 &lt;h2 id=&#34;所调用的函数仅进行了声明&#34;&gt;所调用的函数仅进行了声明&lt;/h2&gt;
 &lt;p&gt;这种情况下新版编译器仍旧会输出 &lt;code&gt;error: ld returned 1 exit status&lt;/code&gt; 这一让人迷惑的错误。
-&lt;img src=&#34;https://i.loli.net/2021/08/22/ePJgykQW3GDwlKH.png&#34;
+&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://i.loli.net/2021/08/22/ePJgykQW3GDwlKH.png&#34; &gt;
+		&lt;img src=&#34;https://i.loli.net/2021/08/22/ePJgykQW3GDwlKH.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			&gt;
+	&lt;/a&gt;
 	
-	
-	
-	loading=&#34;lazy&#34;
-	
-	
-&gt;
+&lt;/figure&gt;
 但是一般也不会把函数体和声明分开写吧&amp;hellip;&lt;/p&gt;
 &lt;p&gt;（函数声明在主函数上方即可，函数体是可以写在 main 函数下方的。）&lt;/p&gt;
 &lt;h3 id=&#34;解决方案-2&#34;&gt;解决方案&lt;/h3&gt;
@@ -245,16 +198,20 @@
 &lt;h2 id=&#34;旧版编译器在主函数中定义了函数&#34;&gt;（旧版编译器）在主函数中定义了函数&lt;/h2&gt;
 &lt;p&gt;新版编译器发现你在 main 函数中定义了其它函数报错并不是&lt;code&gt;error: ld returned 1 exit status&lt;/code&gt;，&lt;/p&gt;
 &lt;p&gt;而是&lt;code&gt;error: a function-definition is not allowed here before &#39;{&#39; token&lt;/code&gt;
-&lt;img src=&#34;https://i.loli.net/2021/08/22/mAlnzduYxWRHPQf.png&#34;
+&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://i.loli.net/2021/08/22/mAlnzduYxWRHPQf.png&#34; &gt;
+		&lt;img src=&#34;https://i.loli.net/2021/08/22/mAlnzduYxWRHPQf.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;Snipaste_2021-08-22_19-30-32.png&#34;&gt;
+	&lt;/a&gt;
 	
+	&lt;figcaption&gt;Snipaste_2021-08-22_19-30-32.png&lt;/figcaption&gt;
 	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;Snipaste_2021-08-22_19-30-32.png&#34;
-	
-	
-&gt;&lt;/p&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;h3 id=&#34;解决方案-3&#34;&gt;解决方案&lt;/h3&gt;
 &lt;p&gt;把子函数定义在主函数外面。&lt;/p&gt;
 &lt;h2 id=&#34;旧版编译器调用了不存在的函数&#34;&gt;（旧版编译器）调用了不存在的函数&lt;/h2&gt;
@@ -267,14 +224,18 @@
 &lt;/blockquote&gt;
 &lt;p&gt;（测试用代码是随机跳题后从&lt;a class=&#34;link&#34; href=&#34;https://www.luogu.com.cn/blog/ShadowassIIXVIIIIV/solution-p3783&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;这里&lt;/a&gt;复制的，并未提交评测）
-&lt;img src=&#34;https://i.loli.net/2021/08/22/nh231c5y94OTdHa.png&#34;
+&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://i.loli.net/2021/08/22/nh231c5y94OTdHa.png&#34; &gt;
+		&lt;img src=&#34;https://i.loli.net/2021/08/22/nh231c5y94OTdHa.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			&gt;
+	&lt;/a&gt;
 	
-	
-	
-	loading=&#34;lazy&#34;
-	
-	
-&gt;&lt;/p&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;h3 id=&#34;解决方案-4&#34;&gt;解决方案&lt;/h3&gt;
 &lt;p&gt;检查函数名称的拼写是否正确。&lt;/p&gt;
 &lt;p&gt;如果想调用库函数但不清楚应该引入什么头文件，可以在搜索引擎上像这样搜索：&lt;/p&gt;
@@ -283,21 +244,11 @@
 &lt;p&gt;&lt;code&gt;C语言 sqrt()&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;或者直接 &lt;code&gt;#include &amp;lt;bits/stdc++.h&amp;gt;&lt;/code&gt;&lt;/p&gt;
 &lt;h2 id=&#34;本文的测试环境&#34;&gt;本文的测试环境&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;g++ (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 10.3.0
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;g++ (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 10.3.0
 Copyright (C) 2020 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;编辑记录&#34;&gt;编辑记录&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;编辑记录&#34;&gt;编辑记录&lt;/h2&gt;
 &lt;p&gt;2021-08-22 19:20:00&lt;/p&gt;
 </description>
         </item>
@@ -307,33 +258,34 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
         <pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate>
         
         <guid>https://ayx.moefox.tech/ssl/</guid>
-        <description>&lt;img src="https://ayx.moefox.tech/ssl/cover.png" alt="Featured image of post MySSL 安全签章" /&gt;&lt;p&gt;&lt;del&gt;又摸了一下午整了个这么个东西出来&lt;/del&gt;&lt;/p&gt;
-&lt;h2 id=&#34;要得到-a-评级&#34;&gt;要得到 A+ 评级：&lt;/h2&gt;
-&lt;p&gt;您的网站必须启用 HSTS 且 &lt;code&gt;max-age&lt;/code&gt; 属性不小于 6 个月（即 15768000 秒）&lt;/p&gt;
-&lt;h2 id=&#34;请注意&#34;&gt;请注意：&lt;/h2&gt;
-&lt;p&gt;启用 HSTS 后&lt;strong&gt;所有&lt;/strong&gt;不支持 HTTPS 的子域名都将无法访问，且在 &lt;code&gt;max-age&lt;/code&gt; 属性设置的时间内无法恢复。&lt;/p&gt;
-&lt;h2 id=&#34;要得到-ats-合规&#34;&gt;要得到 ATS 合规：&lt;/h2&gt;
-&lt;p&gt;您的网站必须支持 TLS v1.2。&lt;/p&gt;
-&lt;h2 id=&#34;要得到-pci-dss-合规&#34;&gt;要得到 PCI DSS 合规：&lt;/h2&gt;
-&lt;p&gt;您的网站不得支持 TLS v1.0。&lt;/p&gt;
-&lt;p&gt;关闭 TLS v1.0 支持意味着放弃对一些老旧操作系统和浏览器（Android ≤ 4.3、Internet Explorer ≤ 10、Java ≤ 7u25、Safari ≤5.1.9、OS X ≤ 10.6.8）的兼容性，具体测试情况见下图。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://blog.myssl.com/content/images/2018/06/---.jpg&#34;
+        <description>&lt;img src="https://ayx.moefox.tech/ssl/cover.png" alt="Featured image of post MySSL 安全签章" /&gt;&lt;h1 id=&#34;myssl-安全认证httpsstaticmysslcomresimagesmyssl-id3pnghttpsmysslcomaynxul03mefrommysslid&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://myssl.com/aynxu.l03.me?from=mysslid&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://static.myssl.com/res/images/myssl-id3.png&#34; &gt;
+		&lt;img src=&#34;https://static.myssl.com/res/images/myssl-id3.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;MySSL 安全认证&#34;&gt;
+	&lt;/a&gt;
 	
+	&lt;figcaption&gt;MySSL 安全认证&lt;/figcaption&gt;
 	
-	
-	loading=&#34;lazy&#34;
-	
-	
-&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;PCI安全标准委员会规定 2018 年 6 月 30 日之后，开启 TLS1.0 将导致 PCI DSS 不合规，&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;/figure&gt;&lt;/a&gt;&lt;/h1&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;又摸了一下午整了个这么个东西出来&#34;&gt;&lt;del&gt;又摸了一下午整了个这么个东西出来&lt;/del&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;要得到-a-评级您的网站必须启用-hsts-且-max-age-属性不小于-6个月即-15768000-秒&#34;&gt;要得到 A+ 评级，您的网站必须启用 HSTS 且 &lt;code&gt;max-age&lt;/code&gt; 属性不小于 6个月（即 15768000 秒）&lt;/h2&gt;
+&lt;h3 id=&#34;请注意启用-hsts-后所有不支持-https-的子域名都将无法访问且在-max-age-属性设置的时间内无法恢复&#34;&gt;请注意启用 HSTS 后所有不支持 HTTPS 的子域名都将无法访问，且在 &lt;code&gt;max-age&lt;/code&gt; 属性设置的时间内无法恢复。&lt;/h3&gt;
+&lt;h2 id=&#34;要得到-ats-合规-您的网站必须支持-tls-v12&#34;&gt;要得到 ATS 合规 ，您的网站必须支持 TLS v1.2。&lt;/h2&gt;
+&lt;h2 id=&#34;要得到-pci-dss-合规您的网站不得支持-tls-v10&#34;&gt;要得到 PCI DSS 合规，您的网站不得支持 TLS v1.0。&lt;/h2&gt;
+&lt;p&gt;PCI安全标准委员会规定2018年6月30日之后，开启TLS1.0将导致PCI DSS不合规，&lt;/p&gt;
 &lt;p&gt;具体参考：&lt;a class=&#34;link&#34; href=&#34;https://blog.myssl.com/pci-dss/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;《更严格的PCI DSS合规标准》&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;hsts-相关配置可以参考-mysslcomhttpsmysslcom-的-https安全与兼容性配置指南httpsblogmysslcomhttps-security-compatibility-best-practices&#34;&gt;HSTS 相关配置可以参考 &lt;a class=&#34;link&#34; href=&#34;https://myssl.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;&lt;code&gt;MySSL.com&lt;/code&gt;&lt;/a&gt; 的 &lt;a class=&#34;link&#34; href=&#34;https://blog.myssl.com/https-security-compatibility-best-practices/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;HTTPS安全与兼容性配置指南&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;测试工具：&lt;a class=&#34;link&#34; href=&#34;https://gf.dev/hsts-test&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://gf.dev/hsts-test&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;HTTP Strict Transport Security Header Testing Tool&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
@@ -363,24 +315,10 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 &lt;p&gt;一个整型变量（密码）。如果没有符合要求的数字出现，则输出 0。&lt;/p&gt;
 &lt;h2 id=&#34;输入输出样例&#34;&gt;输入输出样例&lt;/h2&gt;
 &lt;p&gt;输入 #1&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;Black Obama is two five zero .
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;输出 #1&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;425
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;分析&#34;&gt;分析&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Black Obama is two five zero .
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;输出 #1&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;425
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;分析&#34;&gt;分析&lt;/h2&gt;
 &lt;p&gt;&lt;del&gt;数据咋骂人呢&lt;/del&gt;&lt;/p&gt;
 &lt;p&gt;先一个个输入单词与题目给出的 &lt;code&gt;26&lt;/code&gt; 个单词匹配，&lt;code&gt;string&lt;/code&gt; 类型可以直接使用逻辑运算符 &lt;code&gt;==&lt;/code&gt; 进行判断（C++ 选手谁闲着没事用 &lt;code&gt;char&lt;/code&gt; 数组啊）；&lt;/p&gt;
 &lt;p&gt;由于已经知道单词数量是 $6$ 个并不需要用到 while 循环（输入字符串的情况下 cin 的返回值情况我也不清楚）&lt;/p&gt;
@@ -407,115 +345,30 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 &lt;p&gt;这部分我暂时也想不通怎么解释，以后再编辑吧&amp;hellip;&lt;/p&gt;
 &lt;h3 id=&#34;只能得-20-分&#34;&gt;只能得 &lt;code&gt;20&lt;/code&gt; 分？&lt;/h3&gt;
 &lt;p&gt;放一下我下载的测试点#2 的数据（&lt;del&gt;请勿用于打表&lt;/del&gt;）：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;You are a three eight pig .
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;10964
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;我得了 &lt;code&gt;20&lt;/code&gt; 分的程序在这个测试点上给出的答案是 &lt;code&gt;1964&lt;/code&gt;，也就是忽略了所有 &lt;code&gt;0&lt;/code&gt;，但实际上只能忽略开头那个。&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;You are a three eight pig .
+&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;10964
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;我得了 &lt;code&gt;20&lt;/code&gt; 分的程序在这个测试点上给出的答案是 &lt;code&gt;1964&lt;/code&gt;，也就是忽略了所有 &lt;code&gt;0&lt;/code&gt;，但实际上只能忽略开头那个。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;如果&lt;code&gt;开头&lt;/code&gt;为 0，就去 0。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;记得排序。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;num&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;])&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;cout&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;num&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;];&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;num&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;])&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;cout&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;num&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;];&lt;/span&gt;
 &lt;span class=&#34;k&#34;&gt;for&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;cnt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;++&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;){&lt;/span&gt;
     &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;num&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;cout&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;num&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;];&lt;/span&gt;
     &lt;span class=&#34;k&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;cout&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;sc&#34;&gt;&amp;#39;0&amp;#39;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;num&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;];&lt;/span&gt;
 &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;忘了没有任何单词匹配的情况&#34;&gt;忘了没有任何单词匹配的情况&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;忘了没有任何单词匹配的情况&#34;&gt;忘了没有任何单词匹配的情况&lt;/h3&gt;
 &lt;p&gt;&lt;del&gt;可能就我没看清题？&lt;/del&gt;&lt;/p&gt;
 &lt;h4 id=&#34;直接输出-0-后结束程序即可&#34;&gt;直接输出 &lt;code&gt;0&lt;/code&gt; 后结束程序即可。&lt;/h4&gt;
 &lt;p&gt;其实不结束也啥都输出不出来，浪费点时间而已。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;!&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;cnt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;cout&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;exit&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h5 id=&#34;冷知识虽然-return-0-不能写在逗号后面用于结束程序无法通过编译但是-exit0-可以&#34;&gt;冷知识，虽然 &lt;code&gt;return 0;&lt;/code&gt; 不能写在逗号后面用于结束程序（无法通过编译），但是 &lt;code&gt;exit(0);&lt;/code&gt; 可以&lt;/h5&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;!&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;cnt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;cout&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;exit&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h5 id=&#34;冷知识虽然-return-0-不能写在逗号后面用于结束程序无法通过编译但是-exit0-可以&#34;&gt;冷知识，虽然 &lt;code&gt;return 0;&lt;/code&gt; 不能写在逗号后面用于结束程序（无法通过编译），但是 &lt;code&gt;exit(0);&lt;/code&gt; 可以&lt;/h5&gt;
 &lt;h2 id=&#34;完整代码&#34;&gt;完整代码&lt;/h2&gt;
 &lt;h3 id=&#34;仅供学习参考使用&#34;&gt;仅供学习参考使用&lt;/h3&gt;
 &lt;p&gt;抄袭、复制题解，以达到刷 AC 率/AC 数量或其他目的的行为，在洛谷是严格禁止的。&lt;/p&gt;
 &lt;p&gt;洛谷非常重视&lt;strong&gt;学术诚信&lt;/strong&gt;。此类行为将会导致您成为&lt;em&gt;作弊者&lt;/em&gt;。 具体细则请查看&lt;a class=&#34;link&#34; href=&#34;https://www.luogu.com.cn/blog/luogu/social-rules&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;洛谷社区规则&lt;/a&gt;。&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;34
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;35
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;36
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;37
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;38
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;39
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;40
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;41
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;42
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;43
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;44
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;45
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;46
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;47
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;48
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;49
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#include&lt;/span&gt;&lt;span class=&#34;cpf&#34;&gt;&amp;lt;bits/stdc++.h&amp;gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#include&lt;/span&gt;&lt;span class=&#34;cpf&#34;&gt;&amp;lt;bits/stdc++.h&amp;gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;
 &lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;using&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;namespace&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;std&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;span class=&#34;n&#34;&gt;string&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;tmp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;dic&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;27&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;one&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;two&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;three&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;four&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;five&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;//并不会出现zero 
 &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;six&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;seven&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;eight&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;nine&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;ten&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;//但是这里我为了前20个数下标对应数值把0空着
@@ -564,9 +417,7 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
         &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
     &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;编辑记录&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;编辑记录&lt;/p&gt;
 &lt;p&gt;修复数学公式渲染&lt;/p&gt;
 &lt;p&gt;2021-08-06 18:39:00&lt;/p&gt;
 &lt;p&gt;暂时移除的段落：&lt;/p&gt;
@@ -651,68 +502,18 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 &lt;h2 id=&#34;输出格式&#34;&gt;输出格式：&lt;/h2&gt;
 &lt;p&gt;对于每个测试数据，在单独一行内输出你所能接触到的最多客户数。&lt;/p&gt;
 &lt;h2 id=&#34;样例输入&#34;&gt;样例输入：&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;3
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;3
 1 15
 2 19
 15 17
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;样例输出&#34;&gt;样例输出：&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;样例输出&#34;&gt;样例输出：&lt;/h2&gt;
 &lt;p&gt;2&lt;/p&gt;
 &lt;h2 id=&#34;约定&#34;&gt;约定：&lt;/h2&gt;
 &lt;p&gt;(无)&lt;/p&gt;
 &lt;h2 id=&#34;提示&#34;&gt;提示：&lt;/h2&gt;
 &lt;p&gt;(无)&lt;/p&gt;
 &lt;h2 id=&#34;代码&#34;&gt;代码&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;34
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;35
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;36
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;cm&#34;&gt;/*
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;cm&#34;&gt;/*
 &lt;/span&gt;&lt;span class=&#34;cm&#34;&gt;	Name: 7、客户调查
 &lt;/span&gt;&lt;span class=&#34;cm&#34;&gt;	Copyright: Aynxul03
 &lt;/span&gt;&lt;span class=&#34;cm&#34;&gt;	Author: Aynxul03
@@ -748,9 +549,7 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 	&lt;span class=&#34;n&#34;&gt;cout&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ans&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 	&lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;</description>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
         </item>
         <item>
         <title>题解 P5707 【深基2.例12】上学迟到</title>
@@ -784,26 +583,7 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 &lt;p&gt;7.为什么要发水题的题解？这样比较容易坚持每天刷题===&lt;/p&gt;
 &lt;p&gt;最近在我身上发生了很多事，但是不想放弃OI。&lt;/p&gt;
 &lt;h2 id=&#34;代码&#34;&gt;代码&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#include&lt;/span&gt;&lt;span class=&#34;cpf&#34;&gt;&amp;lt;bits/stdc++.h&amp;gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#include&lt;/span&gt;&lt;span class=&#34;cpf&#34;&gt;&amp;lt;bits/stdc++.h&amp;gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;
 &lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;using&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;namespace&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;std&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
 	&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;s&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;v&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
@@ -818,9 +598,7 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 	&lt;span class=&#34;n&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%.2d:%.2d&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;h&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;m&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
 	&lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;编辑记录&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;编辑记录&lt;/p&gt;
 &lt;p&gt;2021-08-06 18:11:00&lt;/p&gt;
 </description>
         </item>
@@ -841,68 +619,20 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 &lt;p&gt;一个正整数，即骑士收到的金币数。&lt;/p&gt;
 &lt;h2 id=&#34;输入输出样例&#34;&gt;输入输出样例&lt;/h2&gt;
 &lt;p&gt;输入 #1&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;6
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;输出 #1&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;14
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;输入 #2&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;1000
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;输出 #2&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;29820
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;说明/提示&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;6
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;输出 #1&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;14
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;输入 #2&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1000
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;输出 #2&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;29820
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;说明/提示&lt;/p&gt;
 &lt;p&gt;【输入输出样例 1 说明】&lt;/p&gt;
 &lt;p&gt;骑士第一天收到一枚金币；第二天和第三天，每天收到两枚金币；第四、五、六天，每天收到三枚金币。因此一共收到 $1+2+2+3+3+3=14$ 枚金币。&lt;/p&gt;
 &lt;p&gt;对于 $100%$ 的数据，$1\le k\le 10^4$&lt;/p&gt;
 &lt;h2 id=&#34;分析&#34;&gt;分析&lt;/h2&gt;
 &lt;h2 id=&#34;代码&#34;&gt;代码&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#include&lt;/span&gt;&lt;span class=&#34;cpf&#34;&gt;&amp;lt;bits/stdc++.h&amp;gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#include&lt;/span&gt;&lt;span class=&#34;cpf&#34;&gt;&amp;lt;bits/stdc++.h&amp;gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;
 &lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;using&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;namespace&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;std&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
 	&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;K&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;				&lt;span class=&#34;c1&#34;&gt;//发放金币的天数
@@ -918,9 +648,7 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 	&lt;span class=&#34;n&#34;&gt;cout&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;coin&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 	&lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;编辑记录&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;编辑记录&lt;/p&gt;
 &lt;p&gt;2021-08-06 18:10:00&lt;/p&gt;
 </description>
         </item>
@@ -944,47 +672,13 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 &lt;p&gt;无&lt;/p&gt;
 &lt;h2 id=&#34;输入输出样例&#34;&gt;输入输出样例&lt;/h2&gt;
 &lt;p&gt;输入 #1&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;100 16
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;输出 #1&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;56.0 50.1
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;分析&#34;&gt;分析&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;100 16
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;输出 #1&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;56.0 50.1
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;分析&#34;&gt;分析&lt;/h2&gt;
 &lt;p&gt;利用了等差数列等高阶数学知识来减少循环次数。&lt;/p&gt;
 &lt;h2 id=&#34;代码c&#34;&gt;代码（C++）&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#include&lt;/span&gt;&lt;span class=&#34;cpf&#34;&gt;&amp;lt;bits/stdc++.h&amp;gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#include&lt;/span&gt;&lt;span class=&#34;cpf&#34;&gt;&amp;lt;bits/stdc++.h&amp;gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;
 &lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;using&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;namespace&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;std&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(){&lt;/span&gt;
 	&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;k&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;can&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;cant&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;all&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;num&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
@@ -1000,9 +694,7 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 	&lt;span class=&#34;n&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%.1lf %.1lf&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;a_&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
 	&lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;编辑记录&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;编辑记录&lt;/p&gt;
 &lt;p&gt;2021-08-13 12:01:00&lt;/p&gt;
 </description>
         </item>
@@ -1092,29 +784,13 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;填入以下内容并保存&#34;&gt;填入以下内容并保存&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;proxy = null
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;proxy = null
 registry = https://registry.npm.taobao.org
 disturl = https://npm.taobao.org/dist
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h3 id=&#34;然后再重新尝试安装hexonpm-install-hexo-cli--g即可&#34;&gt;然后再重新尝试安装Hexo（&lt;code&gt;npm install hexo-cli -g&lt;/code&gt;）即可。&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;然后再重新尝试安装hexonpm-install-hexo-cli--g即可&#34;&gt;然后再重新尝试安装Hexo（&lt;code&gt;npm install hexo-cli -g&lt;/code&gt;）即可。&lt;/h3&gt;
 &lt;h3 id=&#34;如果依旧无法解决可以尝试在以管理员身份启动的命令提示符或-powershell-中执行此命令&#34;&gt;如果依旧无法解决可以尝试在以管理员身份启动的命令提示符或 Powershell 中执行此命令&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;npm config set disturl https://npm.taobao.org/dist
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;文章迁移备注&#34;&gt;文章迁移备注&lt;/h2&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;npm config set disturl https://npm.taobao.org/dist
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;文章迁移备注&#34;&gt;文章迁移备注&lt;/h2&gt;
 &lt;p&gt;从博客园搬文章的时候无意发现本文已被以下站点转载：&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://qdmana.com/2021/01/20210105173638094t.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;qdmana.com&lt;/a&gt;&lt;/p&gt;
@@ -1143,65 +819,7 @@ disturl = https://npm.taobao.org/dist
 &lt;h2 id=&#34;题目标签&#34;&gt;题目标签&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;匈牙利算法模板题&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;参考代码&#34;&gt;参考代码&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;34
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;35
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;36
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;37
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;38
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;39
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;40
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;41
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;42
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;43
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;44
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;45
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;46
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;47
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;48
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;49
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;50
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;51
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;52
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;53
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;54
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#include&lt;/span&gt; &lt;span class=&#34;cpf&#34;&gt;&amp;lt;bits/stdc++.h&amp;gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#include&lt;/span&gt; &lt;span class=&#34;cpf&#34;&gt;&amp;lt;bits/stdc++.h&amp;gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;
 &lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;using&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;namespace&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;std&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;span class=&#34;cp&#34;&gt;#define maxn 1000 + 10
 &lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;m&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;k&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;head&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;maxn&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;link&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;maxn&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;],&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;cnt&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;tot&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
@@ -1255,9 +873,7 @@ disturl = https://npm.taobao.org/dist
 	&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 	&lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;参考博文&#34;&gt;参考博文&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;参考博文&#34;&gt;参考博文&lt;/h2&gt;
 &lt;p&gt;想理解匈牙利算法的概念，推荐阅读&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/dark_scope/article/details/8880547&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;趣写算法系列之&amp;ndash;匈牙利算法&lt;/a&gt;（推荐在教练的陪同下阅读）&lt;/p&gt;
 &lt;p&gt;评论区有朋友通俗易懂地概括了它的思想：&lt;code&gt;先到先得 能让就让&lt;/code&gt;&lt;/p&gt;
@@ -1282,34 +898,7 @@ disturl = https://npm.taobao.org/dist
 &lt;p&gt;（虽然第一个题目有题号检索比较方便而且貌似用户比较多）&lt;/p&gt;
 &lt;p&gt;更好的选择是不要做《信奥赛一本通》的题&lt;/p&gt;
 &lt;h2 id=&#34;题目的背景描述输入输出格式样例&#34;&gt;题目的背景、描述、输入输出格式样例&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;1000：入门测试题目
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;1000：入门测试题目
 
 时间限制: 1000 ms         内存限制: 32768 KB
 
@@ -1332,57 +921,29 @@ disturl = https://npm.taobao.org/dist
 【输出样例】
 
 3
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;题意分析与算法设计&#34;&gt;题意分析与算法设计&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;题意分析与算法设计&#34;&gt;题意分析与算法设计&lt;/h2&gt;
 &lt;p&gt;新手不用理会 &lt;code&gt;时间限制&lt;/code&gt; 和 &lt;code&gt;内存限制&lt;/code&gt;，一般来说学到后面才会出现 TLE（Time Limit Exceed，超出时间限制）和 MLE（Memory Limit Exceed，超出内存限制）的情况。&lt;/p&gt;
 &lt;p&gt;（关于这些术语，可以在&lt;a class=&#34;link&#34; href=&#34;https://ayx.moefox.tech/explanation-of-oj-terminology/#%e6%ad%a3%e7%bb%8f%e8%a7%a3%e9%87%8a&#34; &gt;&lt;strong&gt;这里&lt;/strong&gt;&lt;/a&gt;了解。）&lt;/p&gt;
 &lt;p&gt;至于这个问题，就是一个最简单的 A+B 问题。&lt;/p&gt;
 &lt;h2 id=&#34;参考用完整代码&#34;&gt;参考用完整代码&lt;/h2&gt;
 &lt;p&gt;各位一定要养成良好的代码风格，因为代码不仅仅是给机器看的，有时候人也要看。&lt;/p&gt;
 &lt;p&gt;使用 cin/cout（需要调用 iostreeam 头文件）：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#include&lt;/span&gt; &lt;span class=&#34;cpf&#34;&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#include&lt;/span&gt; &lt;span class=&#34;cpf&#34;&gt;&amp;lt;iostream&amp;gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;
 &lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;using&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;namespace&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;std&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
 	&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 	&lt;span class=&#34;n&#34;&gt;cin&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 	&lt;span class=&#34;n&#34;&gt;cout&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;b&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;endl&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;使用 scanf/printf（需要调用 cstdio 头文件）：&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#include&lt;/span&gt; &lt;span class=&#34;cpf&#34;&gt;&amp;lt;cstdio&amp;gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;使用 scanf/printf（需要调用 cstdio 头文件）：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#include&lt;/span&gt; &lt;span class=&#34;cpf&#34;&gt;&amp;lt;cstdio&amp;gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;
 &lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;using&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;namespace&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;std&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
 	&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 	&lt;span class=&#34;n&#34;&gt;scanf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%d%d&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;a&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
 	&lt;span class=&#34;n&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%d&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;a&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;b&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
 &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;这两种风格的输入输出各有长处，各位务必都要掌握。&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;这两种风格的输入输出各有长处，各位务必都要掌握。&lt;/p&gt;
 &lt;p&gt;实际上，第二份代码中没有用到任何 C++ 特性，因此不加 &lt;code&gt;using namespace std;&lt;/code&gt; 也没关系。&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;&lt;del&gt;为什么这种题你还要水一篇题解出来&lt;/del&gt;&lt;/p&gt;
@@ -1414,80 +975,15 @@ disturl = https://npm.taobao.org/dist
 &lt;p&gt;仅一行，一个整数，表示田忌最大能得到多少银币。&lt;/p&gt;
 &lt;h2 id=&#34;输入输出样例&#34;&gt;输入输出样例&lt;/h2&gt;
 &lt;p&gt;输入 #1&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;3
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;3
 92 83 71
 95 87 74
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;输出 #1&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;200
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;h2 id=&#34;分析&#34;&gt;分析&lt;/h2&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;输出 #1&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;200
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;分析&#34;&gt;分析&lt;/h2&gt;
 &lt;p&gt;都在代码注释里了&lt;/p&gt;
 &lt;h2 id=&#34;代码&#34;&gt;代码&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;34
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;35
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;36
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;37
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;38
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;39
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;40
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;41
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;42
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;43
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;44
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;45
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;c1&#34;&gt;// Problem: P1650 田忌赛马
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;c1&#34;&gt;// Problem: P1650 田忌赛马
 &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// Contest: Luogu
 &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// URL: https://www.luogu.com.cn/problem/P1650
 &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;// Memory Limit: 125 MB
@@ -1532,9 +1028,7 @@ disturl = https://npm.taobao.org/dist
 	&lt;span class=&#34;n&#34;&gt;printf&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;%d&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;qian&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
 	&lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;修改记录&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;修改记录&lt;/p&gt;
 &lt;p&gt;2021-02-19 19:20 发布于博客园&lt;/p&gt;
 &lt;p&gt;2021-08-06 17:57 迁移自博客园&lt;/p&gt;
 &lt;p&gt;搬文章的时候瞎画的封面图还是决定不摆上去了&amp;hellip;&lt;/p&gt;

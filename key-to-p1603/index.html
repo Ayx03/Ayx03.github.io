@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="zh-CN">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='更新日志：修改了一些小细节'><title>题解 P1603 斯诺登的密码</title>
 
 <link rel='canonical' href='https://ayx.moefox.tech/key-to-p1603/'>
 
-<link rel="stylesheet" href="/scss/style.min.bbcfef3c56489f1f37b552146da519e6b6a74a4c92792bcc512c78e2f55f25e1.css"><meta property='og:title' content='题解 P1603 斯诺登的密码'>
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='题解 P1603 斯诺登的密码'>
 <meta property='og:description' content='更新日志：修改了一些小细节'>
 <meta property='og:url' content='https://ayx.moefox.tech/key-to-p1603/'>
 <meta property='og:site_name' content='Aynxul03 写字的地方'>
@@ -15,6 +15,17 @@
 <meta name="twitter:description" content="更新日志：修改了一些小细节"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://ayx.moefox.tech/key-to-p1603/cover.jpg' />
     <link rel="shortcut icon" href="favicon.jpg" />
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X0SE27LREY"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-X0SE27LREY', { 'anonymize_ip': false });
+}
+</script>
 
     </head>
     <body class="
@@ -108,14 +119,26 @@
         
 
         
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 2 分钟
+                </time>
+            </div>
+        
     </footer>
     
 </div>
 </header>
 
     <section class="article-content">
-    
-    
     <p>题面来自<a class="link" href="https://www.luogu.com.cn/problem/P1603"  target="_blank" rel="noopener"
     >洛谷</a>，根据我的个人喜好有小修改</p>
 <h2 id="题目背景">题目背景</h2>
@@ -136,24 +159,10 @@
 <p>一个整型变量（密码）。如果没有符合要求的数字出现，则输出 0。</p>
 <h2 id="输入输出样例">输入输出样例</h2>
 <p>输入 #1</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">Black Obama is two five zero .
-</code></pre></td></tr></table>
-</div>
-</div><p>输出 #1</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">425
-</code></pre></td></tr></table>
-</div>
-</div><h2 id="分析">分析</h2>
+<pre tabindex="0"><code>Black Obama is two five zero .
+</code></pre><p>输出 #1</p>
+<pre tabindex="0"><code>425
+</code></pre><h2 id="分析">分析</h2>
 <p><del>数据咋骂人呢</del></p>
 <p>先一个个输入单词与题目给出的 <code>26</code> 个单词匹配，<code>string</code> 类型可以直接使用逻辑运算符 <code>==</code> 进行判断（C++ 选手谁闲着没事用 <code>char</code> 数组啊）；</p>
 <p>由于已经知道单词数量是 $6$ 个并不需要用到 while 循环（输入字符串的情况下 cin 的返回值情况我也不清楚）</p>
@@ -180,115 +189,30 @@
 <p>这部分我暂时也想不通怎么解释，以后再编辑吧&hellip;</p>
 <h3 id="只能得-20-分">只能得 <code>20</code> 分？</h3>
 <p>放一下我下载的测试点#2 的数据（<del>请勿用于打表</del>）：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">You are a three eight pig .
-</code></pre></td></tr></table>
-</div>
-</div><div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">10964
-</code></pre></td></tr></table>
-</div>
-</div><p>我得了 <code>20</code> 分的程序在这个测试点上给出的答案是 <code>1964</code>，也就是忽略了所有 <code>0</code>，但实际上只能忽略开头那个。</p>
+<pre tabindex="0"><code>You are a three eight pig .
+</code></pre><pre tabindex="0"><code>10964
+</code></pre><p>我得了 <code>20</code> 分的程序在这个测试点上给出的答案是 <code>1964</code>，也就是忽略了所有 <code>0</code>，但实际上只能忽略开头那个。</p>
 <blockquote>
 <p>如果<code>开头</code>为 0，就去 0。</p>
 </blockquote>
 <p>记得排序。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="k">if</span><span class="p">(</span><span class="n">num</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">num</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="k">if</span><span class="p">(</span><span class="n">num</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">num</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
 <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">cnt</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
     <span class="k">if</span><span class="p">(</span><span class="n">num</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">&gt;</span><span class="mi">10</span><span class="p">)</span> <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">num</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
     <span class="k">else</span> <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="sc">&#39;0&#39;</span><span class="o">&lt;&lt;</span><span class="n">num</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
 <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div><h3 id="忘了没有任何单词匹配的情况">忘了没有任何单词匹配的情况</h3>
+</code></pre></div><h3 id="忘了没有任何单词匹配的情况">忘了没有任何单词匹配的情况</h3>
 <p><del>可能就我没看清题？</del></p>
 <h4 id="直接输出-0-后结束程序即可">直接输出 <code>0</code> 后结束程序即可。</h4>
 <p>其实不结束也啥都输出不出来，浪费点时间而已。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">cnt</span><span class="p">)</span> <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="mi">0</span><span class="p">,</span><span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
-</code></pre></td></tr></table>
-</div>
-</div><h5 id="冷知识虽然-return-0-不能写在逗号后面用于结束程序无法通过编译但是-exit0-可以">冷知识，虽然 <code>return 0;</code> 不能写在逗号后面用于结束程序（无法通过编译），但是 <code>exit(0);</code> 可以</h5>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">cnt</span><span class="p">)</span> <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="mi">0</span><span class="p">,</span><span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+</code></pre></div><h5 id="冷知识虽然-return-0-不能写在逗号后面用于结束程序无法通过编译但是-exit0-可以">冷知识，虽然 <code>return 0;</code> 不能写在逗号后面用于结束程序（无法通过编译），但是 <code>exit(0);</code> 可以</h5>
 <h2 id="完整代码">完整代码</h2>
 <h3 id="仅供学习参考使用">仅供学习参考使用</h3>
 <p>抄袭、复制题解，以达到刷 AC 率/AC 数量或其他目的的行为，在洛谷是严格禁止的。</p>
 <p>洛谷非常重视<strong>学术诚信</strong>。此类行为将会导致您成为<em>作弊者</em>。 具体细则请查看<a class="link" href="https://www.luogu.com.cn/blog/luogu/social-rules"  target="_blank" rel="noopener"
     >洛谷社区规则</a>。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span><span class="lnt">27
-</span><span class="lnt">28
-</span><span class="lnt">29
-</span><span class="lnt">30
-</span><span class="lnt">31
-</span><span class="lnt">32
-</span><span class="lnt">33
-</span><span class="lnt">34
-</span><span class="lnt">35
-</span><span class="lnt">36
-</span><span class="lnt">37
-</span><span class="lnt">38
-</span><span class="lnt">39
-</span><span class="lnt">40
-</span><span class="lnt">41
-</span><span class="lnt">42
-</span><span class="lnt">43
-</span><span class="lnt">44
-</span><span class="lnt">45
-</span><span class="lnt">46
-</span><span class="lnt">47
-</span><span class="lnt">48
-</span><span class="lnt">49
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="cp">#include</span><span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="cp">#include</span><span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
 </span><span class="cp"></span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 <span class="n">string</span> <span class="n">tmp</span><span class="p">,</span><span class="n">dic</span><span class="p">[</span><span class="mi">27</span><span class="p">]</span><span class="o">=</span><span class="p">{</span><span class="s">&#34;&#34;</span><span class="p">,</span><span class="s">&#34;one&#34;</span><span class="p">,</span><span class="s">&#34;two&#34;</span><span class="p">,</span><span class="s">&#34;three&#34;</span><span class="p">,</span><span class="s">&#34;four&#34;</span><span class="p">,</span><span class="s">&#34;five&#34;</span><span class="p">,</span><span class="c1">//并不会出现zero 
 </span><span class="c1"></span><span class="s">&#34;six&#34;</span><span class="p">,</span><span class="s">&#34;seven&#34;</span><span class="p">,</span><span class="s">&#34;eight&#34;</span><span class="p">,</span><span class="s">&#34;nine&#34;</span><span class="p">,</span><span class="s">&#34;ten&#34;</span><span class="p">,</span><span class="c1">//但是这里我为了前20个数下标对应数值把0空着
@@ -337,9 +261,7 @@
         <span class="p">}</span>
     <span class="p">}</span>
 <span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>编辑记录</p>
+</code></pre></div><p>编辑记录</p>
 <p>修复数学公式渲染</p>
 <p>2021-08-06 18:39:00</p>
 <p>暂时移除的段落：</p>
@@ -400,11 +322,11 @@
                 href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css"integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn"crossorigin="anonymous"
             ><script 
                 src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js"integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8"crossorigin="anonymous"
-                defer
+                defer="true"
                 >
             </script><script 
                 src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js"integrity="sha384-vZTG03m&#43;2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl"crossorigin="anonymous"
-                defer
+                defer="true"
                 >
             </script><script>
     window.addEventListener("DOMContentLoaded", () => {
@@ -419,8 +341,6 @@
 </script>
     
 </article>
-
-    
 
     <aside class="related-contents--wrapper">
     
@@ -462,8 +382,7 @@
                 <img src="/error-ld-returned-1-exit-status/fengmian.b3ea81974cc2f38d3e59d4a56ef0c7a0_huc9b449ad671760edd8f09c2c6f896023_562448_250x150_fill_box_smart1_3.png" 
                         width="250" 
                         height="150" 
-                        loading="lazy"
-                        alt="Featured image of post 出现 error: ld returned 1 exit status 的五种原因以及解决方法"
+                        loading="lazy" 
                         data-key="Error-ld-returned-1-exit-status" 
                         data-hash="md5-s&#43;qBl0zC840&#43;WdSlbvDHoA==">
                 
@@ -522,7 +441,7 @@
     }
 </style><script>
     
-    new Waline({"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba","https://cdn.jsdelivr.net/gh/walinejs/emojis/qq","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus"],"lang":"zh-CN","locale":{"admin":"博主"},"requiredMeta":["name","email","url"],"serverURL":"https://c.moefox.tech/"});
+    new Waline({"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus","https://cdn.jsdelivr.net/gh/walinejs/emojis/qq","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba"],"lang":"zh-CN","locale":{"admin":"Admin"},"requiredMeta":["name","email","url"],"serverURL":"https://waline-ikbefr64v-ayx03.vercel.app/","visitor":true});
 </script>
 
     
@@ -533,14 +452,14 @@
         
             2020 - 
         
-        2022 Aynxul03 写字的地方
+        2021 Aynxul03 写字的地方
     </section>
     
     <section class="powerby">
         
-            主站由 Vercel 驱动，如遇需使用 IPv6 或主站无法访问请访问托管于 GitHub Pages 的<a href="https://ayx03.github.io/">镜像</a>（实时同步）。<br>由于 Pages 的局限性，我引入了 Google Analytics 来收集访问数据；这些数据只是我自己看着玩的，不会被泄露；<br>您大可屏蔽它的 Cookie，这不会影响您浏览本站的所有内容或发表评论。<br>本站支持 IPv6 网络。<br><a href="https://icp.gov.moe" target="_blank">萌ICP备</a> <a href="https://icp.gov.moe/?keyword=20213003" target="_blank">20213003号</a> <br/>
+            本站由 GitHub Pages 及 Cloudflare 强力驱动，如果访问出错肯定是它们俩的锅。<br>由于 Pages 的局限性，我引入了 Google Analytics 来收集访问数据；这些数据只是我自己看着玩的，不会被泄露；<br>您大可屏蔽它的 Cookie，这不会影响您浏览本站的所有内容或发表评论。<br><a href="https://icp.gov.moe" target="_blank">萌ICP备</a> <a href="https://icp.gov.moe/?keyword=20213003" target="_blank">20213003号</a> <br/>
         Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.8.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.5.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
     </section>
 </footer>
 
@@ -609,11 +528,11 @@
 
 </div><script 
                 src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
-                defer
+                defer="true"
                 >
             </script><script 
                 src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
-                defer
+                defer="true"
                 >
             </script><link 
                 rel="stylesheet" 
@@ -680,7 +599,7 @@
         </div>
         <script 
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
-                
+                defer="false"
                 >
             </script><script type="text/javascript" src="/ts/main.js" defer></script>
 <script>

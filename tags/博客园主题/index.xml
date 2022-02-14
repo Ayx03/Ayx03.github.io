@@ -5,7 +5,7 @@
     <link>https://ayx.moefox.tech/tags/%E5%8D%9A%E5%AE%A2%E5%9B%AD%E4%B8%BB%E9%A2%98/</link>
     <description>Recent content in 博客园主题 on Aynxul03 写字的地方</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh-CN</language>
     <lastBuildDate>Wed, 06 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ayx.moefox.tech/tags/%E5%8D%9A%E5%AE%A2%E5%9B%AD%E4%B8%BB%E9%A2%98/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>分享一下我的博客园在用的修改版 Wider Gao 博客园主题</title>
@@ -13,7 +13,26 @@
       <pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ayx.moefox.tech/cnblogs-theme-share/</guid>
-      <description>如你所见，我的博客现在使用 Hugo，因此该修改版主题不太可能发布更新。 此主题并非我的原创作品，原作者为 Wider Gao 而且改得很烂，主页的文章展示都搞炸</description>
+      <description>如你所见，我的博客现在使用 Hugo，因此该修改版主题不太可能发布更新。
+此主题并非我的原创作品，原作者为 Wider Gao
+而且改得很烂，主页的文章展示都搞炸了（点击查看demo），不建议使用（但个人感觉也不是特别糟糕）
+我的改动 我作出了如下改动：
+ 把原作者使用的js源（bootcss.com）替换为 bootcdn.net，提升加载速度（至少在我所在的地区可以） 把原作者在博客主题更新了一文中提供的 my.css 替换为从他的页面上扒下来的css（因为这个只有几十行的 my.css 根本没法用=我也不知道为什么，从页面上直接扒也是该文评论区提供的方法）  下载链接 文件均发布在 Pastebin.com 以及 Ubuntu Pastebin 上
+如需获取原版，请移步Wider Gao的博文
+页面定制 CSS 代码 Pastebin.com 复制 下载
+Ubuntu Pastebin
+博客侧边栏公告 Pastebin.com 复制 下载
+Ubuntu Pastebin
+页首 HTML 代码 只有一行，就直接放这了
+&amp;lt;link href=&amp;quot;https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&amp;quot; rel=&amp;quot;stylesheet&amp;quot;&amp;gt;
+页脚 HTML 代码 Pastebin.com 复制 下载
+Ubuntu Pastebin
+使用 先修改一下这些代码（把各种图片链接替换一下） 建议先粘贴到编辑器里操作（搬迁备注：现在博客园后台终于有能看的编辑器而不是光秃秃的HTML原汁原味文本框了，我青结）
+背景图 替换 https://cdn.luogu.com.cn/upload/image_hosting/utntnuud.png
+题外话：洛谷图床会屏蔽站外链接 :( 但是登陆了上传图片的洛谷账号就能加载
+这就是为什么之前syr看不到我博客园的头图而我能看到
+头像 替换 https://pic.cnblogs.com/avatar/2228888/20201128101240.png
+在博客园后台打开设置，将博客皮肤改为 Custom ，并勾选 禁用模板默认CSS ，然后将这些代码粘贴到框里，保存。</description>
     </item>
     
   </channel>

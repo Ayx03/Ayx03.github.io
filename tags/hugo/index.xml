@@ -5,7 +5,7 @@
     <link>https://ayx.moefox.tech/tags/hugo/</link>
     <description>Recent content in Hugo on Aynxul03 写字的地方</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>zh-CN</language>
     <lastBuildDate>Wed, 28 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ayx.moefox.tech/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>安装 Hugo 主题 Stack 时你可能会遇到的问题</title>
@@ -13,7 +13,14 @@
       <pubDate>Wed, 28 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://ayx.moefox.tech/stack/</guid>
-      <description>啥？装了 Stack 拷了 exampleSites 以后不能正常 hugo -D了？ 试试以下两项操作。 删除根目录下的 config.toml Issus #105 @ CaiJimmy/hugo-theme-stack 生成 examplesite/content/post/rich-content/index.md 时报错 是因为是示例文章有请求 Twitter API 的 Shortcode ，需要 珂学上网 。 我</description>
+      <description>啥？装了 Stack 拷了 exampleSites 以后不能正常 hugo -D了？ 试试以下两项操作。
+删除根目录下的 config.toml Issus #105 @ CaiJimmy/hugo-theme-stack
+生成 examplesite/content/post/rich-content/index.md 时报错 是因为是示例文章有请求 Twitter API 的 Shortcode ，需要 珂学上网 。
+我的解决方式是直接把 YouTube 、 Twitter 和 Vimeo 的 ShortCode 都删了，反正以后也用不到（当然你也可以直接把这篇 rich-content 给整个删了）
+Issus #191 @ CaiJimmy/hugo-theme-stack
+另外，Bilibili 的 ShortCode 格式如下： （去掉两个反斜杠）
+\{\{&amp;lt; bilibili BV1Zx411h7ue &amp;gt;}}
+别一天到晚建博客了，赶紧写吧。 </description>
     </item>
     
   </channel>

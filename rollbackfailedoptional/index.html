@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="zh-CN">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='替换 npm 源为淘宝提供的 npm 镜像以实现国内下载加速'><title>使用 Node.js（安装Hexo）时出现了 rollbackFailedOptional 错误的解决方法</title>
 
 <link rel='canonical' href='https://ayx.moefox.tech/rollbackfailedoptional/'>
 
-<link rel="stylesheet" href="/scss/style.min.bbcfef3c56489f1f37b552146da519e6b6a74a4c92792bcc512c78e2f55f25e1.css"><meta property='og:title' content='使用 Node.js（安装Hexo）时出现了 rollbackFailedOptional 错误的解决方法'>
+<link rel="stylesheet" href="/scss/style.min.css"><meta property='og:title' content='使用 Node.js（安装Hexo）时出现了 rollbackFailedOptional 错误的解决方法'>
 <meta property='og:description' content='替换 npm 源为淘宝提供的 npm 镜像以实现国内下载加速'>
 <meta property='og:url' content='https://ayx.moefox.tech/rollbackfailedoptional/'>
 <meta property='og:site_name' content='Aynxul03 写字的地方'>
@@ -14,6 +14,17 @@
     <meta name="twitter:creator" content="@03Ayx"><meta name="twitter:title" content="使用 Node.js（安装Hexo）时出现了 rollbackFailedOptional 错误的解决方法">
 <meta name="twitter:description" content="替换 npm 源为淘宝提供的 npm 镜像以实现国内下载加速">
     <link rel="shortcut icon" href="favicon.jpg" />
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X0SE27LREY"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-X0SE27LREY', { 'anonymize_ip': false });
+}
+</script>
 
     </head>
     <body class="
@@ -95,14 +106,26 @@
         
 
         
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 1 分钟
+                </time>
+            </div>
+        
     </footer>
     
 </div>
 </header>
 
     <section class="article-content">
-    
-    
     <h2 id="我的解决方法">我的解决方法</h2>
 <h3 id="以-管理员身份-运行一个编辑器">以 <strong>管理员身份</strong> 运行一个编辑器</h3>
 <h3 id="打开-cprogram-filesnodejsnode_modulesnpmnpmrc">打开 <code>C:\Program Files\nodejs\node_modules\npm\npmrc</code></h3>
@@ -118,29 +141,13 @@
 </li>
 </ul>
 <h3 id="填入以下内容并保存">填入以下内容并保存</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">proxy = null
+<pre tabindex="0"><code>proxy = null
 registry = https://registry.npm.taobao.org
 disturl = https://npm.taobao.org/dist
-</code></pre></td></tr></table>
-</div>
-</div><h3 id="然后再重新尝试安装hexonpm-install-hexo-cli--g即可">然后再重新尝试安装Hexo（<code>npm install hexo-cli -g</code>）即可。</h3>
+</code></pre><h3 id="然后再重新尝试安装hexonpm-install-hexo-cli--g即可">然后再重新尝试安装Hexo（<code>npm install hexo-cli -g</code>）即可。</h3>
 <h3 id="如果依旧无法解决可以尝试在以管理员身份启动的命令提示符或-powershell-中执行此命令">如果依旧无法解决可以尝试在以管理员身份启动的命令提示符或 Powershell 中执行此命令</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">npm config set disturl https://npm.taobao.org/dist
-</code></pre></td></tr></table>
-</div>
-</div><h2 id="文章迁移备注">文章迁移备注</h2>
+<pre tabindex="0"><code>npm config set disturl https://npm.taobao.org/dist
+</code></pre><h2 id="文章迁移备注">文章迁移备注</h2>
 <p>从博客园搬文章的时候无意发现本文已被以下站点转载：</p>
 <p><a class="link" href="https://qdmana.com/2021/01/20210105173638094t.html"  target="_blank" rel="noopener"
     >qdmana.com</a></p>
@@ -194,8 +201,6 @@ disturl = https://npm.taobao.org/dist
     
 </article>
 
-    
-
     <aside class="related-contents--wrapper">
     
     
@@ -218,7 +223,7 @@ disturl = https://npm.taobao.org/dist
     }
 </style><script>
     
-    new Waline({"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba","https://cdn.jsdelivr.net/gh/walinejs/emojis/qq","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus"],"lang":"zh-CN","locale":{"admin":"博主"},"requiredMeta":["name","email","url"],"serverURL":"https://c.moefox.tech/"});
+    new Waline({"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus","https://cdn.jsdelivr.net/gh/walinejs/emojis/qq","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba"],"lang":"zh-CN","locale":{"admin":"Admin"},"requiredMeta":["name","email","url"],"serverURL":"https://waline-ikbefr64v-ayx03.vercel.app/","visitor":true});
 </script>
 
     
@@ -229,14 +234,14 @@ disturl = https://npm.taobao.org/dist
         
             2020 - 
         
-        2022 Aynxul03 写字的地方
+        2021 Aynxul03 写字的地方
     </section>
     
     <section class="powerby">
         
-            主站由 Vercel 驱动，如遇需使用 IPv6 或主站无法访问请访问托管于 GitHub Pages 的<a href="https://ayx03.github.io/">镜像</a>（实时同步）。<br>由于 Pages 的局限性，我引入了 Google Analytics 来收集访问数据；这些数据只是我自己看着玩的，不会被泄露；<br>您大可屏蔽它的 Cookie，这不会影响您浏览本站的所有内容或发表评论。<br>本站支持 IPv6 网络。<br><a href="https://icp.gov.moe" target="_blank">萌ICP备</a> <a href="https://icp.gov.moe/?keyword=20213003" target="_blank">20213003号</a> <br/>
+            本站由 GitHub Pages 及 Cloudflare 强力驱动，如果访问出错肯定是它们俩的锅。<br>由于 Pages 的局限性，我引入了 Google Analytics 来收集访问数据；这些数据只是我自己看着玩的，不会被泄露；<br>您大可屏蔽它的 Cookie，这不会影响您浏览本站的所有内容或发表评论。<br><a href="https://icp.gov.moe" target="_blank">萌ICP备</a> <a href="https://icp.gov.moe/?keyword=20213003" target="_blank">20213003号</a> <br/>
         Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.8.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.5.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
     </section>
 </footer>
 
@@ -305,11 +310,11 @@ disturl = https://npm.taobao.org/dist
 
 </div><script 
                 src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
-                defer
+                defer="true"
                 >
             </script><script 
                 src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
-                defer
+                defer="true"
                 >
             </script><link 
                 rel="stylesheet" 
@@ -360,7 +365,7 @@ disturl = https://npm.taobao.org/dist
         </div>
         <script 
                 src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
-                
+                defer="false"
                 >
             </script><script type="text/javascript" src="/ts/main.js" defer></script>
 <script>
