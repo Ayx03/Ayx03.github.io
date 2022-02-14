@@ -3,18 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://ayx.moefox.tech/</loc>
-    <lastmod>2022-02-12T23:48:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ayx.moefox.tech/page/</loc>
-    <lastmod>2022-02-12T23:48:00+00:00</lastmod>
+    <lastmod>2022-02-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ayx.moefox.tech/post/</loc>
     <lastmod>2022-02-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ayx.moefox.tech/python3tutorial/</loc>
-    <lastmod>2022-02-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://ayx.moefox.tech/test/</loc>
     <lastmod>2022-02-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://ayx.moefox.tech/tags/</loc>
@@ -83,6 +77,9 @@
     <loc>https://ayx.moefox.tech/hellohugo/</loc>
     <lastmod>2021-10-19T22:47:00+00:00</lastmod>
   </url><url>
+    <loc>https://ayx.moefox.tech/page/</loc>
+    <lastmod>2021-12-26T21:37:00+00:00</lastmod>
+  </url><url>
     <loc>https://ayx.moefox.tech/about/</loc>
     <lastmod>2020-12-26T21:45:00+00:00</lastmod>
   </url><url>
@@ -90,7 +87,7 @@
     <lastmod>2021-10-19T22:47:00+00:00</lastmod>
   </url><url>
     <loc>https://ayx.moefox.tech/link/</loc>
-    <lastmod>2022-02-12T23:48:00+00:00</lastmod>
+    <lastmod>2021-12-26T21:37:00+00:00</lastmod>
   </url><url>
     <loc>https://ayx.moefox.tech/upc1488/</loc>
     <lastmod>2021-08-06T18:42:00+00:00</lastmod>
