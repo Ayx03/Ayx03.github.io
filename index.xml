@@ -12,44 +12,162 @@
         <pubDate>Sat, 12 Feb 2022 00:00:00 +0000</pubDate>
         
         <guid>https://ayx.moefox.tech/python3tutorial/</guid>
-        <description>&lt;h2 id=&#34;安装-python-3-本体与集成开发环境&#34;&gt;安装 Python 3 本体与集成开发环境&lt;/h2&gt;
+        <description>&lt;p&gt;请善用右侧的目录（如果有）来跳转到你需要学习的部分。&lt;/p&gt;
+&lt;h2 id=&#34;安装-python-3-本体与集成开发环境&#34;&gt;安装 Python 3 本体与集成开发环境&lt;/h2&gt;
 &lt;p&gt;如果你已经完成了这些准备工作，可以使用右侧的目录跳到下一章节 - 你好，世界。&lt;/p&gt;
 &lt;h3 id=&#34;python-3-本体包括-idle&#34;&gt;Python 3 本体（包括 IDLE）&lt;/h3&gt;
 &lt;p&gt;前往 Python 官网下载。&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.python.org/downloads&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://www.python.org/downloads&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;打开该地址时会自动识别你的操作系统并为你推荐合适的 Python 3 版本，一般情况下点击黄色按钮下载即可。目前的最新版本为 3.10.2。&lt;/p&gt;
+&lt;p&gt;打开该地址时网页会自动识别你的操作系统并为你推荐合适的 Python 3 版本，一般情况下点击黄色按钮下载即可。目前的最新版本为 3.10.2。&lt;/p&gt;
 &lt;h4 id=&#34;windows-用户&#34;&gt;Windows 用户&lt;/h4&gt;
-&lt;p&gt;8/8.1/10/11 用户也可以在 Microsoft Store &lt;a class=&#34;link&#34; href=&#34;https://www.microsoft.com/zh-cn/p/python-310/9pjpw5ldxlz5&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;免费获取 Python 3.10&lt;/a&gt;。&lt;/p&gt;
-&lt;p&gt;在命令提示符/PowerShell 中输入 &lt;code&gt;python3&lt;/code&gt; 也可以唤起 Microsoft 商店并进入该页面。&lt;/p&gt;
-&lt;p&gt;需要注意的是，如果你使用的是比 Windows 8.1 或 Windows Server 2012 更旧的操作系统，你将无法安装 Python 3.9.0 及更新的版本。你仍能安装 Python 3.8.10，但对 Python 3.8.x 的支持将于 2024 年 10 月终止。&lt;/p&gt;
-&lt;p&gt;安装时记得勾选 Add Python 3.x to PATH，这样就不需要手动配置环境变量了。&lt;/p&gt;
+&lt;p&gt;Windows 8/8.1/10/11（非 LTSC 版本）用户也可以在 Microsoft Store 免费获取 &lt;a class=&#34;link&#34; href=&#34;https://www.microsoft.com/zh-cn/p/python-310/9pjpw5ldxlz5&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Python 3.10&lt;/a&gt; 或 &lt;a class=&#34;link&#34; href=&#34;https://www.microsoft.com/store/productId/9P7QFQMJRFP7&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Python 3.9&lt;/a&gt;。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;LTSC 版本的 Windows 没有自带微软应用商店，但其实也可以自行安装。篇幅所限，感兴趣的自行 Google。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;如果你还没有安装过任何版本的 Python 3，在命令提示符/PowerShell 中输入 &lt;code&gt;python3&lt;/code&gt; 并回车可以直接唤起 Microsoft 商店并进入安装页面。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;需要注意的是，如果你使用的是比 Windows 8.1 或 Windows Server 2012 更旧的操作系统，&lt;strong&gt;你将无法安装 Python 3.9.0 及更新的版本&lt;/strong&gt;。你仍能安装 &lt;a class=&#34;link&#34; href=&#34;https://www.python.org/downloads/release/python-3810/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Python 3.8.10&lt;/a&gt;，但&lt;strong&gt;对 Python 3.8.x 的支持将于 2024 年 10 月终止&lt;/strong&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;安装时记得勾选 &lt;code&gt;Add Python 3.x to PATH&lt;/code&gt;，这样就不需要手动配置环境变量了。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果你没有正确地配置环境变量，你需要手动 cd 到 Python 的安装目录下才能使用 python 等命令。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;linuxunix-用户&#34;&gt;Linux/UNIX 用户&lt;/h4&gt;
+&lt;h5 id=&#34;ubuntu-18042004-用户&#34;&gt;Ubuntu 18.04/20.04 用户&lt;/h5&gt;
+&lt;p&gt;参考这篇教程：&lt;a class=&#34;link&#34; href=&#34;https://phoenixnap.com/kb/how-to-install-python-3-ubuntu&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://phoenixnap.com/kb/how-to-install-python-3-ubuntu&lt;/a&gt;&lt;/p&gt;
+&lt;h5 id=&#34;其他-linuxunix-用户&#34;&gt;其他 Linux/UNIX 用户&lt;/h5&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Linux，30 岁生日快乐！&lt;/p&gt;
+&lt;p&gt;这是你的生日蛋糕，你 ** 自己编译去吧。
+&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://s3.bmp.ovh/imgs/2022/03/0e8fe89a552844d3.png&#34; &gt;
+		&lt;img src=&#34;https://s3.bmp.ovh/imgs/2022/03/0e8fe89a552844d3.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;Source: https://www.reddit.com/r/ProgrammerHumor/comments/ppmtr2/happy_30th_birthday_linux_and_now_ahead_and/&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Source: &lt;a href=&#34;https://www.reddit.com/r/ProgrammerHumor/comments/ppmtr2/happy_30th_birthday_linux_and_now_ahead_and/&#34;&gt;https://www.reddit.com/r/ProgrammerHumor/comments/ppmtr2/happy_30th_birthday_linux_and_now_ahead_and/&lt;/a&gt;&lt;/figcaption&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;大多数 Linux 发行版可能自带了 Python 2，并不建议将其卸载。&lt;/p&gt;
+&lt;p&gt;可以使用 &lt;code&gt;python --version&lt;/code&gt; 来检查已安装的 Python 版本。&lt;/p&gt;
+&lt;p&gt;为 Python 创建一个安装目录，然后在下面的页面下载源代码，并解压到刚刚创建的目录中。&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.python.org/downloads/source/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.python.org/downloads/source/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;使用 yum 命令安装编译 Python 时需要用到的依赖包。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;yum -y install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gdbm-devel db4-devel libpcap-devel xz-devel
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;指定安装路径&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;./configure --prefix=/root/python310
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;解压后使用 &lt;code&gt;make&lt;/code&gt; 命令编译，编译完成后使用 &lt;code&gt;make install&lt;/code&gt; 安装。&lt;/p&gt;
+&lt;p&gt;为 &lt;code&gt;python3&lt;/code&gt; 和 &lt;code&gt;pip3&lt;/code&gt; 建立软连接。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;ln -s /root/python3102/bin/python3102 /usr/bin/python3
+ln -s /root/python3102/bin/pip3 /usr/bin/pip3
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h4 id=&#34;macos-用户&#34;&gt;macOS 用户&lt;/h4&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.python.org/downloads/macos/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.python.org/downloads/macos/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;分为 Intel-only 和 universal2 版本，部分 Release 仅提供后者。&lt;/p&gt;
+&lt;p&gt;Apple Silicon（M1 系列 arm 架构芯片）用户请选择后者。&lt;/p&gt;
+&lt;h4 id=&#34;iosipados-和其他操作系统用户&#34;&gt;iOS、iPadOS 和其他操作系统用户&lt;/h4&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.python.org/download/other/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.python.org/download/other/&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;安装好后，在命令提示符（Command Prompt）/PowerShell（macOS/Linux 是 Terminal） 中输入 &lt;code&gt;python -V&lt;/code&gt; 来查看版本信息。&lt;/p&gt;
-&lt;p&gt;打开运行（按下键盘上的 Win+R），输入 &lt;code&gt;python&lt;/code&gt; 即可进入 IDLE（在 Windows 的开始菜单里你也可以找到 IDLE）。&lt;/p&gt;
+&lt;p&gt;打开运行（按下键盘上的 Win+R），输入 &lt;code&gt;python&lt;/code&gt; 即可进入 IDLE&amp;hellip;的命令行版本&lt;/p&gt;
+&lt;p&gt;在 Windows 的开始菜单里你也可以找到有图形界面的 IDLE。&lt;/p&gt;
 &lt;h3 id=&#34;pycharm&#34;&gt;PyCharm&lt;/h3&gt;
 &lt;p&gt;支持 Windows、macOS(Intel/Apple Silicon)、Linux。&lt;/p&gt;
-&lt;p&gt;前往 JetBrains 官网下载安装包。&lt;/p&gt;
+&lt;p&gt;前往 &lt;a class=&#34;link&#34; href=&#34;https://www.jetbrains.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;JetBrains 官网&lt;/a&gt;下载安装包。&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.jetbrains.com/zh-cn/pycharm/download&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://www.jetbrains.com/zh-cn/pycharm/download&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;如果你没有教育邮箱可用于申请免费的 Professional Edition，推荐下载免费且开源的 Community Edition。&lt;/p&gt;
+&lt;p&gt;如果你没有教育邮箱可用于申请免费的 &lt;code&gt;Professional Edition&lt;/code&gt;，推荐下载&lt;strong&gt;免费且开源&lt;/strong&gt;的 &lt;code&gt;Community Edition&lt;/code&gt;。&lt;/p&gt;
 &lt;h4 id=&#34;ubuntu--1604-用户&#34;&gt;Ubuntu ≥ 16.04 用户&lt;/h4&gt;
-&lt;p&gt;也可以使用 snap 安装 PyCharm：&lt;/p&gt;
+&lt;p&gt;也可以使用 &lt;code&gt;snap&lt;/code&gt; 安装 PyCharm：&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;sudo snap install [pycharm-professional|pycharm-community] --classic&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;你也可以选择 Spyder 等其他 IDE，或者干脆使用一个文本编辑器（如 vim、Sublime Text、Notepad3）。&lt;/p&gt;
-&lt;p&gt;这篇笔记将使用 PyCharm 和 Python 3.10.2。&lt;/p&gt;
+&lt;p&gt;你也可以选择 Spyder 等其他 IDE，或者干脆使用一个文本编辑器（如 vim、Sublime Text、Notepad3 等）。&lt;/p&gt;
+&lt;h3 id=&#34;本文所使用的环境&#34;&gt;本文所使用的环境&lt;/h3&gt;
+&lt;p&gt;这篇笔记将使用 &lt;code&gt;PyCharm Community Edition 2021.3.2&lt;/code&gt; 和 &lt;code&gt;Python 3.10.2&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;使用更新版本的 PyCharm 或其他 IDE/编辑器通常不会产生问题。&lt;/p&gt;
 &lt;h2 id=&#34;你好世界&#34;&gt;你好，世界。&lt;/h2&gt;
-&lt;p&gt;打开 PyCharm 新建一个项目（暂时不需要特别配置解释器，保持默认即可；如果你想保持些神秘感，记得取消勾选 &lt;code&gt;Create a main.py welcome script&lt;/code&gt;；或许在只有一个文件的情况下使用 IDLE 是更好的选择），等待 IDE 自动配置环境。&lt;/p&gt;
+&lt;p&gt;打开 PyCharm，新建一个项目。&lt;/p&gt;
+&lt;p&gt;暂时不需要特别配置解释器，保持默认即可；&lt;/p&gt;
+&lt;p&gt;如果你想保持些神秘感，记得取消勾选 &lt;code&gt;Create a main.py welcome script&lt;/code&gt;；&lt;/p&gt;
+&lt;p&gt;或许在只有一个文件的情况下使用 IDLE 是更好的选择，等待 IDE 自动配置环境。&lt;/p&gt;
 &lt;p&gt;在左侧的资源管理器中右键你刚创建的项目，选择 New &amp;gt; Python File，为你的第一个 Python 程序起一个你喜欢的名字。不过，它不能以数字开头。&lt;/p&gt;
 &lt;h3 id=&#34;print-语句&#34;&gt;print 语句&lt;/h3&gt;
 &lt;p&gt;双击刚刚创建的文件，在右侧打开的文本编辑区域输入 &lt;code&gt;print(&amp;quot;Hello World!&amp;quot;)&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;输入 Python 代码时，记得切换到美式键盘或英式键盘而不是使用中文输入法（如果你没有，在语言和键盘选项中添加一个），以免错误地输入中文的逗号（，）、句号（。）、引号（“”）、中括号（【】）以及小括号。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;编写大多数语言的代码时，都要记得切换到美式键盘或英式键盘&lt;strong&gt;而不是使用中文输入法&lt;/strong&gt;（如果你没有，在语言和键盘选项中添加一个），以免错误地输入全角的逗号&lt;code&gt;，&lt;/code&gt;、句号&lt;code&gt;。&lt;/code&gt;、引号&lt;code&gt;“”&lt;/code&gt;、中括号&lt;code&gt;【】&lt;/code&gt;以及小括号&lt;code&gt;（）&lt;/code&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;像其他大多数 IDE 一样，PyCharm 会替你自动补全括号和双引号，你只需要打左半边就好。&lt;/p&gt;
 &lt;p&gt;按下 Alt+Shift+F10（或在 &lt;code&gt;Run&lt;/code&gt; 菜单下选择 &lt;code&gt;Run...&lt;/code&gt;），选择你的文件。&lt;/p&gt;
 &lt;p&gt;下方弹出的窗口中输出了 &lt;code&gt;Hello World!&lt;/code&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;Process finished with exit code 0&lt;/code&gt; 表示程序正常结束；对应地，&lt;code&gt;Process finished with exit code 1&lt;/code&gt; 表示程序异常退出。&lt;/p&gt;
+&lt;h4 id=&#34;程序结束时的返回值&#34;&gt;程序结束时的返回值&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;Process finished with exit code 0&lt;/code&gt; 表示程序正常结束；&lt;/p&gt;
+&lt;p&gt;相反地，&lt;code&gt;Process finished with exit code 1&lt;/code&gt; 则表示程序异常退出。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在这点上 Python 与 C/C++ 惊人地相似。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;变量&#34;&gt;变量&lt;/h2&gt;
+&lt;p&gt;现在你已经会用 Python 打印文字了！&lt;/p&gt;
+&lt;p&gt;但为了利用 Python 处理数据，我们总得把数据先存在什么地方而不是写死（hardcode）在代码里吧？&lt;/p&gt;
+&lt;p&gt;在 Python 3 中，第一次使用一个变量名时为其赋予的值决定了它之后能存储的数据类型。&lt;/p&gt;
+&lt;p&gt;你不需要像 C++ 那样为变量指定一个类型，也不会出现像 C++ 的主函数中定义的变量一样的奇怪数据。&lt;/p&gt;
+&lt;h3 id=&#34;string-类型&#34;&gt;string 类型&lt;/h3&gt;
+&lt;p&gt;几乎可以存储你想存的任何数据。&lt;/p&gt;
+&lt;p&gt;你可以用一对单引号 &lt;code&gt;&#39;&#39;&lt;/code&gt; 或一对双引号 &lt;code&gt;&amp;quot;&amp;quot;&lt;/code&gt; 来把字符串括起来，以区别于需要 Python 解释器处理的代码。&lt;/p&gt;
+&lt;p&gt;为变量赋值时，把变量名写在左边，用等号与右边的值连接。&lt;/p&gt;
+&lt;p&gt;不明白？看看例程吧。&lt;/p&gt;
+&lt;p&gt;示例程序1：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;n&#34;&gt;username&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;Aynxul03&amp;#39;&lt;/span&gt;
+&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Hello &amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;username&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;!&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;运行，输出为&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Hello Aynxul03!&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h1 id=&#34;未完待续&#34;&gt;未完，待续&lt;/h1&gt;
+&lt;h2 id=&#34;changelog&#34;&gt;Changelog&lt;/h2&gt;
+&lt;p&gt;2022-03-08 22:38:00 新增变量[string 类型]、小标题#本文所使用的环境、程序结束时的返回值，为 Windows 外的操作系统提供 Python 本体的安装教程，修改了一些格式与排版，改善阅读体验。&lt;/p&gt;
 </description>
         </item>
         <item>
@@ -97,22 +215,8 @@
 &lt;p&gt;如果您决定使用 LeanCloud 国内版，您需要为您创建的应用额外绑定已备案的域名。&lt;/p&gt;
 &lt;p&gt;创建开发版新应用（随意命名）并复制设置 - 应用凭证中的前三项值，稍后会添加在 Vercel 中的环境变量里。&lt;/p&gt;
 &lt;h2 id=&#34;在-vercel-上部署服务端&#34;&gt;在 Vercel 上部署服务端&lt;/h2&gt;
-&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://vercel.com/import/project?template=https://github.com/walinejs/waline/tree/main/example&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;&lt;figure 
-	&gt;
-	&lt;a href=&#34;https://vercel.com/button&#34; &gt;
-		&lt;img src=&#34;https://vercel.com/button&#34;
-			
-			
-			
-			loading=&#34;lazy&#34;
-			alt=&#34;点击按钮跳转到 Vercel.com 部署&#34;&gt;
-	&lt;/a&gt;
-	
-	&lt;figcaption&gt;点击按钮跳转到 Vercel.com 部署&lt;/figcaption&gt;
-	
-&lt;/figure&gt;&lt;/a&gt;
-（推荐）使用 GitHub 登录，创建存储库（可以是私有 Repo），跳过创建团队（反正这也不是什么需要团队协作的项目），部署。&lt;/p&gt;
+&lt;figure&gt;&lt;a class=&#34;link&#34; href=&#34;https://vercel.com/import/project?template=https://github.com/walinejs/waline/tree/main/example&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;/a&gt;&lt;a href=&#34;https://vercel.com/import/project?template=https://github.com/walinejs/waline/tree/main/example&#34;&gt;&lt;img src=&#34;https://vercel.com/button&#34; loading=&#34;lazy&#34; alt=&#34;点击按钮跳转到 Vercel.com 部署&#34;&gt;&lt;/a&gt;&lt;figcaption&gt;点击按钮跳转到 Vercel.com 部署&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;p&gt;（推荐）使用 GitHub 登录，创建存储库（可以是私有 Repo），跳过创建团队（反正这也不是什么需要团队协作的项目），部署。&lt;/p&gt;
 &lt;p&gt;两分钟左右部署就会完成。&lt;/p&gt;
 &lt;p&gt;完成部署后在 Settings 中找到 Environment Variables，分别添加三个环境变量 &lt;code&gt;LEAN_ID&lt;/code&gt;、&lt;code&gt;LEAN_KEY&lt;/code&gt; 和 &lt;code&gt;LEAN_MASTER_KEY&lt;/code&gt; 。&lt;code&gt;VALUE&lt;/code&gt; 分别填写在 LeanCloud 中获得的 &lt;code&gt;APP ID&lt;/code&gt;、&lt;code&gt;APP KEY&lt;/code&gt;、和 &lt;code&gt;Master Key&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;记得&lt;a class=&#34;link&#34; href=&#34;#%e8%af%84%e8%ae%ba%e7%ae%a1%e7%90%86&#34; &gt;注册你的管理员账号&lt;/a&gt;，以免被访客注册。第一个注册的用户会得到管理权限。&lt;/p&gt;
@@ -161,6 +265,7 @@
 &lt;p&gt;然后可以使用 &lt;code&gt;hugo server&lt;/code&gt; 看下效果，使用 Waline 时不会像 disqus 一样在本地预览时屏蔽评论。&lt;/p&gt;
 &lt;h3 id=&#34;emoji&#34;&gt;Emoji&lt;/h3&gt;
 &lt;p&gt;你可以为你的 Waline 客户端添加多套表情。&lt;/p&gt;
+&lt;p&gt;题外话，严格来说，这些表情似乎不能称作 emoji。真正的 emoji 必须能被编码，而不是一张图片。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Waline 提供了一系列开箱即用的表情预设。你可以直接将它们添加到 emoji 选项中:&lt;/p&gt;
 &lt;p&gt;Alus&lt;/p&gt;
@@ -176,6 +281,49 @@
 &lt;p&gt;微博&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/weibo&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
+&lt;h4 id=&#34;本站的配置&#34;&gt;本站的配置&lt;/h4&gt;
+&lt;p&gt;例如本站目前的 Waline 部分配置如下：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;        # Waline client configuration see: https://waline.js.org/en/reference/client.html
+        waline:
+            serverURL: https://c.moefox.tech/
+            lang: zh-CN
+            visitor: false
+            avatar:
+            emoji:
+                - https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba
+                - https://cdn.jsdelivr.net/gh/walinejs/emojis/qq
+                - https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus
+            requiredMeta:
+                - name
+                - email
+                - url
+            placeholder:
+            locale:
+                admin: 博主
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;B站和微博的表情看多了会让我生理性不适，因此没有添加进本站的客户端中。&lt;/p&gt;
 &lt;h2 id=&#34;评论管理&#34;&gt;评论管理&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;评论管理 (管理端)&lt;/p&gt;

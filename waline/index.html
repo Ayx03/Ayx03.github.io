@@ -15,6 +15,17 @@
 <meta name="twitter:description" content="我用它换掉了国内用不了的 disqus">
     <link rel="shortcut icon" href="favicon.jpg" />
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X0SE27LREY"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-X0SE27LREY', { 'anonymize_ip': false });
+}
+</script>
+
     </head>
     <body class="
     article-page has-toc
@@ -112,22 +123,8 @@
 <p>如果您决定使用 LeanCloud 国内版，您需要为您创建的应用额外绑定已备案的域名。</p>
 <p>创建开发版新应用（随意命名）并复制设置 - 应用凭证中的前三项值，稍后会添加在 Vercel 中的环境变量里。</p>
 <h2 id="在-vercel-上部署服务端">在 Vercel 上部署服务端</h2>
-<p><a class="link" href="https://vercel.com/import/project?template=https://github.com/walinejs/waline/tree/main/example"  target="_blank" rel="noopener"
-    ><figure 
-	>
-	<a href="https://vercel.com/button" >
-		<img src="https://vercel.com/button"
-			
-			
-			
-			loading="lazy"
-			alt="点击按钮跳转到 Vercel.com 部署">
-	</a>
-	
-	<figcaption>点击按钮跳转到 Vercel.com 部署</figcaption>
-	
-</figure></a>
-（推荐）使用 GitHub 登录，创建存储库（可以是私有 Repo），跳过创建团队（反正这也不是什么需要团队协作的项目），部署。</p>
+<figure><a class="link" href="https://vercel.com/import/project?template=https://github.com/walinejs/waline/tree/main/example" target="_blank" rel="noopener"></a><a href="https://vercel.com/import/project?template=https://github.com/walinejs/waline/tree/main/example"><img src="https://vercel.com/button" loading="lazy" alt="点击按钮跳转到 Vercel.com 部署"></a><figcaption>点击按钮跳转到 Vercel.com 部署</figcaption></figure>
+<p>（推荐）使用 GitHub 登录，创建存储库（可以是私有 Repo），跳过创建团队（反正这也不是什么需要团队协作的项目），部署。</p>
 <p>两分钟左右部署就会完成。</p>
 <p>完成部署后在 Settings 中找到 Environment Variables，分别添加三个环境变量 <code>LEAN_ID</code>、<code>LEAN_KEY</code> 和 <code>LEAN_MASTER_KEY</code> 。<code>VALUE</code> 分别填写在 LeanCloud 中获得的 <code>APP ID</code>、<code>APP KEY</code>、和 <code>Master Key</code>。</p>
 <p>记得<a class="link" href="#%e8%af%84%e8%ae%ba%e7%ae%a1%e7%90%86" >注册你的管理员账号</a>，以免被访客注册。第一个注册的用户会得到管理权限。</p>
@@ -176,6 +173,7 @@
 <p>然后可以使用 <code>hugo server</code> 看下效果，使用 Waline 时不会像 disqus 一样在本地预览时屏蔽评论。</p>
 <h3 id="emoji">Emoji</h3>
 <p>你可以为你的 Waline 客户端添加多套表情。</p>
+<p>题外话，严格来说，这些表情似乎不能称作 emoji。真正的 emoji 必须能被编码，而不是一张图片。</p>
 <blockquote>
 <p>Waline 提供了一系列开箱即用的表情预设。你可以直接将它们添加到 emoji 选项中:</p>
 <p>Alus</p>
@@ -191,6 +189,49 @@
 <p>微博</p>
 <p><code>https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/weibo</code></p>
 </blockquote>
+<h4 id="本站的配置">本站的配置</h4>
+<p>例如本站目前的 Waline 部分配置如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">        # Waline client configuration see: https://waline.js.org/en/reference/client.html
+        waline:
+            serverURL: https://c.moefox.tech/
+            lang: zh-CN
+            visitor: false
+            avatar:
+            emoji:
+                - https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba
+                - https://cdn.jsdelivr.net/gh/walinejs/emojis/qq
+                - https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus
+            requiredMeta:
+                - name
+                - email
+                - url
+            placeholder:
+            locale:
+                admin: 博主
+</code></pre></td></tr></table>
+</div>
+</div><p>B站和微博的表情看多了会让我生理性不适，因此没有添加进本站的客户端中。</p>
 <h2 id="评论管理">评论管理</h2>
 <blockquote>
 <p>评论管理 (管理端)</p>
@@ -267,7 +308,7 @@
     }
 </style><script>
     
-    new Waline({"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba","https://cdn.jsdelivr.net/gh/walinejs/emojis/qq","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus"],"lang":"zh-CN","locale":{"admin":"博主"},"requiredMeta":["name","email","url"],"serverURL":"https://c.moefox.tech/"});
+    new Waline({"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba","https://cdn.jsdelivr.net/gh/walinejs/emojis/qq","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus"],"lang":"zh-CN","locale":{"admin":"博主"},"login":"force","placeholder":"欢迎留下你的评论，但请勿滥用 QQ 表情。","requiredMeta":["name","email","url"],"serverURL":"https://c.moefox.tech/"});
 </script>
 
     
@@ -393,7 +434,11 @@
     <li><a href="#在-vercel-上部署服务端">在 Vercel 上部署服务端</a></li>
     <li><a href="#在配置文件中配置客户端">在配置文件中配置客户端</a>
       <ol>
-        <li><a href="#emoji">Emoji</a></li>
+        <li><a href="#emoji">Emoji</a>
+          <ol>
+            <li><a href="#本站的配置">本站的配置</a></li>
+          </ol>
+        </li>
       </ol>
     </li>
     <li><a href="#评论管理">评论管理</a></li>
