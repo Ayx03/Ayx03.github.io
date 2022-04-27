@@ -1,533 +1,86 @@
-<!DOCTYPE html>
-<html lang="zh-cn">
-    <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='梦开始的地方'><title>题解 YBT 1000：入门测试题目</title>
-
-<link rel='canonical' href='https://ayx.moefox.tech/ybt1000/'>
-
-<link rel="stylesheet" href="/scss/style.min.8f4416a35036b6471a6978873128b5652464226c8db8a9620ed1b94bc11bd353.css"><meta property='og:title' content='题解 YBT 1000：入门测试题目'>
-<meta property='og:description' content='梦开始的地方'>
-<meta property='og:url' content='https://ayx.moefox.tech/ybt1000/'>
-<meta property='og:site_name' content='Aynxul03 写字的地方'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='OI' /><meta property='article:tag' content='题解' /><meta property='article:tag' content='C&#43;&#43;' /><meta property='article:published_time' content='2020-12-04T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2021-10-19T21:57:00&#43;00:00'/>
-<meta name="twitter:site" content="@03Ayx">
-    <meta name="twitter:creator" content="@03Ayx"><meta name="twitter:title" content="题解 YBT 1000：入门测试题目">
-<meta name="twitter:description" content="梦开始的地方">
-    <link rel="shortcut icon" href="favicon.jpg" />
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-X0SE27LREY"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-X0SE27LREY', { 'anonymize_ip': false });
-}
-</script>
-
-    </head>
-    <body class="
-    article-page has-toc
-">
-    <script>
-        (function() {
-            const colorSchemeKey = 'StackColorScheme';
-            if(!localStorage.getItem(colorSchemeKey)){
-                localStorage.setItem(colorSchemeKey, "auto");
-            }
-        })();
-    </script><script>
-    (function() {
-        const colorSchemeKey = 'StackColorScheme';
-        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
-        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
-
-        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
-            
-
-            document.documentElement.dataset.scheme = 'dark';
-        } else {
-            document.documentElement.dataset.scheme = 'light';
-        }
-    })();
-</script>
-<div class="container main-container flex 
-    
-        extended
-    
-">
-    
-        <div id="article-toolbar">
-            <a href="/" class="back-home">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <polyline points="15 6 9 12 15 18" />
-</svg>
-
-
-
-                <span>返回</span>
-            </a>
-        </div>
-    
-<main class="main full-width">
-    <article class="main-article">
-    <header class="article-header">
-
-    <div class="article-details">
-    
-
-    <h2 class="article-title">
-        <a href="/ybt1000/">题解 YBT 1000：入门测试题目</a>
-    </h2>
-
-    
-    <h3 class="article-subtitle">
-        梦开始的地方
-    </h3>
-    
-
-    
-    <footer class="article-time">
-        
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
-  <circle cx="18" cy="18" r="4" />
-  <path d="M15 3v4" />
-  <path d="M7 3v4" />
-  <path d="M3 11h16" />
-  <path d="M18 16.496v1.504l1 1" />
-</svg>
-                <time class="article-time--published">Dec 04, 2020</time>
-            </div>
-        
-
-        
-    </footer>
-    
-</div>
-</header>
-
-    <section class="article-content">
-    
-    
-    <p><a class="link" href="http://noi.openjudge.cn/ch0103/01/"  target="_blank" rel="noopener"
-    >OpenJudge - 01:A+B问题</a></p>
-<p><a class="link" href="http://ybt.ssoier.cn:8088/problem_show.php?pid=1000"  target="_blank" rel="noopener"
-    >信息学奥赛一本通（C++版）在线评测系统</a></p>
-<p>如果非要做这题我推荐第一个 OJ，第二个 OJ 的界面实在惨不忍睹</p>
-<p>（虽然第一个题目有题号检索比较方便而且貌似用户比较多）</p>
-<p>更好的选择是不要做《信奥赛一本通》的题</p>
-<h2 id="题目的背景描述输入输出格式样例">题目的背景、描述、输入输出格式样例</h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">1000：入门测试题目
-
-时间限制: 1000 ms         内存限制: 32768 KB
-
-【题目描述】
-
-求两个整数的和。
-
-【输入】
-
-一行，两个用空格隔开的整数。
-
-【输出】
-
-两个整数的和。
-
-【输入样例】
-
-1 2
-
-【输出样例】
-
-3
-</code></pre></td></tr></table>
-</div>
-</div><h2 id="题意分析与算法设计">题意分析与算法设计</h2>
-<p>新手不用理会 <code>时间限制</code> 和 <code>内存限制</code>，一般来说学到后面才会出现 TLE（Time Limit Exceed，超出时间限制）和 MLE（Memory Limit Exceed，超出内存限制）的情况。</p>
-<p>（关于这些术语，可以在<a class="link" href="/explanation-of-oj-terminology/#%e6%ad%a3%e7%bb%8f%e8%a7%a3%e9%87%8a" ><strong>这里</strong></a>了解。）</p>
-<p>至于这个问题，就是一个最简单的 A+B 问题。</p>
-<h2 id="参考用完整代码">参考用完整代码</h2>
-<p>各位一定要养成良好的代码风格，因为代码不仅仅是给机器看的，有时候人也要看。</p>
-<p>使用 cin/cout（需要调用 iostreeam 头文件）：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="cp"></span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-	<span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">;</span>
-	<span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">a</span> <span class="o">&gt;&gt;</span> <span class="n">b</span><span class="p">;</span>
-	<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>使用 scanf/printf（需要调用 cstdio 头文件）：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="cp">#include</span> <span class="cpf">&lt;cstdio&gt;</span><span class="cp">
-</span><span class="cp"></span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-	<span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">;</span>
-	<span class="n">scanf</span><span class="p">(</span><span class="s">&#34;%d%d&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">a</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">b</span><span class="p">);</span>
-	<span class="n">printf</span><span class="p">(</span><span class="s">&#34;%d&#34;</span><span class="p">,</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>这两种风格的输入输出各有长处，各位务必都要掌握。</p>
-<p>实际上，第二份代码中没有用到任何 C++ 特性，因此不加 <code>using namespace std;</code> 也没关系。</p>
-<hr>
-<p><del>为什么这种题你还要水一篇题解出来</del></p>
-<hr>
-<p>编辑记录</p>
-<p>2021-08-06 18:42:00 UTC+8</p>
-<p>最后更新于 OCT 19, 2021 21:57 UTC+8</p>
-
-</section>
-
-
-    <footer class="article-footer">
-    
-    <section class="article-tags">
-        
-            <a href="/tags/oi/">OI</a>
-        
-            <a href="/tags/%E9%A2%98%E8%A7%A3/">题解</a>
-        
-            <a href="/tags/c&#43;&#43;/">C&#43;&#43;</a>
-        
-    </section>
-
-
-    
-    <section class="article-copyright">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="12" r="9" />
-  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
-</svg>
-
-
-
-        <span>未经允许禁止转载</span>
-    </section>
-    <section class="article-lastmod">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="12" r="9" />
-  <polyline points="12 7 12 12 15 15" />
-</svg>
-
-
-
-        <span>
-            最后更新于 Oct 19, 2021 21:57 UTC
-        </span>
-    </section></footer>
-
-
-    
-</article>
-
-    
-
-    <aside class="related-contents--wrapper">
-    
-    
-        <h2 class="section-title">相关文章</h2>
-        <div class="related-contents">
-            <div class="flex article-list--tile">
-                
-                    
-<article class="has-image">
-    <a href="/key-to-p1603/">
-        
-        
-            <div class="article-image">
-                <img src="/key-to-p1603/cover.ecf17334ebe3bdf20d874b297771da6f_hu33884e09a361eec376ba2239fc3bc8e1_84422_250x150_fill_q75_box_smart1.jpg" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy"
-                        alt="Featured image of post 题解 P1603 斯诺登的密码"
-                        data-key="Key-to-P1603" 
-                        data-hash="md5-7PFzNOvjvfINh0spd3Habw==">
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">题解 P1603 斯诺登的密码</h2>
-        </div>
-    </a>
-</article>
-                
-                    
-<article class="">
-    <a href="/upc1488/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">题解 UPC-1488 客户调查(client)</h2>
-        </div>
-    </a>
-</article>
-                
-                    
-<article class="">
-    <a href="/p5707/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">题解 P5707 【深基2.例12】上学迟到</h2>
-        </div>
-    </a>
-</article>
-                
-                    
-<article class="">
-    <a href="/p2669/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">题解 P2669 [NOIP2015 普及组] 金币</h2>
-        </div>
-    </a>
-</article>
-                
-                    
-<article class="">
-    <a href="/p5719/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">题解 P5719 【深基4.例3】分类平均</h2>
-        </div>
-    </a>
-</article>
-                
-            </div>
-        </div>
-    
-</aside>
-
-     
-    
-        
-    <script src='//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js'></script>
-<div id="waline" class="waline-container"></div>
-<style>
-    .waline-container {
-        background-color: var(--card-background);
-        border-radius: var(--card-border-radius);
-        box-shadow: var(--shadow-l1);
-        padding: var(--card-padding);
-    }
-    .waline-container .vcount {
-        color: var(--card-text-color-main);
-    }
-</style><script>
-    
-    new Waline({"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba","https://cdn.jsdelivr.net/gh/walinejs/emojis/qq","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus"],"lang":"zh-CN","locale":{"admin":"博主"},"login":"force","placeholder":"欢迎留下你的评论，但请勿滥用 QQ 表情。","requiredMeta":["name","email","url"],"serverURL":"https://c.moefox.tech/"});
-</script>
-
-    
-
-    <footer class="site-footer">
-    <section class="copyright">
-        &copy; 
-        
-            2020 - 
-        
-        2022 Aynxul03 写字的地方
-    </section>
-    
-    <section class="powerby">
-        
-            主站由 Vercel 驱动，如遇需使用 IPv6 或主站无法访问请访问托管于 GitHub Pages 的<a href="https://ayx03.github.io/">镜像</a>（实时同步）。<br>由于 Pages 的局限性，我引入了 Google Analytics 来收集访问数据；这些数据只是我自己看着玩的，不会被泄露；<br>您大可屏蔽它的 Cookie，这不会影响您浏览本站的所有内容或发表评论。<br>本站支持 IPv6 网络。<br><a href="https://icp.gov.moe" target="_blank">萌ICP备</a> <a href="https://icp.gov.moe/?keyword=20213003" target="_blank">20213003号</a> <br/>
-        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
-        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.7.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
-    </section>
-</footer>
-
-
-    
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-    
-    <div class="pswp__bg"></div>
-
-    
-    <div class="pswp__scroll-wrap">
-
-        
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-        </div>
-
-        
-        <div class="pswp__ui pswp__ui--hidden">
-
-            <div class="pswp__top-bar">
-
-                
-
-                <div class="pswp__counter"></div>
-
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-                <button class="pswp__button pswp__button--share" title="Share"></button>
-
-                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                
-                
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                        <div class="pswp__preloader__cut">
-                            <div class="pswp__preloader__donut"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div>
-            </div>
-
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
-
-        </div>
-
-    </div>
-
-</div><script 
-                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
-                defer="true"
-                >
-            </script><script 
-                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
-                defer="true"
-                >
-            </script><link 
-                rel="stylesheet" 
-                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css"integrity="sha256-c0uckgykQ9v5k&#43;IqViZOZKc47Jn7KQil4/MP3ySA3F8="crossorigin="anonymous"
-            ><link 
-                rel="stylesheet" 
-                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css"integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE="crossorigin="anonymous"
-            >
-
-            </main>
-    
-        <aside class="sidebar right-sidebar sticky">
-            <section class="widget archives">
-                <div class="widget-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <line x1="5" y1="9" x2="19" y2="9" />
-  <line x1="5" y1="15" x2="19" y2="15" />
-  <line x1="11" y1="4" x2="7" y2="20" />
-  <line x1="17" y1="4" x2="13" y2="20" />
-</svg>
-
-
-
-                </div>
-                <h2 class="widget-title section-title">目录</h2>
-                
-                <div class="widget--toc">
-                    <nav id="TableOfContents">
-  <ol>
-    <li><a href="#题目的背景描述输入输出格式样例">题目的背景、描述、输入输出格式样例</a></li>
-    <li><a href="#题意分析与算法设计">题意分析与算法设计</a></li>
-    <li><a href="#参考用完整代码">参考用完整代码</a></li>
-  </ol>
-</nav>
-                </div>
-            </section>
-        </aside>
-    
-
-        </div>
-        <script 
-                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js"integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g="crossorigin="anonymous"
-                defer="false"
-                >
-            </script><script type="text/javascript" src="/ts/main.js" defer></script>
-<script>
-    (function () {
-        const customFont = document.createElement('link');
-        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
-
-        customFont.type = "text/css";
-        customFont.rel = "stylesheet";
-
-        document.head.appendChild(customFont);
-    }());
-</script>
-
-    </body>
-</html>
+<!doctype html><html lang=zh-cn><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="梦开始的地方"><title>题解 YBT 1000：入门测试题目</title><link rel=canonical href=https://ayx.moefox.tech/ybt1000/><link rel=stylesheet href=/scss/style.min.8f4416a35036b6471a6978873128b5652464226c8db8a9620ed1b94bc11bd353.css><meta property="og:title" content="题解 YBT 1000：入门测试题目"><meta property="og:description" content="梦开始的地方"><meta property="og:url" content="https://ayx.moefox.tech/ybt1000/"><meta property="og:site_name" content="Aynxul03 写字的地方"><meta property="og:type" content="article"><meta property="article:section" content="Post"><meta property="article:tag" content="OI"><meta property="article:tag" content="题解"><meta property="article:tag" content="C++"><meta property="article:published_time" content="2020-12-04T00:00:00+00:00"><meta property="article:modified_time" content="2021-10-19T21:57:00+00:00"><meta name=twitter:site content="@03Ayx"><meta name=twitter:creator content="@03Ayx"><meta name=twitter:title content="题解 YBT 1000：入门测试题目"><meta name=twitter:description content="梦开始的地方"><link rel="shortcut icon" href=favicon.jpg><script async src="https://www.googletagmanager.com/gtag/js?id=G-X0SE27LREY"></script>
+<script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date),gtag("config","G-X0SE27LREY",{anonymize_ip:!1})}</script></head><body class="article-page has-toc"><script>(function(){const e="StackColorScheme";localStorage.getItem(e)||localStorage.setItem(e,"auto")})()</script><script>(function(){const t="StackColorScheme",e=localStorage.getItem(t),n=window.matchMedia("(prefers-color-scheme: dark)").matches===!0;e=="dark"||e==="auto"&&n?document.documentElement.dataset.scheme="dark":document.documentElement.dataset.scheme="light"})()</script><div class="container main-container flex
+extended"><div id=article-toolbar><a href=/ class=back-home><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="15 6 9 12 15 18"/></svg><span>返回</span></a></div><main class="main full-width"><article class=main-article><header class=article-header><div class=article-details><h2 class=article-title><a href=/ybt1000/>题解 YBT 1000：入门测试题目</a></h2><h3 class=article-subtitle>梦开始的地方</h3><footer class=article-time><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M11.795 21H5a2 2 0 01-2-2V7a2 2 0 012-2h12a2 2 0 012 2v4"/><circle cx="18" cy="18" r="4"/><path d="M15 3v4"/><path d="M7 3v4"/><path d="M3 11h16"/><path d="M18 16.496V18l1 1"/></svg><time class=article-time--published>Dec 04, 2020</time></div></footer></div></header><section class=article-content><p><a class=link href=http://noi.openjudge.cn/ch0103/01/ target=_blank rel=noopener>OpenJudge - 01:A+B问题</a></p><p><a class=link href="http://ybt.ssoier.cn:8088/problem_show.php?pid=1000" target=_blank rel=noopener>信息学奥赛一本通（C++版）在线评测系统</a></p><p>如果非要做这题我推荐第一个 OJ，第二个 OJ 的界面实在惨不忍睹</p><p>（虽然第一个题目有题号检索比较方便而且貌似用户比较多）</p><p>更好的选择是不要做《信奥赛一本通》的题</p><h2 id=题目的背景描述输入输出格式样例>题目的背景、描述、输入输出格式样例</h2><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-fallback data-lang=fallback><span class=line><span class=cl>1000：入门测试题目
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>时间限制: 1000 ms         内存限制: 32768 KB
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>【题目描述】
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>求两个整数的和。
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>【输入】
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>一行，两个用空格隔开的整数。
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>【输出】
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>两个整数的和。
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>【输入样例】
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>1 2
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>【输出样例】
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>3
+</span></span></code></pre></td></tr></table></div></div><h2 id=题意分析与算法设计>题意分析与算法设计</h2><p>新手不用理会 <code>时间限制</code> 和 <code>内存限制</code>，一般来说学到后面才会出现 TLE（Time Limit Exceed，超出时间限制）和 MLE（Memory Limit Exceed，超出内存限制）的情况。</p><p>（关于这些术语，可以在<a class=link href=/explanation-of-oj-terminology/#%e6%ad%a3%e7%bb%8f%e8%a7%a3%e9%87%8a><strong>这里</strong></a>了解。）</p><p>至于这个问题，就是一个最简单的 A+B 问题。</p><h2 id=参考用完整代码>参考用完整代码</h2><p>各位一定要养成良好的代码风格，因为代码不仅仅是给机器看的，有时候人也要看。</p><p>使用 cin/cout（需要调用 iostreeam 头文件）：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;iostream&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp></span><span class=k>using</span> <span class=k>namespace</span> <span class=n>std</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=nf>main</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=kt>int</span> <span class=n>a</span><span class=p>,</span> <span class=n>b</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>	<span class=n>cin</span> <span class=o>&gt;&gt;</span> <span class=n>a</span> <span class=o>&gt;&gt;</span> <span class=n>b</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>	<span class=n>cout</span> <span class=o>&lt;&lt;</span> <span class=n>a</span> <span class=o>+</span> <span class=n>b</span> <span class=o>&lt;&lt;</span> <span class=n>endl</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>使用 scanf/printf（需要调用 cstdio 头文件）：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
+</span><span class=lnt>2
+</span><span class=lnt>3
+</span><span class=lnt>4
+</span><span class=lnt>5
+</span><span class=lnt>6
+</span><span class=lnt>7
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-cpp data-lang=cpp><span class=line><span class=cl><span class=cp>#include</span> <span class=cpf>&lt;cstdio&gt;</span><span class=cp>
+</span></span></span><span class=line><span class=cl><span class=cp></span><span class=k>using</span> <span class=k>namespace</span> <span class=n>std</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=kt>int</span> <span class=nf>main</span><span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>	<span class=kt>int</span> <span class=n>a</span><span class=p>,</span> <span class=n>b</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>	<span class=n>scanf</span><span class=p>(</span><span class=s>&#34;%d%d&#34;</span><span class=p>,</span> <span class=o>&amp;</span><span class=n>a</span><span class=p>,</span> <span class=o>&amp;</span><span class=n>b</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>	<span class=n>printf</span><span class=p>(</span><span class=s>&#34;%d&#34;</span><span class=p>,</span> <span class=n>a</span> <span class=o>+</span> <span class=n>b</span><span class=p>);</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></td></tr></table></div></div><p>这两种风格的输入输出各有长处，各位务必都要掌握。</p><p>实际上，第二份代码中没有用到任何 C++ 特性，因此不加 <code>using namespace std;</code> 也没关系。</p><hr><p><del>为什么这种题你还要水一篇题解出来</del></p><hr><p>编辑记录</p><p>2021-08-06 18:42:00 UTC+8</p><p>最后更新于 OCT 19, 2021 21:57 UTC+8</p></section><footer class=article-footer><section class=article-tags><a href=/tags/oi/>OI</a>
+<a href=/tags/%E9%A2%98%E8%A7%A3/>题解</a>
+<a href=/tags/c++/>C++</a></section><section class=article-copyright><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><path d="M14.5 9a3.5 4 0 100 6"/></svg><span>未经允许禁止转载</span></section><section class=article-lastmod><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg><span>最后更新于 Oct 19, 2021 21:57 UTC</span></section></footer></article><aside class=related-contents--wrapper><h2 class=section-title>相关文章</h2><div class=related-contents><div class="flex article-list--tile"><article class=has-image><a href=/key-to-p1603/><div class=article-image><img src=/key-to-p1603/cover.ecf17334ebe3bdf20d874b297771da6f_hu33884e09a361eec376ba2239fc3bc8e1_84422_250x150_fill_q75_box_smart1.jpg width=250 height=150 loading=lazy alt="Featured image of post 题解 P1603 斯诺登的密码" data-key=Key-to-P1603 data-hash="md5-7PFzNOvjvfINh0spd3Habw=="></div><div class=article-details><h2 class=article-title>题解 P1603 斯诺登的密码</h2></div></a></article><article><a href=/upc1488/><div class=article-details><h2 class=article-title>题解 UPC-1488 客户调查(client)</h2></div></a></article><article><a href=/p5707/><div class=article-details><h2 class=article-title>题解 P5707 【深基2.例12】上学迟到</h2></div></a></article><article><a href=/p2669/><div class=article-details><h2 class=article-title>题解 P2669 [NOIP2015 普及组] 金币</h2></div></a></article><article><a href=/p5719/><div class=article-details><h2 class=article-title>题解 P5719 【深基4.例3】分类平均</h2></div></a></article></div></div></aside><script src=//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js></script><div id=waline class=waline-container></div><style>.waline-container{background-color:var(--card-background);border-radius:var(--card-border-radius);box-shadow:var(--shadow-l1);padding:var(--card-padding)}.waline-container .vcount{color:var(--card-text-color-main)}</style><script>new Waline({dark:'html[data-scheme="dark"]',el:"#waline",emoji:["https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/tieba","https://cdn.jsdelivr.net/gh/walinejs/emojis/qq","https://cdn.jsdelivr.net/gh/walinejs/emojis@1.0.0/alus"],lang:"zh-CN",locale:{admin:"博主"},login:"force",placeholder:"欢迎留下你的评论，但请勿滥用 QQ 表情。",requiredMeta:["name","email","url"],serverURL:"https://c.moefox.tech/"})</script><footer class=site-footer><section class=copyright>&copy;
+2020 -
+2022 Aynxul03 写字的地方</section><section class=powerby>主站由 Vercel 驱动，如遇需使用 IPv6 或主站无法访问请访问托管于 GitHub Pages 的<a href=https://ayx03.github.io/>镜像</a>（实时同步）。<br>由于 Pages 的局限性，我引入了 Google Analytics 来收集访问数据；这些数据只是我自己看着玩的，不会被泄露；<br>您大可屏蔽它的 Cookie，这不会影响您浏览本站的所有内容或发表评论。<br>本站支持 IPv6 网络。<br><a href=https://icp.gov.moe target=_blank>萌ICP备</a> <a href="https://icp.gov.moe/?keyword=20213003" target=_blank>20213003号</a><br>Built with <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a><br>Theme <b><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank rel=noopener data-version=3.7.0>Stack</a></b> designed by <a href=https://jimmycai.com target=_blank rel=noopener>Jimmy</a></section></footer><div class=pswp tabindex=-1 role=dialog aria-hidden=true><div class=pswp__bg></div><div class=pswp__scroll-wrap><div class=pswp__container><div class=pswp__item></div><div class=pswp__item></div><div class=pswp__item></div></div><div class="pswp__ui pswp__ui--hidden"><div class=pswp__top-bar><div class=pswp__counter></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<button class="pswp__button pswp__button--share" title=Share></button>
+<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class=pswp__preloader><div class=pswp__preloader__icn><div class=pswp__preloader__cut><div class=pswp__preloader__donut></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class=pswp__share-tooltip></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class=pswp__caption><div class=pswp__caption__center></div></div></div></div></div><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo=" crossorigin=anonymous defer></script><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU=" crossorigin=anonymous defer></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css integrity="sha256-c0uckgykQ9v5k+IqViZOZKc47Jn7KQil4/MP3ySA3F8=" crossorigin=anonymous><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE=" crossorigin=anonymous></main><aside class="sidebar right-sidebar sticky"><section class="widget archives"><div class=widget-icon><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><line x1="5" y1="9" x2="19" y2="9"/><line x1="5" y1="15" x2="19" y2="15"/><line x1="11" y1="4" x2="7" y2="20"/><line x1="17" y1="4" x2="13" y2="20"/></svg></div><h2 class="widget-title section-title">目录</h2><div class=widget--toc><nav id=TableOfContents><ol><li><a href=#题目的背景描述输入输出格式样例>题目的背景、描述、输入输出格式样例</a></li><li><a href=#题意分析与算法设计>题意分析与算法设计</a></li><li><a href=#参考用完整代码>参考用完整代码</a></li></ol></nav></div></section></aside></div><script src=https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g=" crossorigin=anonymous defer></script><script type=text/javascript src=/ts/main.js defer></script>
+<script>(function(){const e=document.createElement("link");e.href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap",e.type="text/css",e.rel="stylesheet",document.head.appendChild(e)})()</script></body></html>
