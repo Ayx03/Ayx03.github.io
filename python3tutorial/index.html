@@ -121,7 +121,7 @@ if (!doNotTrack) {
 <p>前往 Python 官网下载。</p>
 <p><a class="link" href="https://www.python.org/downloads"  target="_blank" rel="noopener"
     >https://www.python.org/downloads</a></p>
-<p>打开该地址时网页会自动识别你的操作系统并为你推荐合适的 Python 3 版本，一般情况下点击黄色按钮下载即可。目前的最新版本为 3.10.2。</p>
+<p>打开该地址时网页会自动识别你的操作系统并为你推荐合适的 Python 3 版本，一般情况下点击黄色按钮下载即可。目前的最新版本为 3.10.4。</p>
 <h4 id="windows-用户">Windows 用户</h4>
 <p>Windows 8/8.1/10/11（非 LTSC 版本）用户也可以在 Microsoft Store 免费获取 <a class="link" href="https://www.microsoft.com/zh-cn/p/python-310/9pjpw5ldxlz5"  target="_blank" rel="noopener"
     >Python 3.10</a> 或 <a class="link" href="https://www.microsoft.com/store/productId/9P7QFQMJRFP7"  target="_blank" rel="noopener"
@@ -139,17 +139,16 @@ if (!doNotTrack) {
 <p>如果你没有正确地配置环境变量，你需要手动 cd 到 Python 的安装目录下才能使用 python 等命令。</p>
 </blockquote>
 <h4 id="linuxunix-用户">Linux/UNIX 用户</h4>
-<h5 id="ubuntu-18042004-用户">Ubuntu 18.04/20.04 用户</h5>
-<p>参考这篇教程：<a class="link" href="https://phoenixnap.com/kb/how-to-install-python-3-ubuntu"  target="_blank" rel="noopener"
+<p>Ubuntu 18.04/20.04 用户可以参考这篇教程：<a class="link" href="https://phoenixnap.com/kb/how-to-install-python-3-ubuntu"  target="_blank" rel="noopener"
     >https://phoenixnap.com/kb/how-to-install-python-3-ubuntu</a></p>
-<h5 id="其他-linuxunix-用户">其他 Linux/UNIX 用户</h5>
+<p>其他 Linux/UNIX 用户请继续阅读这一小节。</p>
 <blockquote>
 <p>Linux，30 岁生日快乐！</p>
 <p>这是你的生日蛋糕，你 ** 自己编译去吧。
 <figure 
 	>
-	<a href="https://s3.bmp.ovh/imgs/2022/03/0e8fe89a552844d3.png" >
-		<img src="https://s3.bmp.ovh/imgs/2022/03/0e8fe89a552844d3.png"
+	<a href="https://i.redd.it/my399q0hqxn71.png" >
+		<img src="https://i.redd.it/my399q0hqxn71.png"
 			
 			
 			
@@ -161,7 +160,7 @@ if (!doNotTrack) {
 	
 </figure></p>
 </blockquote>
-<p>大多数 Linux 发行版可能自带了 Python 2，并不建议将其卸载。</p>
+<p>大多数 Linux 发行版可能自带了 Python 2，由于一些程序仍需依赖它来运行，并不建议将其卸载。</p>
 <p>可以使用 <code>python --version</code> 来检查已安装的 Python 版本。</p>
 <p>为 Python 创建一个安装目录，然后在下面的页面下载源代码，并解压到刚刚创建的目录中。</p>
 <p><a class="link" href="https://www.python.org/downloads/source/"  target="_blank" rel="noopener"
@@ -206,7 +205,7 @@ ln -s /root/python3102/bin/pip3 /usr/bin/pip3
     >https://www.python.org/download/other/</a></p>
 <hr>
 <p>安装好后，在命令提示符（Command Prompt）/PowerShell（macOS/Linux 是 Terminal） 中输入 <code>python -V</code> 来查看版本信息。</p>
-<p>打开运行（按下键盘上的 Win+R），输入 <code>python</code> 即可进入 IDLE&hellip;的命令行版本</p>
+<p>打开运行（按下键盘上的 Win+R），输入 <code>python</code> 即可进入 IDLE 的命令行版本</p>
 <p>在 Windows 的开始菜单里你也可以找到有图形界面的 IDLE。</p>
 <h3 id="pycharm">PyCharm</h3>
 <p>支持 Windows、macOS(Intel/Apple Silicon)、Linux。</p>
@@ -218,7 +217,7 @@ ln -s /root/python3102/bin/pip3 /usr/bin/pip3
 <h4 id="ubuntu--1604-用户">Ubuntu ≥ 16.04 用户</h4>
 <p>也可以使用 <code>snap</code> 安装 PyCharm：</p>
 <p><code>sudo snap install [pycharm-professional|pycharm-community] --classic</code></p>
-<p>你也可以选择 Spyder 等其他 IDE，或者干脆使用一个文本编辑器（如 vim、Sublime Text、Notepad3 等）。</p>
+<p>你也可以选择安装 Spyder 等其他 IDE，或者干脆使用一个文本编辑器（如 vim、Sublime Text、Notepad3 等）。</p>
 <h3 id="本文所使用的环境">本文所使用的环境</h3>
 <p>这篇笔记将使用 <code>PyCharm Community Edition 2021.3.2</code> 和 <code>Python 3.10.2</code>。</p>
 <p>使用更新版本的 PyCharm 或其他 IDE/编辑器通常不会产生问题。</p>
@@ -231,7 +230,7 @@ ln -s /root/python3102/bin/pip3 /usr/bin/pip3
 <h3 id="print-语句">print 语句</h3>
 <p>双击刚刚创建的文件，在右侧打开的文本编辑区域输入 <code>print(&quot;Hello World!&quot;)</code>。</p>
 <blockquote>
-<p>编写大多数语言的代码时，都要记得切换到美式键盘或英式键盘<strong>而不是使用中文输入法</strong>（如果你没有，在语言和键盘选项中添加一个），以免错误地输入全角的逗号<code>，</code>、句号<code>。</code>、引号<code>“”</code>、中括号<code>【】</code>以及小括号<code>（）</code>。</p>
+<p>编写大多数编程语言的代码时，都要记得切换到美式键盘或英式键盘<strong>而不是使用中文输入法</strong>（如果你没有，在语言和键盘选项中添加一个），以免错误地输入全角的逗号<code>，</code>、句号<code>。</code>、引号<code>“”</code>、中括号<code>【】</code>以及小括号<code>（）</code>。</p>
 </blockquote>
 <p>像其他大多数 IDE 一样，PyCharm 会替你自动补全括号和双引号，你只需要打左半边就好。</p>
 <p>按下 Alt+Shift+F10（或在 <code>Run</code> 菜单下选择 <code>Run...</code>），选择你的文件。</p>
@@ -266,6 +265,28 @@ ln -s /root/python3102/bin/pip3 /usr/bin/pip3
 </div><p>运行，输出为</p>
 <blockquote>
 <p>Hello Aynxul03!</p>
+</blockquote>
+<p>示例程序2：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="n">username</span> <span class="o">=</span> <span class="s1">&#39;Aynxul03&#39;</span>
+<span class="n">password</span> <span class="o">=</span> <span class="s1">&#39;123456&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Hello &#34;</span> <span class="o">+</span> <span class="n">username</span> <span class="o">+</span> <span class="s2">&#34;! Your password is &#34;</span> <span class="o">+</span> <span class="n">password</span><span class="p">)</span>
+<span class="n">password</span> <span class="o">=</span> <span class="s1">&#39;654321&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Hello &#34;</span> <span class="o">+</span> <span class="n">username</span> <span class="o">+</span> <span class="s2">&#34;! Your password is &#34;</span> <span class="o">+</span> <span class="n">password</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>运行，输出为</p>
+<blockquote>
+<p>Hello Aynxul03! Your password is 123456</p>
+<p>Hello Aynxul03! Your password is 654321</p>
 </blockquote>
 <h1 id="未完待续">未完，待续</h1>
 <h2 id="changelog">Changelog</h2>

@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Aynxul03 写字的地方</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 12 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ayx.moefox.tech/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ayx.moefox.tech/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LG V50 ThinQ 韩版 LGU&#43; 从解锁 BootLoader 到破解 VoLTE / NSA 5G、从刷入第三方 Recovery 到硬格、从混刷到黑砖全教程</title>
+      <link>https://ayx.moefox.tech/v50/</link>
+      <pubDate>Fri, 08 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://ayx.moefox.tech/v50/</guid>
+      <description>前言 如果您的手机正处在无限重启（Bootloop）的状态，请看这一节（点击跳转）来了解解决方案。 如果您使用的是其他型号或版本的手机（甚至可以</description>
+    </item>
+    
     <item>
       <title>Python 3 入门学习笔记</title>
       <link>https://ayx.moefox.tech/python3tutorial/</link>

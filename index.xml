@@ -6,7 +6,184 @@
         <description>Recent content on Aynxul03 写字的地方</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Sat, 12 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ayx.moefox.tech/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 08 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ayx.moefox.tech/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>LG V50 ThinQ 韩版 LGU&#43; 从解锁 BootLoader 到破解 VoLTE / NSA 5G、从刷入第三方 Recovery 到硬格、从混刷到黑砖全教程</title>
+        <link>https://ayx.moefox.tech/v50/</link>
+        <pubDate>Fri, 08 Apr 2022 00:00:00 +0000</pubDate>
+        
+        <guid>https://ayx.moefox.tech/v50/</guid>
+        <description>&lt;img src="https://ayx.moefox.tech/v50/cover.jpg" alt="Featured image of post LG V50 ThinQ 韩版 LGU&#43; 从解锁 BootLoader 到破解 VoLTE / NSA 5G、从刷入第三方 Recovery 到硬格、从混刷到黑砖全教程" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;如果您的手机正处在无限重启（Bootloop）的状态，请看&lt;a class=&#34;link&#34; href=&#34;#%E5%AF%B9%E4%BA%8E-bootloop%E6%97%A0%E9%99%90%E9%87%8D%E5%90%AF%E9%A6%96%E5%85%88%E5%B0%9D%E8%AF%95%E7%A1%AC%E6%A0%BC&#34; &gt;这一节（点击跳转）&lt;/a&gt;来了解解决方案。&lt;/p&gt;
+&lt;p&gt;如果您使用的是其他型号或版本的手机（甚至可以不是 LG 的手机），本教程也可能部分（但不太可能完全）适用于您。&lt;/p&gt;
+&lt;p&gt;本教程旨在整合其他资源和教程以节省韩版 LGU+ 的 LG V50 ThinQ 用户的时间，因此如果您的机器版本或型号不同，它可能浪费您的时间，甚至对您的设备造成不可挽回的损坏。&lt;/p&gt;
+&lt;p&gt;无论如何，请谨慎操作，尤其是在 Download 和 9008 模式下进行操作时一定要三思而后行，选用可靠的数据线，保持耐心，因为它们造成的损坏很可能无法通过简单地在软件层面进行操作来恢复。&lt;/p&gt;
+&lt;h2 id=&#34;拆箱收货&#34;&gt;拆箱收货&lt;/h2&gt;
+&lt;p&gt;笔者建议您签收贵重物品前先与快递员当面验货，或在快递柜旁拆开，以避免不必要的纠纷。&lt;/p&gt;
+&lt;p&gt;不过，笔者自己从来不这么做。&lt;/p&gt;
+&lt;p&gt;如果卖家声称您购买的机器有以下特性，您可以用下文所述的方法验证他们的描述是否属实。&lt;/p&gt;
+&lt;h3 id=&#34;气密性&#34;&gt;气密性&lt;/h3&gt;
+&lt;p&gt;（该部分适用于其他出厂时支持 IP68 防水且有气压传感器的设备）&lt;/p&gt;
+&lt;p&gt;普遍的检测方法是使用 DevCheck 显示气压传感器的数值（其实系统自检中也可以查看压力传感器的数值，但是我更喜欢使用 DevCehck）&lt;/p&gt;
+&lt;p&gt;DevCheck 的包名：&lt;code&gt;flar2.devcheck&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;蓝奏云下载：&lt;a class=&#34;link&#34; href=&#34;https://cpk.lanzoui.com/iZdritwxo8b&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://cpk.lanzoui.com/iZdritwxo8b&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;打开传感器中的压力传感器&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;堵住右下角扬声器左侧的小孔（对于 LG G8 ThinQ，这个小孔在左上角；别问我为什么知道，因为我也用过）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;用力按压屏幕后松开（小心别把屏幕压碎了，适可而止；别问我为什么要提一嘴，因为我压碎过）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;如果气压值的波动大于 &lt;code&gt;10 hPa&lt;/code&gt;，那么这台手机很可能有气密性，可以下水。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;气密性好的组装机波动甚至能达到 &lt;code&gt;40 hPa&lt;/code&gt;，因此是否有气密性不应作为判断手机是否原装的标准。&lt;/p&gt;
+&lt;p&gt;但是请注意，不要将手机置于热水或蒸汽中。防水功能防水溅不防手贱，不建议经常性主动下水，也不要跟我一样想出水下跑分或者半浸没充电这种操作。&lt;/p&gt;
+&lt;h3 id=&#34;完美屏&#34;&gt;完美屏&lt;/h3&gt;
+&lt;p&gt;一般指显示和触摸功能完美（没有彩点、黑块或绿线黑线），全原装非后压屏的机器外屏没有任何划痕的应该很少。&lt;/p&gt;
+&lt;h2 id=&#34;获取-imei-并记录查询手机版本&#34;&gt;获取 IMEI 并记录，查询手机版本&lt;/h2&gt;
+&lt;p&gt;得到 IMEI 的几种方法：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;正常进入系统时，打开拨号键盘输入 &lt;code&gt;*#06#&lt;/code&gt;；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;正常开机进系统后在 设置-关于手机 中查看；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;关机后长按开机键、音量上下键，同时按住。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;查看手机背面的标签、包装盒上的标签（二手机可能没有）；&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;记录好 IMEI 后可以&lt;a class=&#34;link&#34; href=&#34;https://www.imeidb.com/imei/lg&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;在这里&lt;/a&gt;使用它查询来获得关于这台手机很多有用的信息，包括但不限于运营商（简称）、国家、区域、CPU 类型、手机型号、颜色、S/N 码、CSN 码、生产与出厂日期，但 KDZ 相关的四项信息似乎总是空白或没有。&lt;/p&gt;
+&lt;p&gt;查询手机的型号和版本就是为了下载对应版本的 KDZ（类似于其他安卓手机的线刷包，不懂也不用慌），避免浪费时间。&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;http://www.lgbbs.com/lg_mobile-lg_mobile.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://www.lgbbs.com/lg_mobile-lg_mobile.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;（这个地址似乎暂时无法访问了）&lt;/p&gt;
+&lt;h2 id=&#34;升级-magisk-版本&#34;&gt;升级 Magisk 版本&lt;/h2&gt;
+&lt;p&gt;此部分适用于收到时卖家已帮您刷好旧版 Magisk 的机器。&lt;/p&gt;
+&lt;p&gt;旧版 Magisk 除了用于授予应用 Root 权限外能刷入的模块非常有限，因此我们需要升级 Magisk 版本。&lt;/p&gt;
+&lt;p&gt;推荐先升级 Magisk Manager（新版去掉了 Manager 的后缀），再升级 Magisk 本体。&lt;/p&gt;
+&lt;p&gt;但是，先别急着使用直接安装升级 Magisk，这很可能导致您的设备陷入 BootLoop（无限重启）的状态中（如果您甚至无聊到启用了安全启动），而且您还有可能完全不知道怎么让它停下来。&lt;/p&gt;
+&lt;p&gt;正确的做法应该是把新版 Magisk 的 .apk 文件扩展名改为 .zip，然后以安装模块的方式在 Manager 中刷入。&lt;/p&gt;
+&lt;h2 id=&#34;破解-volte&#34;&gt;破解 VoLTE&lt;/h2&gt;
+&lt;p&gt;我还没成功&amp;hellip;&lt;/p&gt;
+&lt;h2 id=&#34;破解-5g&#34;&gt;破解 5G&lt;/h2&gt;
+&lt;p&gt;卖家已经帮你破解好了 VoLTE，移动卡电信卡都能边打电话边上网了（如果没有破解 VoLTE，电信卡无法正常使用），但你还听说这是一台 5G 手机？&lt;/p&gt;
+&lt;p&gt;其实，它似乎只支持联通与电信的 5G 频段。并且它只支持 NSA（非独立组网模式）而不支持 SA（独立组网模式）。&lt;/p&gt;
+&lt;h3 id=&#34;我没有开通-5g-套餐也没有换新的-usim-卡可以用-5g-吗&#34;&gt;我没有开通 5G 套餐，也没有换新的 USIM 卡，可以用 5G 吗？&lt;/h3&gt;
+&lt;p&gt;不存在只支持 4G 而不支持 5G 的 UIM 卡，并且未开通 5G 套餐也可以连接 5G 网络，只不过速度会被限制在 300 Mbps。开通 5G 套餐后可享受 500 Mbps 或 1 Gbps 甚至高达 4 Gbps 的速率。&lt;/p&gt;
+&lt;p&gt;能不能成功，一试便知。&lt;/p&gt;
+&lt;p&gt;下载 QPST TOOL 并安装，同意许可协议一路 Next 最后 Finish 即可。LG 驱动同理。&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://cpk.lanzoui.com/i0cvUtwz3qf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://cpk.lanzoui.com/i0cvUtwz3qf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://cpk.lanzoui.com/i8Edvtwz7be&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://cpk.lanzoui.com/i8Edvtwz7be&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;替换用文件，记得去掉 .txt 的后缀，笔者加上此后缀是因为蓝奏云不支持上传 .xml 格式的文件。&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://cpk.lanzoui.com/iDTmPtwza4f&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://cpk.lanzoui.com/iDTmPtwza4f&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;电脑下载文件的同时，手机上也可以操作起来了。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;打开拨号键盘，输入 *#546368#*500#&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;进入 HiddenMenu（隐藏菜单）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SVC Menu - LDB - USB debugging 打钩&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;SVC Menu - Port Check Test 选择 Enabled&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;设置 - 系统 - 关于手机 - 软件信息 - 内部版本号 - 连续点击7次 - 您现在是开发人员！&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;设置 - 系统 - 开发人员选项 - 开启 - 启动 OEM解锁 - 启用&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;设置 - 系统 - 开发人员选项 - 开启 - USB调试 - 确定&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;USB 线连接 PC 下拉菜单更改 USB 选项 选择 仅充电 USB 调试授权 同意&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;设置 - 网络和互联网 - 绑定 - 开启 - USB绑定&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://ayx.moefox.tech/1.png&#34; &gt;
+		&lt;img src=&#34;https://ayx.moefox.tech/1.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			&gt;
+	&lt;/a&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;如果你的桌面上有「LG 网络」这个 App，可以直接用它进入 Hidden Menu 和 Field Test 等隐藏菜单，无需繁琐地在拨号键盘中输入代码。&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 46; 
+			flex-basis: 110px&#34;
+	&gt;
+	&lt;a href=&#34;https://ayx.moefox.tech/v50/2.png&#34; data-size=&#34;357x773&#34;&gt;
+		&lt;img src=&#34;https://ayx.moefox.tech/v50/2.png&#34;
+			width=&#34;357&#34;
+			height=&#34;773&#34;
+			srcset=&#34;https://ayx.moefox.tech/v50/2_hu512215e3933e842c8d397701e0fed006_64191_480x0_resize_box_3.png 480w, https://ayx.moefox.tech/v50/2_hu512215e3933e842c8d397701e0fed006_64191_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			&gt;
+	&lt;/a&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;「绑定」实际上是网络共享的意思，官方系统的中文翻译很有问题。（甚至比机器翻译还烂）&lt;/p&gt;
+&lt;p&gt;好的，现在我们打开 QPST Configuration，点击右下角的 Add New Port 按钮。&lt;/p&gt;
+&lt;p&gt;如果你的手机已经以正确的姿势连接到了电脑，那么应该有一个端口后面显示 (LGE Mobile USB Serial Port)。选中它，OK。&lt;/p&gt;
+&lt;p&gt;然后在菜单栏的 Start Client 中选择第一项 EFS Explorer，选择刚刚添加的端口，OK。&lt;/p&gt;
+&lt;p&gt;成功连接并打开类似文件资源管理器的界面后，在左侧找到 policyman 文件夹，选中其中的所有文件（包括子目录 persisted_items），右键选择 Delete 或者按键盘上的 DEL 键删除。（建议备份一份，但这个 Explorer 似乎只支持每次传输一个文件到电脑）&lt;/p&gt;
+&lt;p&gt;然后把刚才下载的 carrier_policy.xml（记得去掉 .txt 后缀）拖进去（或者右键空白处选择 Copy Data File from PC）&lt;/p&gt;
+&lt;p&gt;重启手机，大功告成。&lt;/p&gt;
+&lt;p&gt;如果重启完移动数据的图标还是 4G 或者 LTE 也不用灰心，在拨号键盘中输入 5457#*510# 进入 Service Menu，选择第一项 Debug Screen，如果 NR5G Link 冒号后面的数字为 1，那么恭喜你破解成功了，只是你所在的区域暂时没有 NSA 5G 覆盖或者已经退网了。&lt;/p&gt;
+&lt;p&gt;如果破解 5G 后在拨号键盘输入 &lt;code&gt;5457#*510#&lt;/code&gt; 没有反应，在 &lt;code&gt;*#*#4636#*#*&lt;/code&gt; 中查看也是可以的。&lt;/p&gt;
+&lt;p&gt;以上内容修改自：&lt;a class=&#34;link&#34; href=&#34;https://bbs.lge.fun/thread-147.htm&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;LG V50S 开5G教程 LG V50适用-855板块-LG社区&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;使用-lg-up-来更换系统版本&#34;&gt;使用 LG UP 来更换系统版本&lt;/h2&gt;
+&lt;p&gt;安装并破解好 LG UP，同时下载好对应版本的 .kdz 线刷包文件。&lt;/p&gt;
+&lt;p&gt;将手机关机后在插入数据线的同时按住音量加来进入 Download 模式，数据线另一头需要事先连接到电脑。&lt;/p&gt;
+&lt;p&gt;线刷时请选择可靠的数据线，过程中一定要耐心等待，千万不要在进度条跑完手机端自动重启前断开数据线。&lt;/p&gt;
+&lt;p&gt;打开 LG UP 并拖入 KDZ 即可开始刷机。&lt;/p&gt;
+&lt;p&gt;保持默认模式（第一个），不会造成 BootLoader 被自动回锁。&lt;/p&gt;
+&lt;p&gt;一般两三分钟即可完成，完成后手机会自动重启。&lt;/p&gt;
+&lt;p&gt;韩版的 KDZ 中一般包含很多无用的 App，能卸载的开机后建议尽快卸载，嫌麻烦也可以刷完先硬格一次以清除所有预装应用，具体方法在下方。&lt;/p&gt;
+&lt;p&gt;（该章节尚未完成）&lt;/p&gt;
+&lt;h2 id=&#34;意外与失败的处理&#34;&gt;意外与失败的处理&lt;/h2&gt;
+&lt;h3 id=&#34;对于-bootloop无限重启首先尝试硬格&#34;&gt;对于 Bootloop（无限重启），首先尝试硬格。&lt;/h3&gt;
+&lt;p&gt;同时按住电源键和音量下键 8 秒左右，当第一屏（即显示手机型号的画面）亮起时松开，3 秒后再次按住电源键，即可进入硬格菜单。&lt;/p&gt;
+&lt;p&gt;用音量减切换到 Yes，用电源键确认，Erase（擦除）很快。数据飞灰烟灭。&lt;/p&gt;
+&lt;p&gt;此操作在刷入 TWRP 后不会擦除手机，而是会进入 Recovery，且通过此方式进入一般触屏功能可以使用。&lt;/p&gt;
+&lt;h3 id=&#34;lg-up-线刷救砖&#34;&gt;LG UP 线刷救砖&lt;/h3&gt;
+&lt;p&gt;只要你还能进入 Download 模式，就能使用 LG UP 刷入官方 KDZ 来进行线刷救砖，无需冒险使用 9008 进行救砖。&lt;/p&gt;
+&lt;p&gt;详见「使用 LG UP 来更换系统版本」一节。&lt;/p&gt;
+&lt;h2 id=&#34;鸣谢&#34;&gt;鸣谢&lt;/h2&gt;
+&lt;p&gt;对本文启发很大的&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://855.lge.fun/doc_hz/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;LG 855系列-快速黑砖手册 愿你刷机半生，归来仍是黑砖&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Python 3 入门学习笔记</title>
         <link>https://ayx.moefox.tech/python3tutorial/</link>
         <pubDate>Sat, 12 Feb 2022 00:00:00 +0000</pubDate>
@@ -19,7 +196,7 @@
 &lt;p&gt;前往 Python 官网下载。&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.python.org/downloads&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://www.python.org/downloads&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;打开该地址时网页会自动识别你的操作系统并为你推荐合适的 Python 3 版本，一般情况下点击黄色按钮下载即可。目前的最新版本为 3.10.2。&lt;/p&gt;
+&lt;p&gt;打开该地址时网页会自动识别你的操作系统并为你推荐合适的 Python 3 版本，一般情况下点击黄色按钮下载即可。目前的最新版本为 3.10.4。&lt;/p&gt;
 &lt;h4 id=&#34;windows-用户&#34;&gt;Windows 用户&lt;/h4&gt;
 &lt;p&gt;Windows 8/8.1/10/11（非 LTSC 版本）用户也可以在 Microsoft Store 免费获取 &lt;a class=&#34;link&#34; href=&#34;https://www.microsoft.com/zh-cn/p/python-310/9pjpw5ldxlz5&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Python 3.10&lt;/a&gt; 或 &lt;a class=&#34;link&#34; href=&#34;https://www.microsoft.com/store/productId/9P7QFQMJRFP7&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -37,17 +214,16 @@
 &lt;p&gt;如果你没有正确地配置环境变量，你需要手动 cd 到 Python 的安装目录下才能使用 python 等命令。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h4 id=&#34;linuxunix-用户&#34;&gt;Linux/UNIX 用户&lt;/h4&gt;
-&lt;h5 id=&#34;ubuntu-18042004-用户&#34;&gt;Ubuntu 18.04/20.04 用户&lt;/h5&gt;
-&lt;p&gt;参考这篇教程：&lt;a class=&#34;link&#34; href=&#34;https://phoenixnap.com/kb/how-to-install-python-3-ubuntu&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&lt;p&gt;Ubuntu 18.04/20.04 用户可以参考这篇教程：&lt;a class=&#34;link&#34; href=&#34;https://phoenixnap.com/kb/how-to-install-python-3-ubuntu&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://phoenixnap.com/kb/how-to-install-python-3-ubuntu&lt;/a&gt;&lt;/p&gt;
-&lt;h5 id=&#34;其他-linuxunix-用户&#34;&gt;其他 Linux/UNIX 用户&lt;/h5&gt;
+&lt;p&gt;其他 Linux/UNIX 用户请继续阅读这一小节。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Linux，30 岁生日快乐！&lt;/p&gt;
 &lt;p&gt;这是你的生日蛋糕，你 ** 自己编译去吧。
 &lt;figure 
 	&gt;
-	&lt;a href=&#34;https://s3.bmp.ovh/imgs/2022/03/0e8fe89a552844d3.png&#34; &gt;
-		&lt;img src=&#34;https://s3.bmp.ovh/imgs/2022/03/0e8fe89a552844d3.png&#34;
+	&lt;a href=&#34;https://i.redd.it/my399q0hqxn71.png&#34; &gt;
+		&lt;img src=&#34;https://i.redd.it/my399q0hqxn71.png&#34;
 			
 			
 			
@@ -59,7 +235,7 @@
 	
 &lt;/figure&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;大多数 Linux 发行版可能自带了 Python 2，并不建议将其卸载。&lt;/p&gt;
+&lt;p&gt;大多数 Linux 发行版可能自带了 Python 2，由于一些程序仍需依赖它来运行，并不建议将其卸载。&lt;/p&gt;
 &lt;p&gt;可以使用 &lt;code&gt;python --version&lt;/code&gt; 来检查已安装的 Python 版本。&lt;/p&gt;
 &lt;p&gt;为 Python 创建一个安装目录，然后在下面的页面下载源代码，并解压到刚刚创建的目录中。&lt;/p&gt;
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.python.org/downloads/source/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -104,7 +280,7 @@ ln -s /root/python3102/bin/pip3 /usr/bin/pip3
     &gt;https://www.python.org/download/other/&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;安装好后，在命令提示符（Command Prompt）/PowerShell（macOS/Linux 是 Terminal） 中输入 &lt;code&gt;python -V&lt;/code&gt; 来查看版本信息。&lt;/p&gt;
-&lt;p&gt;打开运行（按下键盘上的 Win+R），输入 &lt;code&gt;python&lt;/code&gt; 即可进入 IDLE&amp;hellip;的命令行版本&lt;/p&gt;
+&lt;p&gt;打开运行（按下键盘上的 Win+R），输入 &lt;code&gt;python&lt;/code&gt; 即可进入 IDLE 的命令行版本&lt;/p&gt;
 &lt;p&gt;在 Windows 的开始菜单里你也可以找到有图形界面的 IDLE。&lt;/p&gt;
 &lt;h3 id=&#34;pycharm&#34;&gt;PyCharm&lt;/h3&gt;
 &lt;p&gt;支持 Windows、macOS(Intel/Apple Silicon)、Linux。&lt;/p&gt;
@@ -116,7 +292,7 @@ ln -s /root/python3102/bin/pip3 /usr/bin/pip3
 &lt;h4 id=&#34;ubuntu--1604-用户&#34;&gt;Ubuntu ≥ 16.04 用户&lt;/h4&gt;
 &lt;p&gt;也可以使用 &lt;code&gt;snap&lt;/code&gt; 安装 PyCharm：&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;sudo snap install [pycharm-professional|pycharm-community] --classic&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;你也可以选择 Spyder 等其他 IDE，或者干脆使用一个文本编辑器（如 vim、Sublime Text、Notepad3 等）。&lt;/p&gt;
+&lt;p&gt;你也可以选择安装 Spyder 等其他 IDE，或者干脆使用一个文本编辑器（如 vim、Sublime Text、Notepad3 等）。&lt;/p&gt;
 &lt;h3 id=&#34;本文所使用的环境&#34;&gt;本文所使用的环境&lt;/h3&gt;
 &lt;p&gt;这篇笔记将使用 &lt;code&gt;PyCharm Community Edition 2021.3.2&lt;/code&gt; 和 &lt;code&gt;Python 3.10.2&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;使用更新版本的 PyCharm 或其他 IDE/编辑器通常不会产生问题。&lt;/p&gt;
@@ -129,7 +305,7 @@ ln -s /root/python3102/bin/pip3 /usr/bin/pip3
 &lt;h3 id=&#34;print-语句&#34;&gt;print 语句&lt;/h3&gt;
 &lt;p&gt;双击刚刚创建的文件，在右侧打开的文本编辑区域输入 &lt;code&gt;print(&amp;quot;Hello World!&amp;quot;)&lt;/code&gt;。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;编写大多数语言的代码时，都要记得切换到美式键盘或英式键盘&lt;strong&gt;而不是使用中文输入法&lt;/strong&gt;（如果你没有，在语言和键盘选项中添加一个），以免错误地输入全角的逗号&lt;code&gt;，&lt;/code&gt;、句号&lt;code&gt;。&lt;/code&gt;、引号&lt;code&gt;“”&lt;/code&gt;、中括号&lt;code&gt;【】&lt;/code&gt;以及小括号&lt;code&gt;（）&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;编写大多数编程语言的代码时，都要记得切换到美式键盘或英式键盘&lt;strong&gt;而不是使用中文输入法&lt;/strong&gt;（如果你没有，在语言和键盘选项中添加一个），以免错误地输入全角的逗号&lt;code&gt;，&lt;/code&gt;、句号&lt;code&gt;。&lt;/code&gt;、引号&lt;code&gt;“”&lt;/code&gt;、中括号&lt;code&gt;【】&lt;/code&gt;以及小括号&lt;code&gt;（）&lt;/code&gt;。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;像其他大多数 IDE 一样，PyCharm 会替你自动补全括号和双引号，你只需要打左半边就好。&lt;/p&gt;
 &lt;p&gt;按下 Alt+Shift+F10（或在 &lt;code&gt;Run&lt;/code&gt; 菜单下选择 &lt;code&gt;Run...&lt;/code&gt;），选择你的文件。&lt;/p&gt;
@@ -164,6 +340,28 @@ ln -s /root/python3102/bin/pip3 /usr/bin/pip3
 &lt;/div&gt;&lt;p&gt;运行，输出为&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Hello Aynxul03!&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;示例程序2：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;n&#34;&gt;username&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;Aynxul03&amp;#39;&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;password&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;123456&amp;#39;&lt;/span&gt;
+&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Hello &amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;username&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;! Your password is &amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;password&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;n&#34;&gt;password&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s1&#34;&gt;&amp;#39;654321&amp;#39;&lt;/span&gt;
+&lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Hello &amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;username&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;! Your password is &amp;#34;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;password&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;运行，输出为&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Hello Aynxul03! Your password is 123456&lt;/p&gt;
+&lt;p&gt;Hello Aynxul03! Your password is 654321&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h1 id=&#34;未完待续&#34;&gt;未完，待续&lt;/h1&gt;
 &lt;h2 id=&#34;changelog&#34;&gt;Changelog&lt;/h2&gt;
