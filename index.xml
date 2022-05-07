@@ -105,30 +105,19 @@
 &lt;p>设置 - 网络和互联网 - 绑定 - 开启 - USB绑定&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;p>&lt;figure
->
-&lt;a href="https://ayx.moefox.tech/1.png" >
-&lt;img src="https://ayx.moefox.tech/1.png"
+&lt;p>&lt;img src="https://ayx.moefox.tech/1.png"
 loading="lazy"
->
-&lt;/a>
-&lt;/figure>&lt;/p>
+>&lt;/p>
 &lt;p>如果你的桌面上有「LG 网络」这个 App，可以直接用它进入 Hidden Menu 和 Field Test 等隐藏菜单，无需繁琐地在拨号键盘中输入代码。&lt;/p>
-&lt;p>&lt;figure
-class="gallery-image"
-style="
-flex-grow: 46;
-flex-basis: 110px"
->
-&lt;a href="https://ayx.moefox.tech/v50/2.png" data-size="357x773">
-&lt;img src="https://ayx.moefox.tech/v50/2.png"
+&lt;p>&lt;img src="https://ayx.moefox.tech/v50/2.png"
 width="357"
 height="773"
 srcset="https://ayx.moefox.tech/v50/2_hu512215e3933e842c8d397701e0fed006_64191_480x0_resize_box_3.png 480w, https://ayx.moefox.tech/v50/2_hu512215e3933e842c8d397701e0fed006_64191_1024x0_resize_box_3.png 1024w"
 loading="lazy"
->
-&lt;/a>
-&lt;/figure>&lt;/p>
+class="gallery-image"
+data-flex-grow="46"
+data-flex-basis="110px"
+>&lt;/p>
 &lt;p>「绑定」实际上是网络共享的意思，官方系统的中文翻译很有问题。（甚至比机器翻译还烂）&lt;/p>
 &lt;p>好的，现在我们打开 QPST Configuration，点击右下角的 Add New Port 按钮。&lt;/p>
 &lt;p>如果你的手机已经以正确的姿势连接到了电脑，那么应该有一个端口后面显示 (LGE Mobile USB Serial Port)。选中它，OK。&lt;/p>
@@ -191,16 +180,10 @@ loading="lazy"
 &lt;blockquote>
 &lt;p>Linux，30 岁生日快乐！&lt;/p>
 &lt;p>这是你的生日蛋糕，你 ** 自己编译去吧。
-&lt;figure
->
-&lt;a href="https://i.redd.it/my399q0hqxn71.png" >
 &lt;img src="https://i.redd.it/my399q0hqxn71.png"
 loading="lazy"
-alt="Source: https://www.reddit.com/r/ProgrammerHumor/comments/ppmtr2/happy_30th_birthday_linux_and_now_ahead_and/">
-&lt;/a>
-&lt;figcaption>Source: &lt;a class="link" href="https://www.reddit.com/r/ProgrammerHumor/comments/ppmtr2/happy_30th_birthday_linux_and_now_ahead_and/" target="_blank" rel="noopener"
->https://www.reddit.com/r/ProgrammerHumor/comments/ppmtr2/happy_30th_birthday_linux_and_now_ahead_and/&lt;/a>&lt;/figcaption>
-&lt;/figure>&lt;/p>
+alt="Source: https://www.reddit.com/r/ProgrammerHumor/comments/ppmtr2/happy_30th_birthday_linux_and_now_ahead_and/"
+>&lt;/p>
 &lt;/blockquote>
 &lt;p>大多数 Linux 发行版可能自带了 Python 2，由于一些程序仍需依赖它来运行，并不建议将其卸载。&lt;/p>
 &lt;p>可以使用 &lt;code>python --version&lt;/code> 来检查已安装的 Python 版本。&lt;/p>
@@ -332,7 +315,22 @@ alt="Source: https://www.reddit.com/r/ProgrammerHumor/comments/ppmtr2/happy_30th
 &lt;/blockquote>
 &lt;h1 id="未完待续">未完，待续&lt;/h1>
 &lt;h2 id="changelog">Changelog&lt;/h2>
-&lt;p>2022-03-08 22:38:00 新增变量[string 类型]、小标题#本文所使用的环境、程序结束时的返回值，为 Windows 外的操作系统提供 Python 本体的安装教程，修改了一些格式与排版，改善阅读体验。&lt;/p></description></item><item><title>新年快乐 &amp; 本站的改版</title><link>https://ayx.moefox.tech/happynewyear2022/</link><pubDate>Sun, 26 Dec 2021 00:00:00 +0000</pubDate><guid>https://ayx.moefox.tech/happynewyear2022/</guid><description>&lt;p>今天终于找到自己的 Hugo 站点文件了&amp;hellip;&lt;/p>
+&lt;p>2022-03-08 22:38:00 新增变量[string 类型]、小标题#本文所使用的环境、程序结束时的返回值，为 Windows 外的操作系统提供 Python 本体的安装教程，修改了一些格式与排版，改善阅读体验。&lt;/p></description></item><item><title>测试</title><link>https://ayx.moefox.tech/test/</link><pubDate>Sat, 12 Feb 2022 00:00:00 +0000</pubDate><guid>https://ayx.moefox.tech/test/</guid><description>&lt;h2 id="这是一个标题">这是一个标题&lt;/h2>
+&lt;h3 id="this-is-a-title">This is a title&lt;/h3>
+&lt;h2 id="这是一个含有-链接httpsayxmoefoxtech-的二级标题">这是一个含有 &lt;a class="link" href="https://ayx.moefox.tech/" target="_blank" rel="noopener"
+>链接&lt;/a> 的二级标题&lt;/h2>
+&lt;h3 id="this-is-a-title-with-a-linkhttpsayxmoefoxtech-in-it">This is a title with a &lt;a class="link" href="https://ayx.moefox.tech/" target="_blank" rel="noopener"
+>link&lt;/a> in it&lt;/h3>
+&lt;h2 id="这是一整个都是链接的标题httpsayxmoefoxtech">&lt;a class="link" href="https://ayx.moefox.tech/" target="_blank" rel="noopener"
+>这是一整个都是链接的标题&lt;/a>&lt;/h2>
+&lt;h3 id="this-is-a-title-and-also-a-linkhttpsayxmoefoxtech">&lt;a class="link" href="https://ayx.moefox.tech/" target="_blank" rel="noopener"
+>This is a title and also a link&lt;/a>&lt;/h3>
+&lt;h2 id="我们httpsayxmoefoxtech也可以在一个标题中加入多个链接httpsayxmoefoxtech">&lt;a class="link" href="https://ayx.moefox.tech/" target="_blank" rel="noopener"
+>我们&lt;/a>也可以在一个标题中加入多个&lt;a class="link" href="https://ayx.moefox.tech/" target="_blank" rel="noopener"
+>链接&lt;/a>&lt;/h2>
+&lt;h3 id="wehttpsayxmoefoxtech-can-also-use-multiple-linkhttpsayxmoefoxtechs-in-one-title">&lt;a class="link" href="https://ayx.moefox.tech/" target="_blank" rel="noopener"
+>We&lt;/a> can also use multiple &lt;a class="link" href="https://ayx.moefox.tech/" target="_blank" rel="noopener"
+>link&lt;/a>s in one title&lt;/h3></description></item><item><title>新年快乐 &amp; 本站的改版</title><link>https://ayx.moefox.tech/happynewyear2022/</link><pubDate>Sun, 26 Dec 2021 00:00:00 +0000</pubDate><guid>https://ayx.moefox.tech/happynewyear2022/</guid><description>&lt;p>今天终于找到自己的 Hugo 站点文件了&amp;hellip;&lt;/p>
 &lt;p>没别的，就感觉快过年了该发篇博文。&lt;/p>
 &lt;p>这次我在慎重考虑后对博客进行了一些&lt;del>大刀阔斧的&lt;/del>改版：&lt;/p>
 &lt;ul>
@@ -485,49 +483,29 @@ alt="Source: https://www.reddit.com/r/ProgrammerHumor/comments/ppmtr2/happy_30th
 >Visual Studio Code&lt;/a>）&lt;/p>
 &lt;p>扩展：&lt;a class="link" href="https://marketplace.visualstudio.com/items?itemName=danielpinto8zz6.c-cpp-compile-run" target="_blank" rel="noopener"
 >C/C++ Compile Run&lt;/a>（可以方便地编译单个 cpp 文件，且不会因为路径中存在空格或中文出错。）
-&lt;figure
->
-&lt;a href="https://i.loli.net/2021/08/22/XLc4rwa5vFWldKG.png" >
 &lt;img src="https://i.loli.net/2021/08/22/XLc4rwa5vFWldKG.png"
 loading="lazy"
->
-&lt;/a>
-&lt;/figure>&lt;/p>
+>&lt;/p>
 &lt;h3 id="解决方案">解决方案&lt;/h3>
 &lt;p>Dev C++ 等 IDE 直接把弹出的窗口（黑框）关了就行了&lt;/p>
 &lt;p>VS Code 可以从输出切换到终端选项卡，使用快捷键 Ctrl+C 结束程序（同样适用于 external console ）。&lt;/p>
 &lt;p>实在不行就用任务管理器和 taskkill 吧
-&lt;figure
->
-&lt;a href="https://i.loli.net/2021/08/22/i1kWGBpEeq4njRo.png" >
 &lt;img src="https://i.loli.net/2021/08/22/i1kWGBpEeq4njRo.png"
 loading="lazy"
->
-&lt;/a>
-&lt;/figure>&lt;/p>
+>&lt;/p>
 &lt;h2 id="主函数不存在main-拼写错误">主函数不存在（main 拼写错误）&lt;/h2>
 &lt;p>你不太可能不写主函数，但是你很有可能把 &lt;code>main&lt;/code> 打成 &lt;code>mian&lt;/code> 或者什么其他奇怪的东西。&lt;/p>
 &lt;p>在编译器眼里，这些可不能算主函数。&lt;/p>
-&lt;p>&lt;figure
->
-&lt;a href="https://i.loli.net/2021/08/22/cx9kIgiFmMAUSe2.png" >
-&lt;img src="https://i.loli.net/2021/08/22/cx9kIgiFmMAUSe2.png"
+&lt;p>&lt;img src="https://i.loli.net/2021/08/22/cx9kIgiFmMAUSe2.png"
 loading="lazy"
->
-&lt;/a>
-&lt;/figure>&lt;/p>
+>&lt;/p>
 &lt;h3 id="解决方案-1">解决方案&lt;/h3>
 &lt;p>把 &lt;code>main&lt;/code> 拼对。&lt;/p>
 &lt;h2 id="所调用的函数仅进行了声明">所调用的函数仅进行了声明&lt;/h2>
 &lt;p>这种情况下新版编译器仍旧会输出 &lt;code>error: ld returned 1 exit status&lt;/code> 这一让人迷惑的错误。
-&lt;figure
->
-&lt;a href="https://i.loli.net/2021/08/22/ePJgykQW3GDwlKH.png" >
 &lt;img src="https://i.loli.net/2021/08/22/ePJgykQW3GDwlKH.png"
 loading="lazy"
 >
-&lt;/a>
-&lt;/figure>
 但是一般也不会把函数体和声明分开写吧&amp;hellip;&lt;/p>
 &lt;p>（函数声明在主函数上方即可，函数体是可以写在 main 函数下方的。）&lt;/p>
 &lt;h3 id="解决方案-2">解决方案&lt;/h3>
@@ -535,15 +513,10 @@ loading="lazy"
 &lt;h2 id="旧版编译器在主函数中定义了函数">（旧版编译器）在主函数中定义了函数&lt;/h2>
 &lt;p>新版编译器发现你在 main 函数中定义了其它函数报错并不是&lt;code>error: ld returned 1 exit status&lt;/code>，&lt;/p>
 &lt;p>而是&lt;code>error: a function-definition is not allowed here before '{' token&lt;/code>
-&lt;figure
->
-&lt;a href="https://i.loli.net/2021/08/22/mAlnzduYxWRHPQf.png" >
 &lt;img src="https://i.loli.net/2021/08/22/mAlnzduYxWRHPQf.png"
 loading="lazy"
-alt="Snipaste_2021-08-22_19-30-32.png">
-&lt;/a>
-&lt;figcaption>Snipaste_2021-08-22_19-30-32.png&lt;/figcaption>
-&lt;/figure>&lt;/p>
+alt="Snipaste_2021-08-22_19-30-32.png"
+>&lt;/p>
 &lt;h3 id="解决方案-3">解决方案&lt;/h3>
 &lt;p>把子函数定义在主函数外面。&lt;/p>
 &lt;h2 id="旧版编译器调用了不存在的函数">（旧版编译器）调用了不存在的函数&lt;/h2>
@@ -556,14 +529,9 @@ alt="Snipaste_2021-08-22_19-30-32.png">
 &lt;/blockquote>
 &lt;p>（测试用代码是随机跳题后从&lt;a class="link" href="https://www.luogu.com.cn/blog/ShadowassIIXVIIIIV/solution-p3783" target="_blank" rel="noopener"
 >这里&lt;/a>复制的，并未提交评测）
-&lt;figure
->
-&lt;a href="https://i.loli.net/2021/08/22/nh231c5y94OTdHa.png" >
 &lt;img src="https://i.loli.net/2021/08/22/nh231c5y94OTdHa.png"
 loading="lazy"
->
-&lt;/a>
-&lt;/figure>&lt;/p>
+>&lt;/p>
 &lt;h3 id="解决方案-4">解决方案&lt;/h3>
 &lt;p>检查函数名称的拼写是否正确。&lt;/p>
 &lt;p>如果想调用库函数但不清楚应该引入什么头文件，可以在搜索引擎上像这样搜索：&lt;/p>
@@ -597,14 +565,9 @@ loading="lazy"
 &lt;h2 id="要得到-pci-dss-合规">要得到 PCI DSS 合规：&lt;/h2>
 &lt;p>您的网站不得支持 TLS v1.0。&lt;/p>
 &lt;p>关闭 TLS v1.0 支持意味着放弃对一些老旧操作系统和浏览器（Android ≤ 4.3、Internet Explorer ≤ 10、Java ≤ 7u25、Safari ≤5.1.9、OS X ≤ 10.6.8）的兼容性，具体测试情况见下图。&lt;/p>
-&lt;p>&lt;figure
->
-&lt;a href="https://blog.myssl.com/content/images/2018/06/---.jpg" >
-&lt;img src="https://blog.myssl.com/content/images/2018/06/---.jpg"
+&lt;p>&lt;img src="https://blog.myssl.com/content/images/2018/06/---.jpg"
 loading="lazy"
->
-&lt;/a>
-&lt;/figure>&lt;/p>
+>&lt;/p>
 &lt;blockquote>
 &lt;p>PCI安全标准委员会规定 2018 年 6 月 30 日之后，开启 TLS1.0 将导致 PCI DSS 不合规，&lt;/p>
 &lt;/blockquote>
@@ -870,7 +833,72 @@ framespacing="0"
 allowfullscreen="true"
 >
 &lt;/iframe>
-&lt;/div></description></item><item><title>题解 UPC-1488 客户调查(client)</title><link>https://ayx.moefox.tech/upc1488/</link><pubDate>Tue, 13 Jul 2021 00:00:00 +0000</pubDate><guid>https://ayx.moefox.tech/upc1488/</guid><description>&lt;h2 id="题目描述">题目描述：&lt;/h2>
+&lt;/div></description></item><item><title>关于</title><link>https://ayx.moefox.tech/about/</link><pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate><guid>https://ayx.moefox.tech/about/</guid><description>&lt;p>有事找我请首先考虑发邮件，我的常用邮箱: &lt;code>aynxul03#gmail.com&lt;/code> （把&lt;code>#&lt;/code>替换成&lt;code>@&lt;/code>）&lt;/p>
+&lt;p>B站: &lt;a class="link" href="https://space.bilibili.com/13509072" target="_blank" rel="noopener"
+>@Aynxul03&lt;/a>&lt;/p>
+&lt;p>GitHub: &lt;a class="link" href="https://github.com/Ayx03" target="_blank" rel="noopener"
+>@Ayx03&lt;/a>&lt;/p>
+&lt;p>洛谷: &lt;a class="link" href="https://www.luogu.com.cn/user/267459" target="_blank" rel="noopener"
+>@Aynxul03&lt;/a>&lt;/p>
+&lt;p>知乎: &lt;a class="link" href="https://www.zhihu.com/people/Aynxul03" target="_blank" rel="noopener"
+>@Aynxul03&lt;/a>&lt;/p>
+&lt;p>Telegram：&lt;a class="link" href="https://t.me/AyxO3" target="_blank" rel="noopener"
+>@AyxO3&lt;/a>&lt;/p>
+&lt;p>QQ/微信等其他IM账号：熟了自然会告诉你&lt;/p>
+&lt;p>2020-12-26 21:45:00&lt;/p></description></item><item><title>链接</title><link>https://ayx.moefox.tech/link/</link><pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate><guid>https://ayx.moefox.tech/link/</guid><description>&lt;p>&lt;del>右边的目录似乎出现了一些问题&amp;hellip;&lt;/del> 已解决（临时降级到 hugo-theme-stack v3.7.0）&lt;/p>
+&lt;h2 id="个人博客">个人博客&lt;/h2>
+&lt;p>目前都是 OI 向的（&lt;/p>
+&lt;h3 id="一条鱼-的博客httpswwwluogucomcnblog320282">&lt;a class="link" href="https://www.luogu.com.cn/blog/320282/" target="_blank" rel="noopener"
+>一条鱼 的博客&lt;/a>&lt;/h3>
+&lt;p>&lt;a class="link" href="https://www.luogu.com.cn/user/320282" target="_blank" rel="noopener"
+>洛谷@我和鱼过不去&lt;/a>&lt;/p>
+&lt;p>&lt;strong>她 AK 了 IOI ！&lt;/strong>
+&lt;img src="https://i.loli.net/2021/08/13/3qAOXQzLTCE9Wxi.png"
+loading="lazy"
+alt="在 IOI 中获得满分，俗称 AKIOI"
+>&lt;/p>
+&lt;h3 id="rosyr-的博客园httpswwwcnblogscomrosyr050301">&lt;a class="link" href="https://www.cnblogs.com/rosyr050301" target="_blank" rel="noopener"
+>Rosyr 的博客园&lt;/a>&lt;/h3>
+&lt;p>Rosyr 用来记录学习轨迹的地方 | &lt;a class="link" href="https://i.loli.net/2021/03/24/e3nhuKdaN4cxDbp.png" target="_blank" rel="noopener"
+>他的头像&lt;/a> | &lt;a class="link" href="https://www.luogu.com.cn/user/171528" target="_blank" rel="noopener"
+>luogu@syr050301&lt;/a> | &lt;a class="link" href="https://space.bilibili.com/448346984" target="_blank" rel="noopener"
+>bilibili@艾鹰司坛&lt;/a>&lt;/p>
+&lt;p>TA AFO 了。&lt;/p>
+&lt;h2 id="组织项目">组织/项目&lt;/h2>
+&lt;h3 id="萌狸科技httpsmoefoxtech">&lt;a class="link" href="https://moefox.tech/" target="_blank" rel="noopener"
+>萌狸科技&lt;/a>&lt;/h3>
+&lt;p>本站隶属于萌狸科技。&lt;/p>
+&lt;h3 id="淀粉月刊httpsdfkancom">&lt;a class="link" href="https://dfkan.com/" target="_blank" rel="noopener"
+>淀粉月刊&lt;/a>&lt;/h3>
+&lt;p>接力曾经的《少年电脑世界》！&lt;a class="link" href="https://dfkan.com/10.html" target="_blank" rel="noopener"
+>简介/我们的故事&lt;/a>&lt;/p>
+&lt;h3 id="中文独立博客httpsgithubcomtimqianchinese-independent-blogs">&lt;a class="link" href="https://github.com/timqian/chinese-independent-blogs" target="_blank" rel="noopener"
+>中文独立博客&lt;/a>&lt;/h3>
+&lt;p>如果你想找到更多像本站一样拥有自己的域名且相对自由的博客站点的话&amp;hellip;&lt;/p>
+&lt;h3 id="萌国icp备案httpsicpgovmoe">&lt;a class="link" href="https://icp.gov.moe/" target="_blank" rel="noopener"
+>萌国ICP备案&lt;/a>&lt;/h3>
+&lt;p>本站仅在此处进行过ICP备案，备案号为&lt;a class="link" href="https://icp.gov.moe/?keyword=20213003" target="_blank" rel="noopener"
+>20213003&lt;/a>。&lt;/p>
+&lt;h3 id="提问的智慧httpsgithubcomryanhanwuhow-to-ask-questions-the-smart-way">&lt;a class="link" href="https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way" target="_blank" rel="noopener"
+>提问的智慧&lt;/a>&lt;/h3>
+&lt;p>&lt;a class="link" href="https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md" target="_blank" rel="noopener"
+>简体中文版&lt;/a>&lt;/p>
+&lt;h3 id="a-dark-roomadarkroom">&lt;a class="link" href="https://ayx.moefox.tech/ADarkRoom" >A Dark Room&lt;/a>&lt;/h3>
+&lt;p>小黑屋，一款文字游戏。&lt;/p>
+&lt;p>支持以一串 Base64 编码后的 json 进行存档导入/导出。&lt;/p>
+&lt;p>&lt;del>我对它做了一些小改进，应该&lt;/del> 以后会稍微改改的&lt;/p>
+&lt;h3 id="mergemp4mergemp4">&lt;a class="link" href="https://ayx.moefox.tech/mergemp4" >mergemp4&lt;/a>&lt;/h3>
+&lt;p>利用 FFmpeg 在现代浏览器中合并 .mp4 格式的视频和音频，原作者为 &lt;a class="link" href="https://github.com/maple3142" target="_blank" rel="noopener"
+>maple3142&lt;/a>。&lt;/p>
+&lt;p>目前似乎不可用。&lt;del>肯定不是被我搞坏的！&lt;/del>&lt;/p>
+&lt;p>&lt;a class="link" href="https://github.com/Ayx03/mergemp4" target="_blank" rel="noopener"
+>GitHub 存储库&lt;/a>&lt;/p>
+&lt;h2 id="申请交换友链">申请交换友链&lt;/h2>
+&lt;ul>
+&lt;li>为了减少本站（大概率会）每年更换域名带来的不便，本站的链接请使用 &lt;code>https://ayx03.github.io/&lt;/code> 而不是 &lt;code>https://ayx.moefox.tech/&lt;/code>&lt;/li>
+&lt;li>&lt;code>aynxu.l03.me&lt;/code> &lt;strong>已&lt;/strong>于2021年12月19日过期。本站域名&lt;strong>已&lt;/strong>更换为 &lt;code>ayx.moefox.tech&lt;/code>。&lt;/li>
+&lt;li>发在评论区与邮箱（&lt;code>aynxul03@gmail.com&lt;/code>）的申请（格式不限）我都会在看到后尽快回复。&lt;/li>
+&lt;/ul></description></item><item><title>题解 UPC-1488 客户调查(client)</title><link>https://ayx.moefox.tech/upc1488/</link><pubDate>Tue, 13 Jul 2021 00:00:00 +0000</pubDate><guid>https://ayx.moefox.tech/upc1488/</guid><description>&lt;h2 id="题目描述">题目描述：&lt;/h2>
 &lt;p>时间：1s 空间：32M&lt;/p>
 &lt;p>公司派你去和几位客户面谈，以了解他们对公司产品的意见。你逐个打电话与客户联系，得知他们一般都很忙，不过他们还是可以为你抽出一点时间。现在的问题是有些客户的时间有冲突，你无法在一天内联系所有客户。所以你需要一个程序来帮助你安排第一天的工作，使得你能尽可能地和更多的客户进行联系。注意，客户不愿意你打乱他们的计划。如果你和某个客户约定见面，必须按时到达并且充分利用这段时间和他交谈，这样才不至于让他产生不满。你可以假设从一个客户处到另一个客户处的时间短得忽略不计。&lt;/p>
 &lt;h2 id="输入格式">输入格式：&lt;/h2>
@@ -1845,4 +1873,4 @@ allowfullscreen="true"
 &lt;li>而TLE、OLE、MLE、ER经常同时出现，可以给予你少量的额外分数；&lt;/li>
 &lt;li>PE、CE都能给予你大量的额外分数；&lt;/li>
 &lt;li>UKE这个标签非常稀有，可以让你直接通过这次比赛并名列前茅。&lt;/li>
-&lt;/ul></description></item></channel></rss>
+&lt;/ul></description></item><item><title>标签</title><link>https://ayx.moefox.tech/tags/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ayx.moefox.tech/tags/</guid><description>&lt;h2 id="如果你看到了这段话说明这个页面出了些问题">如果你看到了这段话，说明这个页面出了些问题&amp;hellip;&lt;/h2></description></item><item><title>归档</title><link>https://ayx.moefox.tech/archives/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ayx.moefox.tech/archives/</guid><description>&lt;h2 id="如果你看到了这段话说明这个页面出了些问题">如果你看到了这段话，说明这个页面出了些问题&amp;hellip;&lt;/h2></description></item><item><title>搜索</title><link>https://ayx.moefox.tech/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ayx.moefox.tech/search/</guid><description>&lt;h2 id="如果你看到了这段话说明这个页面出了些问题">如果你看到了这段话，说明这个页面出了些问题&amp;hellip;&lt;/h2></description></item></channel></rss>

@@ -1,1 +1,153 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OJ on Aynxul03 写字的地方</title><link>https://ayx.moefox.tech/tags/oj/</link><description>Recent content in OJ on Aynxul03 写字的地方</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 29 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://ayx.moefox.tech/tags/oj/index.xml" rel="self" type="application/rss+xml"/><item><title>OJ术语的解释： AC、WA、TLE、OLE、MLE、RE、PE、CE、UKE 都是些啥？</title><link>https://ayx.moefox.tech/explanation-of-oj-terminology/</link><pubDate>Sun, 29 Dec 2019 00:00:00 +0000</pubDate><guid>https://ayx.moefox.tech/explanation-of-oj-terminology/</guid><description>正经解释 简称 全称 中文称谓 补充说明 &amp;amp; 修改建议 OJ Online Judge 在线判题系统 可以对你的程序进行评测并给出结果。洛谷、SPOJ、Codeforces、Vijo</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OJ on Aynxul03 写字的地方</title><link>https://ayx.moefox.tech/tags/oj/</link><description>Recent content in OJ on Aynxul03 写字的地方</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 29 Dec 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://ayx.moefox.tech/tags/oj/index.xml" rel="self" type="application/rss+xml"/><item><title>OJ术语的解释： AC、WA、TLE、OLE、MLE、RE、PE、CE、UKE 都是些啥？</title><link>https://ayx.moefox.tech/explanation-of-oj-terminology/</link><pubDate>Sun, 29 Dec 2019 00:00:00 +0000</pubDate><guid>https://ayx.moefox.tech/explanation-of-oj-terminology/</guid><description>&lt;h2 id="正经解释">正经解释&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>简称&lt;/th>
+&lt;th>全称&lt;/th>
+&lt;th>中文称谓&lt;/th>
+&lt;th>补充说明 &amp;amp; 修改建议&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>OJ&lt;/td>
+&lt;td>Online Judge&lt;/td>
+&lt;td>在线判题系统&lt;/td>
+&lt;td>可以对你的程序进行评测并给出结果。&lt;a class="link" href="https://www.luogu.com.cn/" target="_blank" rel="noopener"
+>洛谷&lt;/a>、&lt;a class="link" href="https://www.spoj.com/" target="_blank" rel="noopener"
+>SPOJ&lt;/a>、&lt;a class="link" href="https://codeforces.com/" target="_blank" rel="noopener"
+>Codeforces&lt;/a>、&lt;a class="link" href="https://vijos.org/" target="_blank" rel="noopener"
+>Vijos&lt;/a>、&lt;a class="link" href="https://onlinejudge.org/" target="_blank" rel="noopener"
+>UVa OJ&lt;/a> 都是在线判题系统&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>AC&lt;/td>
+&lt;td>Accepted&lt;/td>
+&lt;td>通过&lt;/td>
+&lt;td>&lt;del>嘲讽你还没过的同学&lt;/del> 想想在时间和空间上能否做到更优，或是继续做其他题目&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>WA&lt;/td>
+&lt;td>Wrong Answer&lt;/td>
+&lt;td>答案错误&lt;/td>
+&lt;td>你的程序在规定的时间和内存限制内里输出了错误的答案，因此没有得分（想一想，有没有没有考虑到的特殊情况？如果你的程序根本无法对样例输入输出正确的答案，那么你的思路很可能有问题）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>TLE&lt;/td>
+&lt;td>Time Limit Exceed&lt;/td>
+&lt;td>超出时间限制&lt;/td>
+&lt;td>你的程序在该测试点上超出了题目给定的时间仍未结束运行，因此被强行中止（检查是否存在死循环或过多的循环，使用时间复杂度更优的算法，进行一些常数及输入输出优化，剪枝）如果你的程序能正常给出答案，记得使用循环控制语句 break 或 return 0、exit(0) 这样的语句结束程序；在一些评测系统老旧的 OJ 中，没有读入完输入的数据也会造成 TLE，但是在洛谷不会发生。&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>OLE&lt;/td>
+&lt;td>Output Limit Exceed&lt;/td>
+&lt;td>超出输出限制&lt;/td>
+&lt;td>你的程序在这个测试点中输出的字符数量超出了限制，因此被系统强行中止（检查是否存在死循环和没有注释掉的调试用输出语句）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>MLE&lt;/td>
+&lt;td>Memory Limit Exceed&lt;/td>
+&lt;td>超出内存限制&lt;/td>
+&lt;td>你的程序在运行过程中占用了过多的内存，因此被系统强行中止（检查是否在程序中使用了过大的数组或是往 STL 容器中存入了过多的数据）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>RE&lt;/td>
+&lt;td>Runtime Error&lt;/td>
+&lt;td>运行时出错&lt;/td>
+&lt;td>检查是否存在数组越界访问（尤其是C(++)语言选手）。另外，如果你在 main 函数中返回一个非 0 的值也会被系统认为程序异常退出&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>PE&lt;/td>
+&lt;td>Presentation Error&lt;/td>
+&lt;td>格式错误&lt;/td>
+&lt;td>检查输出的空格/换行符数量是否与题面中的要求严格一致&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>CE&lt;/td>
+&lt;td>Compile Error&lt;/td>
+&lt;td>编译错误&lt;/td>
+&lt;td>你的程序根本无法通过编译，也就没有可执行文件可以用来评测（检查语法，初学者建议着重检查分号和全角标点，建议敲代码时禁用中文输入法）&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>UKE&lt;/td>
+&lt;td>Unknown Error&lt;/td>
+&lt;td>未知错误&lt;/td>
+&lt;td>评测姬也不知道出了什么问题（联系 OJ 管理员或出题人，稍后再尝试重新提交）&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="哈哈太搞笑了">哈哈太搞笑了&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:center">简写&lt;/th>
+&lt;th style="text-align:center">全称&lt;/th>
+&lt;th style="text-align:center">中文称谓&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:center">AC&lt;/td>
+&lt;td style="text-align:center">Answer Cubi&lt;/td>
+&lt;td style="text-align:center">粗鄙的答案&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">WA&lt;/td>
+&lt;td style="text-align:center">Wonderful Answer&lt;/td>
+&lt;td style="text-align:center">优美的答案&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">TLE&lt;/td>
+&lt;td style="text-align:center">Time Limit Enough&lt;/td>
+&lt;td style="text-align:center">时间充裕&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">OLE&lt;/td>
+&lt;td style="text-align:center">Output Limit Enough&lt;/td>
+&lt;td style="text-align:center">输出足够&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">MLE&lt;/td>
+&lt;td style="text-align:center">Memory Limit Enough&lt;/td>
+&lt;td style="text-align:center">内存充裕&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">RE&lt;/td>
+&lt;td style="text-align:center">Runtime Excellent&lt;/td>
+&lt;td style="text-align:center">运行时（过于） 优秀&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">PE&lt;/td>
+&lt;td style="text-align:center">Pretty Excellent&lt;/td>
+&lt;td style="text-align:center">十分优秀&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">CE&lt;/td>
+&lt;td style="text-align:center">Compile Easily&lt;/td>
+&lt;td style="text-align:center">轻松通过编译&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">UKE&lt;/td>
+&lt;td style="text-align:center">Unbelievable Keeping Excellent&lt;/td>
+&lt;td style="text-align:center">难以置信的保持优秀&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;ul>
+&lt;li>AC=Answer Cubi 粗鄙的答案&lt;/li>
+&lt;li>WA=Wonderful Answer 优美的答案&lt;/li>
+&lt;li>TLE=Time Limit Enough 时间充裕&lt;/li>
+&lt;li>OLE=Output Limit Enough 输出足够&lt;/li>
+&lt;li>MLE=Memory Limit Enough 内存充裕&lt;/li>
+&lt;li>RE=Runtime Excellent 运行时（过于）优秀&lt;/li>
+&lt;li>PE=Pretty Excellent 十分优秀&lt;/li>
+&lt;li>CE=Compile Easily 轻松通过编译&lt;/li>
+&lt;li>UKE=Unbelievable Keeping Excellent 难以置信的保持优秀&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;ul>
+&lt;li>出现AC时你需要将你的答案变得更优美才能通过；&lt;/li>
+&lt;li>而TLE、OLE、MLE、ER经常同时出现，可以给予你少量的额外分数；&lt;/li>
+&lt;li>PE、CE都能给予你大量的额外分数；&lt;/li>
+&lt;li>UKE这个标签非常稀有，可以让你直接通过这次比赛并名列前茅。&lt;/li>
+&lt;/ul></description></item></channel></rss>

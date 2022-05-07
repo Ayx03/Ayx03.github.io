@@ -1,1 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SSL on Aynxul03 写字的地方</title><link>https://ayx.moefox.tech/tags/ssl/</link><description>Recent content in SSL on Aynxul03 写字的地方</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 02 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ayx.moefox.tech/tags/ssl/index.xml" rel="self" type="application/rss+xml"/><item><title>MySSL 安全签章</title><link>https://ayx.moefox.tech/ssl/</link><pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate><guid>https://ayx.moefox.tech/ssl/</guid><description>又摸了一下午整了个这么个东西出来 要得到 A+ 评级： 您的网站必须启用 HSTS 且 max-age 属性不小于 6 个月（即 15768000 秒） 请注意： 启用 HSTS 后所有不支持 HTTPS 的子域名都将无法访</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SSL on Aynxul03 写字的地方</title><link>https://ayx.moefox.tech/tags/ssl/</link><description>Recent content in SSL on Aynxul03 写字的地方</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Mon, 02 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ayx.moefox.tech/tags/ssl/index.xml" rel="self" type="application/rss+xml"/><item><title>MySSL 安全签章</title><link>https://ayx.moefox.tech/ssl/</link><pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate><guid>https://ayx.moefox.tech/ssl/</guid><description>&lt;img src="https://ayx.moefox.tech/ssl/cover.png" alt="Featured image of post MySSL 安全签章" />&lt;p>&lt;del>又摸了一下午整了个这么个东西出来&lt;/del>&lt;/p>
+&lt;h2 id="要得到-a-评级">要得到 A+ 评级：&lt;/h2>
+&lt;p>您的网站必须启用 HSTS 且 &lt;code>max-age&lt;/code> 属性不小于 6 个月（即 15768000 秒）&lt;/p>
+&lt;h2 id="请注意">请注意：&lt;/h2>
+&lt;p>启用 HSTS 后&lt;strong>所有&lt;/strong>不支持 HTTPS 的子域名都将无法访问，且在 &lt;code>max-age&lt;/code> 属性设置的时间内无法恢复。&lt;/p>
+&lt;h2 id="要得到-ats-合规">要得到 ATS 合规：&lt;/h2>
+&lt;p>您的网站必须支持 TLS v1.2。&lt;/p>
+&lt;h2 id="要得到-pci-dss-合规">要得到 PCI DSS 合规：&lt;/h2>
+&lt;p>您的网站不得支持 TLS v1.0。&lt;/p>
+&lt;p>关闭 TLS v1.0 支持意味着放弃对一些老旧操作系统和浏览器（Android ≤ 4.3、Internet Explorer ≤ 10、Java ≤ 7u25、Safari ≤5.1.9、OS X ≤ 10.6.8）的兼容性，具体测试情况见下图。&lt;/p>
+&lt;p>&lt;img src="https://blog.myssl.com/content/images/2018/06/---.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;blockquote>
+&lt;p>PCI安全标准委员会规定 2018 年 6 月 30 日之后，开启 TLS1.0 将导致 PCI DSS 不合规，&lt;/p>
+&lt;/blockquote>
+&lt;p>具体参考：&lt;a class="link" href="https://blog.myssl.com/pci-dss/" target="_blank" rel="noopener"
+>《更严格的PCI DSS合规标准》&lt;/a>&lt;/p>
+&lt;h2 id="hsts-相关配置可以参考-mysslcomhttpsmysslcom-的-https安全与兼容性配置指南httpsblogmysslcomhttps-security-compatibility-best-practices">HSTS 相关配置可以参考 &lt;a class="link" href="https://myssl.com/" target="_blank" rel="noopener"
+>&lt;code>MySSL.com&lt;/code>&lt;/a> 的 &lt;a class="link" href="https://blog.myssl.com/https-security-compatibility-best-practices/" target="_blank" rel="noopener"
+>HTTPS安全与兼容性配置指南&lt;/a>&lt;/h2>
+&lt;p>测试工具：&lt;a class="link" href="https://gf.dev/hsts-test" target="_blank" rel="noopener"
+>HTTP Strict Transport Security Header Testing Tool&lt;/a>&lt;/p></description></item></channel></rss>

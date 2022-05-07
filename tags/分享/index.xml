@@ -1,1 +1,57 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>分享 on Aynxul03 写字的地方</title><link>https://ayx.moefox.tech/tags/%E5%88%86%E4%BA%AB/</link><description>Recent content in 分享 on Aynxul03 写字的地方</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 06 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ayx.moefox.tech/tags/%E5%88%86%E4%BA%AB/index.xml" rel="self" type="application/rss+xml"/><item><title>分享一下我的博客园在用的修改版 Wider Gao 博客园主题</title><link>https://ayx.moefox.tech/cnblogs-theme-share/</link><pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate><guid>https://ayx.moefox.tech/cnblogs-theme-share/</guid><description>如你所见，我的博客现在使用 Hugo，因此该修改版主题不太可能发布更新。 此主题并非我的原创作品，原作者为 Wider Gao 而且改得很烂，主页的文章展示都搞炸</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>分享 on Aynxul03 写字的地方</title><link>https://ayx.moefox.tech/tags/%E5%88%86%E4%BA%AB/</link><description>Recent content in 分享 on Aynxul03 写字的地方</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 06 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ayx.moefox.tech/tags/%E5%88%86%E4%BA%AB/index.xml" rel="self" type="application/rss+xml"/><item><title>分享一下我的博客园在用的修改版 Wider Gao 博客园主题</title><link>https://ayx.moefox.tech/cnblogs-theme-share/</link><pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate><guid>https://ayx.moefox.tech/cnblogs-theme-share/</guid><description>&lt;p>如你所见，我的博客现在使用 Hugo，因此该修改版主题不太可能发布更新。&lt;/p>
+&lt;p>此主题&lt;code>并非我的原创作品&lt;/code>，原作者为 &lt;a class="link" href="https://www.cnblogs.com/widerg" target="_blank" rel="noopener"
+>Wider Gao&lt;/a>&lt;/p>
+&lt;p>而且改得很烂，&lt;a class="link" href="https://www.cnblogs.com/ayx03" target="_blank" rel="noopener"
+>主页的文章展示&lt;/a>都搞炸了（点击查看demo），不建议使用（但个人感觉也不是特别糟糕）&lt;/p>
+&lt;h2 id="我的改动">我的改动&lt;/h2>
+&lt;p>我作出了如下改动：&lt;/p>
+&lt;ol>
+&lt;li>把原作者使用的js源（&lt;code>bootcss.com&lt;/code>）替换为 &lt;code>bootcdn.net&lt;/code>，提升加载速度（至少在我所在的地区可以）&lt;/li>
+&lt;li>把原作者在&lt;a class="link" href="https://www.cnblogs.com/widerg/p/9908459.html" target="_blank" rel="noopener"
+>博客主题更新了&lt;/a>一文中提供的 &lt;code>my.css&lt;/code> 替换为从他的页面上扒下来的css（因为这个只有几十行的 &lt;code>my.css&lt;/code> 根本没法用=我也不知道为什么，从页面上直接扒也是该文评论区提供的方法）&lt;/li>
+&lt;/ol>
+&lt;h2 id="下载链接">下载链接&lt;/h2>
+&lt;p>文件均发布在 &lt;code>Pastebin.com&lt;/code> 以及 &lt;code>Ubuntu Pastebin&lt;/code> 上&lt;/p>
+&lt;p>如需获取原版，请移步&lt;a class="link" href="https://www.cnblogs.com/widerg/p/9908459.html" target="_blank" rel="noopener"
+>Wider Gao的博文&lt;/a>&lt;/p>
+&lt;h3 id="页面定制-css-代码">页面定制 CSS 代码&lt;/h3>
+&lt;p>&lt;a class="link" href="https://pastebin.com/chRbBYGJ" target="_blank" rel="noopener"
+>Pastebin.com&lt;/a> &lt;a class="link" href="https://pastebin.com/raw/chRbBYGJ" target="_blank" rel="noopener"
+>复制&lt;/a> &lt;a class="link" href="https://pastebin.com/dl/chRbBYGJ" target="_blank" rel="noopener"
+>下载&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://paste.ubuntu.com/p/J37WKxYwtC/" target="_blank" rel="noopener"
+>Ubuntu Pastebin&lt;/a>&lt;/p>
+&lt;h3 id="博客侧边栏公告">博客侧边栏公告&lt;/h3>
+&lt;p>&lt;a class="link" href="https://pastebin.com/7rxEMER7" target="_blank" rel="noopener"
+>Pastebin.com&lt;/a> &lt;a class="link" href="https://pastebin.com/raw/7rxEMER7" target="_blank" rel="noopener"
+>复制&lt;/a> &lt;a class="link" href="https://pastebin.com/dl/7rxEMER7" target="_blank" rel="noopener"
+>下载&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://paste.ubuntu.com/p/BC4YmKsrvD/" target="_blank" rel="noopener"
+>Ubuntu Pastebin&lt;/a>&lt;/p>
+&lt;h3 id="页首-html-代码">页首 HTML 代码&lt;/h3>
+&lt;p>只有一行，就直接放这了&lt;/p>
+&lt;p>&lt;code>&amp;lt;link href=&amp;quot;https://cdn.bootcdn.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&amp;quot; rel=&amp;quot;stylesheet&amp;quot;&amp;gt;&lt;/code>&lt;/p>
+&lt;h3 id="页脚-html-代码">页脚 HTML 代码&lt;/h3>
+&lt;p>&lt;a class="link" href="https://pastebin.com/PnEmxixN" target="_blank" rel="noopener"
+>Pastebin.com&lt;/a> &lt;a class="link" href="https://pastebin.com/raw/PnEmxixN" target="_blank" rel="noopener"
+>复制&lt;/a> &lt;a class="link" href="https://pastebin.com/dl/PnEmxixN" target="_blank" rel="noopener"
+>下载&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://paste.ubuntu.com/p/n5Jq9QjWms" target="_blank" rel="noopener"
+>Ubuntu Pastebin&lt;/a>&lt;/p>
+&lt;h2 id="使用">使用&lt;/h2>
+&lt;h3 id="先修改一下这些代码把各种图片链接替换一下">先修改一下这些代码（把各种图片链接替换一下）&lt;/h3>
+&lt;p>建议先粘贴到编辑器里操作（搬迁备注：现在博客园后台终于有能看的编辑器而不是光秃秃的HTML原汁原味文本框了，我青结）&lt;/p>
+&lt;h3 id="背景图">背景图&lt;/h3>
+&lt;p>替换 &lt;code>https://cdn.luogu.com.cn/upload/image_hosting/utntnuud.png&lt;/code>&lt;/p>
+&lt;p>题外话：洛谷图床会屏蔽站外链接 :( 但是登陆了上传图片的洛谷账号就能加载&lt;/p>
+&lt;p>这就是为什么之前syr看不到我博客园的头图而我能看到&lt;/p>
+&lt;h3 id="头像">头像&lt;/h3>
+&lt;p>替换 &lt;code>https://pic.cnblogs.com/avatar/2228888/20201128101240.png&lt;/code>&lt;/p>
+&lt;p>在博客园后台打开&lt;a class="link" href="https://i.cnblogs.com/settings" target="_blank" rel="noopener"
+>设置&lt;/a>，将博客皮肤改为 &lt;code>Custom&lt;/code> ，并勾选 &lt;code>禁用模板默认CSS&lt;/code> ，然后将这些代码粘贴到框里，保存。&lt;/p>
+&lt;p>实现正常显示需要申请两个（次）权限，一次HTML的，一次JS的。（申请HTML权限通过了才能申请JS权限）&lt;/p>
+&lt;h2 id="声明">声明&lt;/h2>
+&lt;p>本主题并非本人制作，如果这侵犯了您的权利，请发邮件和我取得联系，我将第一时间作出回应。&lt;/p>
+&lt;hr>
+&lt;p>修改记录&lt;/p>
+&lt;p>2021-08-06 17:37:00&lt;/p></description></item></channel></rss>

@@ -1,1 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on Aynxul03 写字的地方</title><link>https://ayx.moefox.tech/tags/hugo/</link><description>Recent content in Hugo on Aynxul03 写字的地方</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 28 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ayx.moefox.tech/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>安装 Hugo 主题 Stack 时你可能会遇到的问题</title><link>https://ayx.moefox.tech/stack/</link><pubDate>Wed, 28 Jul 2021 00:00:00 +0000</pubDate><guid>https://ayx.moefox.tech/stack/</guid><description>啥？装了 Stack 拷了 exampleSites 以后不能正常 hugo -D了？ 试试以下两项操作。 删除根目录下的 config.toml Issus #105 @ CaiJimmy/hugo-theme-stack 生成 examplesite/content/post/rich-content/index.md 时报错 是因为是示例文章有请求 Twitter API 的 Shortcode ，需要 珂学上网 。 我</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on Aynxul03 写字的地方</title><link>https://ayx.moefox.tech/tags/hugo/</link><description>Recent content in Hugo on Aynxul03 写字的地方</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Wed, 28 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ayx.moefox.tech/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>安装 Hugo 主题 Stack 时你可能会遇到的问题</title><link>https://ayx.moefox.tech/stack/</link><pubDate>Wed, 28 Jul 2021 00:00:00 +0000</pubDate><guid>https://ayx.moefox.tech/stack/</guid><description>&lt;img src="https://ayx.moefox.tech/stack/%E5%B0%81%E9%9D%A2.jpg" alt="Featured image of post 安装 Hugo 主题 Stack 时你可能会遇到的问题" />&lt;h2 id="啥装了-stack-拷了-examplesites-以后不能正常-hugo--d了">啥？装了 &lt;code>Stack&lt;/code> 拷了 &lt;code>exampleSites&lt;/code> 以后不能正常 &lt;code>hugo -D&lt;/code>了？&lt;/h2>
+&lt;p>试试以下两项操作。&lt;/p>
+&lt;h3 id="删除根目录下的-configtoml">删除根目录下的 &lt;code>config.toml&lt;/code>&lt;/h3>
+&lt;p>&lt;a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack/issues/105" target="_blank" rel="noopener"
+>Issus #105 @ CaiJimmy/hugo-theme-stack&lt;/a>&lt;/p>
+&lt;h3 id="生成-examplesitecontentpostrich-contentindexmd-时报错">生成 &lt;code>examplesite/content/post/rich-content/index.md&lt;/code> 时报错&lt;/h3>
+&lt;p>是因为是示例文章有请求 &lt;code>Twitter API&lt;/code> 的 &lt;code>Shortcode&lt;/code> ，需要 &lt;code>珂学上网&lt;/code> 。&lt;/p>
+&lt;p>我的解决方式是直接把 YouTube 、 Twitter 和 Vimeo 的 ShortCode 都删了，反正以后也用不到（当然你也可以直接把这篇 &lt;code>rich-content&lt;/code> 给整个删了）&lt;/p>
+&lt;p>&lt;a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack/issues/191" target="_blank" rel="noopener"
+>Issus #191 @ CaiJimmy/hugo-theme-stack&lt;/a>&lt;/p>
+&lt;h2 id="另外bilibili-的-shortcode-格式如下">另外，&lt;code>Bilibili&lt;/code> 的 &lt;code>ShortCode&lt;/code> 格式如下：&lt;/h2>
+&lt;p>（去掉两个反斜杠）&lt;/p>
+&lt;p>&lt;code>\{\{&amp;lt; bilibili BV1Zx411h7ue &amp;gt;}}&lt;/code>&lt;/p>
+&lt;h2 id="别一天到晚建博客了赶紧写吧">别一天到晚建博客了，赶紧写吧。&lt;/h2></description></item></channel></rss>

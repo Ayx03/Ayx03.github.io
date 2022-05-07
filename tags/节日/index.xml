@@ -1,1 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>节日 on Aynxul03 写字的地方</title><link>https://ayx.moefox.tech/tags/%E8%8A%82%E6%97%A5/</link><description>Recent content in 节日 on Aynxul03 写字的地方</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 26 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ayx.moefox.tech/tags/%E8%8A%82%E6%97%A5/index.xml" rel="self" type="application/rss+xml"/><item><title>新年快乐 &amp; 本站的改版</title><link>https://ayx.moefox.tech/happynewyear2022/</link><pubDate>Sun, 26 Dec 2021 00:00:00 +0000</pubDate><guid>https://ayx.moefox.tech/happynewyear2022/</guid><description>今天终于找到自己的 Hugo 站点文件了&amp;hellip; 没别的，就感觉快过年了该发篇博文。 这次我在慎重考虑后对博客进行了一些大刀阔斧的改版： 移除了博客</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>节日 on Aynxul03 写字的地方</title><link>https://ayx.moefox.tech/tags/%E8%8A%82%E6%97%A5/</link><description>Recent content in 节日 on Aynxul03 写字的地方</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 26 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ayx.moefox.tech/tags/%E8%8A%82%E6%97%A5/index.xml" rel="self" type="application/rss+xml"/><item><title>新年快乐 &amp; 本站的改版</title><link>https://ayx.moefox.tech/happynewyear2022/</link><pubDate>Sun, 26 Dec 2021 00:00:00 +0000</pubDate><guid>https://ayx.moefox.tech/happynewyear2022/</guid><description>&lt;p>今天终于找到自己的 Hugo 站点文件了&amp;hellip;&lt;/p>
+&lt;p>没别的，就感觉快过年了该发篇博文。&lt;/p>
+&lt;p>这次我在慎重考虑后对博客进行了一些&lt;del>大刀阔斧的&lt;/del>改版：&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>移除了博客中的所有「分类」，各位仍可使用首页右侧的「标签云」或「标签」页面。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>将个人博客的友情链接和各种组织和项目的链接页面合并为一个页面。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>更新到 hugo 及 hugo-theme-stack 的最新版本。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>在页脚添加了关于使用 Google Analytics 收集用户数据的声明&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>把本站的锅全甩给了 GitHub Pages 和 Cloudflare。&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>不过，今天还是没把评论回复的邮件通知配置好&amp;hellip;&lt;/p>
+&lt;p>因为我忘了怎么整了，还得再仔细看文档&amp;hellip;&lt;/p></description></item></channel></rss>
