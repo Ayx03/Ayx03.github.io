@@ -63,21 +63,11 @@ loading="lazy"
 &lt;p>&lt;code>C语言 sqrt()&lt;/code>&lt;/p>
 &lt;p>或者直接 &lt;code>#include &amp;lt;bits/stdc++.h&amp;gt;&lt;/code>&lt;/p>
 &lt;h2 id="本文的测试环境">本文的测试环境&lt;/h2>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">g++ (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 10.3.0
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Copyright (C) 2020 Free Software Foundation, Inc.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">This is free software; see the source for copying conditions. There is NO
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h2 id="编辑记录">编辑记录&lt;/h2>
+&lt;pre tabindex="0">&lt;code>g++ (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 10.3.0
+Copyright (C) 2020 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions. There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+&lt;/code>&lt;/pre>&lt;h2 id="编辑记录">编辑记录&lt;/h2>
 &lt;p>2021-08-22 19:20:00&lt;/p></description></item><item><title>MySSL 安全签章</title><link>https://ayx.moefox.tech/ssl/</link><pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate><guid>https://ayx.moefox.tech/ssl/</guid><description>&lt;img src="https://ayx.moefox.tech/ssl/cover.png" alt="Featured image of post MySSL 安全签章" />&lt;p>&lt;del>又摸了一下午整了个这么个东西出来&lt;/del>&lt;/p>
 &lt;h2 id="要得到-a-评级">要得到 A+ 评级：&lt;/h2>
 &lt;p>您的网站必须启用 HSTS 且 &lt;code>max-age&lt;/code> 属性不小于 6 个月（即 15768000 秒）&lt;/p>
@@ -120,24 +110,10 @@ loading="lazy"
 &lt;p>一个整型变量（密码）。如果没有符合要求的数字出现，则输出 0。&lt;/p>
 &lt;h2 id="输入输出样例">输入输出样例&lt;/h2>
 &lt;p>输入 #1&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">Black Obama is two five zero .
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>输出 #1&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">425
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h2 id="分析">分析&lt;/h2>
+&lt;pre tabindex="0">&lt;code>Black Obama is two five zero .
+&lt;/code>&lt;/pre>&lt;p>输出 #1&lt;/p>
+&lt;pre tabindex="0">&lt;code>425
+&lt;/code>&lt;/pre>&lt;h2 id="分析">分析&lt;/h2>
 &lt;p>&lt;del>数据咋骂人呢&lt;/del>&lt;/p>
 &lt;p>先一个个输入单词与题目给出的 &lt;code>26&lt;/code> 个单词匹配，&lt;code>string&lt;/code> 类型可以直接使用逻辑运算符 &lt;code>==&lt;/code> 进行判断（C++ 选手谁闲着没事用 &lt;code>char&lt;/code> 数组啊）；&lt;/p>
 &lt;p>由于已经知道单词数量是 $6$ 个并不需要用到 while 循环（输入字符串的情况下 cin 的返回值情况我也不清楚）&lt;/p>
@@ -164,166 +140,79 @@ loading="lazy"
 &lt;p>这部分我暂时也想不通怎么解释，以后再编辑吧&amp;hellip;&lt;/p>
 &lt;h3 id="只能得-20-分">只能得 &lt;code>20&lt;/code> 分？&lt;/h3>
 &lt;p>放一下我下载的测试点#2 的数据（&lt;del>请勿用于打表&lt;/del>）：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">You are a three eight pig .
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">10964
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>我得了 &lt;code>20&lt;/code> 分的程序在这个测试点上给出的答案是 &lt;code>1964&lt;/code>，也就是忽略了所有 &lt;code>0&lt;/code>，但实际上只能忽略开头那个。&lt;/p>
+&lt;pre tabindex="0">&lt;code>You are a three eight pig .
+&lt;/code>&lt;/pre>&lt;pre tabindex="0">&lt;code>10964
+&lt;/code>&lt;/pre>&lt;p>我得了 &lt;code>20&lt;/code> 分的程序在这个测试点上给出的答案是 &lt;code>1964&lt;/code>，也就是忽略了所有 &lt;code>0&lt;/code>，但实际上只能忽略开头那个。&lt;/p>
 &lt;blockquote>
 &lt;p>如果&lt;code>开头&lt;/code>为 0，就去 0。&lt;/p>
 &lt;/blockquote>
 &lt;p>记得排序。&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-cpp" data-lang="cpp">&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">num&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">])&lt;/span> &lt;span class="n">cout&lt;/span>&lt;span class="o">&amp;lt;&amp;lt;&lt;/span>&lt;span class="n">num&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">];&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">for&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">i&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">cnt&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="o">++&lt;/span>&lt;span class="p">){&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">num&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">]&lt;/span>&lt;span class="o">&amp;gt;&lt;/span>&lt;span class="mi">10&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="n">cout&lt;/span>&lt;span class="o">&amp;lt;&amp;lt;&lt;/span>&lt;span class="n">num&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">];&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">else&lt;/span> &lt;span class="n">cout&lt;/span>&lt;span class="o">&amp;lt;&amp;lt;&lt;/span>&lt;span class="sc">&amp;#39;0&amp;#39;&lt;/span>&lt;span class="o">&amp;lt;&amp;lt;&lt;/span>&lt;span class="n">num&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">];&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h3 id="忘了没有任何单词匹配的情况">忘了没有任何单词匹配的情况&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">if&lt;/span>(num[&lt;span style="color:#ae81ff">0&lt;/span>]) cout&lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span>num[&lt;span style="color:#ae81ff">0&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> i&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>;i&lt;span style="color:#f92672">&amp;lt;&lt;/span>cnt;i&lt;span style="color:#f92672">++&lt;/span>){
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span>(num[i]&lt;span style="color:#f92672">&amp;gt;&lt;/span>&lt;span style="color:#ae81ff">10&lt;/span>) cout&lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span>num[i];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">else&lt;/span> cout&lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span>&lt;span style="color:#e6db74">&amp;#39;0&amp;#39;&lt;/span>&lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span>num[i];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="忘了没有任何单词匹配的情况">忘了没有任何单词匹配的情况&lt;/h3>
 &lt;p>&lt;del>可能就我没看清题？&lt;/del>&lt;/p>
 &lt;h4 id="直接输出-0-后结束程序即可">直接输出 &lt;code>0&lt;/code> 后结束程序即可。&lt;/h4>
 &lt;p>其实不结束也啥都输出不出来，浪费点时间而已。&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-cpp" data-lang="cpp">&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">!&lt;/span>&lt;span class="n">cnt&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="n">cout&lt;/span>&lt;span class="o">&amp;lt;&amp;lt;&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="n">exit&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h5 id="冷知识虽然-return-0-不能写在逗号后面用于结束程序无法通过编译但是-exit0-可以">冷知识，虽然 &lt;code>return 0;&lt;/code> 不能写在逗号后面用于结束程序（无法通过编译），但是 &lt;code>exit(0);&lt;/code> 可以&lt;/h5>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">if&lt;/span>(&lt;span style="color:#f92672">!&lt;/span>cnt) cout&lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span>&lt;span style="color:#ae81ff">0&lt;/span>,exit(&lt;span style="color:#ae81ff">0&lt;/span>);
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h5 id="冷知识虽然-return-0-不能写在逗号后面用于结束程序无法通过编译但是-exit0-可以">冷知识，虽然 &lt;code>return 0;&lt;/code> 不能写在逗号后面用于结束程序（无法通过编译），但是 &lt;code>exit(0);&lt;/code> 可以&lt;/h5>
 &lt;h2 id="完整代码">完整代码&lt;/h2>
 &lt;h3 id="仅供学习参考使用">仅供学习参考使用&lt;/h3>
 &lt;p>抄袭、复制题解，以达到刷 AC 率/AC 数量或其他目的的行为，在洛谷是严格禁止的。&lt;/p>
 &lt;p>洛谷非常重视&lt;strong>学术诚信&lt;/strong>。此类行为将会导致您成为&lt;em>作弊者&lt;/em>。 具体细则请查看&lt;a class="link" href="https://www.luogu.com.cn/blog/luogu/social-rules" target="_blank" rel="noopener"
 >洛谷社区规则&lt;/a>。&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;span class="lnt">12
-&lt;/span>&lt;span class="lnt">13
-&lt;/span>&lt;span class="lnt">14
-&lt;/span>&lt;span class="lnt">15
-&lt;/span>&lt;span class="lnt">16
-&lt;/span>&lt;span class="lnt">17
-&lt;/span>&lt;span class="lnt">18
-&lt;/span>&lt;span class="lnt">19
-&lt;/span>&lt;span class="lnt">20
-&lt;/span>&lt;span class="lnt">21
-&lt;/span>&lt;span class="lnt">22
-&lt;/span>&lt;span class="lnt">23
-&lt;/span>&lt;span class="lnt">24
-&lt;/span>&lt;span class="lnt">25
-&lt;/span>&lt;span class="lnt">26
-&lt;/span>&lt;span class="lnt">27
-&lt;/span>&lt;span class="lnt">28
-&lt;/span>&lt;span class="lnt">29
-&lt;/span>&lt;span class="lnt">30
-&lt;/span>&lt;span class="lnt">31
-&lt;/span>&lt;span class="lnt">32
-&lt;/span>&lt;span class="lnt">33
-&lt;/span>&lt;span class="lnt">34
-&lt;/span>&lt;span class="lnt">35
-&lt;/span>&lt;span class="lnt">36
-&lt;/span>&lt;span class="lnt">37
-&lt;/span>&lt;span class="lnt">38
-&lt;/span>&lt;span class="lnt">39
-&lt;/span>&lt;span class="lnt">40
-&lt;/span>&lt;span class="lnt">41
-&lt;/span>&lt;span class="lnt">42
-&lt;/span>&lt;span class="lnt">43
-&lt;/span>&lt;span class="lnt">44
-&lt;/span>&lt;span class="lnt">45
-&lt;/span>&lt;span class="lnt">46
-&lt;/span>&lt;span class="lnt">47
-&lt;/span>&lt;span class="lnt">48
-&lt;/span>&lt;span class="lnt">49
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-cpp" data-lang="cpp">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#include&lt;/span>&lt;span class="cpf">&amp;lt;bits/stdc++.h&amp;gt;&lt;/span>&lt;span class="cp">
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>&lt;span class="k">using&lt;/span> &lt;span class="k">namespace&lt;/span> &lt;span class="n">std&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">string&lt;/span> &lt;span class="n">tmp&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="n">dic&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">27&lt;/span>&lt;span class="p">]&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="s">&amp;#34;&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="s">&amp;#34;one&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="s">&amp;#34;two&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="s">&amp;#34;three&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="s">&amp;#34;four&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="s">&amp;#34;five&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="c1">//并不会出现zero
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="s">&amp;#34;six&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="s">&amp;#34;seven&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="s">&amp;#34;eight&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="s">&amp;#34;nine&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="s">&amp;#34;ten&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="c1">//但是这里我为了前20个数下标对应数值把0空着
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="s">&amp;#34;eleven&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="s">&amp;#34;twelve&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="s">&amp;#34;thirteen&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="s">&amp;#34;fourteen&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="s">&amp;#34;fifteen&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s">&amp;#34;sixteen&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="s">&amp;#34;seventeen&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="s">&amp;#34;eighteen&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="s">&amp;#34;nineteen&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="s">&amp;#34;twenty&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s">&amp;#34;a&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="s">&amp;#34;both&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="s">&amp;#34;another&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="s">&amp;#34;first&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="s">&amp;#34;second&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="s">&amp;#34;third&amp;#34;&lt;/span>&lt;span class="p">};&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">int&lt;/span> &lt;span class="n">num&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">6&lt;/span>&lt;span class="p">],&lt;/span>&lt;span class="n">cnt&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">int&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">(){&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">i&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="mi">6&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="o">++&lt;/span>&lt;span class="p">){&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cin&lt;/span>&lt;span class="o">&amp;gt;&amp;gt;&lt;/span>&lt;span class="n">tmp&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">!&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="o">&amp;amp;&amp;amp;&lt;/span>&lt;span class="n">tmp&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">]&lt;/span>&lt;span class="o">&amp;gt;=&lt;/span>&lt;span class="sc">&amp;#39;A&amp;#39;&lt;/span>&lt;span class="o">&amp;amp;&amp;amp;&lt;/span>&lt;span class="n">tmp&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">]&lt;/span>&lt;span class="o">&amp;lt;=&lt;/span>&lt;span class="sc">&amp;#39;Z&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="n">tmp&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">]&lt;/span>&lt;span class="o">+=&lt;/span>&lt;span class="sc">&amp;#39;a&amp;#39;&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="sc">&amp;#39;A&amp;#39;&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">j&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="n">j&lt;/span>&lt;span class="o">&amp;lt;=&lt;/span>&lt;span class="mi">26&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="n">j&lt;/span>&lt;span class="o">++&lt;/span>&lt;span class="p">){&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">tmp&lt;/span>&lt;span class="o">==&lt;/span>&lt;span class="n">dic&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">j&lt;/span>&lt;span class="p">]){&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">j&lt;/span>&lt;span class="o">&amp;lt;=&lt;/span>&lt;span class="mi">20&lt;/span>&lt;span class="p">){&lt;/span> &lt;span class="c1">//在下标1-20匹配即对应1-20
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">num&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">cnt&lt;/span>&lt;span class="o">++&lt;/span>&lt;span class="p">]&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">j&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">break&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span> &lt;span class="k">else&lt;/span> &lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">switch&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">j&lt;/span>&lt;span class="p">){&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">case&lt;/span> &lt;span class="mi">21&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="k">case&lt;/span> &lt;span class="mi">23&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="k">case&lt;/span> &lt;span class="mi">24&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="c1">//21、23、24对应1
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">num&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">cnt&lt;/span>&lt;span class="o">++&lt;/span>&lt;span class="p">]&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="k">break&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">case&lt;/span> &lt;span class="mi">22&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="k">case&lt;/span> &lt;span class="mi">25&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="c1">//22、25对应2
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">num&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">cnt&lt;/span>&lt;span class="o">++&lt;/span>&lt;span class="p">]&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="k">break&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">case&lt;/span> &lt;span class="mi">26&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="c1">//26对应3
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">num&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">cnt&lt;/span>&lt;span class="o">++&lt;/span>&lt;span class="p">]&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="k">break&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">break&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="c1">//switch 语句内的 break 仅能跳出 switch 而对外面的循环没有影响，
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="c1">//因此必须在跳出 switch 后再 break 一次以确保跳出循环（其实继续遍历应该
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="c1">//也没事，不会成功匹配只是浪费点时间）
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">!&lt;/span>&lt;span class="n">cnt&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="n">cout&lt;/span>&lt;span class="o">&amp;lt;&amp;lt;&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="n">exit&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="c1">//冷知识，虽然 return 0 不能写在逗号后面用于结束程序但是
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="c1">// exit(0) 可以
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="k">for&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">i&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">cnt&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="o">++&lt;/span>&lt;span class="p">){&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">num&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">]&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">num&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">]&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="n">num&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">];&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">num&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">]&lt;/span>&lt;span class="o">%=&lt;/span>&lt;span class="mi">100&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">sort&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">num&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="n">num&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="n">cnt&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">num&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">])&lt;/span> &lt;span class="n">cout&lt;/span>&lt;span class="o">&amp;lt;&amp;lt;&lt;/span>&lt;span class="n">num&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">];&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">i&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="n">cnt&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="o">++&lt;/span>&lt;span class="p">){&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">num&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">]&lt;/span>&lt;span class="o">&amp;gt;&lt;/span>&lt;span class="mi">10&lt;/span>&lt;span class="p">){&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cout&lt;/span>&lt;span class="o">&amp;lt;&amp;lt;&lt;/span>&lt;span class="n">num&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">];&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span> &lt;span class="k">else&lt;/span> &lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cout&lt;/span>&lt;span class="o">&amp;lt;&amp;lt;&lt;/span>&lt;span class="sc">&amp;#39;0&amp;#39;&lt;/span>&lt;span class="o">&amp;lt;&amp;lt;&lt;/span>&lt;span class="n">num&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">];&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>编辑记录&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#include&lt;/span>&lt;span style="color:#75715e">&amp;lt;bits/stdc++.h&amp;gt;&lt;/span>&lt;span style="color:#75715e">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">using&lt;/span> &lt;span style="color:#66d9ef">namespace&lt;/span> std;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>string tmp,dic[&lt;span style="color:#ae81ff">27&lt;/span>]&lt;span style="color:#f92672">=&lt;/span>{&lt;span style="color:#e6db74">&amp;#34;&amp;#34;&lt;/span>,&lt;span style="color:#e6db74">&amp;#34;one&amp;#34;&lt;/span>,&lt;span style="color:#e6db74">&amp;#34;two&amp;#34;&lt;/span>,&lt;span style="color:#e6db74">&amp;#34;three&amp;#34;&lt;/span>,&lt;span style="color:#e6db74">&amp;#34;four&amp;#34;&lt;/span>,&lt;span style="color:#e6db74">&amp;#34;five&amp;#34;&lt;/span>,&lt;span style="color:#75715e">//并不会出现zero
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#e6db74">&amp;#34;six&amp;#34;&lt;/span>,&lt;span style="color:#e6db74">&amp;#34;seven&amp;#34;&lt;/span>,&lt;span style="color:#e6db74">&amp;#34;eight&amp;#34;&lt;/span>,&lt;span style="color:#e6db74">&amp;#34;nine&amp;#34;&lt;/span>,&lt;span style="color:#e6db74">&amp;#34;ten&amp;#34;&lt;/span>,&lt;span style="color:#75715e">//但是这里我为了前20个数下标对应数值把0空着
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#e6db74">&amp;#34;eleven&amp;#34;&lt;/span>,&lt;span style="color:#e6db74">&amp;#34;twelve&amp;#34;&lt;/span>,&lt;span style="color:#e6db74">&amp;#34;thirteen&amp;#34;&lt;/span>,&lt;span style="color:#e6db74">&amp;#34;fourteen&amp;#34;&lt;/span>,&lt;span style="color:#e6db74">&amp;#34;fifteen&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">&amp;#34;sixteen&amp;#34;&lt;/span>,&lt;span style="color:#e6db74">&amp;#34;seventeen&amp;#34;&lt;/span>,&lt;span style="color:#e6db74">&amp;#34;eighteen&amp;#34;&lt;/span>,&lt;span style="color:#e6db74">&amp;#34;nineteen&amp;#34;&lt;/span>,&lt;span style="color:#e6db74">&amp;#34;twenty&amp;#34;&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">&amp;#34;a&amp;#34;&lt;/span>,&lt;span style="color:#e6db74">&amp;#34;both&amp;#34;&lt;/span>,&lt;span style="color:#e6db74">&amp;#34;another&amp;#34;&lt;/span>,&lt;span style="color:#e6db74">&amp;#34;first&amp;#34;&lt;/span>,&lt;span style="color:#e6db74">&amp;#34;second&amp;#34;&lt;/span>,&lt;span style="color:#e6db74">&amp;#34;third&amp;#34;&lt;/span>};
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">int&lt;/span> num[&lt;span style="color:#ae81ff">6&lt;/span>],cnt;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">int&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>(){
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> i&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">0&lt;/span>;i&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#ae81ff">6&lt;/span>;i&lt;span style="color:#f92672">++&lt;/span>){
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cin&lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span>tmp;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span>(&lt;span style="color:#f92672">!&lt;/span>i&lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span>tmp[&lt;span style="color:#ae81ff">0&lt;/span>]&lt;span style="color:#f92672">&amp;gt;=&lt;/span>&lt;span style="color:#e6db74">&amp;#39;A&amp;#39;&lt;/span>&lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span>tmp[&lt;span style="color:#ae81ff">0&lt;/span>]&lt;span style="color:#f92672">&amp;lt;=&lt;/span>&lt;span style="color:#e6db74">&amp;#39;Z&amp;#39;&lt;/span>) tmp[&lt;span style="color:#ae81ff">0&lt;/span>]&lt;span style="color:#f92672">+=&lt;/span>&lt;span style="color:#e6db74">&amp;#39;a&amp;#39;&lt;/span>&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#e6db74">&amp;#39;A&amp;#39;&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> j&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>;j&lt;span style="color:#f92672">&amp;lt;=&lt;/span>&lt;span style="color:#ae81ff">26&lt;/span>;j&lt;span style="color:#f92672">++&lt;/span>){
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span>(tmp&lt;span style="color:#f92672">==&lt;/span>dic[j]){
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span>(j&lt;span style="color:#f92672">&amp;lt;=&lt;/span>&lt;span style="color:#ae81ff">20&lt;/span>){ &lt;span style="color:#75715e">//在下标1-20匹配即对应1-20
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> num[cnt&lt;span style="color:#f92672">++&lt;/span>]&lt;span style="color:#f92672">=&lt;/span>j;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">break&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> } &lt;span style="color:#66d9ef">else&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">switch&lt;/span>(j){
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">case&lt;/span> &lt;span style="color:#ae81ff">21&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#66d9ef">case&lt;/span> &lt;span style="color:#ae81ff">23&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#66d9ef">case&lt;/span> &lt;span style="color:#ae81ff">24&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#75715e">//21、23、24对应1
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> num[cnt&lt;span style="color:#f92672">++&lt;/span>]&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>;&lt;span style="color:#66d9ef">break&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">case&lt;/span> &lt;span style="color:#ae81ff">22&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#66d9ef">case&lt;/span> &lt;span style="color:#ae81ff">25&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#75715e">//22、25对应2
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> num[cnt&lt;span style="color:#f92672">++&lt;/span>]&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">2&lt;/span>;&lt;span style="color:#66d9ef">break&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">case&lt;/span> &lt;span style="color:#ae81ff">26&lt;/span>&lt;span style="color:#f92672">:&lt;/span> &lt;span style="color:#75715e">//26对应3
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> num[cnt&lt;span style="color:#f92672">++&lt;/span>]&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">3&lt;/span>;&lt;span style="color:#66d9ef">break&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">break&lt;/span>;&lt;span style="color:#75715e">//switch 语句内的 break 仅能跳出 switch 而对外面的循环没有影响，
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#75715e">//因此必须在跳出 switch 后再 break 一次以确保跳出循环（其实继续遍历应该
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#75715e">//也没事，不会成功匹配只是浪费点时间）
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span>(&lt;span style="color:#f92672">!&lt;/span>cnt) cout&lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span>&lt;span style="color:#ae81ff">0&lt;/span>,exit(&lt;span style="color:#ae81ff">0&lt;/span>);&lt;span style="color:#75715e">//冷知识，虽然 return 0 不能写在逗号后面用于结束程序但是
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#75715e">// exit(0) 可以
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> i&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">0&lt;/span>;i&lt;span style="color:#f92672">&amp;lt;&lt;/span>cnt;i&lt;span style="color:#f92672">++&lt;/span>){
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> num[i]&lt;span style="color:#f92672">=&lt;/span>num[i]&lt;span style="color:#f92672">*&lt;/span>num[i];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> num[i]&lt;span style="color:#f92672">%=&lt;/span>&lt;span style="color:#ae81ff">100&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> sort(num,num&lt;span style="color:#f92672">+&lt;/span>cnt);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span>(num[&lt;span style="color:#ae81ff">0&lt;/span>]) cout&lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span>num[&lt;span style="color:#ae81ff">0&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> i&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>;i&lt;span style="color:#f92672">&amp;lt;&lt;/span>cnt;i&lt;span style="color:#f92672">++&lt;/span>){
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span>(num[i]&lt;span style="color:#f92672">&amp;gt;&lt;/span>&lt;span style="color:#ae81ff">10&lt;/span>){
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cout&lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span>num[i];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> } &lt;span style="color:#66d9ef">else&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cout&lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span>&lt;span style="color:#e6db74">&amp;#39;0&amp;#39;&lt;/span>&lt;span style="color:#f92672">&amp;lt;&amp;lt;&lt;/span>num[i];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>编辑记录&lt;/p>
 &lt;p>修复数学公式渲染&lt;/p>
 &lt;p>2021-08-06 18:39:00&lt;/p>
 &lt;p>暂时移除的段落：&lt;/p>
@@ -372,43 +261,22 @@ loading="lazy"
 &lt;p>7.为什么要发水题的题解？这样比较容易坚持每天刷题===&lt;/p>
 &lt;p>最近在我身上发生了很多事，但是不想放弃OI。&lt;/p>
 &lt;h2 id="代码">代码&lt;/h2>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;span class="lnt">12
-&lt;/span>&lt;span class="lnt">13
-&lt;/span>&lt;span class="lnt">14
-&lt;/span>&lt;span class="lnt">15
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-cpp" data-lang="cpp">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#include&lt;/span>&lt;span class="cpf">&amp;lt;bits/stdc++.h&amp;gt;&lt;/span>&lt;span class="cp">
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>&lt;span class="k">using&lt;/span> &lt;span class="k">namespace&lt;/span> &lt;span class="n">std&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">int&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">int&lt;/span> &lt;span class="n">s&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="n">v&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cin&lt;/span>&lt;span class="o">&amp;gt;&amp;gt;&lt;/span>&lt;span class="n">s&lt;/span>&lt;span class="o">&amp;gt;&amp;gt;&lt;/span>&lt;span class="n">v&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">int&lt;/span> &lt;span class="n">t&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">ceil&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mf">1.0&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="n">s&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">v&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">int&lt;/span> &lt;span class="n">h&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">8&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="n">m&lt;/span>&lt;span class="o">=-&lt;/span>&lt;span class="n">t&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">10&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">while&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">m&lt;/span>&lt;span class="o">&amp;lt;=&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">m&lt;/span>&lt;span class="o">+=&lt;/span>&lt;span class="mi">60&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">h&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">if&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">h&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="n">h&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">23&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">printf&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;%.2d:%.2d&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="n">h&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="n">m&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>编辑记录&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#include&lt;/span>&lt;span style="color:#75715e">&amp;lt;bits/stdc++.h&amp;gt;&lt;/span>&lt;span style="color:#75715e">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">using&lt;/span> &lt;span style="color:#66d9ef">namespace&lt;/span> std;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">int&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>() {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">int&lt;/span> s,v;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cin&lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span>s&lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span>v;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">int&lt;/span> t&lt;span style="color:#f92672">=&lt;/span>ceil(&lt;span style="color:#ae81ff">1.0&lt;/span>&lt;span style="color:#f92672">*&lt;/span>s&lt;span style="color:#f92672">/&lt;/span>v);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">int&lt;/span> h&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">8&lt;/span>,m&lt;span style="color:#f92672">=-&lt;/span>t&lt;span style="color:#f92672">-&lt;/span>&lt;span style="color:#ae81ff">10&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">while&lt;/span>(m&lt;span style="color:#f92672">&amp;lt;=&lt;/span>&lt;span style="color:#ae81ff">0&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> m&lt;span style="color:#f92672">+=&lt;/span>&lt;span style="color:#ae81ff">60&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> h&lt;span style="color:#f92672">--&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span>(h&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#ae81ff">0&lt;/span>) h&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">23&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> printf(&lt;span style="color:#e6db74">&amp;#34;%.2d:%.2d&amp;#34;&lt;/span>,h,m);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>编辑记录&lt;/p>
 &lt;p>2021-08-06 18:11:00&lt;/p></description></item><item><title>题解 P5719 【深基4.例3】分类平均</title><link>https://ayx.moefox.tech/p5719/</link><pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate><guid>https://ayx.moefox.tech/p5719/</guid><description>&lt;p>这题太有意思了，发个题解纪念一下&lt;/p>
 &lt;p>题面来自&lt;a class="link" href="https://www.luogu.com.cn/problem/P5719" target="_blank" rel="noopener"
 >洛谷&lt;/a>&lt;/p>
@@ -423,63 +291,27 @@ loading="lazy"
 &lt;p>无&lt;/p>
 &lt;h2 id="输入输出样例">输入输出样例&lt;/h2>
 &lt;p>输入 #1&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">100 16
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>输出 #1&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">56.0 50.1
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h2 id="分析">分析&lt;/h2>
+&lt;pre tabindex="0">&lt;code>100 16
+&lt;/code>&lt;/pre>&lt;p>输出 #1&lt;/p>
+&lt;pre tabindex="0">&lt;code>56.0 50.1
+&lt;/code>&lt;/pre>&lt;h2 id="分析">分析&lt;/h2>
 &lt;p>利用了等差数列等高阶数学知识来减少循环次数。&lt;/p>
 &lt;h2 id="代码c">代码（C++）&lt;/h2>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;span class="lnt">12
-&lt;/span>&lt;span class="lnt">13
-&lt;/span>&lt;span class="lnt">14
-&lt;/span>&lt;span class="lnt">15
-&lt;/span>&lt;span class="lnt">16
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-cpp" data-lang="cpp">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#include&lt;/span>&lt;span class="cpf">&amp;lt;bits/stdc++.h&amp;gt;&lt;/span>&lt;span class="cp">
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>&lt;span class="k">using&lt;/span> &lt;span class="k">namespace&lt;/span> &lt;span class="n">std&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">int&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">(){&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">int&lt;/span> &lt;span class="n">n&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="n">k&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="n">can&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="n">cant&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="n">all&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="n">num&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cin&lt;/span>&lt;span class="o">&amp;gt;&amp;gt;&lt;/span>&lt;span class="n">n&lt;/span>&lt;span class="o">&amp;gt;&amp;gt;&lt;/span>&lt;span class="n">k&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">all&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">n&lt;/span>&lt;span class="o">+&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="n">n&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">i&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">k&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="o">&amp;lt;=&lt;/span>&lt;span class="n">n&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="o">+=&lt;/span>&lt;span class="n">k&lt;/span>&lt;span class="p">){&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">can&lt;/span>&lt;span class="o">+=&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">num&lt;/span>&lt;span class="o">++&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">cant&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="n">all&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">can&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">double&lt;/span> &lt;span class="n">a&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kt">double&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="n">can&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">num&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">double&lt;/span> &lt;span class="n">a_&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kt">double&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="n">cant&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">n&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">num&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">printf&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;%.1lf %.1lf&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="n">a&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="n">a_&lt;/span>&lt;span class="p">);&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>编辑记录&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-cpp" data-lang="cpp">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">#include&lt;/span>&lt;span style="color:#75715e">&amp;lt;bits/stdc++.h&amp;gt;&lt;/span>&lt;span style="color:#75715e">
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">using&lt;/span> &lt;span style="color:#66d9ef">namespace&lt;/span> std;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">int&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>(){
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">int&lt;/span> n,k,can,cant,all,num&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#ae81ff">0&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cin&lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span>n&lt;span style="color:#f92672">&amp;gt;&amp;gt;&lt;/span>k;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> all&lt;span style="color:#f92672">=&lt;/span>(n&lt;span style="color:#f92672">+&lt;/span>&lt;span style="color:#ae81ff">1&lt;/span>)&lt;span style="color:#f92672">*&lt;/span>n&lt;span style="color:#f92672">/&lt;/span>&lt;span style="color:#ae81ff">2&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">for&lt;/span>(&lt;span style="color:#66d9ef">int&lt;/span> i&lt;span style="color:#f92672">=&lt;/span>k;i&lt;span style="color:#f92672">&amp;lt;=&lt;/span>n;i&lt;span style="color:#f92672">+=&lt;/span>k){
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> can&lt;span style="color:#f92672">+=&lt;/span>i;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> num&lt;span style="color:#f92672">++&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cant&lt;span style="color:#f92672">=&lt;/span>all&lt;span style="color:#f92672">-&lt;/span>can;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">double&lt;/span> a &lt;span style="color:#f92672">=&lt;/span> (&lt;span style="color:#66d9ef">double&lt;/span>)can&lt;span style="color:#f92672">/&lt;/span>num;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">double&lt;/span> a_ &lt;span style="color:#f92672">=&lt;/span> (&lt;span style="color:#66d9ef">double&lt;/span>)cant&lt;span style="color:#f92672">/&lt;/span>(n&lt;span style="color:#f92672">-&lt;/span>num);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> printf(&lt;span style="color:#e6db74">&amp;#34;%.1lf %.1lf&amp;#34;&lt;/span>,a,a_);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>编辑记录&lt;/p>
 &lt;p>2021-08-13 12:01:00&lt;/p></description></item></channel></rss>

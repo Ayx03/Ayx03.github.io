@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Android on Aynxul03 写字的地方</title><link>https://ayx.moefox.tech/tags/android/</link><description>Recent content in Android on Aynxul03 写字的地方</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Fri, 08 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ayx.moefox.tech/tags/android/index.xml" rel="self" type="application/rss+xml"/><item><title>LG V50 ThinQ 韩版 LGU+ 从解锁 BootLoader 到破解 VoLTE / NSA 5G、从刷入第三方 Recovery 到硬格、从混刷到黑砖全教程</title><link>https://ayx.moefox.tech/v50/</link><pubDate>Fri, 08 Apr 2022 00:00:00 +0000</pubDate><guid>https://ayx.moefox.tech/v50/</guid><description>&lt;img src="https://ayx.moefox.tech/v50/cover.jpg" alt="Featured image of post LG V50 ThinQ 韩版 LGU+ 从解锁 BootLoader 到破解 VoLTE / NSA 5G、从刷入第三方 Recovery 到硬格、从混刷到黑砖全教程" />&lt;h2 id="前言">前言&lt;/h2>
+&lt;p>如果您的手机正处在无限重启（Bootloop）的状态，请看&lt;a class="link" href="#%E5%AF%B9%E4%BA%8E-bootloop%E6%97%A0%E9%99%90%E9%87%8D%E5%90%AF%E9%A6%96%E5%85%88%E5%B0%9D%E8%AF%95%E7%A1%AC%E6%A0%BC" >这一节（点击跳转）&lt;/a>来了解解决方案。&lt;/p>
+&lt;p>如果您使用的是其他型号或版本的手机（甚至可以不是 LG 的手机），本教程也可能部分（但不太可能完全）适用于您。&lt;/p>
+&lt;p>本教程旨在整合其他资源和教程以节省韩版 LGU+ 的 LG V50 ThinQ 用户的时间，因此如果您的机器版本或型号不同，它可能浪费您的时间，甚至对您的设备造成不可挽回的损坏。&lt;/p>
+&lt;p>无论如何，请谨慎操作，尤其是在 Download 和 9008 模式下进行操作时一定要三思而后行，选用可靠的数据线，保持耐心，因为它们造成的损坏很可能无法通过简单地在软件层面进行操作来恢复。&lt;/p>
+&lt;h2 id="拆箱收货">拆箱收货&lt;/h2>
+&lt;p>笔者建议您签收贵重物品前先与快递员当面验货，或在快递柜旁拆开，以避免不必要的纠纷。&lt;/p>
+&lt;p>不过，笔者自己从来不这么做。&lt;/p>
+&lt;p>如果卖家声称您购买的机器有以下特性，您可以用下文所述的方法验证他们的描述是否属实。&lt;/p>
+&lt;h3 id="气密性">气密性&lt;/h3>
+&lt;p>（该部分适用于其他出厂时支持 IP68 防水且有气压传感器的设备）&lt;/p>
+&lt;p>普遍的检测方法是使用 DevCheck 显示气压传感器的数值（其实系统自检中也可以查看压力传感器的数值，但是我更喜欢使用 DevCehck）&lt;/p>
+&lt;p>DevCheck 的包名：&lt;code>flar2.devcheck&lt;/code>&lt;/p>
+&lt;p>蓝奏云下载：&lt;a class="link" href="https://cpk.lanzoui.com/iZdritwxo8b" target="_blank" rel="noopener"
+>https://cpk.lanzoui.com/iZdritwxo8b&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>打开传感器中的压力传感器&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>堵住右下角扬声器左侧的小孔（对于 LG G8 ThinQ，这个小孔在左上角；别问我为什么知道，因为我也用过）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>用力按压屏幕后松开（小心别把屏幕压碎了，适可而止；别问我为什么要提一嘴，因为我压碎过）。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>如果气压值的波动大于 &lt;code>10 hPa&lt;/code>，那么这台手机很可能有气密性，可以下水。&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>气密性好的组装机波动甚至能达到 &lt;code>40 hPa&lt;/code>，因此是否有气密性不应作为判断手机是否原装的标准。&lt;/p>
+&lt;p>但是请注意，不要将手机置于热水或蒸汽中。防水功能防水溅不防手贱，不建议经常性主动下水，也不要跟我一样想出水下跑分或者半浸没充电这种操作。&lt;/p>
+&lt;h3 id="完美屏">完美屏&lt;/h3>
+&lt;p>一般指显示和触摸功能完美（没有彩点、黑块或绿线黑线），全原装非后压屏的机器外屏没有任何划痕的应该很少。&lt;/p>
+&lt;h2 id="获取-imei-并记录查询手机版本">获取 IMEI 并记录，查询手机版本&lt;/h2>
+&lt;p>得到 IMEI 的几种方法：&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>正常进入系统时，打开拨号键盘输入 &lt;code>*#06#&lt;/code>；&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>正常开机进系统后在 设置-关于手机 中查看；&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>关机后长按开机键、音量上下键，同时按住。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>查看手机背面的标签、包装盒上的标签（二手机可能没有）；&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>记录好 IMEI 后可以&lt;a class="link" href="https://www.imeidb.com/imei/lg" target="_blank" rel="noopener"
+>在这里&lt;/a>使用它查询来获得关于这台手机很多有用的信息，包括但不限于运营商（简称）、国家、区域、CPU 类型、手机型号、颜色、S/N 码、CSN 码、生产与出厂日期，但 KDZ 相关的四项信息似乎总是空白或没有。&lt;/p>
+&lt;p>查询手机的型号和版本就是为了下载对应版本的 KDZ（类似于其他安卓手机的线刷包，不懂也不用慌），避免浪费时间。&lt;/p>
+&lt;p>&lt;a class="link" href="http://www.lgbbs.com/lg_mobile-lg_mobile.html" target="_blank" rel="noopener"
+>http://www.lgbbs.com/lg_mobile-lg_mobile.html&lt;/a>&lt;/p>
+&lt;p>（这个地址似乎暂时无法访问了）&lt;/p>
+&lt;h2 id="升级-magisk-版本">升级 Magisk 版本&lt;/h2>
+&lt;p>此部分适用于收到时卖家已帮您刷好旧版 Magisk 的机器。&lt;/p>
+&lt;p>旧版 Magisk 除了用于授予应用 Root 权限外能刷入的模块非常有限，因此我们需要升级 Magisk 版本。&lt;/p>
+&lt;p>推荐先升级 Magisk Manager（新版去掉了 Manager 的后缀），再升级 Magisk 本体。&lt;/p>
+&lt;p>但是，先别急着使用直接安装升级 Magisk，这很可能导致您的设备陷入 BootLoop（无限重启）的状态中（如果您甚至无聊到启用了安全启动），而且您还有可能完全不知道怎么让它停下来。&lt;/p>
+&lt;p>正确的做法应该是把新版 Magisk 的 .apk 文件扩展名改为 .zip，然后以安装模块的方式在 Manager 中刷入。&lt;/p>
+&lt;h2 id="破解-volte">破解 VoLTE&lt;/h2>
+&lt;p>我还没成功&amp;hellip;&lt;/p>
+&lt;h2 id="破解-5g">破解 5G&lt;/h2>
+&lt;p>卖家已经帮你破解好了 VoLTE，移动卡电信卡都能边打电话边上网了（如果没有破解 VoLTE，电信卡无法正常使用），但你还听说这是一台 5G 手机？&lt;/p>
+&lt;p>其实，它似乎只支持联通与电信的 5G 频段。并且它只支持 NSA（非独立组网模式）而不支持 SA（独立组网模式）。&lt;/p>
+&lt;h3 id="我没有开通-5g-套餐也没有换新的-usim-卡可以用-5g-吗">我没有开通 5G 套餐，也没有换新的 USIM 卡，可以用 5G 吗？&lt;/h3>
+&lt;p>不存在只支持 4G 而不支持 5G 的 UIM 卡，并且未开通 5G 套餐也可以连接 5G 网络，只不过速度会被限制在 300 Mbps。开通 5G 套餐后可享受 500 Mbps 或 1 Gbps 甚至高达 4 Gbps 的速率。&lt;/p>
+&lt;p>能不能成功，一试便知。&lt;/p>
+&lt;p>下载 QPST TOOL 并安装，同意许可协议一路 Next 最后 Finish 即可。LG 驱动同理。&lt;/p>
+&lt;p>&lt;a class="link" href="https://cpk.lanzoui.com/i0cvUtwz3qf" target="_blank" rel="noopener"
+>https://cpk.lanzoui.com/i0cvUtwz3qf&lt;/a>&lt;/p>
+&lt;p>&lt;a class="link" href="https://cpk.lanzoui.com/i8Edvtwz7be" target="_blank" rel="noopener"
+>https://cpk.lanzoui.com/i8Edvtwz7be&lt;/a>&lt;/p>
+&lt;p>替换用文件，记得去掉 .txt 的后缀，笔者加上此后缀是因为蓝奏云不支持上传 .xml 格式的文件。&lt;/p>
+&lt;p>&lt;a class="link" href="https://cpk.lanzoui.com/iDTmPtwza4f" target="_blank" rel="noopener"
+>https://cpk.lanzoui.com/iDTmPtwza4f&lt;/a>&lt;/p>
+&lt;p>电脑下载文件的同时，手机上也可以操作起来了。&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>打开拨号键盘，输入 *#546368#*500#&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>进入 HiddenMenu（隐藏菜单）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>SVC Menu - LDB - USB debugging 打钩&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>SVC Menu - Port Check Test 选择 Enabled&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>设置 - 系统 - 关于手机 - 软件信息 - 内部版本号 - 连续点击7次 - 您现在是开发人员！&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>设置 - 系统 - 开发人员选项 - 开启 - 启动 OEM解锁 - 启用&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>设置 - 系统 - 开发人员选项 - 开启 - USB调试 - 确定&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>USB 线连接 PC 下拉菜单更改 USB 选项 选择 仅充电 USB 调试授权 同意&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>设置 - 网络和互联网 - 绑定 - 开启 - USB绑定&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://ayx.moefox.tech/1.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>如果你的桌面上有「LG 网络」这个 App，可以直接用它进入 Hidden Menu 和 Field Test 等隐藏菜单，无需繁琐地在拨号键盘中输入代码。&lt;/p>
+&lt;p>&lt;img src="https://ayx.moefox.tech/v50/2.png"
+width="357"
+height="773"
+srcset="https://ayx.moefox.tech/v50/2_hu512215e3933e842c8d397701e0fed006_64191_480x0_resize_box_3.png 480w, https://ayx.moefox.tech/v50/2_hu512215e3933e842c8d397701e0fed006_64191_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="46"
+data-flex-basis="110px"
+>&lt;/p>
+&lt;p>「绑定」实际上是网络共享的意思，官方系统的中文翻译很有问题。（甚至比机器翻译还烂）&lt;/p>
+&lt;p>好的，现在我们打开 QPST Configuration，点击右下角的 Add New Port 按钮。&lt;/p>
+&lt;p>如果你的手机已经以正确的姿势连接到了电脑，那么应该有一个端口后面显示 (LGE Mobile USB Serial Port)。选中它，OK。&lt;/p>
+&lt;p>然后在菜单栏的 Start Client 中选择第一项 EFS Explorer，选择刚刚添加的端口，OK。&lt;/p>
+&lt;p>成功连接并打开类似文件资源管理器的界面后，在左侧找到 policyman 文件夹，选中其中的所有文件（包括子目录 persisted_items），右键选择 Delete 或者按键盘上的 DEL 键删除。（建议备份一份，但这个 Explorer 似乎只支持每次传输一个文件到电脑）&lt;/p>
+&lt;p>然后把刚才下载的 carrier_policy.xml（记得去掉 .txt 后缀）拖进去（或者右键空白处选择 Copy Data File from PC）&lt;/p>
+&lt;p>重启手机，大功告成。&lt;/p>
+&lt;p>如果重启完移动数据的图标还是 4G 或者 LTE 也不用灰心，在拨号键盘中输入 5457#*510# 进入 Service Menu，选择第一项 Debug Screen，如果 NR5G Link 冒号后面的数字为 1，那么恭喜你破解成功了，只是你所在的区域暂时没有 NSA 5G 覆盖或者已经退网了。&lt;/p>
+&lt;p>如果破解 5G 后在拨号键盘输入 &lt;code>5457#*510#&lt;/code> 没有反应，在 &lt;code>*#*#4636#*#*&lt;/code> 中查看也是可以的。&lt;/p>
+&lt;p>以上内容修改自：&lt;a class="link" href="https://bbs.lge.fun/thread-147.htm" target="_blank" rel="noopener"
+>LG V50S 开5G教程 LG V50适用-855板块-LG社区&lt;/a>&lt;/p>
+&lt;h2 id="使用-lg-up-来更换系统版本">使用 LG UP 来更换系统版本&lt;/h2>
+&lt;p>安装并破解好 LG UP，同时下载好对应版本的 .kdz 线刷包文件。&lt;/p>
+&lt;p>将手机关机后在插入数据线的同时按住音量加来进入 Download 模式，数据线另一头需要事先连接到电脑。&lt;/p>
+&lt;p>线刷时请选择可靠的数据线，过程中一定要耐心等待，千万不要在进度条跑完手机端自动重启前断开数据线。&lt;/p>
+&lt;p>打开 LG UP 并拖入 KDZ 即可开始刷机。&lt;/p>
+&lt;p>保持默认模式（第一个），不会造成 BootLoader 被自动回锁。&lt;/p>
+&lt;p>一般两三分钟即可完成，完成后手机会自动重启。&lt;/p>
+&lt;p>韩版的 KDZ 中一般包含很多无用的 App，能卸载的开机后建议尽快卸载，嫌麻烦也可以刷完先硬格一次以清除所有预装应用，具体方法在下方。&lt;/p>
+&lt;p>（该章节尚未完成）&lt;/p>
+&lt;h2 id="意外与失败的处理">意外与失败的处理&lt;/h2>
+&lt;h3 id="对于-bootloop无限重启首先尝试硬格">对于 Bootloop（无限重启），首先尝试硬格。&lt;/h3>
+&lt;p>同时按住电源键和音量下键 8 秒左右，当第一屏（即显示手机型号的画面）亮起时松开，3 秒后再次按住电源键，即可进入硬格菜单。&lt;/p>
+&lt;p>用音量减切换到 Yes，用电源键确认，Erase（擦除）很快。数据飞灰烟灭。&lt;/p>
+&lt;p>此操作在刷入 TWRP 后不会擦除手机，而是会进入 Recovery，且通过此方式进入一般触屏功能可以使用。&lt;/p>
+&lt;h3 id="lg-up-线刷救砖">LG UP 线刷救砖&lt;/h3>
+&lt;p>只要你还能进入 Download 模式，就能使用 LG UP 刷入官方 KDZ 来进行线刷救砖，无需冒险使用 9008 进行救砖。&lt;/p>
+&lt;p>详见「使用 LG UP 来更换系统版本」一节。&lt;/p>
+&lt;h2 id="鸣谢">鸣谢&lt;/h2>
+&lt;p>对本文启发很大的&lt;/p>
+&lt;p>&lt;a class="link" href="https://855.lge.fun/doc_hz/" target="_blank" rel="noopener"
+>LG 855系列-快速黑砖手册 愿你刷机半生，归来仍是黑砖&lt;/a>&lt;/p></description></item></channel></rss>
