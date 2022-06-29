@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>刷机 on Aynxul03 写字的地方</title><link>https://ayx.moefox.tech/tags/%E5%88%B7%E6%9C%BA/</link><description>Recent content in 刷机 on Aynxul03 写字的地方</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Fri, 08 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ayx.moefox.tech/tags/%E5%88%B7%E6%9C%BA/index.xml" rel="self" type="application/rss+xml"/><item><title>LG V50 ThinQ 韩版 LGU+ 从解锁 BootLoader 到破解 VoLTE / NSA 5G、从刷入第三方 Recovery 到硬格、从混刷到黑砖全教程</title><link>https://ayx.moefox.tech/v50/</link><pubDate>Fri, 08 Apr 2022 00:00:00 +0000</pubDate><guid>https://ayx.moefox.tech/v50/</guid><description>&lt;img src="https://ayx.moefox.tech/v50/cover.jpg" alt="Featured image of post LG V50 ThinQ 韩版 LGU+ 从解锁 BootLoader 到破解 VoLTE / NSA 5G、从刷入第三方 Recovery 到硬格、从混刷到黑砖全教程" />&lt;h2 id="前言">前言&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>刷机 on Ayx 博客</title><link>https://example.com/tags/%E5%88%B7%E6%9C%BA/</link><description>Recent content in 刷机 on Ayx 博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Fri, 08 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/%E5%88%B7%E6%9C%BA/index.xml" rel="self" type="application/rss+xml"/><item><title>LG V50 ThinQ 韩版 LGU+ 从解锁 BootLoader 到破解 VoLTE / NSA 5G、从刷入第三方 Recovery 到硬格、从混刷到黑砖全教程</title><link>https://example.com/v50/</link><pubDate>Fri, 08 Apr 2022 00:00:00 +0000</pubDate><guid>https://example.com/v50/</guid><description>&lt;img src="https://example.com/v50/cover.jpg" alt="Featured image of post LG V50 ThinQ 韩版 LGU+ 从解锁 BootLoader 到破解 VoLTE / NSA 5G、从刷入第三方 Recovery 到硬格、从混刷到黑砖全教程" />&lt;h2 id="前言">前言&lt;/h2>
 &lt;p>如果您的手机正处在无限重启（Bootloop）的状态，请看&lt;a class="link" href="#%E5%AF%B9%E4%BA%8E-bootloop%E6%97%A0%E9%99%90%E9%87%8D%E5%90%AF%E9%A6%96%E5%85%88%E5%B0%9D%E8%AF%95%E7%A1%AC%E6%A0%BC" >这一节（点击跳转）&lt;/a>来了解解决方案。&lt;/p>
 &lt;p>如果您使用的是其他型号或版本的手机（甚至可以不是 LG 的手机），本教程也可能部分（但不太可能完全）适用于您。&lt;/p>
 &lt;p>本教程旨在整合其他资源和教程以节省韩版 LGU+ 的 LG V50 ThinQ 用户的时间，因此如果您的机器版本或型号不同，它可能浪费您的时间，甚至对您的设备造成不可挽回的损坏。&lt;/p>
@@ -105,14 +105,14 @@
 &lt;p>设置 - 网络和互联网 - 绑定 - 开启 - USB绑定&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;p>&lt;img src="https://ayx.moefox.tech/1.png"
+&lt;p>&lt;img src="https://example.com/1.png"
 loading="lazy"
 >&lt;/p>
 &lt;p>如果你的桌面上有「LG 网络」这个 App，可以直接用它进入 Hidden Menu 和 Field Test 等隐藏菜单，无需繁琐地在拨号键盘中输入代码。&lt;/p>
-&lt;p>&lt;img src="https://ayx.moefox.tech/v50/2.png"
+&lt;p>&lt;img src="https://example.com/v50/2.png"
 width="357"
 height="773"
-srcset="https://ayx.moefox.tech/v50/2_hu512215e3933e842c8d397701e0fed006_64191_480x0_resize_box_3.png 480w, https://ayx.moefox.tech/v50/2_hu512215e3933e842c8d397701e0fed006_64191_1024x0_resize_box_3.png 1024w"
+srcset="https://example.com/v50/2_hu512215e3933e842c8d397701e0fed006_64191_480x0_resize_box_3.png 480w, https://example.com/v50/2_hu512215e3933e842c8d397701e0fed006_64191_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="46"
