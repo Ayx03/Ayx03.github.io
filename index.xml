@@ -315,22 +315,7 @@ alt="Source: https://www.reddit.com/r/ProgrammerHumor/comments/ppmtr2/happy_30th
 &lt;/blockquote>
 &lt;h1 id="未完待续">未完，待续&lt;/h1>
 &lt;h2 id="changelog">Changelog&lt;/h2>
-&lt;p>2022-03-08 22:38:00 新增变量[string 类型]、小标题#本文所使用的环境、程序结束时的返回值，为 Windows 外的操作系统提供 Python 本体的安装教程，修改了一些格式与排版，改善阅读体验。&lt;/p></description></item><item><title>测试</title><link>https://example.com/test/</link><pubDate>Sat, 12 Feb 2022 00:00:00 +0000</pubDate><guid>https://example.com/test/</guid><description>&lt;h2 id="这是一个标题">这是一个标题&lt;/h2>
-&lt;h3 id="this-is-a-title">This is a title&lt;/h3>
-&lt;h2 id="这是一个含有-链接httpsayxmoefoxtech-的二级标题">这是一个含有 &lt;a class="link" href="https://ayx.moefox.tech/" target="_blank" rel="noopener"
->链接&lt;/a> 的二级标题&lt;/h2>
-&lt;h3 id="this-is-a-title-with-a-linkhttpsayxmoefoxtech-in-it">This is a title with a &lt;a class="link" href="https://ayx.moefox.tech/" target="_blank" rel="noopener"
->link&lt;/a> in it&lt;/h3>
-&lt;h2 id="这是一整个都是链接的标题httpsayxmoefoxtech">&lt;a class="link" href="https://ayx.moefox.tech/" target="_blank" rel="noopener"
->这是一整个都是链接的标题&lt;/a>&lt;/h2>
-&lt;h3 id="this-is-a-title-and-also-a-linkhttpsayxmoefoxtech">&lt;a class="link" href="https://ayx.moefox.tech/" target="_blank" rel="noopener"
->This is a title and also a link&lt;/a>&lt;/h3>
-&lt;h2 id="我们httpsayxmoefoxtech也可以在一个标题中加入多个链接httpsayxmoefoxtech">&lt;a class="link" href="https://ayx.moefox.tech/" target="_blank" rel="noopener"
->我们&lt;/a>也可以在一个标题中加入多个&lt;a class="link" href="https://ayx.moefox.tech/" target="_blank" rel="noopener"
->链接&lt;/a>&lt;/h2>
-&lt;h3 id="wehttpsayxmoefoxtech-can-also-use-multiple-linkhttpsayxmoefoxtechs-in-one-title">&lt;a class="link" href="https://ayx.moefox.tech/" target="_blank" rel="noopener"
->We&lt;/a> can also use multiple &lt;a class="link" href="https://ayx.moefox.tech/" target="_blank" rel="noopener"
->link&lt;/a>s in one title&lt;/h3></description></item><item><title>新年快乐 &amp; 本站的改版</title><link>https://example.com/happynewyear2022/</link><pubDate>Sun, 26 Dec 2021 00:00:00 +0000</pubDate><guid>https://example.com/happynewyear2022/</guid><description>&lt;p>今天终于找到自己的 Hugo 站点文件了&amp;hellip;&lt;/p>
+&lt;p>2022-03-08 22:38:00 新增变量[string 类型]、小标题#本文所使用的环境、程序结束时的返回值，为 Windows 外的操作系统提供 Python 本体的安装教程，修改了一些格式与排版，改善阅读体验。&lt;/p></description></item><item><title>新年快乐 &amp; 本站的改版</title><link>https://example.com/happynewyear2022/</link><pubDate>Sun, 26 Dec 2021 00:00:00 +0000</pubDate><guid>https://example.com/happynewyear2022/</guid><description>&lt;p>今天终于找到自己的 Hugo 站点文件了&amp;hellip;&lt;/p>
 &lt;p>没别的，就感觉快过年了该发篇博文。&lt;/p>
 &lt;p>这次我在慎重考虑后对博客进行了一些&lt;del>大刀阔斧的&lt;/del>改版：&lt;/p>
 &lt;ul>
