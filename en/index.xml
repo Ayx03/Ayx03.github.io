@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AyxBlog</title><link>https://example.com/en/</link><description>Recent content on AyxBlog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 30 Jun 2022 16:26:00 +0000</lastBuildDate><atom:link href="https://example.com/en/index.xml" rel="self" type="application/rss+xml"/><item><title>About</title><link>https://example.com/en/about/</link><pubDate>Thu, 30 Jun 2022 16:26:00 +0000</pubDate><guid>https://example.com/en/about/</guid><description>&lt;p>This English version may not be updated frequently. If you&amp;rsquo;re able to read Chinese, check the Chinese version.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AyxBlog</title><link>https://imayx.top/en/</link><description>Recent content on AyxBlog</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 30 Jun 2022 16:26:00 +0000</lastBuildDate><atom:link href="https://imayx.top/en/index.xml" rel="self" type="application/rss+xml"/><item><title>About</title><link>https://imayx.top/en/about/</link><pubDate>Thu, 30 Jun 2022 16:26:00 +0000</pubDate><guid>https://imayx.top/en/about/</guid><description>&lt;p>This English version may not be updated frequently. If you&amp;rsquo;re able to read Chinese, check the Chinese version.&lt;/p>
 &lt;h2 id="about-me">About me&lt;/h2>
 &lt;p>Email: &lt;a class="link" href="mailto:aynxul03@gmail.com" >aynxul03@gmail.com&lt;/a>&lt;/p>
 &lt;h2 id="im-also-on">I&amp;rsquo;m also on&lt;/h2>
@@ -25,7 +25,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">2022-03-08 22:44:00
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>Archives</title><link>https://example.com/en/archives/</link><pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate><guid>https://example.com/en/archives/</guid><description/></item><item><title>Links</title><link>https://example.com/en/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/en/links/</guid><description>&lt;p>To use this feature, add &lt;code>links&lt;/code> section to frontmatter.&lt;/p>
+&lt;/div></description></item><item><title>Archives</title><link>https://imayx.top/en/archives/</link><pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate><guid>https://imayx.top/en/archives/</guid><description/></item><item><title>Links</title><link>https://imayx.top/en/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://imayx.top/en/links/</guid><description>&lt;p>To use this feature, add &lt;code>links&lt;/code> section to frontmatter.&lt;/p>
 &lt;p>This page&amp;rsquo;s frontmatter:&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -51,4 +51,4 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="nt">image&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">ts-logo-128.jpg&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>&lt;code>image&lt;/code> field accepts both local and external images.&lt;/p></description></item><item><title>Search</title><link>https://example.com/en/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/en/search/</guid><description/></item></channel></rss>
+&lt;/div>&lt;p>&lt;code>image&lt;/code> field accepts both local and external images.&lt;/p></description></item><item><title>Search</title><link>https://imayx.top/en/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://imayx.top/en/search/</guid><description/></item></channel></rss>

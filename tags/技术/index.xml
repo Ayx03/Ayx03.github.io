@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>技术 on Ayx 博客</title><link>https://example.com/tags/%E6%8A%80%E6%9C%AF/</link><description>Recent content in 技术 on Ayx 博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 22 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml"/><item><title>出现 error: ld returned 1 exit status 的五种原因以及解决方法</title><link>https://example.com/error-ld-returned-1-exit-status/</link><pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate><guid>https://example.com/error-ld-returned-1-exit-status/</guid><description>&lt;img src="https://example.com/error-ld-returned-1-exit-status/fengmian.png" alt="Featured image of post 出现 error: ld returned 1 exit status 的五种原因以及解决方法" />&lt;p>这个错误让人懵圈的地方就在于它不会给出错误出现的位置，让已经写了几百行的你痛不欲生。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>技术 on Ayx 博客</title><link>https://imayx.top/tags/%E6%8A%80%E6%9C%AF/</link><description>Recent content in 技术 on Ayx 博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 22 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://imayx.top/tags/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml"/><item><title>出现 error: ld returned 1 exit status 的五种原因以及解决方法</title><link>https://imayx.top/error-ld-returned-1-exit-status/</link><pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate><guid>https://imayx.top/error-ld-returned-1-exit-status/</guid><description>&lt;img src="https://imayx.top/error-ld-returned-1-exit-status/fengmian.png" alt="Featured image of post 出现 error: ld returned 1 exit status 的五种原因以及解决方法" />&lt;p>这个错误让人懵圈的地方就在于它不会给出错误出现的位置，让已经写了几百行的你痛不欲生。&lt;/p>
 &lt;h2 id="可执行文件被占用了">可执行文件被占用了&lt;/h2>
 &lt;p>因此编译器无法覆盖旧的可执行文件，所以编译失败。&lt;/p>
 &lt;p>这很有可能是你没发现它还没结束运行。&lt;/p>
@@ -78,7 +78,7 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;h2 id="编辑记录">编辑记录&lt;/h2>
-&lt;p>2021-08-22 19:20:00&lt;/p></description></item><item><title>MySSL 安全签章</title><link>https://example.com/ssl/</link><pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate><guid>https://example.com/ssl/</guid><description>&lt;img src="https://example.com/ssl/cover.png" alt="Featured image of post MySSL 安全签章" />&lt;p>&lt;del>又摸了一下午整了个这么个东西出来&lt;/del>&lt;/p>
+&lt;p>2021-08-22 19:20:00&lt;/p></description></item><item><title>MySSL 安全签章</title><link>https://imayx.top/ssl/</link><pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate><guid>https://imayx.top/ssl/</guid><description>&lt;img src="https://imayx.top/ssl/cover.png" alt="Featured image of post MySSL 安全签章" />&lt;p>&lt;del>又摸了一下午整了个这么个东西出来&lt;/del>&lt;/p>
 &lt;h2 id="要得到-a-评级">要得到 A+ 评级：&lt;/h2>
 &lt;p>您的网站必须启用 HSTS 且 &lt;code>max-age&lt;/code> 属性不小于 6 个月（即 15768000 秒）&lt;/p>
 &lt;h2 id="请注意">请注意：&lt;/h2>
@@ -100,7 +100,7 @@ loading="lazy"
 >&lt;code>MySSL.com&lt;/code>&lt;/a> 的 &lt;a class="link" href="https://blog.myssl.com/https-security-compatibility-best-practices/" target="_blank" rel="noopener"
 >HTTPS安全与兼容性配置指南&lt;/a>&lt;/h2>
 &lt;p>测试工具：&lt;a class="link" href="https://gf.dev/hsts-test" target="_blank" rel="noopener"
->HTTP Strict Transport Security Header Testing Tool&lt;/a>&lt;/p></description></item><item><title>题解 P1603 斯诺登的密码</title><link>https://example.com/key-to-p1603/</link><pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate><guid>https://example.com/key-to-p1603/</guid><description>&lt;img src="https://example.com/key-to-p1603/cover.jpg" alt="Featured image of post 题解 P1603 斯诺登的密码" />&lt;p>题面来自&lt;a class="link" href="https://www.luogu.com.cn/problem/P1603" target="_blank" rel="noopener"
+>HTTP Strict Transport Security Header Testing Tool&lt;/a>&lt;/p></description></item><item><title>题解 P1603 斯诺登的密码</title><link>https://imayx.top/key-to-p1603/</link><pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate><guid>https://imayx.top/key-to-p1603/</guid><description>&lt;img src="https://imayx.top/key-to-p1603/cover.jpg" alt="Featured image of post 题解 P1603 斯诺登的密码" />&lt;p>题面来自&lt;a class="link" href="https://www.luogu.com.cn/problem/P1603" target="_blank" rel="noopener"
 >洛谷&lt;/a>，根据我的个人喜好有小修改&lt;/p>
 &lt;h2 id="题目背景">题目背景&lt;/h2>
 &lt;p>根据斯诺登事件出的一道水题&lt;/p>
@@ -331,7 +331,7 @@ loading="lazy"
 &lt;p>我得了 &lt;code>20&lt;/code> 分（过了测试点#1）之后重读题面的理解是&lt;code>把数字的每一位拆分排序&lt;/code>，而&lt;a class="link" href="https://www.luogu.com.cn/discuss/show/293285" target="_blank" rel="noopener"
 >这个帖子&lt;/a>的&lt;a class="link" href="https://www.luogu.com.cn/user/434215" target="_blank" rel="noopener"
 >楼主&lt;/a>的想法则是 &lt;code>25&lt;/code> 和 &lt;code>4&lt;/code> 的两种组合 &lt;code>425&lt;/code> 和 &lt;code>254&lt;/code> 中 &lt;code>254&lt;/code> 更小。&lt;/p>
-&lt;/blockquote></description></item><item><title>安装 Hugo 主题 Stack 时你可能会遇到的问题</title><link>https://example.com/stack/</link><pubDate>Wed, 28 Jul 2021 00:00:00 +0000</pubDate><guid>https://example.com/stack/</guid><description>&lt;img src="https://example.com/stack/%E5%B0%81%E9%9D%A2.jpg" alt="Featured image of post 安装 Hugo 主题 Stack 时你可能会遇到的问题" />&lt;h2 id="啥装了-stack-拷了-examplesites-以后不能正常-hugo--d了">啥？装了 &lt;code>Stack&lt;/code> 拷了 &lt;code>exampleSites&lt;/code> 以后不能正常 &lt;code>hugo -D&lt;/code>了？&lt;/h2>
+&lt;/blockquote></description></item><item><title>安装 Hugo 主题 Stack 时你可能会遇到的问题</title><link>https://imayx.top/stack/</link><pubDate>Wed, 28 Jul 2021 00:00:00 +0000</pubDate><guid>https://imayx.top/stack/</guid><description>&lt;img src="https://imayx.top/stack/%E5%B0%81%E9%9D%A2.jpg" alt="Featured image of post 安装 Hugo 主题 Stack 时你可能会遇到的问题" />&lt;h2 id="啥装了-stack-拷了-examplesites-以后不能正常-hugo--d了">啥？装了 &lt;code>Stack&lt;/code> 拷了 &lt;code>exampleSites&lt;/code> 以后不能正常 &lt;code>hugo -D&lt;/code>了？&lt;/h2>
 &lt;p>试试以下两项操作。&lt;/p>
 &lt;h3 id="删除根目录下的-configtoml">删除根目录下的 &lt;code>config.toml&lt;/code>&lt;/h3>
 &lt;p>&lt;a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack/issues/105" target="_blank" rel="noopener"
@@ -344,9 +344,9 @@ loading="lazy"
 &lt;h2 id="另外bilibili-的-shortcode-格式如下">另外，&lt;code>Bilibili&lt;/code> 的 &lt;code>ShortCode&lt;/code> 格式如下：&lt;/h2>
 &lt;p>（去掉两个反斜杠）&lt;/p>
 &lt;p>&lt;code>\{\{&amp;lt; bilibili BV1Zx411h7ue &amp;gt;}}&lt;/code>&lt;/p>
-&lt;h2 id="别一天到晚建博客了赶紧写吧">别一天到晚建博客了，赶紧写吧。&lt;/h2></description></item><item><title>独角兽搜索</title><link>https://example.com/unicorn-search/</link><pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate><guid>https://example.com/unicorn-search/</guid><description>&lt;p>我的博客的&lt;a class="link" href="https://example.com/search" >站内搜索&lt;/a>已经搭载了这款 &lt;code>微内核万物互联分布式软总线形式化验证&lt;/code> 搜索引擎，大家可以在侧边栏点击搜索抢先体验一下！&lt;/p>
+&lt;h2 id="别一天到晚建博客了赶紧写吧">别一天到晚建博客了，赶紧写吧。&lt;/h2></description></item><item><title>独角兽搜索</title><link>https://imayx.top/unicorn-search/</link><pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate><guid>https://imayx.top/unicorn-search/</guid><description>&lt;p>我的博客的&lt;a class="link" href="https://imayx.top/search" >站内搜索&lt;/a>已经搭载了这款 &lt;code>微内核万物互联分布式软总线形式化验证&lt;/code> 搜索引擎，大家可以在侧边栏点击搜索抢先体验一下！&lt;/p>
 &lt;p>相信这将是与 &lt;a class="link" href="https://www.zhihu.com/question/428248188" target="_blank" rel="noopener"
->&lt;strong>花瓣搜索&lt;/strong>&lt;/a> 一样的优秀国产项目！让我们在一起拒绝卡脖子！星星之火可以燎原！&lt;/p></description></item><item><title>题解 P5707 【深基2.例12】上学迟到</title><link>https://example.com/p5707/</link><pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate><guid>https://example.com/p5707/</guid><description>&lt;p>&lt;strong>（题面来自&lt;a class="link" href="https://www.luogu.com.cn/problem/P5707" target="_blank" rel="noopener"
+>&lt;strong>花瓣搜索&lt;/strong>&lt;/a> 一样的优秀国产项目！让我们在一起拒绝卡脖子！星星之火可以燎原！&lt;/p></description></item><item><title>题解 P5707 【深基2.例12】上学迟到</title><link>https://imayx.top/p5707/</link><pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate><guid>https://imayx.top/p5707/</guid><description>&lt;p>&lt;strong>（题面来自&lt;a class="link" href="https://www.luogu.com.cn/problem/P5707" target="_blank" rel="noopener"
 >洛谷&lt;/a>）&lt;/strong>&lt;/p>
 &lt;h2 id="题目描述">题目描述&lt;/h2>
 &lt;p>yyy 的学校要求早上 8 点前到达。学校到 yyy 的家一共有 $s$($s\le 10000$) 米，而 yyy 可以以 $v$($v&amp;lt;10000$) 米每分钟的速度匀速走到学校。此外在上学路上它还要额外花 10 分钟时间进行垃圾分类。请问为了避免迟到 yyy 最晚什么时候出门？输出 &lt;code>HH:MM&lt;/code> 的时间格式，不足两位时补零。由于路途遥远， yyy 可能不得不提前一天出发，不过不可能提前超过一天。&lt;/p>
@@ -409,7 +409,7 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>编辑记录&lt;/p>
-&lt;p>2021-08-06 18:11:00&lt;/p></description></item><item><title>题解 P5719 【深基4.例3】分类平均</title><link>https://example.com/p5719/</link><pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate><guid>https://example.com/p5719/</guid><description>&lt;p>这题太有意思了，发个题解纪念一下&lt;/p>
+&lt;p>2021-08-06 18:11:00&lt;/p></description></item><item><title>题解 P5719 【深基4.例3】分类平均</title><link>https://imayx.top/p5719/</link><pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate><guid>https://imayx.top/p5719/</guid><description>&lt;p>这题太有意思了，发个题解纪念一下&lt;/p>
 &lt;p>题面来自&lt;a class="link" href="https://www.luogu.com.cn/problem/P5719" target="_blank" rel="noopener"
 >洛谷&lt;/a>&lt;/p>
 &lt;p>$\LaTeX$ 渲染不了，哭了（明明后台预览是可以渲染的啊=&lt;/p>

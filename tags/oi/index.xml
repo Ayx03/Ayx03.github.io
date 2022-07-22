@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OI on Ayx 博客</title><link>https://example.com/tags/oi/</link><description>Recent content in OI on Ayx 博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 22 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/oi/index.xml" rel="self" type="application/rss+xml"/><item><title>出现 error: ld returned 1 exit status 的五种原因以及解决方法</title><link>https://example.com/error-ld-returned-1-exit-status/</link><pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate><guid>https://example.com/error-ld-returned-1-exit-status/</guid><description>&lt;img src="https://example.com/error-ld-returned-1-exit-status/fengmian.png" alt="Featured image of post 出现 error: ld returned 1 exit status 的五种原因以及解决方法" />&lt;p>这个错误让人懵圈的地方就在于它不会给出错误出现的位置，让已经写了几百行的你痛不欲生。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OI on Ayx 博客</title><link>https://imayx.top/tags/oi/</link><description>Recent content in OI on Ayx 博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 22 Aug 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://imayx.top/tags/oi/index.xml" rel="self" type="application/rss+xml"/><item><title>出现 error: ld returned 1 exit status 的五种原因以及解决方法</title><link>https://imayx.top/error-ld-returned-1-exit-status/</link><pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate><guid>https://imayx.top/error-ld-returned-1-exit-status/</guid><description>&lt;img src="https://imayx.top/error-ld-returned-1-exit-status/fengmian.png" alt="Featured image of post 出现 error: ld returned 1 exit status 的五种原因以及解决方法" />&lt;p>这个错误让人懵圈的地方就在于它不会给出错误出现的位置，让已经写了几百行的你痛不欲生。&lt;/p>
 &lt;h2 id="可执行文件被占用了">可执行文件被占用了&lt;/h2>
 &lt;p>因此编译器无法覆盖旧的可执行文件，所以编译失败。&lt;/p>
 &lt;p>这很有可能是你没发现它还没结束运行。&lt;/p>
@@ -78,7 +78,7 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;h2 id="编辑记录">编辑记录&lt;/h2>
-&lt;p>2021-08-22 19:20:00&lt;/p></description></item><item><title>题解 P1603 斯诺登的密码</title><link>https://example.com/key-to-p1603/</link><pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate><guid>https://example.com/key-to-p1603/</guid><description>&lt;img src="https://example.com/key-to-p1603/cover.jpg" alt="Featured image of post 题解 P1603 斯诺登的密码" />&lt;p>题面来自&lt;a class="link" href="https://www.luogu.com.cn/problem/P1603" target="_blank" rel="noopener"
+&lt;p>2021-08-22 19:20:00&lt;/p></description></item><item><title>题解 P1603 斯诺登的密码</title><link>https://imayx.top/key-to-p1603/</link><pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate><guid>https://imayx.top/key-to-p1603/</guid><description>&lt;img src="https://imayx.top/key-to-p1603/cover.jpg" alt="Featured image of post 题解 P1603 斯诺登的密码" />&lt;p>题面来自&lt;a class="link" href="https://www.luogu.com.cn/problem/P1603" target="_blank" rel="noopener"
 >洛谷&lt;/a>，根据我的个人喜好有小修改&lt;/p>
 &lt;h2 id="题目背景">题目背景&lt;/h2>
 &lt;p>根据斯诺登事件出的一道水题&lt;/p>
@@ -309,7 +309,7 @@ loading="lazy"
 &lt;p>我得了 &lt;code>20&lt;/code> 分（过了测试点#1）之后重读题面的理解是&lt;code>把数字的每一位拆分排序&lt;/code>，而&lt;a class="link" href="https://www.luogu.com.cn/discuss/show/293285" target="_blank" rel="noopener"
 >这个帖子&lt;/a>的&lt;a class="link" href="https://www.luogu.com.cn/user/434215" target="_blank" rel="noopener"
 >楼主&lt;/a>的想法则是 &lt;code>25&lt;/code> 和 &lt;code>4&lt;/code> 的两种组合 &lt;code>425&lt;/code> 和 &lt;code>254&lt;/code> 中 &lt;code>254&lt;/code> 更小。&lt;/p>
-&lt;/blockquote></description></item><item><title>题解 UPC-1488 客户调查(client)</title><link>https://example.com/upc1488/</link><pubDate>Tue, 13 Jul 2021 00:00:00 +0000</pubDate><guid>https://example.com/upc1488/</guid><description>&lt;h2 id="题目描述">题目描述：&lt;/h2>
+&lt;/blockquote></description></item><item><title>题解 UPC-1488 客户调查(client)</title><link>https://imayx.top/upc1488/</link><pubDate>Tue, 13 Jul 2021 00:00:00 +0000</pubDate><guid>https://imayx.top/upc1488/</guid><description>&lt;h2 id="题目描述">题目描述：&lt;/h2>
 &lt;p>时间：1s 空间：32M&lt;/p>
 &lt;p>公司派你去和几位客户面谈，以了解他们对公司产品的意见。你逐个打电话与客户联系，得知他们一般都很忙，不过他们还是可以为你抽出一点时间。现在的问题是有些客户的时间有冲突，你无法在一天内联系所有客户。所以你需要一个程序来帮助你安排第一天的工作，使得你能尽可能地和更多的客户进行联系。注意，客户不愿意你打乱他们的计划。如果你和某个客户约定见面，必须按时到达并且充分利用这段时间和他交谈，这样才不至于让他产生不满。你可以假设从一个客户处到另一个客户处的时间短得忽略不计。&lt;/p>
 &lt;h2 id="输入格式">输入格式：&lt;/h2>
@@ -416,7 +416,7 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>题解 P5707 【深基2.例12】上学迟到</title><link>https://example.com/p5707/</link><pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate><guid>https://example.com/p5707/</guid><description>&lt;p>&lt;strong>（题面来自&lt;a class="link" href="https://www.luogu.com.cn/problem/P5707" target="_blank" rel="noopener"
+&lt;/div></description></item><item><title>题解 P5707 【深基2.例12】上学迟到</title><link>https://imayx.top/p5707/</link><pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate><guid>https://imayx.top/p5707/</guid><description>&lt;p>&lt;strong>（题面来自&lt;a class="link" href="https://www.luogu.com.cn/problem/P5707" target="_blank" rel="noopener"
 >洛谷&lt;/a>）&lt;/strong>&lt;/p>
 &lt;h2 id="题目描述">题目描述&lt;/h2>
 &lt;p>yyy 的学校要求早上 8 点前到达。学校到 yyy 的家一共有 $s$($s\le 10000$) 米，而 yyy 可以以 $v$($v&amp;lt;10000$) 米每分钟的速度匀速走到学校。此外在上学路上它还要额外花 10 分钟时间进行垃圾分类。请问为了避免迟到 yyy 最晚什么时候出门？输出 &lt;code>HH:MM&lt;/code> 的时间格式，不足两位时补零。由于路途遥远， yyy 可能不得不提前一天出发，不过不可能提前超过一天。&lt;/p>
@@ -479,7 +479,7 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>编辑记录&lt;/p>
-&lt;p>2021-08-06 18:11:00&lt;/p></description></item><item><title>题解 P2669 [NOIP2015 普及组] 金币</title><link>https://example.com/p2669/</link><pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate><guid>https://example.com/p2669/</guid><description>&lt;p>&lt;strong>（题面来自&lt;a class="link" href="https://www.luogu.com.cn/problem/P2669" target="_blank" rel="noopener"
+&lt;p>2021-08-06 18:11:00&lt;/p></description></item><item><title>题解 P2669 [NOIP2015 普及组] 金币</title><link>https://imayx.top/p2669/</link><pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate><guid>https://imayx.top/p2669/</guid><description>&lt;p>&lt;strong>（题面来自&lt;a class="link" href="https://www.luogu.com.cn/problem/P2669" target="_blank" rel="noopener"
 >洛谷&lt;/a>）&lt;/strong>&lt;/p>
 &lt;h2 id="题目描述">题目描述&lt;/h2>
 &lt;p>国王将金币作为工资，发放给忠诚的骑士。第一天，骑士收到一枚金币；之后两天（第二天和第三天），每天收到两枚金币；之后三天（第四、五、六天），每天收到三枚金币；之后四天（第七、八、九、十天），每天收到四枚金币……；这种工资发放模式会一直这样延续下去：当连续 $n$ 天每天收到 $n$ 枚金币后，骑士会在之后的连续 $n+1$ 天里，每天收到 $n+1$ 枚金币。&lt;/p>
@@ -570,7 +570,7 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>编辑记录&lt;/p>
-&lt;p>2021-08-06 18:10:00&lt;/p></description></item><item><title>题解 P5719 【深基4.例3】分类平均</title><link>https://example.com/p5719/</link><pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate><guid>https://example.com/p5719/</guid><description>&lt;p>这题太有意思了，发个题解纪念一下&lt;/p>
+&lt;p>2021-08-06 18:10:00&lt;/p></description></item><item><title>题解 P5719 【深基4.例3】分类平均</title><link>https://imayx.top/p5719/</link><pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate><guid>https://imayx.top/p5719/</guid><description>&lt;p>这题太有意思了，发个题解纪念一下&lt;/p>
 &lt;p>题面来自&lt;a class="link" href="https://www.luogu.com.cn/problem/P5719" target="_blank" rel="noopener"
 >洛谷&lt;/a>&lt;/p>
 &lt;p>$\LaTeX$ 渲染不了，哭了（明明后台预览是可以渲染的啊=&lt;/p>
@@ -643,7 +643,7 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>编辑记录&lt;/p>
-&lt;p>2021-08-13 12:01:00&lt;/p></description></item><item><title>题解 HDU2063 过山车</title><link>https://example.com/hdu2063/</link><pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate><guid>https://example.com/hdu2063/</guid><description>&lt;h2 id="题面链接">题面链接&lt;/h2>
+&lt;p>2021-08-13 12:01:00&lt;/p></description></item><item><title>题解 HDU2063 过山车</title><link>https://imayx.top/hdu2063/</link><pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate><guid>https://imayx.top/hdu2063/</guid><description>&lt;h2 id="题面链接">题面链接&lt;/h2>
 &lt;p>&lt;a class="link" href="http://acm.hdu.edu.cn/showproblem.php?pid=2063" target="_blank" rel="noopener"
 >HDU 2063&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://vjudge.net/problem/HDU-2063" target="_blank" rel="noopener"
@@ -775,7 +775,7 @@ loading="lazy"
 >hdu 2063 过山车 (匈牙利算法模板题) – 111qqz的小窝&lt;/a>&lt;/p>
 &lt;hr>
 &lt;p>编辑记录&lt;/p>
-&lt;p>2021-08-05 13:37:00&lt;/p></description></item><item><title>题解 YBT 1000：入门测试题目</title><link>https://example.com/ybt1000/</link><pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate><guid>https://example.com/ybt1000/</guid><description>&lt;p>&lt;a class="link" href="http://noi.openjudge.cn/ch0103/01/" target="_blank" rel="noopener"
+&lt;p>2021-08-05 13:37:00&lt;/p></description></item><item><title>题解 YBT 1000：入门测试题目</title><link>https://imayx.top/ybt1000/</link><pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate><guid>https://imayx.top/ybt1000/</guid><description>&lt;p>&lt;a class="link" href="http://noi.openjudge.cn/ch0103/01/" target="_blank" rel="noopener"
 >OpenJudge - 01:A+B问题&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="http://ybt.ssoier.cn:8088/problem_show.php?pid=1000" target="_blank" rel="noopener"
 >信息学奥赛一本通（C++版）在线评测系统&lt;/a>&lt;/p>
@@ -837,7 +837,7 @@ loading="lazy"
 &lt;/div>
 &lt;/div>&lt;h2 id="题意分析与算法设计">题意分析与算法设计&lt;/h2>
 &lt;p>新手不用理会 &lt;code>时间限制&lt;/code> 和 &lt;code>内存限制&lt;/code>，一般来说学到后面才会出现 TLE（Time Limit Exceed，超出时间限制）和 MLE（Memory Limit Exceed，超出内存限制）的情况。&lt;/p>
-&lt;p>（关于这些术语，可以在&lt;a class="link" href="https://example.com/explanation-of-oj-terminology/#%e6%ad%a3%e7%bb%8f%e8%a7%a3%e9%87%8a" >&lt;strong>这里&lt;/strong>&lt;/a>了解。）&lt;/p>
+&lt;p>（关于这些术语，可以在&lt;a class="link" href="https://imayx.top/explanation-of-oj-terminology/#%e6%ad%a3%e7%bb%8f%e8%a7%a3%e9%87%8a" >&lt;strong>这里&lt;/strong>&lt;/a>了解。）&lt;/p>
 &lt;p>至于这个问题，就是一个最简单的 A+B 问题。&lt;/p>
 &lt;h2 id="参考用完整代码">参考用完整代码&lt;/h2>
 &lt;p>各位一定要养成良好的代码风格，因为代码不仅仅是给机器看的，有时候人也要看。&lt;/p>
@@ -890,7 +890,7 @@ loading="lazy"
 &lt;hr>
 &lt;p>编辑记录&lt;/p>
 &lt;p>2021-08-06 18:42:00 UTC+8&lt;/p>
-&lt;p>最后更新于 OCT 19, 2021 21:57 UTC+8&lt;/p></description></item><item><title>题解 P1650 田忌赛马</title><link>https://example.com/p1650/</link><pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate><guid>https://example.com/p1650/</guid><description>&lt;p>&lt;strong>(题面来自&lt;a class="link" href="https://www.luogu.com.cn/problem/P1650" target="_blank" rel="noopener"
+&lt;p>最后更新于 OCT 19, 2021 21:57 UTC+8&lt;/p></description></item><item><title>题解 P1650 田忌赛马</title><link>https://imayx.top/p1650/</link><pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate><guid>https://imayx.top/p1650/</guid><description>&lt;p>&lt;strong>(题面来自&lt;a class="link" href="https://www.luogu.com.cn/problem/P1650" target="_blank" rel="noopener"
 >洛谷&lt;/a>)&lt;/strong>&lt;/p>
 &lt;h2 id="题目描述">题目描述&lt;/h2>
 &lt;p>我国历史上有个著名的故事： 那是在2300年以前。齐国的大将军田忌喜欢赛马。他经常和齐王赛马。他和齐王都有三匹马：常规马，上级马，超级马。一共赛三局，每局的胜者可以从负者这里取得200银币。每匹马只能用一次。齐王的马好，同等级的马，齐王的总是比田忌的要好一点。于是每次和齐王赛马，田忌总会输600银币。&lt;/p>

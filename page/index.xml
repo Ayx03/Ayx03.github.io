@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on Ayx 博客</title><link>https://example.com/page/</link><description>Recent content in Pages on Ayx 博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 30 Jun 2022 06:38:00 +0000</lastBuildDate><atom:link href="https://example.com/page/index.xml" rel="self" type="application/rss+xml"/><item><title>关于</title><link>https://example.com/about/</link><pubDate>Thu, 30 Jun 2022 06:38:00 +0000</pubDate><guid>https://example.com/about/</guid><description>&lt;h2 id="关于我">关于我&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on Ayx 博客</title><link>https://imayx.top/page/</link><description>Recent content in Pages on Ayx 博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 30 Jun 2022 06:38:00 +0000</lastBuildDate><atom:link href="https://imayx.top/page/index.xml" rel="self" type="application/rss+xml"/><item><title>关于</title><link>https://imayx.top/about/</link><pubDate>Thu, 30 Jun 2022 06:38:00 +0000</pubDate><guid>https://imayx.top/about/</guid><description>&lt;h2 id="关于我">关于我&lt;/h2>
 &lt;p>有事找我请首先考虑发邮件，但是你大概率也没什么事找我。&lt;/p>
 &lt;p>我的常用邮箱: &lt;a class="link" href="mailto:aynxul03@gmail.com" >aynxul03@gmail.com&lt;/a>&lt;/p>
 &lt;h2 id="我还在">我还在&lt;/h2>
@@ -25,7 +25,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">2022-03-08 22:44:00
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>链接</title><link>https://example.com/link/</link><pubDate>Thu, 30 Jun 2022 00:00:00 +0000</pubDate><guid>https://example.com/link/</guid><description>&lt;h2 id="你知道吗">你知道吗？&lt;/h2>
+&lt;/div></description></item><item><title>链接</title><link>https://imayx.top/link/</link><pubDate>Thu, 30 Jun 2022 00:00:00 +0000</pubDate><guid>https://imayx.top/link/</guid><description>&lt;h2 id="你知道吗">你知道吗？&lt;/h2>
 &lt;h3 id="大屏访客点击右边的目录即可直接跳转到对应站点">大屏访客点击右边的目录即可直接跳转到对应站点&lt;/h3>
 &lt;h2 id="个人博客">个人博客&lt;/h2>
 &lt;p>目前都是 OI 向的（&lt;/p>
@@ -65,11 +65,11 @@ loading="lazy"
 >提问的智慧&lt;/a>&lt;/h3>
 &lt;p>&lt;a class="link" href="https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md" target="_blank" rel="noopener"
 >简体中文版&lt;/a>&lt;/p>
-&lt;h3 id="a-dark-roomadarkroom">&lt;a class="link" href="https://example.com/ADarkRoom" >A Dark Room&lt;/a>&lt;/h3>
+&lt;h3 id="a-dark-roomadarkroom">&lt;a class="link" href="https://imayx.top/ADarkRoom" >A Dark Room&lt;/a>&lt;/h3>
 &lt;p>小黑屋，一款文字游戏。&lt;/p>
 &lt;p>支持以一串 Base64 编码后的 json 进行存档导入/导出。&lt;/p>
 &lt;p>&lt;del>我对它做了一些小改进，应该&lt;/del> 以后会稍微改改的&lt;/p>
-&lt;h3 id="mergemp4mergemp4">&lt;a class="link" href="https://example.com/mergemp4" >mergemp4&lt;/a>&lt;/h3>
+&lt;h3 id="mergemp4mergemp4">&lt;a class="link" href="https://imayx.top/mergemp4" >mergemp4&lt;/a>&lt;/h3>
 &lt;p>利用 FFmpeg 在现代浏览器中合并 .mp4 格式的视频和音频，原作者为 &lt;a class="link" href="https://github.com/maple3142" target="_blank" rel="noopener"
 >maple3142&lt;/a>。&lt;/p>
 &lt;p>目前似乎不可用。&lt;del>肯定不是被我搞坏的！&lt;/del>&lt;/p>
@@ -96,5 +96,5 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">2022-02-12 23:48:00
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>归档</title><link>https://example.com/archives/</link><pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate><guid>https://example.com/archives/</guid><description/></item><item><title>搜索</title><link>https://example.com/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/search/</guid><description/></item><item><title>友链</title><link>https://example.com/%E5%8F%8B%E9%93%BE/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/%E5%8F%8B%E9%93%BE/</guid><description>&lt;p>欢迎来到新版友链页面！&lt;a class="link" href="https://example.com/link" >&lt;strong>回到旧版&lt;/strong>&lt;/a>以查看更多链接&lt;/p>
+&lt;/div></description></item><item><title>归档</title><link>https://imayx.top/archives/</link><pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate><guid>https://imayx.top/archives/</guid><description/></item><item><title>搜索</title><link>https://imayx.top/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://imayx.top/search/</guid><description/></item><item><title>友链</title><link>https://imayx.top/%E5%8F%8B%E9%93%BE/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://imayx.top/%E5%8F%8B%E9%93%BE/</guid><description>&lt;p>欢迎来到新版友链页面！&lt;a class="link" href="https://imayx.top/link" >&lt;strong>回到旧版&lt;/strong>&lt;/a>以查看更多链接&lt;/p>
 &lt;p>欢迎申请友链，把你的站点名称、简介（不要太长）、地址和图片发在下方评论区或我的邮箱（aynxul03@gmail.com）即可。&lt;/p></description></item></channel></rss>

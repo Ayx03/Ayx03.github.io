@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>洛谷 on Ayx 博客</title><link>https://example.com/tags/%E6%B4%9B%E8%B0%B7/</link><description>Recent content in 洛谷 on Ayx 博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 25 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/%E6%B4%9B%E8%B0%B7/index.xml" rel="self" type="application/rss+xml"/><item><title>题解 P5707 【深基2.例12】上学迟到</title><link>https://example.com/p5707/</link><pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate><guid>https://example.com/p5707/</guid><description>&lt;p>&lt;strong>（题面来自&lt;a class="link" href="https://www.luogu.com.cn/problem/P5707" target="_blank" rel="noopener"
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>洛谷 on Ayx 博客</title><link>https://imayx.top/tags/%E6%B4%9B%E8%B0%B7/</link><description>Recent content in 洛谷 on Ayx 博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 25 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://imayx.top/tags/%E6%B4%9B%E8%B0%B7/index.xml" rel="self" type="application/rss+xml"/><item><title>题解 P5707 【深基2.例12】上学迟到</title><link>https://imayx.top/p5707/</link><pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate><guid>https://imayx.top/p5707/</guid><description>&lt;p>&lt;strong>（题面来自&lt;a class="link" href="https://www.luogu.com.cn/problem/P5707" target="_blank" rel="noopener"
 >洛谷&lt;/a>）&lt;/strong>&lt;/p>
 &lt;h2 id="题目描述">题目描述&lt;/h2>
 &lt;p>yyy 的学校要求早上 8 点前到达。学校到 yyy 的家一共有 $s$($s\le 10000$) 米，而 yyy 可以以 $v$($v&amp;lt;10000$) 米每分钟的速度匀速走到学校。此外在上学路上它还要额外花 10 分钟时间进行垃圾分类。请问为了避免迟到 yyy 最晚什么时候出门？输出 &lt;code>HH:MM&lt;/code> 的时间格式，不足两位时补零。由于路途遥远， yyy 可能不得不提前一天出发，不过不可能提前超过一天。&lt;/p>
@@ -61,7 +61,7 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>编辑记录&lt;/p>
-&lt;p>2021-08-06 18:11:00&lt;/p></description></item><item><title>题解 P2669 [NOIP2015 普及组] 金币</title><link>https://example.com/p2669/</link><pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate><guid>https://example.com/p2669/</guid><description>&lt;p>&lt;strong>（题面来自&lt;a class="link" href="https://www.luogu.com.cn/problem/P2669" target="_blank" rel="noopener"
+&lt;p>2021-08-06 18:11:00&lt;/p></description></item><item><title>题解 P2669 [NOIP2015 普及组] 金币</title><link>https://imayx.top/p2669/</link><pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate><guid>https://imayx.top/p2669/</guid><description>&lt;p>&lt;strong>（题面来自&lt;a class="link" href="https://www.luogu.com.cn/problem/P2669" target="_blank" rel="noopener"
 >洛谷&lt;/a>）&lt;/strong>&lt;/p>
 &lt;h2 id="题目描述">题目描述&lt;/h2>
 &lt;p>国王将金币作为工资，发放给忠诚的骑士。第一天，骑士收到一枚金币；之后两天（第二天和第三天），每天收到两枚金币；之后三天（第四、五、六天），每天收到三枚金币；之后四天（第七、八、九、十天），每天收到四枚金币……；这种工资发放模式会一直这样延续下去：当连续 $n$ 天每天收到 $n$ 枚金币后，骑士会在之后的连续 $n+1$ 天里，每天收到 $n+1$ 枚金币。&lt;/p>
@@ -152,7 +152,7 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>编辑记录&lt;/p>
-&lt;p>2021-08-06 18:10:00&lt;/p></description></item><item><title>题解 P5719 【深基4.例3】分类平均</title><link>https://example.com/p5719/</link><pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate><guid>https://example.com/p5719/</guid><description>&lt;p>这题太有意思了，发个题解纪念一下&lt;/p>
+&lt;p>2021-08-06 18:10:00&lt;/p></description></item><item><title>题解 P5719 【深基4.例3】分类平均</title><link>https://imayx.top/p5719/</link><pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate><guid>https://imayx.top/p5719/</guid><description>&lt;p>这题太有意思了，发个题解纪念一下&lt;/p>
 &lt;p>题面来自&lt;a class="link" href="https://www.luogu.com.cn/problem/P5719" target="_blank" rel="noopener"
 >洛谷&lt;/a>&lt;/p>
 &lt;p>$\LaTeX$ 渲染不了，哭了（明明后台预览是可以渲染的啊=&lt;/p>
@@ -225,7 +225,7 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>编辑记录&lt;/p>
-&lt;p>2021-08-13 12:01:00&lt;/p></description></item><item><title>题解 P1650 田忌赛马</title><link>https://example.com/p1650/</link><pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate><guid>https://example.com/p1650/</guid><description>&lt;p>&lt;strong>(题面来自&lt;a class="link" href="https://www.luogu.com.cn/problem/P1650" target="_blank" rel="noopener"
+&lt;p>2021-08-13 12:01:00&lt;/p></description></item><item><title>题解 P1650 田忌赛马</title><link>https://imayx.top/p1650/</link><pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate><guid>https://imayx.top/p1650/</guid><description>&lt;p>&lt;strong>(题面来自&lt;a class="link" href="https://www.luogu.com.cn/problem/P1650" target="_blank" rel="noopener"
 >洛谷&lt;/a>)&lt;/strong>&lt;/p>
 &lt;h2 id="题目描述">题目描述&lt;/h2>
 &lt;p>我国历史上有个著名的故事： 那是在2300年以前。齐国的大将军田忌喜欢赛马。他经常和齐王赛马。他和齐王都有三匹马：常规马，上级马，超级马。一共赛三局，每局的胜者可以从负者这里取得200银币。每匹马只能用一次。齐王的马好，同等级的马，齐王的总是比田忌的要好一点。于是每次和齐王赛马，田忌总会输600银币。&lt;/p>

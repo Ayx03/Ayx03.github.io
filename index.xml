@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ayx 博客</title><link>https://example.com/</link><description>Recent content on Ayx 博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 12 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml"/><item><title>moefox.tech 将于 7 月 25 日过期</title><link>https://example.com/moefox-tech-will-expire-soon/</link><pubDate>Tue, 12 Jul 2022 00:00:00 +0000</pubDate><guid>https://example.com/moefox-tech-will-expire-soon/</guid><description>&lt;p>如题，届时将更换域名为 &lt;a class="link" href="https://imayx.top/" target="_blank" rel="noopener"
->imayx.top&lt;/a>&lt;/p></description></item><item><title>关于</title><link>https://example.com/about/</link><pubDate>Thu, 30 Jun 2022 06:38:00 +0000</pubDate><guid>https://example.com/about/</guid><description>&lt;h2 id="关于我">关于我&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ayx 博客</title><link>https://imayx.top/</link><description>Recent content on Ayx 博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 12 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://imayx.top/index.xml" rel="self" type="application/rss+xml"/><item><title>moefox.tech 将于 7 月 25 日过期</title><link>https://imayx.top/moefox-tech-will-expire-soon/</link><pubDate>Tue, 12 Jul 2022 00:00:00 +0000</pubDate><guid>https://imayx.top/moefox-tech-will-expire-soon/</guid><description>&lt;p>如题，届时将更换域名为 &lt;a class="link" href="https://imayx.top/" target="_blank" rel="noopener"
+>imayx.top&lt;/a>&lt;/p></description></item><item><title>关于</title><link>https://imayx.top/about/</link><pubDate>Thu, 30 Jun 2022 06:38:00 +0000</pubDate><guid>https://imayx.top/about/</guid><description>&lt;h2 id="关于我">关于我&lt;/h2>
 &lt;p>有事找我请首先考虑发邮件，但是你大概率也没什么事找我。&lt;/p>
 &lt;p>我的常用邮箱: &lt;a class="link" href="mailto:aynxul03@gmail.com" >aynxul03@gmail.com&lt;/a>&lt;/p>
 &lt;h2 id="我还在">我还在&lt;/h2>
@@ -26,7 +26,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">2022-03-08 22:44:00
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>链接</title><link>https://example.com/link/</link><pubDate>Thu, 30 Jun 2022 00:00:00 +0000</pubDate><guid>https://example.com/link/</guid><description>&lt;h2 id="你知道吗">你知道吗？&lt;/h2>
+&lt;/div></description></item><item><title>链接</title><link>https://imayx.top/link/</link><pubDate>Thu, 30 Jun 2022 00:00:00 +0000</pubDate><guid>https://imayx.top/link/</guid><description>&lt;h2 id="你知道吗">你知道吗？&lt;/h2>
 &lt;h3 id="大屏访客点击右边的目录即可直接跳转到对应站点">大屏访客点击右边的目录即可直接跳转到对应站点&lt;/h3>
 &lt;h2 id="个人博客">个人博客&lt;/h2>
 &lt;p>目前都是 OI 向的（&lt;/p>
@@ -66,11 +66,11 @@ loading="lazy"
 >提问的智慧&lt;/a>&lt;/h3>
 &lt;p>&lt;a class="link" href="https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md" target="_blank" rel="noopener"
 >简体中文版&lt;/a>&lt;/p>
-&lt;h3 id="a-dark-roomadarkroom">&lt;a class="link" href="https://example.com/ADarkRoom" >A Dark Room&lt;/a>&lt;/h3>
+&lt;h3 id="a-dark-roomadarkroom">&lt;a class="link" href="https://imayx.top/ADarkRoom" >A Dark Room&lt;/a>&lt;/h3>
 &lt;p>小黑屋，一款文字游戏。&lt;/p>
 &lt;p>支持以一串 Base64 编码后的 json 进行存档导入/导出。&lt;/p>
 &lt;p>&lt;del>我对它做了一些小改进，应该&lt;/del> 以后会稍微改改的&lt;/p>
-&lt;h3 id="mergemp4mergemp4">&lt;a class="link" href="https://example.com/mergemp4" >mergemp4&lt;/a>&lt;/h3>
+&lt;h3 id="mergemp4mergemp4">&lt;a class="link" href="https://imayx.top/mergemp4" >mergemp4&lt;/a>&lt;/h3>
 &lt;p>利用 FFmpeg 在现代浏览器中合并 .mp4 格式的视频和音频，原作者为 &lt;a class="link" href="https://github.com/maple3142" target="_blank" rel="noopener"
 >maple3142&lt;/a>。&lt;/p>
 &lt;p>目前似乎不可用。&lt;del>肯定不是被我搞坏的！&lt;/del>&lt;/p>
@@ -97,7 +97,7 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">2022-02-12 23:48:00
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>LG V50 ThinQ 韩版 LGU+ 从解锁 BootLoader 到破解 VoLTE / NSA 5G、从刷入第三方 Recovery 到硬格、从混刷到黑砖全教程</title><link>https://example.com/v50/</link><pubDate>Fri, 08 Apr 2022 00:00:00 +0000</pubDate><guid>https://example.com/v50/</guid><description>&lt;img src="https://example.com/v50/cover.jpg" alt="Featured image of post LG V50 ThinQ 韩版 LGU+ 从解锁 BootLoader 到破解 VoLTE / NSA 5G、从刷入第三方 Recovery 到硬格、从混刷到黑砖全教程" />&lt;h2 id="前言">前言&lt;/h2>
+&lt;/div></description></item><item><title>LG V50 ThinQ 韩版 LGU+ 从解锁 BootLoader 到破解 VoLTE / NSA 5G、从刷入第三方 Recovery 到硬格、从混刷到黑砖全教程</title><link>https://imayx.top/v50/</link><pubDate>Fri, 08 Apr 2022 00:00:00 +0000</pubDate><guid>https://imayx.top/v50/</guid><description>&lt;img src="https://imayx.top/v50/cover.jpg" alt="Featured image of post LG V50 ThinQ 韩版 LGU+ 从解锁 BootLoader 到破解 VoLTE / NSA 5G、从刷入第三方 Recovery 到硬格、从混刷到黑砖全教程" />&lt;h2 id="前言">前言&lt;/h2>
 &lt;p>如果您的手机正处在无限重启（Bootloop）的状态，请看&lt;a class="link" href="#%E5%AF%B9%E4%BA%8E-bootloop%E6%97%A0%E9%99%90%E9%87%8D%E5%90%AF%E9%A6%96%E5%85%88%E5%B0%9D%E8%AF%95%E7%A1%AC%E6%A0%BC" >这一节（点击跳转）&lt;/a>来了解解决方案。&lt;/p>
 &lt;p>如果您使用的是其他型号或版本的手机（甚至可以不是 LG 的手机），本教程也可能部分（但不太可能完全）适用于您。&lt;/p>
 &lt;p>本教程旨在整合其他资源和教程以节省韩版 LGU+ 的 LG V50 ThinQ 用户的时间，因此如果您的机器版本或型号不同，它可能浪费您的时间，甚至对您的设备造成不可挽回的损坏。&lt;/p>
@@ -204,14 +204,14 @@ loading="lazy"
 &lt;p>设置 - 网络和互联网 - 绑定 - 开启 - USB绑定&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;p>&lt;img src="https://example.com/1.png"
+&lt;p>&lt;img src="https://imayx.top/1.png"
 loading="lazy"
 >&lt;/p>
 &lt;p>如果你的桌面上有「LG 网络」这个 App，可以直接用它进入 Hidden Menu 和 Field Test 等隐藏菜单，无需繁琐地在拨号键盘中输入代码。&lt;/p>
-&lt;p>&lt;img src="https://example.com/v50/2.png"
+&lt;p>&lt;img src="https://imayx.top/v50/2.png"
 width="357"
 height="773"
-srcset="https://example.com/v50/2_hu512215e3933e842c8d397701e0fed006_64191_480x0_resize_box_3.png 480w, https://example.com/v50/2_hu512215e3933e842c8d397701e0fed006_64191_1024x0_resize_box_3.png 1024w"
+srcset="https://imayx.top/v50/2_hu512215e3933e842c8d397701e0fed006_64191_480x0_resize_box_3.png 480w, https://imayx.top/v50/2_hu512215e3933e842c8d397701e0fed006_64191_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="46"
@@ -248,7 +248,7 @@ data-flex-basis="110px"
 &lt;h2 id="鸣谢">鸣谢&lt;/h2>
 &lt;p>对本文启发很大的&lt;/p>
 &lt;p>&lt;a class="link" href="https://855.lge.fun/doc_hz/" target="_blank" rel="noopener"
->LG 855系列-快速黑砖手册 愿你刷机半生，归来仍是黑砖&lt;/a>&lt;/p></description></item><item><title>Python 3 入门学习笔记</title><link>https://example.com/python3tutorial/</link><pubDate>Sat, 12 Feb 2022 00:00:00 +0000</pubDate><guid>https://example.com/python3tutorial/</guid><description>&lt;p>请善用右侧的目录（如果有）来跳转到你需要学习的部分。&lt;/p>
+>LG 855系列-快速黑砖手册 愿你刷机半生，归来仍是黑砖&lt;/a>&lt;/p></description></item><item><title>Python 3 入门学习笔记</title><link>https://imayx.top/python3tutorial/</link><pubDate>Sat, 12 Feb 2022 00:00:00 +0000</pubDate><guid>https://imayx.top/python3tutorial/</guid><description>&lt;p>请善用右侧的目录（如果有）来跳转到你需要学习的部分。&lt;/p>
 &lt;h2 id="安装-python-3-本体与集成开发环境">安装 Python 3 本体与集成开发环境&lt;/h2>
 &lt;p>如果你已经完成了这些准备工作，可以使用右侧的目录跳到下一章节 - 你好，世界。&lt;/p>
 &lt;h3 id="python-3-本体包括-idle">Python 3 本体（包括 IDLE）&lt;/h3>
@@ -414,7 +414,7 @@ alt="Source: https://www.reddit.com/r/ProgrammerHumor/comments/ppmtr2/happy_30th
 &lt;/blockquote>
 &lt;h1 id="未完待续">未完，待续&lt;/h1>
 &lt;h2 id="changelog">Changelog&lt;/h2>
-&lt;p>2022-03-08 22:38:00 新增变量[string 类型]、小标题#本文所使用的环境、程序结束时的返回值，为 Windows 外的操作系统提供 Python 本体的安装教程，修改了一些格式与排版，改善阅读体验。&lt;/p></description></item><item><title>新年快乐 &amp; 本站的改版</title><link>https://example.com/happynewyear2022/</link><pubDate>Sun, 26 Dec 2021 00:00:00 +0000</pubDate><guid>https://example.com/happynewyear2022/</guid><description>&lt;p>今天终于找到自己的 Hugo 站点文件了&amp;hellip;&lt;/p>
+&lt;p>2022-03-08 22:38:00 新增变量[string 类型]、小标题#本文所使用的环境、程序结束时的返回值，为 Windows 外的操作系统提供 Python 本体的安装教程，修改了一些格式与排版，改善阅读体验。&lt;/p></description></item><item><title>新年快乐 &amp; 本站的改版</title><link>https://imayx.top/happynewyear2022/</link><pubDate>Sun, 26 Dec 2021 00:00:00 +0000</pubDate><guid>https://imayx.top/happynewyear2022/</guid><description>&lt;p>今天终于找到自己的 Hugo 站点文件了&amp;hellip;&lt;/p>
 &lt;p>没别的，就感觉快过年了该发篇博文。&lt;/p>
 &lt;p>这次我在慎重考虑后对博客进行了一些&lt;del>大刀阔斧的&lt;/del>改版：&lt;/p>
 &lt;ul>
@@ -435,7 +435,7 @@ alt="Source: https://www.reddit.com/r/ProgrammerHumor/comments/ppmtr2/happy_30th
 &lt;/li>
 &lt;/ul>
 &lt;p>不过，今天还是没把评论回复的邮件通知配置好&amp;hellip;&lt;/p>
-&lt;p>因为我忘了怎么整了，还得再仔细看文档&amp;hellip;&lt;/p></description></item><item><title>在 Hugo 主题 Stack 中轻松配置 Waline 评论系统</title><link>https://example.com/waline/</link><pubDate>Mon, 04 Oct 2021 00:00:00 +0000</pubDate><guid>https://example.com/waline/</guid><description>&lt;p>你以前也许听说过或用过 Valine。Waline 与它差不多，但管理功能集成在内，并可以更方便地部署。&lt;/p>
+&lt;p>因为我忘了怎么整了，还得再仔细看文档&amp;hellip;&lt;/p></description></item><item><title>在 Hugo 主题 Stack 中轻松配置 Waline 评论系统</title><link>https://imayx.top/waline/</link><pubDate>Mon, 04 Oct 2021 00:00:00 +0000</pubDate><guid>https://imayx.top/waline/</guid><description>&lt;p>你以前也许听说过或用过 Valine。Waline 与它差不多，但管理功能集成在内，并可以更方便地部署。&lt;/p>
 &lt;p>如果你使用其他没有 Waline 支持的 Hugo 主题或其他博客系统，按本文部署后可以参考官方文档来&lt;a class="link" href="https://waline.js.org/guide/client/import.html" target="_blank" rel="noopener"
 >引入客户端&lt;/a>。&lt;/p>
 &lt;h2 id="在-leancloud-上部署数据库">在 LeanCloud 上部署数据库&lt;/h2>
@@ -559,7 +559,7 @@ alt="Source: https://www.reddit.com/r/ProgrammerHumor/comments/ppmtr2/happy_30th
 &lt;p>部署完成后，请访问 &lt;code>&amp;lt;serverURL&amp;gt;/ui/register&lt;/code> 进行注册。首个注册的人会被设定成管理员。&lt;/p>
 &lt;p>管理员登陆后，即可看到评论管理界面。在这里可以修改、标记或删除评论。&lt;/p>
 &lt;p>用户也通过评论框注册账号，登陆后会跳转到自己的档案页。&lt;/p>
-&lt;/blockquote></description></item><item><title>出现 error: ld returned 1 exit status 的五种原因以及解决方法</title><link>https://example.com/error-ld-returned-1-exit-status/</link><pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate><guid>https://example.com/error-ld-returned-1-exit-status/</guid><description>&lt;img src="https://example.com/error-ld-returned-1-exit-status/fengmian.png" alt="Featured image of post 出现 error: ld returned 1 exit status 的五种原因以及解决方法" />&lt;p>这个错误让人懵圈的地方就在于它不会给出错误出现的位置，让已经写了几百行的你痛不欲生。&lt;/p>
+&lt;/blockquote></description></item><item><title>出现 error: ld returned 1 exit status 的五种原因以及解决方法</title><link>https://imayx.top/error-ld-returned-1-exit-status/</link><pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate><guid>https://imayx.top/error-ld-returned-1-exit-status/</guid><description>&lt;img src="https://imayx.top/error-ld-returned-1-exit-status/fengmian.png" alt="Featured image of post 出现 error: ld returned 1 exit status 的五种原因以及解决方法" />&lt;p>这个错误让人懵圈的地方就在于它不会给出错误出现的位置，让已经写了几百行的你痛不欲生。&lt;/p>
 &lt;h2 id="可执行文件被占用了">可执行文件被占用了&lt;/h2>
 &lt;p>因此编译器无法覆盖旧的可执行文件，所以编译失败。&lt;/p>
 &lt;p>这很有可能是你没发现它还没结束运行。&lt;/p>
@@ -639,7 +639,7 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;h2 id="编辑记录">编辑记录&lt;/h2>
-&lt;p>2021-08-22 19:20:00&lt;/p></description></item><item><title>MySSL 安全签章</title><link>https://example.com/ssl/</link><pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate><guid>https://example.com/ssl/</guid><description>&lt;img src="https://example.com/ssl/cover.png" alt="Featured image of post MySSL 安全签章" />&lt;p>&lt;del>又摸了一下午整了个这么个东西出来&lt;/del>&lt;/p>
+&lt;p>2021-08-22 19:20:00&lt;/p></description></item><item><title>MySSL 安全签章</title><link>https://imayx.top/ssl/</link><pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate><guid>https://imayx.top/ssl/</guid><description>&lt;img src="https://imayx.top/ssl/cover.png" alt="Featured image of post MySSL 安全签章" />&lt;p>&lt;del>又摸了一下午整了个这么个东西出来&lt;/del>&lt;/p>
 &lt;h2 id="要得到-a-评级">要得到 A+ 评级：&lt;/h2>
 &lt;p>您的网站必须启用 HSTS 且 &lt;code>max-age&lt;/code> 属性不小于 6 个月（即 15768000 秒）&lt;/p>
 &lt;h2 id="请注意">请注意：&lt;/h2>
@@ -661,7 +661,7 @@ loading="lazy"
 >&lt;code>MySSL.com&lt;/code>&lt;/a> 的 &lt;a class="link" href="https://blog.myssl.com/https-security-compatibility-best-practices/" target="_blank" rel="noopener"
 >HTTPS安全与兼容性配置指南&lt;/a>&lt;/h2>
 &lt;p>测试工具：&lt;a class="link" href="https://gf.dev/hsts-test" target="_blank" rel="noopener"
->HTTP Strict Transport Security Header Testing Tool&lt;/a>&lt;/p></description></item><item><title>题解 P1603 斯诺登的密码</title><link>https://example.com/key-to-p1603/</link><pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate><guid>https://example.com/key-to-p1603/</guid><description>&lt;img src="https://example.com/key-to-p1603/cover.jpg" alt="Featured image of post 题解 P1603 斯诺登的密码" />&lt;p>题面来自&lt;a class="link" href="https://www.luogu.com.cn/problem/P1603" target="_blank" rel="noopener"
+>HTTP Strict Transport Security Header Testing Tool&lt;/a>&lt;/p></description></item><item><title>题解 P1603 斯诺登的密码</title><link>https://imayx.top/key-to-p1603/</link><pubDate>Mon, 02 Aug 2021 00:00:00 +0000</pubDate><guid>https://imayx.top/key-to-p1603/</guid><description>&lt;img src="https://imayx.top/key-to-p1603/cover.jpg" alt="Featured image of post 题解 P1603 斯诺登的密码" />&lt;p>题面来自&lt;a class="link" href="https://www.luogu.com.cn/problem/P1603" target="_blank" rel="noopener"
 >洛谷&lt;/a>，根据我的个人喜好有小修改&lt;/p>
 &lt;h2 id="题目背景">题目背景&lt;/h2>
 &lt;p>根据斯诺登事件出的一道水题&lt;/p>
@@ -892,7 +892,7 @@ loading="lazy"
 &lt;p>我得了 &lt;code>20&lt;/code> 分（过了测试点#1）之后重读题面的理解是&lt;code>把数字的每一位拆分排序&lt;/code>，而&lt;a class="link" href="https://www.luogu.com.cn/discuss/show/293285" target="_blank" rel="noopener"
 >这个帖子&lt;/a>的&lt;a class="link" href="https://www.luogu.com.cn/user/434215" target="_blank" rel="noopener"
 >楼主&lt;/a>的想法则是 &lt;code>25&lt;/code> 和 &lt;code>4&lt;/code> 的两种组合 &lt;code>425&lt;/code> 和 &lt;code>254&lt;/code> 中 &lt;code>254&lt;/code> 更小。&lt;/p>
-&lt;/blockquote></description></item><item><title>安装 Hugo 主题 Stack 时你可能会遇到的问题</title><link>https://example.com/stack/</link><pubDate>Wed, 28 Jul 2021 00:00:00 +0000</pubDate><guid>https://example.com/stack/</guid><description>&lt;img src="https://example.com/stack/%E5%B0%81%E9%9D%A2.jpg" alt="Featured image of post 安装 Hugo 主题 Stack 时你可能会遇到的问题" />&lt;h2 id="啥装了-stack-拷了-examplesites-以后不能正常-hugo--d了">啥？装了 &lt;code>Stack&lt;/code> 拷了 &lt;code>exampleSites&lt;/code> 以后不能正常 &lt;code>hugo -D&lt;/code>了？&lt;/h2>
+&lt;/blockquote></description></item><item><title>安装 Hugo 主题 Stack 时你可能会遇到的问题</title><link>https://imayx.top/stack/</link><pubDate>Wed, 28 Jul 2021 00:00:00 +0000</pubDate><guid>https://imayx.top/stack/</guid><description>&lt;img src="https://imayx.top/stack/%E5%B0%81%E9%9D%A2.jpg" alt="Featured image of post 安装 Hugo 主题 Stack 时你可能会遇到的问题" />&lt;h2 id="啥装了-stack-拷了-examplesites-以后不能正常-hugo--d了">啥？装了 &lt;code>Stack&lt;/code> 拷了 &lt;code>exampleSites&lt;/code> 以后不能正常 &lt;code>hugo -D&lt;/code>了？&lt;/h2>
 &lt;p>试试以下两项操作。&lt;/p>
 &lt;h3 id="删除根目录下的-configtoml">删除根目录下的 &lt;code>config.toml&lt;/code>&lt;/h3>
 &lt;p>&lt;a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack/issues/105" target="_blank" rel="noopener"
@@ -905,11 +905,11 @@ loading="lazy"
 &lt;h2 id="另外bilibili-的-shortcode-格式如下">另外，&lt;code>Bilibili&lt;/code> 的 &lt;code>ShortCode&lt;/code> 格式如下：&lt;/h2>
 &lt;p>（去掉两个反斜杠）&lt;/p>
 &lt;p>&lt;code>\{\{&amp;lt; bilibili BV1Zx411h7ue &amp;gt;}}&lt;/code>&lt;/p>
-&lt;h2 id="别一天到晚建博客了赶紧写吧">别一天到晚建博客了，赶紧写吧。&lt;/h2></description></item><item><title>独角兽搜索</title><link>https://example.com/unicorn-search/</link><pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate><guid>https://example.com/unicorn-search/</guid><description>&lt;p>我的博客的&lt;a class="link" href="https://example.com/search" >站内搜索&lt;/a>已经搭载了这款 &lt;code>微内核万物互联分布式软总线形式化验证&lt;/code> 搜索引擎，大家可以在侧边栏点击搜索抢先体验一下！&lt;/p>
+&lt;h2 id="别一天到晚建博客了赶紧写吧">别一天到晚建博客了，赶紧写吧。&lt;/h2></description></item><item><title>独角兽搜索</title><link>https://imayx.top/unicorn-search/</link><pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate><guid>https://imayx.top/unicorn-search/</guid><description>&lt;p>我的博客的&lt;a class="link" href="https://imayx.top/search" >站内搜索&lt;/a>已经搭载了这款 &lt;code>微内核万物互联分布式软总线形式化验证&lt;/code> 搜索引擎，大家可以在侧边栏点击搜索抢先体验一下！&lt;/p>
 &lt;p>相信这将是与 &lt;a class="link" href="https://www.zhihu.com/question/428248188" target="_blank" rel="noopener"
->&lt;strong>花瓣搜索&lt;/strong>&lt;/a> 一样的优秀国产项目！让我们在一起拒绝卡脖子！星星之火可以燎原！&lt;/p></description></item><item><title>Hello Hugo</title><link>https://example.com/hellohugo/</link><pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate><guid>https://example.com/hellohugo/</guid><description>&lt;h1 id="你好hugo">你好，Hugo！&lt;/h1>
+>&lt;strong>花瓣搜索&lt;/strong>&lt;/a> 一样的优秀国产项目！让我们在一起拒绝卡脖子！星星之火可以燎原！&lt;/p></description></item><item><title>Hello Hugo</title><link>https://imayx.top/hellohugo/</link><pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate><guid>https://imayx.top/hellohugo/</guid><description>&lt;h1 id="你好hugo">你好，Hugo！&lt;/h1>
 &lt;h2 id="bilibili-short-code-test">Bilibili Short Code Test&lt;/h2>
-&lt;p>{{&amp;lt; bilibili BV1Zx411h7ue &amp;gt;}}&lt;/p></description></item><item><title>题解 UPC-1488 客户调查(client)</title><link>https://example.com/upc1488/</link><pubDate>Tue, 13 Jul 2021 00:00:00 +0000</pubDate><guid>https://example.com/upc1488/</guid><description>&lt;h2 id="题目描述">题目描述：&lt;/h2>
+&lt;p>{{&amp;lt; bilibili BV1Zx411h7ue &amp;gt;}}&lt;/p></description></item><item><title>题解 UPC-1488 客户调查(client)</title><link>https://imayx.top/upc1488/</link><pubDate>Tue, 13 Jul 2021 00:00:00 +0000</pubDate><guid>https://imayx.top/upc1488/</guid><description>&lt;h2 id="题目描述">题目描述：&lt;/h2>
 &lt;p>时间：1s 空间：32M&lt;/p>
 &lt;p>公司派你去和几位客户面谈，以了解他们对公司产品的意见。你逐个打电话与客户联系，得知他们一般都很忙，不过他们还是可以为你抽出一点时间。现在的问题是有些客户的时间有冲突，你无法在一天内联系所有客户。所以你需要一个程序来帮助你安排第一天的工作，使得你能尽可能地和更多的客户进行联系。注意，客户不愿意你打乱他们的计划。如果你和某个客户约定见面，必须按时到达并且充分利用这段时间和他交谈，这样才不至于让他产生不满。你可以假设从一个客户处到另一个客户处的时间短得忽略不计。&lt;/p>
 &lt;h2 id="输入格式">输入格式：&lt;/h2>
@@ -1016,7 +1016,7 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>题解 P5707 【深基2.例12】上学迟到</title><link>https://example.com/p5707/</link><pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate><guid>https://example.com/p5707/</guid><description>&lt;p>&lt;strong>（题面来自&lt;a class="link" href="https://www.luogu.com.cn/problem/P5707" target="_blank" rel="noopener"
+&lt;/div></description></item><item><title>题解 P5707 【深基2.例12】上学迟到</title><link>https://imayx.top/p5707/</link><pubDate>Tue, 25 May 2021 00:00:00 +0000</pubDate><guid>https://imayx.top/p5707/</guid><description>&lt;p>&lt;strong>（题面来自&lt;a class="link" href="https://www.luogu.com.cn/problem/P5707" target="_blank" rel="noopener"
 >洛谷&lt;/a>）&lt;/strong>&lt;/p>
 &lt;h2 id="题目描述">题目描述&lt;/h2>
 &lt;p>yyy 的学校要求早上 8 点前到达。学校到 yyy 的家一共有 $s$($s\le 10000$) 米，而 yyy 可以以 $v$($v&amp;lt;10000$) 米每分钟的速度匀速走到学校。此外在上学路上它还要额外花 10 分钟时间进行垃圾分类。请问为了避免迟到 yyy 最晚什么时候出门？输出 &lt;code>HH:MM&lt;/code> 的时间格式，不足两位时补零。由于路途遥远， yyy 可能不得不提前一天出发，不过不可能提前超过一天。&lt;/p>
@@ -1079,7 +1079,7 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>编辑记录&lt;/p>
-&lt;p>2021-08-06 18:11:00&lt;/p></description></item><item><title>题解 P2669 [NOIP2015 普及组] 金币</title><link>https://example.com/p2669/</link><pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate><guid>https://example.com/p2669/</guid><description>&lt;p>&lt;strong>（题面来自&lt;a class="link" href="https://www.luogu.com.cn/problem/P2669" target="_blank" rel="noopener"
+&lt;p>2021-08-06 18:11:00&lt;/p></description></item><item><title>题解 P2669 [NOIP2015 普及组] 金币</title><link>https://imayx.top/p2669/</link><pubDate>Sun, 09 May 2021 00:00:00 +0000</pubDate><guid>https://imayx.top/p2669/</guid><description>&lt;p>&lt;strong>（题面来自&lt;a class="link" href="https://www.luogu.com.cn/problem/P2669" target="_blank" rel="noopener"
 >洛谷&lt;/a>）&lt;/strong>&lt;/p>
 &lt;h2 id="题目描述">题目描述&lt;/h2>
 &lt;p>国王将金币作为工资，发放给忠诚的骑士。第一天，骑士收到一枚金币；之后两天（第二天和第三天），每天收到两枚金币；之后三天（第四、五、六天），每天收到三枚金币；之后四天（第七、八、九、十天），每天收到四枚金币……；这种工资发放模式会一直这样延续下去：当连续 $n$ 天每天收到 $n$ 枚金币后，骑士会在之后的连续 $n+1$ 天里，每天收到 $n+1$ 枚金币。&lt;/p>
@@ -1170,7 +1170,7 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>编辑记录&lt;/p>
-&lt;p>2021-08-06 18:10:00&lt;/p></description></item><item><title>题解 P5719 【深基4.例3】分类平均</title><link>https://example.com/p5719/</link><pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate><guid>https://example.com/p5719/</guid><description>&lt;p>这题太有意思了，发个题解纪念一下&lt;/p>
+&lt;p>2021-08-06 18:10:00&lt;/p></description></item><item><title>题解 P5719 【深基4.例3】分类平均</title><link>https://imayx.top/p5719/</link><pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate><guid>https://imayx.top/p5719/</guid><description>&lt;p>这题太有意思了，发个题解纪念一下&lt;/p>
 &lt;p>题面来自&lt;a class="link" href="https://www.luogu.com.cn/problem/P5719" target="_blank" rel="noopener"
 >洛谷&lt;/a>&lt;/p>
 &lt;p>$\LaTeX$ 渲染不了，哭了（明明后台预览是可以渲染的啊=&lt;/p>
@@ -1243,7 +1243,7 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>编辑记录&lt;/p>
-&lt;p>2021-08-13 12:01:00&lt;/p></description></item><item><title>分享一下我的博客园在用的修改版 Wider Gao 博客园主题</title><link>https://example.com/cnblogs-theme-share/</link><pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate><guid>https://example.com/cnblogs-theme-share/</guid><description>&lt;p>如你所见，我的博客现在使用 Hugo，因此该修改版主题不太可能发布更新。&lt;/p>
+&lt;p>2021-08-13 12:01:00&lt;/p></description></item><item><title>分享一下我的博客园在用的修改版 Wider Gao 博客园主题</title><link>https://imayx.top/cnblogs-theme-share/</link><pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate><guid>https://imayx.top/cnblogs-theme-share/</guid><description>&lt;p>如你所见，我的博客现在使用 Hugo，因此该修改版主题不太可能发布更新。&lt;/p>
 &lt;p>此主题&lt;code>并非我的原创作品&lt;/code>，原作者为 &lt;a class="link" href="https://www.cnblogs.com/widerg" target="_blank" rel="noopener"
 >Wider Gao&lt;/a>&lt;/p>
 &lt;p>而且改得很烂，&lt;a class="link" href="https://www.cnblogs.com/ayx03" target="_blank" rel="noopener"
@@ -1299,7 +1299,7 @@ loading="lazy"
 &lt;p>本主题并非本人制作，如果这侵犯了您的权利，请发邮件和我取得联系，我将第一时间作出回应。&lt;/p>
 &lt;hr>
 &lt;p>修改记录&lt;/p>
-&lt;p>2021-08-06 17:37:00&lt;/p></description></item><item><title>使用 Node.js（安装Hexo）时出现了 rollbackFailedOptional 错误的解决方法</title><link>https://example.com/rollbackfailedoptional/</link><pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate><guid>https://example.com/rollbackfailedoptional/</guid><description>&lt;h2 id="我的解决方法">我的解决方法&lt;/h2>
+&lt;p>2021-08-06 17:37:00&lt;/p></description></item><item><title>使用 Node.js（安装Hexo）时出现了 rollbackFailedOptional 错误的解决方法</title><link>https://imayx.top/rollbackfailedoptional/</link><pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate><guid>https://imayx.top/rollbackfailedoptional/</guid><description>&lt;h2 id="我的解决方法">我的解决方法&lt;/h2>
 &lt;h3 id="以-管理员身份-运行一个编辑器">以 &lt;strong>管理员身份&lt;/strong> 运行一个编辑器&lt;/h3>
 &lt;h3 id="打开-cprogram-filesnodejsnode_modulesnpmnpmrc">打开 &lt;code>C:\Program Files\nodejs\node_modules\npm\npmrc&lt;/code>&lt;/h3>
 &lt;ul>
@@ -1346,7 +1346,7 @@ loading="lazy"
 &lt;p>虽然这篇博客没有花我很多时间，但是这些网站的行为让我感到十分不满。&lt;/p>
 &lt;hr>
 &lt;p>编辑记录&lt;/p>
-&lt;p>2021-08-05 13:20:00&lt;/p></description></item><item><title>题解 HDU2063 过山车</title><link>https://example.com/hdu2063/</link><pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate><guid>https://example.com/hdu2063/</guid><description>&lt;h2 id="题面链接">题面链接&lt;/h2>
+&lt;p>2021-08-05 13:20:00&lt;/p></description></item><item><title>题解 HDU2063 过山车</title><link>https://imayx.top/hdu2063/</link><pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate><guid>https://imayx.top/hdu2063/</guid><description>&lt;h2 id="题面链接">题面链接&lt;/h2>
 &lt;p>&lt;a class="link" href="http://acm.hdu.edu.cn/showproblem.php?pid=2063" target="_blank" rel="noopener"
 >HDU 2063&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="https://vjudge.net/problem/HDU-2063" target="_blank" rel="noopener"
@@ -1478,7 +1478,7 @@ loading="lazy"
 >hdu 2063 过山车 (匈牙利算法模板题) – 111qqz的小窝&lt;/a>&lt;/p>
 &lt;hr>
 &lt;p>编辑记录&lt;/p>
-&lt;p>2021-08-05 13:37:00&lt;/p></description></item><item><title>题解 YBT 1000：入门测试题目</title><link>https://example.com/ybt1000/</link><pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate><guid>https://example.com/ybt1000/</guid><description>&lt;p>&lt;a class="link" href="http://noi.openjudge.cn/ch0103/01/" target="_blank" rel="noopener"
+&lt;p>2021-08-05 13:37:00&lt;/p></description></item><item><title>题解 YBT 1000：入门测试题目</title><link>https://imayx.top/ybt1000/</link><pubDate>Fri, 04 Dec 2020 00:00:00 +0000</pubDate><guid>https://imayx.top/ybt1000/</guid><description>&lt;p>&lt;a class="link" href="http://noi.openjudge.cn/ch0103/01/" target="_blank" rel="noopener"
 >OpenJudge - 01:A+B问题&lt;/a>&lt;/p>
 &lt;p>&lt;a class="link" href="http://ybt.ssoier.cn:8088/problem_show.php?pid=1000" target="_blank" rel="noopener"
 >信息学奥赛一本通（C++版）在线评测系统&lt;/a>&lt;/p>
@@ -1540,7 +1540,7 @@ loading="lazy"
 &lt;/div>
 &lt;/div>&lt;h2 id="题意分析与算法设计">题意分析与算法设计&lt;/h2>
 &lt;p>新手不用理会 &lt;code>时间限制&lt;/code> 和 &lt;code>内存限制&lt;/code>，一般来说学到后面才会出现 TLE（Time Limit Exceed，超出时间限制）和 MLE（Memory Limit Exceed，超出内存限制）的情况。&lt;/p>
-&lt;p>（关于这些术语，可以在&lt;a class="link" href="https://example.com/explanation-of-oj-terminology/#%e6%ad%a3%e7%bb%8f%e8%a7%a3%e9%87%8a" >&lt;strong>这里&lt;/strong>&lt;/a>了解。）&lt;/p>
+&lt;p>（关于这些术语，可以在&lt;a class="link" href="https://imayx.top/explanation-of-oj-terminology/#%e6%ad%a3%e7%bb%8f%e8%a7%a3%e9%87%8a" >&lt;strong>这里&lt;/strong>&lt;/a>了解。）&lt;/p>
 &lt;p>至于这个问题，就是一个最简单的 A+B 问题。&lt;/p>
 &lt;h2 id="参考用完整代码">参考用完整代码&lt;/h2>
 &lt;p>各位一定要养成良好的代码风格，因为代码不仅仅是给机器看的，有时候人也要看。&lt;/p>
@@ -1593,7 +1593,7 @@ loading="lazy"
 &lt;hr>
 &lt;p>编辑记录&lt;/p>
 &lt;p>2021-08-06 18:42:00 UTC+8&lt;/p>
-&lt;p>最后更新于 OCT 19, 2021 21:57 UTC+8&lt;/p></description></item><item><title>题解 P1650 田忌赛马</title><link>https://example.com/p1650/</link><pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate><guid>https://example.com/p1650/</guid><description>&lt;p>&lt;strong>(题面来自&lt;a class="link" href="https://www.luogu.com.cn/problem/P1650" target="_blank" rel="noopener"
+&lt;p>最后更新于 OCT 19, 2021 21:57 UTC+8&lt;/p></description></item><item><title>题解 P1650 田忌赛马</title><link>https://imayx.top/p1650/</link><pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate><guid>https://imayx.top/p1650/</guid><description>&lt;p>&lt;strong>(题面来自&lt;a class="link" href="https://www.luogu.com.cn/problem/P1650" target="_blank" rel="noopener"
 >洛谷&lt;/a>)&lt;/strong>&lt;/p>
 &lt;h2 id="题目描述">题目描述&lt;/h2>
 &lt;p>我国历史上有个著名的故事： 那是在2300年以前。齐国的大将军田忌喜欢赛马。他经常和齐王赛马。他和齐王都有三匹马：常规马，上级马，超级马。一共赛三局，每局的胜者可以从负者这里取得200银币。每匹马只能用一次。齐王的马好，同等级的马，齐王的总是比田忌的要好一点。于是每次和齐王赛马，田忌总会输600银币。&lt;/p>
@@ -1732,7 +1732,7 @@ loading="lazy"
 &lt;/div>&lt;p>修改记录&lt;/p>
 &lt;p>2021-02-19 19:20 发布于博客园&lt;/p>
 &lt;p>2021-08-06 17:57 迁移自博客园&lt;/p>
-&lt;p>搬文章的时候瞎画的封面图还是决定不摆上去了&amp;hellip;&lt;/p></description></item><item><title>OJ术语的解释： AC、WA、TLE、OLE、MLE、RE、PE、CE、UKE 都是些啥？</title><link>https://example.com/explanation-of-oj-terminology/</link><pubDate>Sun, 29 Dec 2019 00:00:00 +0000</pubDate><guid>https://example.com/explanation-of-oj-terminology/</guid><description>&lt;h2 id="正经解释">正经解释&lt;/h2>
+&lt;p>搬文章的时候瞎画的封面图还是决定不摆上去了&amp;hellip;&lt;/p></description></item><item><title>OJ术语的解释： AC、WA、TLE、OLE、MLE、RE、PE、CE、UKE 都是些啥？</title><link>https://imayx.top/explanation-of-oj-terminology/</link><pubDate>Sun, 29 Dec 2019 00:00:00 +0000</pubDate><guid>https://imayx.top/explanation-of-oj-terminology/</guid><description>&lt;h2 id="正经解释">正经解释&lt;/h2>
 &lt;table>
 &lt;thead>
 &lt;tr>
@@ -1884,5 +1884,5 @@ loading="lazy"
 &lt;li>而TLE、OLE、MLE、ER经常同时出现，可以给予你少量的额外分数；&lt;/li>
 &lt;li>PE、CE都能给予你大量的额外分数；&lt;/li>
 &lt;li>UKE这个标签非常稀有，可以让你直接通过这次比赛并名列前茅。&lt;/li>
-&lt;/ul></description></item><item><title>归档</title><link>https://example.com/archives/</link><pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate><guid>https://example.com/archives/</guid><description/></item><item><title>搜索</title><link>https://example.com/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/search/</guid><description/></item><item><title>友链</title><link>https://example.com/%E5%8F%8B%E9%93%BE/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.com/%E5%8F%8B%E9%93%BE/</guid><description>&lt;p>欢迎来到新版友链页面！&lt;a class="link" href="https://example.com/link" >&lt;strong>回到旧版&lt;/strong>&lt;/a>以查看更多链接&lt;/p>
+&lt;/ul></description></item><item><title>归档</title><link>https://imayx.top/archives/</link><pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate><guid>https://imayx.top/archives/</guid><description/></item><item><title>搜索</title><link>https://imayx.top/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://imayx.top/search/</guid><description/></item><item><title>友链</title><link>https://imayx.top/%E5%8F%8B%E9%93%BE/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://imayx.top/%E5%8F%8B%E9%93%BE/</guid><description>&lt;p>欢迎来到新版友链页面！&lt;a class="link" href="https://imayx.top/link" >&lt;strong>回到旧版&lt;/strong>&lt;/a>以查看更多链接&lt;/p>
 &lt;p>欢迎申请友链，把你的站点名称、简介（不要太长）、地址和图片发在下方评论区或我的邮箱（aynxul03@gmail.com）即可。&lt;/p></description></item></channel></rss>
