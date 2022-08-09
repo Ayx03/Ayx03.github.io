@@ -47,7 +47,7 @@ loading="lazy"
 >@-Rosyr-&lt;/a>&lt;/p>
 &lt;p>TA AFO 了。&lt;/p>
 &lt;h2 id="组织项目">组织/项目&lt;/h2>
-&lt;h3 id="萌狸科技httpsmoefoxtech">&lt;a class="link" href="https://moefox.tech/" target="_blank" rel="noopener"
+&lt;h3 id="萌狸科技httpsmimayxtop">&lt;a class="link" href="https://m.imayx.top/" target="_blank" rel="noopener"
 >萌狸科技&lt;/a>&lt;/h3>
 &lt;p>本站隶属于萌狸科技。&lt;/p>
 &lt;h3 id="淀粉月刊httpsdfkancom">&lt;a class="link" href="https://dfkan.com/" target="_blank" rel="noopener"
@@ -65,11 +65,16 @@ loading="lazy"
 >提问的智慧&lt;/a>&lt;/h3>
 &lt;p>&lt;a class="link" href="https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md" target="_blank" rel="noopener"
 >简体中文版&lt;/a>&lt;/p>
-&lt;h3 id="a-dark-roomadarkroom">&lt;a class="link" href="https://imayx.top/ADarkRoom" >A Dark Room&lt;/a>&lt;/h3>
-&lt;p>小黑屋，一款文字游戏。&lt;/p>
+&lt;p>很有幸参与了一些贡献，虽然第一次发 Pull Request 没意识到 patch-1 分支里的后续 commit 也会被同步到 pr 里&lt;a class="link" href="https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/pull/138#issuecomment-940160150" target="_blank" rel="noopener"
+>被骂了&lt;/a>&amp;hellip;&lt;/p>
+&lt;h3 id="a-dark-roomhttpsadrimayxtop">&lt;a class="link" href="https://adr.imayx.top/" target="_blank" rel="noopener"
+>A Dark Room&lt;/a>&lt;/h3>
+&lt;p>小黑屋，一款被移植到网页上的文字游戏，挺有趣的。&lt;/p>
 &lt;p>支持以一串 Base64 编码后的 json 进行存档导入/导出。&lt;/p>
-&lt;p>&lt;del>我对它做了一些小改进，应该&lt;/del> 以后会稍微改改的&lt;/p>
-&lt;h3 id="mergemp4mergemp4">&lt;a class="link" href="https://imayx.top/mergemp4" >mergemp4&lt;/a>&lt;/h3>
+&lt;p>如果 Vercel 在你所在的地区或使用的线路访问缓慢，试试 GitHub Pages: &lt;a class="link" href="https://g.imayx.top/ADarkRoom/" target="_blank" rel="noopener"
+>https://g.imayx.top/ADarkRoom/&lt;/a>&lt;/p>
+&lt;h3 id="mergemp4httpsgimayxtopmergemp4">&lt;a class="link" href="https://g.imayx.top/mergemp4/" target="_blank" rel="noopener"
+>mergemp4&lt;/a>&lt;/h3>
 &lt;p>利用 FFmpeg 在现代浏览器中合并 .mp4 格式的视频和音频，原作者为 &lt;a class="link" href="https://github.com/maple3142" target="_blank" rel="noopener"
 >maple3142&lt;/a>。&lt;/p>
 &lt;p>目前似乎不可用。&lt;del>肯定不是被我搞坏的！&lt;/del>&lt;/p>
@@ -77,12 +82,21 @@ loading="lazy"
 >GitHub 存储库&lt;/a>&lt;/p>
 &lt;h2 id="申请交换友链">申请交换友链&lt;/h2>
 &lt;ul>
-&lt;li>为了减少本站（大概率会）每年更换域名带来的不便，本站的链接请使用 &lt;code>https://ayx03.github.io/&lt;/code> 而不是 &lt;code>https://ayx.moefox.tech/&lt;/code>&lt;/li>
+&lt;li>
+&lt;p>为了减少本站（大概率会）每年更换域名带来的不便，本站的链接请使用 &lt;code>https://ayx03.github.io/&lt;/code> 而不是 &lt;code>https://imayx.top/&lt;/code>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>发在评论区与邮箱（&lt;code>aynxul03@gmail.com&lt;/code>）的申请（格式不限）我都会在看到后尽快回复。&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="本站域名更换记录">本站域名更换记录&lt;/h3>
+&lt;ul>
 &lt;li>&lt;code>aynxu.l03.me&lt;/code> &lt;strong>已&lt;/strong>于2021年12月19日过期。本站域名&lt;strong>已&lt;/strong>更换为 &lt;code>ayx.moefox.tech&lt;/code>。&lt;/li>
-&lt;li>发在评论区与邮箱（&lt;code>aynxul03@gmail.com&lt;/code>）的申请（格式不限）我都会在看到后尽快回复。&lt;/li>
+&lt;li>&lt;code>ayx.moefox.tech&lt;/code> &lt;strong>已&lt;/strong>于 2022 年 7 月 25 日过期。本站域名&lt;strong>已&lt;/strong>更换为 &lt;code>imayx.top&lt;/code>。&lt;/li>
 &lt;/ul>
 &lt;h2 id="后记">后记&lt;/h2>
-&lt;p>&lt;del>右边的目录似乎出现了一些问题&amp;hellip;&lt;/del> 已解决（临时降级到 hugo-theme-stack v3.7.0）&lt;/p>
+&lt;p>&lt;del>右边的目录似乎出现了一些问题&amp;hellip;&lt;/del> &lt;del>已解决（临时降级到 hugo-theme-stack v3.7.0）&lt;/del> 已彻底解决（Stack 主题修复了这一问题（&lt;a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack/issues/495" target="_blank" rel="noopener"
+>#459&lt;/a>）&lt;/p>
 &lt;p>其实又出了一些问题，但是我假装没看见，然后现在解决了（&lt;a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack/issues/631" target="_blank" rel="noopener"
 >#631&lt;/a>&lt;/p>
 &lt;h2 id="更新记录">更新记录&lt;/h2>

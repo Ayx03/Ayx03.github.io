@@ -442,7 +442,7 @@ alt="Source: https://www.reddit.com/r/ProgrammerHumor/comments/ppmtr2/happy_30th
 &lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"> # Waline client configuration see: https://waline.js.org/en/reference/client.html
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> waline:
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> serverURL: https://c.moefox.tech/
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> serverURL: https://c.imayx.top/
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> lang: zh-CN
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> visitor: false
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> avatar:
@@ -466,7 +466,17 @@ alt="Source: https://www.reddit.com/r/ProgrammerHumor/comments/ppmtr2/happy_30th
 &lt;p>部署完成后，请访问 &lt;code>&amp;lt;serverURL&amp;gt;/ui/register&lt;/code> 进行注册。首个注册的人会被设定成管理员。&lt;/p>
 &lt;p>管理员登陆后，即可看到评论管理界面。在这里可以修改、标记或删除评论。&lt;/p>
 &lt;p>用户也通过评论框注册账号，登陆后会跳转到自己的档案页。&lt;/p>
-&lt;/blockquote></description></item><item><title>出现 error: ld returned 1 exit status 的五种原因以及解决方法</title><link>https://imayx.top/error-ld-returned-1-exit-status/</link><pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate><guid>https://imayx.top/error-ld-returned-1-exit-status/</guid><description>&lt;img src="https://imayx.top/error-ld-returned-1-exit-status/fengmian.png" alt="Featured image of post 出现 error: ld returned 1 exit status 的五种原因以及解决方法" />&lt;p>这个错误让人懵圈的地方就在于它不会给出错误出现的位置，让已经写了几百行的你痛不欲生。&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="编辑记录">编辑记录&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">2021-10-19 23:21:00
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>出现 error: ld returned 1 exit status 的五种原因以及解决方法</title><link>https://imayx.top/error-ld-returned-1-exit-status/</link><pubDate>Sun, 22 Aug 2021 00:00:00 +0000</pubDate><guid>https://imayx.top/error-ld-returned-1-exit-status/</guid><description>&lt;img src="https://imayx.top/error-ld-returned-1-exit-status/fengmian.png" alt="Featured image of post 出现 error: ld returned 1 exit status 的五种原因以及解决方法" />&lt;p>这个错误让人懵圈的地方就在于它不会给出错误出现的位置，让已经写了几百行的你痛不欲生。&lt;/p>
 &lt;h2 id="可执行文件被占用了">可执行文件被占用了&lt;/h2>
 &lt;p>因此编译器无法覆盖旧的可执行文件，所以编译失败。&lt;/p>
 &lt;p>这很有可能是你没发现它还没结束运行。&lt;/p>
