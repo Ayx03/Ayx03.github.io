@@ -4,8 +4,8 @@
 &lt;h1 id="github-pages-httpsgimayxtop">GitHub Pages: &lt;a class="link" href="https://g.imayx.top/" target="_blank" rel="noopener"
 >https://g.imayx.top/&lt;/a>&lt;/h1>
 &lt;p>有时候证书会抽风，自身支持 IPv6，因此关闭 Cloudflare Proxy 不影响纯 IPv6 用户访问&lt;/p>
-&lt;h1 id="vercel-httpsimayxtop">Vercel: &lt;a class="link" href="https://imayx.top" target="_blank" rel="noopener"
->https://imayx.top&lt;/a>&lt;/h1>
+&lt;h1 id="vercel-httpsimayxtop">Vercel: &lt;a class="link" href="https://imayx.top/" target="_blank" rel="noopener"
+>https://imayx.top/&lt;/a>&lt;/h1>
 &lt;p>综合考量下目前的主站，不支持 IPv6，但通过 Cloudflare Proxy 可支持 IPv6 访问&lt;/p>
 &lt;h1 id="netlify-httpsnimayxtop">Netlify: &lt;a class="link" href="https://n.imayx.top/" target="_blank" rel="noopener"
 >https://n.imayx.top/&lt;/a>&lt;/h1>
