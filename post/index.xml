@@ -1,14 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Ayx 博客</title><link>https://imayx.top/post/</link><description>Recent content in Posts on Ayx 博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 25 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://imayx.top/post/index.xml" rel="self" type="application/rss+xml"/><item><title>此博客的所有镜像</title><link>https://imayx.top/blogmirrors/</link><pubDate>Thu, 25 May 2023 00:00:00 +0000</pubDate><guid>https://imayx.top/blogmirrors/</guid><description>&lt;p>Cloudflare Pages: &lt;a class="link" href="https://e.imayx.top/" target="_blank" rel="noopener"
->https://e.imayx.top/&lt;/a>&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Ayx 博客</title><link>https://imayx.top/post/</link><description>Recent content in Posts on Ayx 博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Thu, 25 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://imayx.top/post/index.xml" rel="self" type="application/rss+xml"/><item><title>此博客的所有镜像</title><link>https://imayx.top/blogmirrors/</link><pubDate>Thu, 25 May 2023 00:00:00 +0000</pubDate><guid>https://imayx.top/blogmirrors/</guid><description>&lt;h1 id="cloudflare-pages-httpseimayxtop">Cloudflare Pages: &lt;a class="link" href="https://e.imayx.top/" target="_blank" rel="noopener"
+>https://e.imayx.top/&lt;/a>&lt;/h1>
 &lt;p>似乎在&lt;em>网络条件合适&lt;/em>的情况下访问体验比较好？&lt;/p>
-&lt;p>GitHub Pages: &lt;a class="link" href="https://g.imayx.top/" target="_blank" rel="noopener"
->https://g.imayx.top/&lt;/a>&lt;/p>
-&lt;p>有时候证书会抽风，支持 IPv6&lt;/p>
-&lt;p>Vercel: &lt;a class="link" href="https://imayx.top" target="_blank" rel="noopener"
->https://imayx.top&lt;/a>&lt;/p>
+&lt;h1 id="github-pages-httpsgimayxtop">GitHub Pages: &lt;a class="link" href="https://g.imayx.top/" target="_blank" rel="noopener"
+>https://g.imayx.top/&lt;/a>&lt;/h1>
+&lt;p>有时候证书会抽风，自身支持 IPv6，因此关闭 Cloudflare Proxy 不影响纯 IPv6 用户访问&lt;/p>
+&lt;h1 id="vercel-httpsimayxtop">Vercel: &lt;a class="link" href="https://imayx.top" target="_blank" rel="noopener"
+>https://imayx.top&lt;/a>&lt;/h1>
 &lt;p>综合考量下目前的主站，不支持 IPv6，但通过 Cloudflare Proxy 可支持 IPv6 访问&lt;/p>
-&lt;p>Netlify: &lt;a class="link" href="https://n.imayx.top/" target="_blank" rel="noopener"
->https://n.imayx.top/&lt;/a>&lt;/p></description></item><item><title>免费获取在 Microsoft Store 中收费 ￥7.00 的 HEVC 视频扩展</title><link>https://imayx.top/get7yuanhevcvideoextensionforfree/</link><pubDate>Sun, 27 Nov 2022 21:38:01 +0800</pubDate><guid>https://imayx.top/get7yuanhevcvideoextensionforfree/</guid><description>&lt;p>原来直接从微软商店下载的方法已经失效了，我在这里分享一个离线安装包：&lt;a class="link" href="https://o.imayx.top/zh-CN/%E8%BD%AF%E4%BB%B6/%E6%9D%A5%E8%87%AA%E8%AE%BE%E5%A4%87%E5%88%B6%E9%80%A0%E5%95%86%E7%9A%84%20HEVC%20%E8%A7%86%E9%A2%91%E6%89%A9%E5%B1%95/" target="_blank" rel="noopener"
+&lt;h1 id="netlify-httpsnimayxtop">Netlify: &lt;a class="link" href="https://n.imayx.top/" target="_blank" rel="noopener"
+>https://n.imayx.top/&lt;/a>&lt;/h1>
+&lt;p>感觉不是很稳定。。&lt;/p></description></item><item><title>免费获取在 Microsoft Store 中收费 ￥7.00 的 HEVC 视频扩展</title><link>https://imayx.top/get7yuanhevcvideoextensionforfree/</link><pubDate>Sun, 27 Nov 2022 21:38:01 +0800</pubDate><guid>https://imayx.top/get7yuanhevcvideoextensionforfree/</guid><description>&lt;p>原来直接从微软商店下载的方法已经失效了，我在这里分享一个离线安装包：&lt;a class="link" href="https://o.imayx.top/zh-CN/%E8%BD%AF%E4%BB%B6/%E6%9D%A5%E8%87%AA%E8%AE%BE%E5%A4%87%E5%88%B6%E9%80%A0%E5%95%86%E7%9A%84%20HEVC%20%E8%A7%86%E9%A2%91%E6%89%A9%E5%B1%95/" target="_blank" rel="noopener"
 >来自设备制造商的 HEVC 视频扩展 - AyxDrive&lt;/a>&lt;/p>
 &lt;p>一般下载 x64 的直接打开安装就行了。&lt;/p>
 &lt;p>&lt;img src="https://user-images.githubusercontent.com/75155322/230762831-4270bf35-5e43-4e22-aa51-db699117ad1a.png"
