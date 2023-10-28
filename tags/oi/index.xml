@@ -569,12 +569,12 @@ loading="lazy"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-cpp" data-lang="cpp">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#include&amp;lt;bits/stdc++.h&amp;gt;
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>&lt;span class="k">using&lt;/span> &lt;span class="k">namespace&lt;/span> &lt;span class="n">std&lt;/span>&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="kt">int&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">int&lt;/span> &lt;span class="n">K&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="c1">//发放金币的天数
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kt">int&lt;/span> &lt;span class="n">k&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="c1">//发放金币的天数
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">coin&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="c1">//骑士收到的金币数
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">per&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="c1">//每天发给骑士的金币数
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">remain&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="c1">//按此数量发放的剩余天数
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">cin&lt;/span>&lt;span class="o">&amp;gt;&amp;gt;&lt;/span>&lt;span class="n">K&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">i&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="o">&amp;lt;=&lt;/span>&lt;span class="n">day&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="o">++&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="n">cin&lt;/span>&lt;span class="o">&amp;gt;&amp;gt;&lt;/span>&lt;span class="n">k&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kt">int&lt;/span> &lt;span class="n">i&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="o">&amp;lt;=&lt;/span>&lt;span class="n">k&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="o">++&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">coin&lt;/span>&lt;span class="o">+=&lt;/span>&lt;span class="n">per&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="c1">//发放金币
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="k">if&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">--&lt;/span>&lt;span class="n">remain&lt;/span>&lt;span class="o">==&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">remain&lt;/span>&lt;span class="o">=++&lt;/span>&lt;span class="n">per&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="c1">//之后的 per+1 天每天发放 per+1 枚金币
@@ -585,6 +585,8 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>编辑记录&lt;/p>
+&lt;p>突然发现之前放的代码压根没法通过编译&amp;hellip;&lt;/p>
+&lt;p>2023-10-28 11:49:00&lt;/p>
 &lt;p>2021-08-06 18:10:00&lt;/p></description></item><item><title>题解 P5719 【深基4.例3】分类平均</title><link>https://imayx.top/p5719/</link><pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate><guid>https://imayx.top/p5719/</guid><description>&lt;p>这题太有意思了，发个题解纪念一下&lt;/p>
 &lt;p>题面来自&lt;a class="link" href="https://www.luogu.com.cn/problem/P5719" target="_blank" rel="noopener"
 >洛谷&lt;/a>&lt;/p>
