@@ -1107,11 +1107,8 @@ loading="lazy"
 &lt;p>不要忘了加上10分钟&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>怎么输出 &lt;code>HH:MM&lt;/code> 的格式？&lt;/p>
+&lt;p>怎么输出 &lt;code>HH:MM&lt;/code> 的格式？试了一下像保留小数点一样使用 C 的标准输入输出（Xchkoo 口中所说的“那套老掉牙的 cstdio”）的占位符，居然啪一下就行了&lt;/p>
 &lt;/li>
-&lt;/ol>
-&lt;p>试了一下像保留小数点一样使用C的标准输入输出（Xchkoo口中所说的“那套老掉牙的cstdio”）的占位符，居然啪一下就行了&lt;/p>
-&lt;ol start="3">
 &lt;li>
 &lt;p>怎么处理时分进位？60 进制，因为不知道进几次所以用 while 循环实现就行了&lt;/p>
 &lt;/li>
