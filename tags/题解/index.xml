@@ -64,7 +64,6 @@
 &lt;p>把这些两位数&lt;code>按数位&lt;/code>排成一行，组成一个新数&lt;/p>
 &lt;/blockquote>
 &lt;p>我感觉中间那三个字是多余的&amp;hellip;不仅不能帮助理解反而可能误导选手&lt;/p>
-&lt;p>这部分我暂时也想不通怎么解释，以后再编辑吧&amp;hellip;&lt;/p>
 &lt;h3 id="只能得-20-分">只能得 &lt;code>20&lt;/code> 分？&lt;/h3>
 &lt;p>放一下我下载的测试点#2 的数据（&lt;del>请勿用于打表&lt;/del>）：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -227,6 +226,8 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>编辑记录&lt;/p>
+&lt;p>修复了最后一个解释不通的地方&lt;/p>
+&lt;p>2023-10-28 11:37:00&lt;/p>
 &lt;p>修复数学公式渲染&lt;/p>
 &lt;p>2021-08-06 18:39:00&lt;/p>
 &lt;p>暂时移除的段落：&lt;/p>
