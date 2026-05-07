@@ -2112,17 +2112,13 @@ description: 这个世界太吵，别听，别看，别管
 website: &lt;a class="link" href="https://bushsec.cn/" target="_blank" rel="noopener"
 >https://bushsec.cn/&lt;/a>?
 image: &lt;a class="link" href="https://bushsec.cn/usr/uploads/2024/11/2244717004.png" target="_blank" rel="noopener"
->https://bushsec.cn/usr/uploads/2024/11/2244717004.png&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h1 id="--title-typescript">- title: TypeScript&lt;/h1>
-&lt;h1 id="description-typescript-is-a-typed-superset-of-javascript-that-compiles-to-plain-javascript">description: TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.&lt;/h1>
-&lt;h1 id="website-httpswwwtypescriptlangorg">website: &lt;a class="link" href="https://www.typescriptlang.org" target="_blank" rel="noopener"
->https://www.typescriptlang.org&lt;/a>&lt;/h1>
-&lt;h1 id="image-ts-logo-128jpg">image: ts-logo-128.jpg&lt;/h1>
-&lt;h2 id="icon-link">menu:
+>https://bushsec.cn/usr/uploads/2024/11/2244717004.png&lt;/a>
+menu:
 main:
 weight: -50
 params:
-icon: link&lt;/h2>
+icon: link&lt;/li>
+&lt;/ul>
+&lt;hr>
 &lt;p>欢迎来到新版友链页面！&lt;a class="link" href="https://imayx.top/link" >&lt;strong>回到旧版&lt;/strong>&lt;/a>以查看更多链接&lt;/p>
 &lt;p>欢迎申请友链，把你的站点名称、简介（不要太长）、地址和图片发在下方评论区或我的邮箱（LinkApply@ImAyx.top）即可。当然，通过 IM 联系我也是可以的（&lt;/p></description></item><item><title>搜索</title><link>https://imayx.top/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://imayx.top/search/</guid><description/></item></channel></rss>
